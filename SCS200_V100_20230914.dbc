@@ -1,0 +1,415 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SCS200 Host
+
+
+BO_ 2565841151 CANTxQuery: 8 Host
+ SG_ CANTxQuery_Mux M : 0|16@1+ (1,0) [0|0] ""  SCS200
+ SG_ SwitchCh01 m984 : 20|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh02 m984 : 16|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh03 m984 : 28|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh04 m984 : 24|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh05 m984 : 36|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh06 m984 : 32|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh07 m984 : 44|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh08 m984 : 40|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh09 m984 : 52|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh10 m984 : 48|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh11 m984 : 60|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ SwitchCh12 m984 : 56|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ QueryLoad01 m5080 : 20|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad02 m5080 : 16|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad03 m5080 : 28|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad04 m5080 : 24|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad05 m5080 : 36|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad06 m5080 : 32|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad07 m5080 : 44|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad08 m5080 : 40|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad09 m5080 : 52|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad10 m5080 : 48|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad11 m5080 : 60|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryLoad12 m5080 : 56|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ QueryAInputsModuleValues m9176 : 16|2@1+ (1,0) [0|3] ""  SCS200
+ SG_ AdvancedOptions m13272 : 16|8@1+ (1,0) [0|255] ""  SCS200
+ SG_ SwitchLED m13272 : 24|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Mode m25560 : 16|8@1+ (1,0) [0|255] ""  SCS200
+ SG_ ChNonewIDPMA m25560 : 24|8@1+ (1,0) [0|255] ""  SCS200
+ SG_ MultiONNominalCurTrip2 m25560 : 32|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ MultiplierOFFDelay m25560 : 40|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ BaseOFFDelay m25560 : 44|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ BaseONDelay m25560 : 36|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ PMAMode m25560 : 24|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ ChNo m25560 : 24|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ BootloaderMode m33752 : 56|8@1+ (1,0) [0|255] ""  SCS200
+ SG_ BootoaderOptions m33752 : 16|8@1+ (1,0) [0|255] ""  SCS200
+
+BO_ 2565537536 J1939RQST: 3 SCS200
+ SG_ J1939RQST : 8|8@1+ (1,0) [0|255] ""  Host
+
+BO_ 2566849952 ModuleValues: 8 SCS200
+ SG_ Totalcurrent : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Ubat : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Moduletemperature : 48|16@1+ (100,0) [0|6553500] "°C"  Host
+
+BO_ 2566850208 AnalogInputs_1_4: 8 SCS200
+ SG_ Analoginput01 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Analoginput02 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Analoginput03 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Analoginput04 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850464 AnalogInputs_5_6_PMAMode: 8 SCS200
+ SG_ Analoginput05 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Analoginput06 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ PMAMode : 56|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566850720 LoadVoltage_1_4: 8 SCS200
+ SG_ Loadvoltage01 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage02 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage03 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage04 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566851232 LoadVoltage_5_8: 8 SCS200
+ SG_ Loadvoltage05 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage06 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage07 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage08 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566851744 LoadVoltage_9_12: 8 SCS200
+ SG_ Loadvoltage09 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage10 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage11 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Loadvoltage12 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850976 LoadCurrent_1_4: 8 SCS200
+ SG_ Loadcurrent01 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent02 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent03 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent04 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566851488 LoadCurrent_5_8: 8 SCS200
+ SG_ Loadcurrent05 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent06 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent07 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent08 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566852000 LoadCurrent_9_12: 8 SCS200
+ SG_ Loadcurrent09 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent10 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent11 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Loadcurrent12 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566852256 LoadModuleDiagnostic: 8 SCS200
+ SG_ DiagnosticCh01 : 4|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh02 : 0|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh03 : 12|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh04 : 8|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh05 : 20|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh06 : 16|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh07 : 28|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh08 : 24|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh09 : 36|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh10 : 32|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh11 : 44|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticCh12 : 40|2@1+ (1,0) [0|4] ""  Host
+ SG_ DiagnosticModuleVoltage : 48|1@1+ (1,0) [0|1] ""  Host
+ SG_ DiagnosticModuleCurrent : 56|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566852512 LoadSwitchingStates: 8 SCS200
+ SG_ SwitchingStateCh02 : 0|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh03 : 12|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh04 : 8|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh05 : 20|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh06 : 16|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh07 : 28|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh08 : 24|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh09 : 36|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh10 : 32|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh11 : 44|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh12 : 40|1@1+ (1,0) [0|1] ""  Host
+ SG_ SwitchingStateCh01 : 4|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566855328 SWVersion: 8 SCS200
+ SG_ SWVersion : 48|16@1+ (1,0) [0|65535] ""  Host
+
+BO_ 2566852768 ConfigData_0x60_0x67: 8 SCS200
+ SG_ Ch01Trip2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch01DelayONBase : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch01DelayONMultiplier : 0|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch01DelayOFFBase : 12|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch01DelayOFFMultiplier : 8|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch02Trip2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch02DelayOFFBase : 28|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch02DelayOFFMultiplier : 24|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch02DelayONBase : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch02DelayONMultiplier : 16|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch03Trip2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch03DelayOFFBase : 44|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch03DelayOFFMultiplier : 40|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch03DelayONBase : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch03DelayONMultiplier : 32|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch04Trip2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch04DelayOFFMultiplier : 56|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch04DelayONMultiplier : 48|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch04DelayONBase : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch04DelayOFFBase : 60|4@1+ (1,0) [0|15] ""  Host
+
+BO_ 2566853024 ConfigData_0x68_0x6F: 8 SCS200
+ SG_ Ch05Trip2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch05DelayOFFBase : 12|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch05DelayOFFMultiplier : 8|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch05DelayONBase : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch05DelayONMultiplier : 0|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch06Trip2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch06DelayOFFBase : 28|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch06DelayOFFMultiplier : 24|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch06DelayONBase : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch06DelayONMultiplier : 16|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch07Trip2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch07DelayONMultiplier : 32|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch07DelayONBase : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch07DelayOFFMultiplier : 40|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch07DelayOFFBase : 44|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch08DelayONMultiplier : 48|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch08DelayONBase : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch08Trip2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch08DelayOFFMultiplier : 56|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch08DelayOFFBase : 60|4@1+ (1,0) [0|15] ""  Host
+
+BO_ 2566853280 ConfigData_0x70_0x77: 8 SCS200
+ SG_ Ch09DelayONMultiplier : 0|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch09DelayONBase : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch09Trip2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch09DelayOFFMultiplier : 8|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch09DelayOFFBase : 12|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch10DelayONMultiplier : 16|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch10DelayONBase : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch10Trip2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch10DelayOFFBase : 28|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch10DelayOFFMultiplier : 24|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch11DelayONMultiplier : 32|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch11DelayONBase : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch11Trip2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch11DelayOFFMultiplier : 40|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch11DelayOFFBase : 44|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch12DelayONMultiplier : 48|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch12DelayONBase : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ Ch12Trip2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ Ch12DelayOFFMultiplier : 56|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch12DelayOFFBase : 60|4@1+ (1,0) [0|15] ""  Host
+
+BO_ 2566853536 ConfigData_0x78_0x7F: 8 SCS200
+ SG_ Ch01NominalCurrent : 4|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch02NominalCurrent : 0|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch04NominalCurrent : 8|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch03NominalCurrent : 12|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch06NominalCurrent : 16|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch05NominalCurrent : 20|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch08NominalCurrent : 24|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch07NominalCurrent : 28|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch10NominalCurrent : 32|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch09NominalCurrent : 36|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch12NominalCurrent : 40|4@1+ (1,0) [0|15] ""  Host
+ SG_ Ch11NominalCurrent : 44|4@1+ (1,0) [0|15] ""  Host
+ SG_ ChecksumConfig : 48|16@1+ (1,0) [0|65535] ""  Host
+
+
+
+CM_ BO_ 2565841151 "Switch load outputs";
+CM_ SG_ 2565841151 ChNonewIDPMA "PMA feature only available starting FW version V100";
+CM_ SG_ 2565841151 PMAMode "PMA feature only available starting FW version V100";
+CM_ BO_ 2565537536 "Request Message for Address Claimed";
+CM_ BO_ 2566849952 "Total current, UBat and module temperature";
+CM_ SG_ 2566849952 Totalcurrent "Total current in mA";
+CM_ SG_ 2566849952 Ubat "Ubat in mV";
+CM_ SG_ 2566849952 Moduletemperature "Module temperature in °C";
+CM_ BO_ 2566850208 "Voltage values at analog inputs 1 - 4";
+CM_ BO_ 2566850464 "Voltage values at analog inputs 5 - 6";
+CM_ SG_ 2566850464 PMAMode "PMA feature only available starting FW version V100";
+CM_ BO_ 2566850720 "Voltage values per channel 1 - 4";
+CM_ BO_ 2566851232 "Voltage values per channel 5 - 8";
+CM_ BO_ 2566851744 "Voltage values per channel 9 - 12";
+CM_ BO_ 2566850976 "Load current per channel 1 - 4";
+CM_ BO_ 2566851488 "Load current per channel 5 - 8";
+CM_ BO_ 2566852000 "Load current per channel 9 - 12";
+CM_ BO_ 2566852256 "Load status and troubleshooting";
+CM_ BO_ 2566852512 "Switching status of load outputs";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2565841151 100;
+BA_ "GenSigStartValue" SG_ 2565841151 Mode 2;
+BA_ "GenSigStartValue" SG_ 2565841151 BootloaderMode 56;
+BA_ "GenSigStartValue" SG_ 2565537536 J1939RQST 238;
+VAL_ 2565841151 CANTxQuery_Mux 984 "Switch Outputs" 5080 "Query Load Values" 9176 "Query Analog Input  Module Data" 13272 "Advanced Options" 25560 "Send Config" 33752 "Bootloader Mode" ;
+VAL_ 2565841151 SwitchCh01 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh02 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh03 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh04 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh05 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh06 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh07 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh08 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh09 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh10 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh11 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 SwitchCh12 0 "IDLE" 1 "ON" 2 "OFF" ;
+VAL_ 2565841151 QueryLoad01 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad02 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad03 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad04 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad05 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad06 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad07 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad08 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad09 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad10 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad11 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryLoad12 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565841151 QueryAInputsModuleValues 1 "Analog Inputs" 2 "Module Values" ;
+VAL_ 2565841151 AdvancedOptions 1 "Activate Sleep Mode" 2 "Query Config Data" 3 "Query Diagnose" 4 "Reset Diagnose" 5 "Query Switching States" 6 "Switch LED" 8 "Query PMA Mode" 9 "Query SW Version" ;
+VAL_ 2565841151 SwitchLED 0 "OFF" 1 "ON" ;
+VAL_ 2565841151 Mode 1 "Delay" 2 "Nominal current" 3 "Change ID" 4 "Default Config" 5 "Trip 2 Activation" 6 "Change PMA Mode" ;
+VAL_ 2565841151 MultiONNominalCurTrip2 0 "0 / 30 A ... 10 A / T2 ON" 1 "1 / 5 A ... 1 A / T2 OFF" 2 "2 / 7.5 A ... 2 A" 3 "3 / 10 A ... 3 A" 4 "4 / 15 A ... 4 A" 5 "5 / 20 A ... 5 A" 6 "6 / 25 A ... 7.5 A" 7 "7 / 30 A ... 10 A" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2565841151 MultiplierOFFDelay 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2565841151 BaseOFFDelay 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2565841151 BaseONDelay 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2565841151 PMAMode 0 "ON" 1 "OFF" ;
+VAL_ 2565841151 ChNo 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2565841151 BootoaderOptions 1 "Reset" ;
+VAL_ 2566850464 PMAMode 0 "ON" 1 "OFF" ;
+VAL_ 2566852256 DiagnosticCh01 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh02 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh03 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh04 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh05 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh06 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh07 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh08 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh09 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh10 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh11 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticCh12 0 "Normal" 1 "Overcurrent" 2 "Open load" 4 "Fast Trip" ;
+VAL_ 2566852256 DiagnosticModuleVoltage 0 "Normal" 1 "Overvoltage" ;
+VAL_ 2566852256 DiagnosticModuleCurrent 0 "Normal" 1 "Overcurrent" ;
+VAL_ 2566852512 SwitchingStateCh02 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh03 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh04 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh05 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh06 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh07 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh08 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh09 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh10 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh11 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh12 0 "OFF" 1 "ON" ;
+VAL_ 2566852512 SwitchingStateCh01 0 "OFF" 1 "ON" ;
+VAL_ 2566852768 Ch01Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566852768 Ch01DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch01DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch01DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch01DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch02Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566852768 Ch02DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch02DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch02DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch02DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch03Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566852768 Ch03DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch03DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch03DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch03DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch04Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566852768 Ch04DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch04DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852768 Ch04DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852768 Ch04DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch05Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853024 Ch05DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch05DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch05DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch05DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch06Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853024 Ch06DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch06DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch06DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch06DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch07Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853024 Ch07DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch07DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch07DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch07DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch08DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch08DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853024 Ch08Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853024 Ch08DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853024 Ch08DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch09DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch09DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch09Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853280 Ch09DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch09DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch10DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch10DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch10Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853280 Ch10DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch10DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch11DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch11DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch11Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853280 Ch11DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch11DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch12DelayONMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch12DelayONBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853280 Ch12Trip2 0 "ON" 1 "OFF" ;
+VAL_ 2566853280 Ch12DelayOFFMultiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853280 Ch12DelayOFFBase 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853536 Ch01NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch02NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch04NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch03NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch06NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch05NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch08NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch07NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch10NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch09NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch12NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2566853536 Ch11NominalCurrent 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+

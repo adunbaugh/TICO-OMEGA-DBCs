@@ -1,0 +1,333 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: vfb_tpdo vfb_rpdo
+
+
+BO_ 128 NMT: 8 vfb_tpdo
+ SG_ crc8 : 47|8@0+ (1,0) [0|255] ""  vfb_tpdo
+ SG_ cnt16 : 55|16@0+ (1,0) [0|255] ""  vfb_tpdo
+ SG_ cnt8 : 7|8@0+ (1,0) [0|0] ""  vfb_tpdo
+ SG_ cnt32 : 15|32@0+ (1,0) [0|0] ""  vfb_tpdo
+
+BO_ 1921 TPDO23: 8 vfb_tpdo
+ SG_ AN1_adc_cnt : 7|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN2_adc_cnt : 23|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN3_adc_cnt : 39|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN6_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1922 TPDO24: 8 vfb_tpdo
+ SG_ AN7_adc_cnt : 7|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN8_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN9_adc_cnt : 39|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN10_adc_cnt : 55|16@0+ (1,0) [0|1] ""  vfb_tpdo
+
+BO_ 1923 TPDO25: 8 vfb_tpdo
+ SG_ AN11_adc_cnt : 7|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN12_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN13_adc_cnt : 39|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN14_adc_cnt : 55|16@0+ (1,0) [0|1] ""  vfb_tpdo
+
+BO_ 1924 TPDO4: 8 vfb_tpdo
+ SG_ AN15_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN16_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN17_adc_cnt : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN19_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1925 TPDO5: 8 vfb_tpdo
+ SG_ AN20_adc_cnt : 7|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN21_adc_cnt : 23|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN22_adc_cnt : 39|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN23_adc_cnt : 55|16@0+ (1,0) [0|1] ""  vfb_tpdo
+
+BO_ 1792 RPDO1: 8 vfb_rpdo
+ SG_ LSO1_st : 3|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO2_st : 7|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO3_st : 11|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO4_st : 15|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO5_st : 19|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO6_st : 23|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO7_st : 27|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ LSO8_st : 31|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ crc8 : 55|8@0+ (1,0) [0|0] ""  vfb_tpdo
+ SG_ cnt8 : 63|8@0+ (1,0) [0|255] ""  vfb_tpdo
+ SG_ flgs : 39|16@0+ (1,0) [0|0] ""  vfb_tpdo
+
+BO_ 1926 TPDO6: 8 vfb_tpdo
+ SG_ AN25_adc_cnt : 7|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN26_adc_cnt : 23|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN27_adc_cnt : 39|16@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ AN28_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1927 TPDO7: 8 vfb_tpdo
+ SG_ AN29_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN30_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG1_frequency_st : 39|32@0+ (1,0) [0|1] "0.01Hz"  vfb_tpdo
+
+BO_ 1930 TPDO10: 8 vfb_tpdo
+ SG_ DG3_st : 3|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG4_st : 7|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG5_st : 11|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG6_st : 15|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG7_st : 19|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG8_st : 23|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG9_st : 27|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG10_st : 31|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG11_st : 35|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ DG12_st : 39|4@0+ (1,0) [0|1] ""  vfb_tpdo
+ SG_ crc8 : 55|8@0+ (1,0) [0|0] ""  vfb_tpdo
+ SG_ cnt : 63|8@0+ (1,0) [0|255] ""  vfb_tpdo
+
+BO_ 1928 TPDO8: 8 vfb_tpdo
+ SG_ DG1_dutycycle_st : 7|16@0- (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ DG1_edgecount_st : 23|32@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG2_dutycycle_st : 55|16@0- (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1929 TPDO9: 8 vfb_tpdo
+ SG_ DG2_frequency_st : 7|32@0+ (1,0) [0|1] "0.01Hz"  vfb_tpdo
+ SG_ DG2_edgecount_st : 39|32@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1931 TPDO11: 8 vfb_tpdo
+ SG_ CAN1State : 0|16@1- (1,0) [0|1] "" Vector__XXX
+ SG_ CAN2State : 16|16@1- (1,0) [0|1] "" Vector__XXX
+ SG_ CAN3State : 32|16@1- (1,0) [0|1] "" Vector__XXX
+ SG_ CAN4State : 48|16@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1932 TPDO12: 8 vfb_tpdo
+ SG_ CAN1RxErrCount : 0|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN1TXErrCount : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1933 TPDO13: 8 vfb_tpdo
+ SG_ CAN2RxErrCount : 0|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN2TxErrCount : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1934 TPDO14: 8 vfb_tpdo
+ SG_ CAN3RxErrCount : 0|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN3TxErrCount : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1935 TPDO15: 8 vfb_tpdo
+ SG_ CAN4RxErrCount : 0|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN4TxErrCount : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1936 TPDO16: 8 vfb_tpdo
+ SG_ CAN5RxErrCount : 0|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CAN5TxErrCount : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1937 TPDO17: 8 vfb_tpdo
+ SG_ CAN5State : 0|16@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1938 TPDO18: 8 vfb_tpdo
+ SG_ SENSORPOWERA : 0|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERB : 8|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERC : 16|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERD : 24|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ VBATT : 32|10@1+ (0.1,0) [0|75] "V" Vector__XXX
+ SG_ DRVP : 42|10@1+ (0.1,0) [0|75] "V" Vector__XXX
+
+BO_ 1939 TPDO19: 8 vfb_tpdo
+ SG_ HB1P_HSO_CURRENT : 0|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HB1P_LSO_CURRENT : 16|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HB2P_HSO_CURRENT : 32|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HB2P_LSO_CURRENT : 48|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+
+BO_ 1940 TPDO20: 8 vfb_tpdo
+ SG_ HSO1_CURRENT : 0|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HSO2_CURRENT : 16|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HSO3_CURRENT : 32|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ HSO4_CURRENT : 48|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+
+BO_ 1941 TPDO21: 8 vfb_tpdo
+ SG_ LSO1_CURRENT : 0|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO2_CURRENT : 16|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO3_CURRENT : 32|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO4_CURRENT : 48|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+
+BO_ 1942 TPDO22: 8 vfb_tpdo
+ SG_ LSO5_CURRENT : 0|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO6_CURRENT : 16|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO7_CURRENT : 32|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+ SG_ LSO8_CURRENT : 48|16@1+ (1,0) [0|5000] "ma" Vector__XXX
+
+BO_ 1943 TPDO26_LSODC: 8 vfb_tpdo
+ SG_ LSO1_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO2_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO3_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO4_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1944 TPDO27_LSODC: 8 vfb_tpdo
+ SG_ LSO5_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO6_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO7_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO8_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1945 TPDO28_LSODC: 8 vfb_tpdo
+ SG_ LSO9_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO10_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO11_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO12_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1946 TPDO29_LSODC: 8 vfb_tpdo
+ SG_ LSO13_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO14_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO15_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ LSO16_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1947 TPDO30_HSODC: 8 vfb_tpdo
+ SG_ HSO1_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO2_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO3_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO4_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1948 TPDO31_HSODC: 8 vfb_tpdo
+ SG_ HSO5_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO6_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO7_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO8_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1949 TPDO32_HSODC: 8 vfb_tpdo
+ SG_ HSO9_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO10_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO11_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO12_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1950 TPDO33_HSODC: 8 vfb_tpdo
+ SG_ HSO13_DC : 0|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO14_DC : 16|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO15_DC : 32|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+ SG_ HSO16_DC : 48|16@1+ (1,0) [0|1] "0.01%DC" Vector__XXX
+
+BO_ 1951 TPDO34_HDC: 8 vfb_tpdo
+ SG_ H1_DC : 0|16@1+ (1,-32767) [-32767|32767] "0.01%DC" Vector__XXX
+ SG_ H2_DC : 16|16@1+ (1,-32767) [-32767|32767] "0.01%DC" Vector__XXX
+
+BO_ 1952 TPDO35_LSOOutSts: 8 vfb_tpdo
+ SG_ LSO1_OutSts : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO2_OutSts : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO3_OutSts : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO4_OutSts : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO5_OutSts : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO6_OutSts : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO7_OutSts : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO8_OutSts : 56|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1953 TPDO36_LSOOutSts: 8 vfb_tpdo
+ SG_ LSO9_OutSts : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO10_OutSts : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO11_OutSts : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO12_OutSts : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO13_OutSts : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO14_OutSts : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO15_OutSts : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LSO16_OutSts : 56|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1956 TPDO39_HOutSts: 8 vfb_tpdo
+ SG_ H1_OutSts : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ H2_OutSts : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1954 TPDO37_HSOOutSts: 8 vfb_tpdo
+ SG_ HSO1_OutSts : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO2_OutSts : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO3_OutSts : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO4_OutSts : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO5_OutSts : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO6_OutSts : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO7_OutSts : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO8_OutSts : 56|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1955 TPDO38_HSOOutSts: 8 vfb_tpdo
+ SG_ HSO9_OutSts : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO10_OutSts : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO11_OutSts : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO12_OutSts : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO13_OutSts : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO14_OutSts : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO15_OutSts : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSO16_OutSts : 56|8@1+ (1,0) [0|1] "" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 100;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "FixedPeriodic","Event","EnabledPeriodic","NotUsed","NotUsed","EventPeriodic","NotUsed","NotUsed","NoMsgSendType";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "FixedPeriodic";
+BA_ "GenMsgCycleTime" BO_ 128 10;
+BA_ "GenMsgCycleTime" BO_ 1921 20;
+BA_ "GenMsgCycleTime" BO_ 1922 20;
+BA_ "GenMsgCycleTime" BO_ 1923 20;
+BA_ "GenMsgCycleTime" BO_ 1924 20;
+BA_ "GenMsgCycleTime" BO_ 1925 20;
+BA_ "GenMsgCycleTime" BO_ 1792 20;
+BA_ "GenMsgCycleTime" BO_ 1926 20;
+BA_ "GenMsgCycleTime" BO_ 1927 20;
+BA_ "GenMsgCycleTime" BO_ 1930 20;
+BA_ "GenMsgCycleTime" BO_ 1928 20;
+BA_ "GenMsgCycleTime" BO_ 1929 20;
+BA_ "GenMsgCycleTime" BO_ 1931 20;
+BA_ "GenMsgCycleTime" BO_ 1932 20;
+BA_ "GenMsgCycleTime" BO_ 1933 20;
+BA_ "GenMsgCycleTime" BO_ 1934 20;
+BA_ "GenMsgCycleTime" BO_ 1935 20;
+BA_ "GenMsgCycleTime" BO_ 1936 20;
+BA_ "GenMsgCycleTime" BO_ 1937 20;
+BA_ "GenMsgCycleTime" BO_ 1938 20;
+BA_ "GenMsgCycleTime" BO_ 1939 20;
+BA_ "GenMsgCycleTime" BO_ 1940 20;
+BA_ "GenMsgCycleTime" BO_ 1941 20;
+BA_ "GenMsgCycleTime" BO_ 1942 20;
+BA_ "GenMsgCycleTime" BO_ 1943 20;
+BA_ "GenMsgCycleTime" BO_ 1944 20;
+BA_ "GenMsgCycleTime" BO_ 1945 20;
+BA_ "GenMsgCycleTime" BO_ 1946 20;
+BA_ "GenMsgCycleTime" BO_ 1947 20;
+BA_ "GenMsgCycleTime" BO_ 1948 20;
+BA_ "GenMsgCycleTime" BO_ 1949 20;
+BA_ "GenMsgCycleTime" BO_ 1950 20;
+BA_ "GenMsgCycleTime" BO_ 1951 20;
+BA_ "GenMsgCycleTime" BO_ 1952 20;
+BA_ "GenMsgCycleTime" BO_ 1953 20;
+BA_ "GenMsgCycleTime" BO_ 1956 20;
+BA_ "GenMsgCycleTime" BO_ 1954 20;
+BA_ "GenMsgCycleTime" BO_ 1955 20;
+

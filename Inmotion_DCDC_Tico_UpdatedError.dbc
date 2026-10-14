@@ -1,0 +1,214 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DCC_Single_2 DCC_Single_1 VCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ReqDebugEnable_DC2 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ReqDebugEnable_DC1 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2365538651 EC_Command_DC_2: 8 VCU
+ SG_ ControlMode_DC2 : 8|2@1+ (1,0) [0|0] ""  DCC_Single_2
+ SG_ CommandCurrent_DC2 : 32|16@1+ (0.05,-1600) [-1600|1612.75] "A"  DCC_Single_2
+ SG_ CommandVoltage_DC2 : 16|16@1+ (0.05,0) [0|3212.7] "V"  DCC_Single_2
+ SG_ CommandEnable_DC2 : 0|2@1+ (1,0) [0|0] ""  DCC_Single_2
+
+BO_ 2566865912 DC2_ReferenceInformation: 8 DCC_Single_2
+ SG_ ReferenceLowsideCurrent_DC2 : 16|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ ReferenceLowsideVoltage_DC2 : 0|16@1+ (0.05,0) [0|3212.7] "V"  VCU
+
+BO_ 2566865910 DC1_ReferenceInformation: 8 DCC_Single_1
+ SG_ ReferenceLowsideCurrent_DC1 : 16|16@1+ (0.05,-1600) [-1600|1676.75] "A"  VCU
+ SG_ ReferenceLowsideVoltage_DC1 : 0|16@1+ (0.05,0) [0|3212.7] "V"  VCU
+
+BO_ 2566866168 DC2_Faults1: 8 DCC_Single_2
+ SG_ WarningBitfield_DC2 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorBitfield_DC2 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566865654 DC1_Status: 8 DCC_Single_1
+ SG_ BatterySensVoltage_DC1 : 48|16@1+ (0.05,0) [0|3212.7] "V"  VCU
+ SG_ LimitationMode_DC1 : 4|4@1+ (1,0) [0|0] "-"  VCU
+ SG_ CoolantTemperature_DC1 : 8|8@1+ (1,-40) [-40|209] "C"  VCU
+ SG_ AbilityLowsideCurrent_DC1 : 32|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ HeatsinkTemperature_DC1 : 16|8@1+ (1,-40) [-40|209] "C"  VCU
+ SG_ ActualControlMode_DC1 : 0|4@1+ (1,0) [0|0] ""  VCU
+
+BO_ 2566865656 DC2_Status: 8 DCC_Single_2
+ SG_ BatterySensVoltage_DC2 : 48|16@1+ (0.05,0) [0|3212.75] "V"  VCU
+ SG_ AbilityLowsideCurrent_DC2 : 32|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ CoolantTemperature_DC2 : 8|8@1+ (1,-40) [-40|209] "C"  VCU
+ SG_ ActualControlMode_DC2 : 0|4@1+ (1,0) [0|0] ""  VCU
+ SG_ LimitationMode_DC2 : 4|4@1+ (1,0) [0|0] ""  VCU
+ SG_ HeatsinkTemperature_DC2 : 16|8@1+ (1,-40) [-40|209] "C"  VCU
+
+BO_ 2566865400 DC2_Actual: 8 DCC_Single_2
+ SG_ ActualHighsideVoltage_DC2 : 32|16@1+ (0.05,0) [0|3212.75] "V"  VCU
+ SG_ ActualHighsideCurrent_DC2 : 48|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ ActualLowsideVoltage_DC2 : 0|16@1+ (0.05,0) [0|3212.75] "V"  VCU
+ SG_ ActualLowsideCurrent_DC2 : 16|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+
+BO_ 2566865398 DC1_Actual: 8 DCC_Single_1
+ SG_ ActualHighsideCurrent_DC1 : 48|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ ActualHighsideVoltage_DC1 : 32|16@1+ (0.05,0) [0|3212.75] "V"  VCU
+ SG_ ActualLowsideCurrent_DC1 : 16|16@1+ (0.05,-1600) [-1600|1612.75] "A"  VCU
+ SG_ ActualLowsideVoltage_DC1 : 0|16@1+ (0.05,0) [0|3212.7] "V"  VCU
+
+BO_ 2566866166 DC1_Faults1: 8 DCC_Single_1
+ SG_ WarningBitfield_DC1 : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorBitfield_DC1 : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2365538395 EC_Command_DC_1: 8 VCU
+ SG_ ControlMode_DC1 : 8|2@1+ (1,0) [0|0] ""  DCC_Single_1
+ SG_ CommandCurrent_DC1 : 32|16@1+ (0.05,-1600) [-1600|1612.75] "A"  DCC_Single_1
+ SG_ CommandVoltage_DC1 : 16|16@1+ (0.05,0) [0|3212.7] "V"  DCC_Single_1
+ SG_ CommandEnable_DC1 : 0|2@1+ (1,0) [0|0] ""  DCC_Single_1
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 2566865912 ReferenceLowsideCurrent_DC2 "Lowside current limit for DCDC2";
+CM_ SG_ 2566865912 ReferenceLowsideVoltage_DC2 "Lowside voltage limit for DCDC2";
+CM_ SG_ 2566865910 ReferenceLowsideCurrent_DC1 "Lowside current limit for DCDC1";
+CM_ SG_ 2566865910 ReferenceLowsideVoltage_DC1 "Lowside voltage limit for DCDC1";
+BA_DEF_ BO_  "Message_Timeout" INT 0 1000;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "Yes","No";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","reserved","OnChange","reserved","reserved","reserved","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "Message_Timeout" 100;
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "ProtocolType" "";
+BA_ "BusType" "CAN";
+BA_ "DBName" "Inmotion_DCC2_J1939";
+BA_ "NmStationAddress" BU_ DCC_Single_2 248;
+BA_ "NmStationAddress" BU_ DCC_Single_1 246;
+BA_ "NmStationAddress" BU_ VCU 90;
+BA_ "GenMsgCycleTime" BO_ 2365538651 200;
+BA_ "VFrameFormat" BO_ 2365538651 3;
+BA_ "GenMsgCycleTime" BO_ 2566865912 1000;
+BA_ "VFrameFormat" BO_ 2566865912 3;
+BA_ "GenMsgCycleTime" BO_ 2566865910 1000;
+BA_ "VFrameFormat" BO_ 2566865910 3;
+BA_ "GenMsgCycleTime" BO_ 2566866168 1000;
+BA_ "VFrameFormat" BO_ 2566866168 3;
+BA_ "GenMsgCycleTime" BO_ 2566865654 200;
+BA_ "VFrameFormat" BO_ 2566865654 3;
+BA_ "GenMsgCycleTime" BO_ 2566865656 200;
+BA_ "VFrameFormat" BO_ 2566865656 3;
+BA_ "GenMsgCycleTime" BO_ 2566865400 200;
+BA_ "VFrameFormat" BO_ 2566865400 3;
+BA_ "GenMsgCycleTime" BO_ 2566865398 200;
+BA_ "VFrameFormat" BO_ 2566865398 3;
+BA_ "GenMsgCycleTime" BO_ 2566866166 1000;
+BA_ "VFrameFormat" BO_ 2566866166 3;
+BA_ "GenMsgCycleTime" BO_ 2365538395 200;
+BA_ "VFrameFormat" BO_ 2365538395 3;
+BA_ "GenSigStartValue" SG_ 2365538651 CommandCurrent_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865912 ReferenceLowsideCurrent_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865910 ReferenceLowsideCurrent_DC1 0;
+BA_ "GenSigStartValue" SG_ 2566865654 CoolantTemperature_DC1 0;
+BA_ "GenSigStartValue" SG_ 2566865654 AbilityLowsideCurrent_DC1 0;
+BA_ "GenSigStartValue" SG_ 2566865654 HeatsinkTemperature_DC1 0;
+BA_ "GenSigStartValue" SG_ 2566865656 AbilityLowsideCurrent_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865656 CoolantTemperature_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865656 HeatsinkTemperature_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865400 ActualHighsideCurrent_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865400 ActualLowsideCurrent_DC2 0;
+BA_ "GenSigStartValue" SG_ 2566865398 ActualHighsideCurrent_DC1 0;
+BA_ "GenSigStartValue" SG_ 2566865398 ActualLowsideCurrent_DC1 0;
+BA_ "GenSigStartValue" SG_ 2365538395 CommandCurrent_DC1 0;
+VAL_ 3221225472 ReqDebugEnable_DC2 3 "Take no Action" 2 "Reserved" 1 "ON" 0 "OFF" ;
+VAL_ 3221225472 ReqDebugEnable_DC1 3 "Take no Action" 2 "Reserved" 1 "ON" 0 "OFF" ;
+VAL_ 2365538651 ControlMode_DC2 3 "Take no action" 2 "Reserved" 1 "CurrentControl" 0 "VoltageControl" ;
+VAL_ 2365538651 CommandEnable_DC2 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Standby" ;
+VAL_ 2566865654 LimitationMode_DC1 15 "Error Indicator" 14 "Not Available" 11 "Ext output voltage limitation" 10 "Int output voltage limitation" 9 "External current limitation" 8 "Highside current limitation" 7 "Highside power limitation" 6 "Coolant temp limitation" 5 "Power stage temp limitation" 4 "High input voltage limitation" 3 "Low input voltage limitation" 2 "Event limitation" 1 "Max current limitation" 0 "No limitation" ;
+VAL_ 2566865654 ActualControlMode_DC1 15 "Error indicator" 13 "ErrorState" 12 "ShuttingDown" 14 "Not available" 2 "CurrentControl" 1 "VoltageControl" 0 "Standby" ;
+VAL_ 2566865656 ActualControlMode_DC2 13 "ErrorState" 12 "ShuttingDown" 15 "Error indicator" 14 "Not available" 2 "CurrentControl" 1 "VoltageControl" 0 "Standby" ;
+VAL_ 2566865656 LimitationMode_DC2 15 "Error Indicator" 14 "Not Available" 11 "Ext output voltage limitation" 10 "Int output voltage limitation" 9 "External current limitation" 8 "Highside current limitation" 7 "Highside power limitation" 6 "Coolant temp limitation" 5 "Power stage temp limitation" 4 "High input voltage limitation" 3 "Low input voltage limitation" 2 "Event limitation" 1 "Max current limitation" 0 "No limitation" ;
+VAL_ 2365538395 ControlMode_DC1 3 "Take no action" 2 "Reserved" 1 "CurrentControl" 0 "VoltageControl" ;
+VAL_ 2365538395 CommandEnable_DC1 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Standby" ;
+

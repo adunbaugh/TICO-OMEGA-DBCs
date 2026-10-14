@@ -1,0 +1,75 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: EVCM EAC
+
+
+BO_ 2288558151 STATUS1: 6 EAC
+ SG_ ElecCurrV : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Stat : 3|4@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ ElecPwrV : 2|1@1+ (1,0) [0|0] "" Vector__XXX 
+ SG_ SpdIncrReq : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SpdV : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ElecPwr : 8|8@1+ (40,0) [0|10200] "Watts" Vector__XXX
+ SG_ Spd : 21|14@0+ (1,0) [0|16383] "RPM" Vector__XXX 
+ SG_ ElecCurr : 32|8@1+ (0.2,0) [0|51] "Amps" Vector__XXX
+ SG_ FltStat : 40|4@1+ (1,0) [0|6] "" Vector__XXX
+
+BO_ 2289082439 STATUS2: 4 EAC
+ SG_ IGBTTempV : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVInputV : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BoardTempV : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BoardTemp : 8|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ HVInput : 16|8@1+ (4,0) [0|1020] "Volts" Vector__XXX
+ SG_ IGBTTemp : 24|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+
+BO_ 2349637696 REQ: 8 EVCM
+ SG_ SpdReq : 5|14@0+ (1,0) [960|8640] "RPM" Vector__XXX
+ SG_ BATT_VOLT : 24|8@1+ (0.1,0) [0|25.5] "Volts" Vector__XXX
+ SG_ KeyStart : 36|4@1+ (1,0) [0|3] "" Vector__XXX
+
+
+
+VAL_ 2288558151 Stat 0 "Normal Operation" 1 "Degraded Operation" 2 "Inoperative" ;
+VAL_ 2288558151 ElecPwrV 0 "Valid" 1 "Invalid" ;
+VAL_ 2288558151 SpdIncrReq 0 "False" 1 "True" ;
+VAL_ 2288558151 SpdV 0 "Valid" 1 "Invalid" ;
+VAL_ 2288558151 ElecCurrV 0 "Valid" 1 "Invalid" ;
+VAL_ 2288558151 FltStat 0 "No Fault" 1 "Under Voltage" 2 "Over Voltage" 3 "Over Temperature" 4 "Input Control" 5 "Current Fault" 6 "Internal Fault" ;
+VAL_ 2289082439 IGBTTempV 0 "Valid" 1 "Invalid" ;
+VAL_ 2289082439 HVInputV 0 "Valid" 1 "Invalid" ;
+VAL_ 2289082439 BoardTempV 0 "Valid" 1 "Invalid" ;
+VAL_ 2349637696 KeyStart 0 "OFF" 1 "ACC" 2 "CRANK" 3 "Run" ;
+

@@ -1,0 +1,368 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Transmission1 ShiftConsolePrimary
+
+
+VAL_TABLE_ FMI 31 "Not available" 19 "Received network data in error" 18 "Below normal (moderately severe)" 17 "Below normal (least severe)" 16 "Above normal (moderately severe)" 15 "Above normal (least severe)" 14 "Special intstructions" 13 "Out of calibration" 12 "Bad intelligent device" 11 "Root cause not known" 10 "Abnormal rate of change" 9 "Abnormal update rate" 8 "Abnormal frequency" 7 "Mechanical system not responding" 6 "Current above normal" 5 "Current below normal" 4 "Voltage below normal" 3 "Voltage above normal" 2 "Data erratic" 1 "Below normal (most severe)" 0 "Above normal (most severe)" ;
+
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ TrailerWeight : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ ReferenceTirePressSetting : 0|8@1+ (1,0) [0|2000] "kPa" Vector__XXX
+ SG_ ReferenceTirePress : 0|8@1+ (1,0) [0|2000] "kPa" Vector__XXX
+ SG_ TirePressThresholdDetection : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TireAirLeakageRate : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ CTIWheelEndElectricalFault : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TireTemp : 0|16@1+ (0.03125,-273) [-273|1734.96875] "deg C" Vector__XXX
+ SG_ TirePress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ EngTurningGearEngaged : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsShftSlectorDisplayModeSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransRequestedLaunchGear : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ DisengageDiffLockRqCentralRear : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqCentralFront : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqCentral : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqRearAxle2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqRearAxle1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqFrontAxle2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDiffLockRqFrontAxle1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RequestedPercentClutchSlip : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ TransReverseGearShiftInhibitRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DisengageDrivelineRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsTrqeConverterLockupDisableRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransGearShiftInhibitRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsRverseGearShiftInhibitStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsCrrentRangeDisplayBlankState : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransRequestedGearFeedback : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ TransShiftInhibitIndicator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransEngCrankEnable : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransActualGearRatio : 0|16@1+ (0.001,0) [0|64.255] "" Vector__XXX
+
+BO_ 2348876549 TC1: 8 ShiftConsolePrimary
+ SG_ TransMode8 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode7 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode6 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode5 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode4 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode3 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode2 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode1 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransRequestedGear : 16|8@1+ (1,-125) [-127|127] "" Vector__XXX
+
+BO_ 2566801923 ETC7: 8 Transmission1
+ SG_ TransWarningIndicator : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode8Indicator : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode7Indicator : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode6Indicator : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode5Indicator : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode1Indicator : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode2Indicator : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode3Indicator : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode4Indicator : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ActiveShiftConsoleIndicator : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransReadyForBrakeRelease : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsRqstedRangeDisplayFlashState : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsRqstedRangeDisplayBlankState : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransServiceIndicator : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2565866755 ETC2: 8 Transmission1
+ SG_ TransCurrentRange : 48|16@1+ (1,0) [0|255] "per byte" Vector__XXX
+ SG_ TransRequestedRange : 32|16@1+ (1,0) [0|255] "per byte" Vector__XXX
+ SG_ TransCurrentGear : 24|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ TransSelectedGear : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 TrailerWeight "Total mass of freight-carrying vehicle designed to be pulled by truck, including the weight of the contents.";
+CM_ SG_ 3221225472 ReferenceTirePressSetting "Reference value of the tire pressure setting as basis for the tire pressure monitoring";
+CM_ SG_ 3221225472 ReferenceTirePress "Reference value of the tire pressure as basis for the tire pressure monitoring";
+CM_ SG_ 3221225472 TirePressThresholdDetection "Signal indicating the pressure level of the tire. The levels defined represent different pressure conditions of the tire:";
+CM_ SG_ 3221225472 TireAirLeakageRate "The pressure loss rate of a tire.";
+CM_ SG_ 3221225472 CTIWheelEndElectricalFault "Indicates the status of electrical fault on CTI wheel interface.";
+CM_ SG_ 3221225472 CTITireStatus "Indicates the status of the tire.";
+CM_ SG_ 3221225472 CTIWheelSensorStatus "Indicates whether the wheel is being monitored by the CTI controller.";
+CM_ SG_ 3221225472 TireTemp "Temperature at the surface of the tire sidewall.";
+CM_ SG_ 3221225472 TirePress "Pressure at which air is contained in cavity formed by tire and rim.";
+CM_ SG_ 3221225472 EngTurningGearEngaged "Status signal which indicates that the turning gear is engaged. The turning gear is used to turn the flywheel/crankshaft,";
+CM_ SG_ 3221225472 TrnsShftSlectorDisplayModeSwitch "Status of the operator’s switch used to ‘toggle’ through multiple display modes of a shift selector display.";
+CM_ SG_ 3221225472 TransRequestedLaunchGear "Initial gear for the transmission to start out in when the vehicle is launched from a standing stop, as specified by the";
+CM_ SG_ 3221225472 DisengageDiffLockRqCentralRear "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqCentralFront "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqCentral "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqRearAxle2 "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqRearAxle1 "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqFrontAxle2 "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 DisengageDiffLockRqFrontAxle1 "Command signal used to disengage the various differential locks, e.g., to allow an undistributed individual wheel control";
+CM_ SG_ 3221225472 RequestedPercentClutchSlip "Parameter which represents the percent clutch slip requested by a device.";
+CM_ SG_ 3221225472 TransReverseGearShiftInhibitRq "Allows devices external to the normal transmission shift selector system to request the transmission to inhibit shifts into";
+CM_ SG_ 3221225472 DisengageDrivelineRq "Command signal used to simply disengage the driveline, e.g., to prevent engine drag torque from causing high wheel slip";
+CM_ SG_ 3221225472 TrnsTrqeConverterLockupDisableRq "Command signal to prevent torque converter lockup, which may cause problems in certain circumstances for ASR.";
+CM_ SG_ 3221225472 TransGearShiftInhibitRq "Command signal to inhibit gear shifts.";
+CM_ SG_ 3221225472 TrnsRverseGearShiftInhibitStatus "Reflects the status of transmission reverse inhibit activity in response to requests via SPN 4242 - Transmission Reverse";
+CM_ SG_ 3221225472 TrnsCrrentRangeDisplayBlankState "State signal indicating a transmission request for the display of the Transmission Current Range parameter (SPN 163) to";
+CM_ SG_ 3221225472 TransRequestedGearFeedback "Feedback of the SPN 525 Transmission Requested Gear input as received from the shift selector, ABS or engine via";
+CM_ SG_ 3221225472 TransShiftInhibitIndicator "State signal indicating a transmission request for the Shift Inhibit Indicator to be active or inactive. The shift inhibit";
+CM_ SG_ 3221225472 TransEngCrankEnable "State signal from the transmission indicating if the transmission’s status is such that engine cranking is allowed (i.e. at a";
+CM_ SG_ 3221225472 TransActualGearRatio "Actual ratio of input shaft speed to output shaft speed.";
+CM_ SG_ 2348876549 TransMode8 "Indicates whether transmission mode 8 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode7 "Indicates whether transmission mode 7 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode6 "Indicates whether transmission mode 6 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode5 "Indicates whether transmission mode 5 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode4 "Indicates whether transmission mode 4 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode3 "Indicates whether transmission mode 3 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode2 "Indicates whether transmission mode 2 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransMode1 "Indicates whether transmission mode 1 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2348876549 TransRequestedGear "Gear requested by the operator, ABS, or engine.";
+CM_ BO_ 2566801923 "Electronic Transmission Controller 7";
+CM_ SG_ 2566801923 TransWarningIndicator "Signal from transmission indicating that some aspect of its operation is not functioning correctly, and as a result,";
+CM_ SG_ 2566801923 TransMode8Indicator "Indicates whether transmission mode 8 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2566801923 TransMode7Indicator "Indicates whether transmission mode 7 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2566801923 TransMode6Indicator "Indicates whether transmission mode 6 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2566801923 TransMode5Indicator "Indicates whether transmission mode 5 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 2566801923 TransMode1Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 1 (SPN 1852) as";
+CM_ SG_ 2566801923 TransMode2Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 2 (SPN 1853) as";
+CM_ SG_ 2566801923 TransMode3Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 3 (SPN 1854) as";
+CM_ SG_ 2566801923 TransMode4Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 4 (SPN 1855) as";
+CM_ SG_ 2566801923 ActiveShiftConsoleIndicator "Signal from transmission control unit indicating which shift console (primary or secondary) it currently considers as the";
+CM_ SG_ 2566801923 TransReadyForBrakeRelease "This parameter indicates that enough torque / motive force is available at the transmission output shaft to release all the";
+CM_ SG_ 2566801923 TrnsRqstedRangeDisplayFlashState "State signal indicating a transmission request for the display of the Transmission Requested Range parameter (SPN 162)";
+CM_ SG_ 2566801923 TrnsRqstedRangeDisplayBlankState "State signal indicating a transmission request for the display of the Transmission Requested Range parameter (SPN162)";
+CM_ SG_ 2566801923 TransServiceIndicator "Signal from transmission indicating that some aspect of the gearbox requires servicing, such as the oil, filter, clutch(es) or";
+CM_ BO_ 2565866755 "Electronic Transmission Controller 2";
+CM_ SG_ 2565866755 TransCurrentRange "Range currently being commanded by the transmission control system. Characters may include P, Rx, Rx-1...R2, R1, R,";
+CM_ SG_ 2565866755 TransRequestedRange "Range selected by the operator. Characters may include P, Rx, Rx-1...R2, R1, R, Nx, Nx-1...N2, N1, N, D, D1, D2..., Dx,";
+CM_ SG_ 2565866755 TransCurrentGear "The gear currently engaged in the transmission or the last gear engaged while the transmission is in the process of";
+CM_ SG_ 2565866755 TransSelectedGear "The gear that the transmission will attempt to achieve during the current shift if a shift is in progress, or the next shift if one";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","reserved","OnChange","reserved","reserved","reserved","NoSigSendType";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "Yes","No";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ SG_  "DDI" INT 0 65535;
+BA_DEF_ SG_  "SAEDocument" STRING ;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "SingleFrame" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "SAE_Document" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "SAE_J1939_75_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_71_SpecVersion" STRING ;
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DDI" 0;
+BA_DEF_DEF_  "SAEDocument" "";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "SingleFrame" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SAE_Document" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "SAE_J1939_75_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_71_SpecVersion" "";
+BA_ "SAE_J1939_71_SpecVersion" "2010-10";
+BA_ "SAE_J1939_73_SpecVersion" "2010-10";
+BA_ "SAE_J1939_21_SpecVersion" "2006-10";
+BA_ "SAE_J1939_75_SpecVersion" "2005-10";
+BA_ "ProtocolType" "J1939";
+BA_ "BusType" "CAN";
+BA_ "DatabaseVersion" "7.5";
+BA_ "SAE_Document" BO_ 2348876549 "J1939-71";
+BA_ "GenMsgCycleTime" BO_ 2348876549 50;
+BA_ "GenMsgSendType" BO_ 2348876549 2;
+BA_ "VFrameFormat" BO_ 2348876549 3;
+BA_ "SAEDocument" SG_ 2348876549 TransMode8 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode8 4249;
+BA_ "SigType" SG_ 2348876549 TransMode8 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode7 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode7 4248;
+BA_ "SigType" SG_ 2348876549 TransMode7 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode6 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode6 4247;
+BA_ "SigType" SG_ 2348876549 TransMode6 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode5 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode5 4246;
+BA_ "SigType" SG_ 2348876549 TransMode5 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode4 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode4 1855;
+BA_ "SigType" SG_ 2348876549 TransMode4 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode3 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode3 1854;
+BA_ "SigType" SG_ 2348876549 TransMode3 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode2 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode2 1853;
+BA_ "SigType" SG_ 2348876549 TransMode2 5;
+BA_ "SAEDocument" SG_ 2348876549 TransMode1 "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransMode1 1852;
+BA_ "SigType" SG_ 2348876549 TransMode1 5;
+BA_ "SAEDocument" SG_ 2348876549 TransRequestedGear "J1939-71";
+BA_ "SPN" SG_ 2348876549 TransRequestedGear 525;
+BA_ "SigType" SG_ 2348876549 TransRequestedGear 0;
+BA_ "SAE_Document" BO_ 2566801923 "J1939-71";
+BA_ "GenMsgCycleTime" BO_ 2566801923 100;
+BA_ "GenMsgSendType" BO_ 2566801923 0;
+BA_ "VFrameFormat" BO_ 2566801923 3;
+BA_ "SAEDocument" SG_ 2566801923 TransWarningIndicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransWarningIndicator 5344;
+BA_ "SigType" SG_ 2566801923 TransWarningIndicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode8Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode8Indicator 4253;
+BA_ "SigType" SG_ 2566801923 TransMode8Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode7Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode7Indicator 4252;
+BA_ "SigType" SG_ 2566801923 TransMode7Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode6Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode6Indicator 4251;
+BA_ "SigType" SG_ 2566801923 TransMode6Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode5Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode5Indicator 4250;
+BA_ "SigType" SG_ 2566801923 TransMode5Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode1Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode1Indicator 2536;
+BA_ "SigType" SG_ 2566801923 TransMode1Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode2Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode2Indicator 2537;
+BA_ "SigType" SG_ 2566801923 TransMode2Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode3Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode3Indicator 2538;
+BA_ "SigType" SG_ 2566801923 TransMode3Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransMode4Indicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransMode4Indicator 2539;
+BA_ "SigType" SG_ 2566801923 TransMode4Indicator 5;
+BA_ "SAEDocument" SG_ 2566801923 ActiveShiftConsoleIndicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 ActiveShiftConsoleIndicator 2945;
+BA_ "SigType" SG_ 2566801923 ActiveShiftConsoleIndicator 5;
+BA_ "SAEDocument" SG_ 2566801923 TransReadyForBrakeRelease "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransReadyForBrakeRelease 3086;
+BA_ "SigType" SG_ 2566801923 TransReadyForBrakeRelease 5;
+BA_ "SAEDocument" SG_ 2566801923 TrnsRqstedRangeDisplayFlashState "J1939-71";
+BA_ "SPN" SG_ 2566801923 TrnsRqstedRangeDisplayFlashState 1849;
+BA_ "SigType" SG_ 2566801923 TrnsRqstedRangeDisplayFlashState 5;
+BA_ "SAEDocument" SG_ 2566801923 TrnsRqstedRangeDisplayBlankState "J1939-71";
+BA_ "SPN" SG_ 2566801923 TrnsRqstedRangeDisplayBlankState 1850;
+BA_ "SigType" SG_ 2566801923 TrnsRqstedRangeDisplayBlankState 5;
+BA_ "SAEDocument" SG_ 2566801923 TransServiceIndicator "J1939-71";
+BA_ "SPN" SG_ 2566801923 TransServiceIndicator 4178;
+BA_ "SigType" SG_ 2566801923 TransServiceIndicator 5;
+BA_ "SAE_Document" BO_ 2565866755 "J1939-71";
+BA_ "GenMsgCycleTime" BO_ 2565866755 100;
+BA_ "GenMsgSendType" BO_ 2565866755 0;
+BA_ "VFrameFormat" BO_ 2565866755 3;
+BA_ "SAEDocument" SG_ 2565866755 TransCurrentRange "J1939-71";
+BA_ "SPN" SG_ 2565866755 TransCurrentRange 163;
+BA_ "SigType" SG_ 2565866755 TransCurrentRange 0;
+BA_ "SAEDocument" SG_ 2565866755 TransRequestedRange "J1939-71";
+BA_ "SPN" SG_ 2565866755 TransRequestedRange 162;
+BA_ "SigType" SG_ 2565866755 TransRequestedRange 0;
+BA_ "SAEDocument" SG_ 2565866755 TransCurrentGear "J1939-71";
+BA_ "SPN" SG_ 2565866755 TransCurrentGear 523;
+BA_ "SigType" SG_ 2565866755 TransCurrentGear 1;
+BA_ "SAEDocument" SG_ 2565866755 TransSelectedGear "J1939-71";
+BA_ "SPN" SG_ 2565866755 TransSelectedGear 524;
+BA_ "SigType" SG_ 2565866755 TransSelectedGear 0;
+BA_ "NmStationAddress" BU_ Transmission1 3;
+BA_ "NmStationAddress" BU_ ShiftConsolePrimary 5;
+VAL_ 2348876549 TransMode8 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode7 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode6 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode5 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode4 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode3 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode2 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2348876549 TransMode1 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566801923 TransWarningIndicator 3 "Not available" 2 "Transmission Warning Indicator is flashing" 1 "Transmission Warning Indicator is on continuously" 0 "Transmission Warning Indicator is off" ;
+VAL_ 2566801923 TransMode8Indicator 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566801923 TransMode7Indicator 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566801923 TransMode6Indicator 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566801923 TransMode5Indicator 3 "Take no action" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566801923 TransMode1Indicator 3 "Not available" 2 "Error" 1 "Transmission Mode 1 Active" 0 "Transmission Mode 1 not active" ;
+VAL_ 2566801923 TransMode2Indicator 3 "Not available" 2 "Error" 1 "Transmission Mode 2 Active" 0 "Transmission Mode 2 not active" ;
+VAL_ 2566801923 TransMode3Indicator 3 "Not available" 2 "Error" 1 "Transmission Mode 3 Active" 0 "Transmission Mode 3 not active" ;
+VAL_ 2566801923 TransMode4Indicator 3 "Not available" 2 "Error" 1 "Transmission Mode 4 Active" 0 "Transmission Mode 4 not active" ;
+VAL_ 2566801923 ActiveShiftConsoleIndicator 3 "Not available" 2 "Reserved" 1 "Secondary shift console is active" 0 "Primary shift console is active" ;
+VAL_ 2566801923 TransReadyForBrakeRelease 3 "Not available" 2 "Error" 1 "Transmission Ready for Brake Release" 0 "Transmission Not Ready for Brake Release" ;
+VAL_ 2566801923 TrnsRqstedRangeDisplayFlashState 3 "Take no action" 2 "Reserved" 1 "Active Transmission Requested Range display should be flashing" 0 "Inactive Transmission Requested Range display should not be flashing" ;
+VAL_ 2566801923 TrnsRqstedRangeDisplayBlankState 3 "Take no action" 2 "Reserved" 1 "Active Transmission Requested Range display should be blanked" 0 "Inactive Transmission Requested Range display should not be blanked" ;
+VAL_ 2566801923 TransServiceIndicator 3 "Not available" 2 "Transmission Service Indicator is flashing" 1 "Transmission Service Indicator is on continuously" 0 "Transmission Service Indicator is off" ;
+

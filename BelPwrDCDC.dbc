@@ -1,0 +1,95 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DCDC VCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ InptVoltUnderLimFlg : 0|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ CANFlt : 7|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ I2CFlt : 6|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OverTempFld : 5|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OutptCurrOverLimFlg : 4|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OutptVoltOverLimFlg : 3|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OutptVoltUnderLimFlg : 2|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ InptVoltOverLimFlg : 1|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ UnitEnbld : 48|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ CurrLimActv : 25|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OverTempWarn : 24|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ RevPlrtyFlt : 13|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OvrVoltLatchFlt : 12|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OvrPwrdFlt : 11|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ ThrmSnsFld : 10|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OutptShrtCirc : 9|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ EEPROMFlt : 8|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ HiccupMdActv : 57|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ RevPlrtyProtActv : 56|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ HVILVld : 55|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ InptVltVld : 54|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ StartInitDone : 53|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ RemoteShdn : 52|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ FltLtchd : 51|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ Fltd : 50|1@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ WakeupActv : 49|1@1+ (1,0) [0|1] "bool" Vector__XXX
+
+BO_ 2566903475 ConverterInputOutput: 8 DCDC
+ SG_ OutputVoltage : 0|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ OutputCurrent : 16|16@1+ (0.05,0) [0|3276.75] "A" Vector__XXX
+ SG_ InputVoltage : 32|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ CoolingPlateTemperature : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+
+BO_ 2566902963 Status: 8 DCDC
+ SG_ FaultFlags : 0|14@1+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ WarningFlags : 24|2@1+ (1,0) [0|0] "enum" Vector__XXX
+ SG_ StatusFlags : 48|10@1+ (1,0) [0|0] "enum" Vector__XXX
+
+BO_ 2565845760 OutputSetpoint: 8 VCU
+ SG_ OutputVoltageSetpt m0 : 8|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ Mode M : 0|8@1+ (1,0) [0|3] "enum" Vector__XXX
+ SG_ OutputCurrentSetpt m0 : 24|16@1+ (0.05,0) [0|3276.75] "A" Vector__XXX
+ SG_ RemoteShutdown m0 : 40|8@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OutputUVLimit m1 : 8|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ OutputOVLimit m1 : 24|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ CoolingPlateFaultLim m2 : 8|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ CoolingPlateWarningLim m2 : 24|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+
+
+
+CM_ SG_ 2566902963 FaultFlags "See CAN spec for bit mapping.";
+CM_ SG_ 2566902963 WarningFlags "See CAN spec for bit mapping.";
+CM_ SG_ 2566902963 StatusFlags "See CAN spec for bit mapping.";
+CM_ SG_ 2565845760 Mode "";
+VAL_ 2565845760 Mode 0 "OpSetpt" 1 "LimSetpt" 2 "ThermSetpt" ;
+

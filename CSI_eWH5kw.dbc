@@ -1,0 +1,90 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2147484264 AC_0x268: 8 Vector__XXX
+ SG_ PTC_PowerRatio : 32|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ TempSetting : 40|8@1+ (1,0) [0|85] "degC" Vector__XXX
+ SG_ PTC_ON_OFF : 48|1@1+ (1,0) [0|1] "bool" Vector__XXX
+
+BO_ 2147484272 PTC_0x270: 8 Vector__XXX
+ SG_ PTC_Power : 0|8@1+ (1,0) [0|255] "W" Vector__XXX
+ SG_ TempOfOutWater : 8|8@1+ (1,-40) [0|255] "degC" Vector__XXX
+ SG_ TempOfPTC : 16|8@1+ (1,-40) [0|255] "degC" Vector__XXX
+ SG_ PTC_RunStatus : 24|8@1+ (1,0) [0|3] "enum" Vector__XXX
+ SG_ PTC_ErrCode : 32|8@1+ (1,0) [0|255] "bitmap" Vector__XXX
+ SG_ PTC_ErrLevel : 40|8@1+ (1,0) [0|3] "enum" Vector__XXX
+ SG_ PTC_RunningCurrent : 48|8@1+ (1,0) [0|255] "A" Vector__XXX
+ SG_ PTC_HVDCVlts : 56|8@1+ (1,0) [0|255] "V" Vector__XXX
+
+
+
+CM_ SG_ 2147484264 PTC_PowerRatio "0-10%: Stop
+11-95%: Proportionally adjusted power
+95%+: (96-255) Full power output (no thermal body power output)";
+CM_ SG_ 2147484264 TempSetting "Data range: 0 to 85 degree C
+Any value that exceeds 85 will cap at 85";
+CM_ SG_ 2147484264 PTC_ON_OFF "0: Stop Heating
+1: Start heating
+";
+CM_ SG_ 2147484272 PTC_Power "example: raw reading of 0x32 = 50, 50x100 = 5000w
+";
+CM_ SG_ 2147484272 TempOfOutWater "Coolant output temperature, offset -40 degC
+";
+CM_ SG_ 2147484272 PTC_RunStatus "Run Status:
+0: Standby
+1: Run
+2: Invalid
+3: Fault";
+CM_ SG_ 2147484272 PTC_ErrCode "Bit map:
+bit 0 - IGBT fault
+bit 1 - over-voltage
+bit 2 - under-voltage
+bit 3 - NTC is broken
+bit 4 - outlet temp too high
+bit 5 - dry burning
+bit 6 - over-current
+bit 7 - reserved";
+CM_ SG_ 2147484272 PTC_ErrLevel "0 - normal
+1 - minor fault
+2 - general fault
+3 - critical fault (disconnect HV in this state)";
+CM_ SG_ 2147484272 PTC_RunningCurrent "0.2 scaling, max reading 51A
+";
+CM_ SG_ 2147484272 PTC_HVDCVlts "4 scaling, max VDC 1000V, while run voltage 0-800V
+";
+

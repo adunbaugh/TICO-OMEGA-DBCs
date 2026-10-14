@@ -1,0 +1,138 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2566877787 TX_to_T6_eAir_CAN: 8 Vector__XXX
+ SG_ oil_level_sensor_analog_value : 52|4@1+ (10,-20) [-20|130] "[]" Vector__XXX
+ SG_ dont_invert_oil_level_input : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ use_oil_level_sensor : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ oil_level_sensor_ok : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ oil_level_ok_input : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ max_requested_motor_speed : 56|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ use_moteg_can_lt_box : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ additional_pressure_demand : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ requested_motor_speed : 8|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ actual_minimum_air_pressure : 40|8@1+ (0.08,0) [0|20.4] "Bar" Vector__XXX
+ SG_ vehicle_speed : 32|8@1+ (1,0) [0|255] "kmph" Vector__XXX
+ SG_ dynamic_can_request_data : 24|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ measured_oil_temp_voltage : 16|8@1+ (0.02,0.5) [0.5|5.6] "V" Vector__XXX
+ SG_ service_reset_20000h : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ service_reset_4000h : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ service_reset_1000h : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ service_reset_250h : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ vehicle_can_ok : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ enable_mode : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566877455 RX_from_T6_eAir_CAN: 8 Vector__XXX
+ SG_ oil_level_sensor_fill_level : 36|4@1+ (10,-20) [-20|130] "%" Vector__XXX
+ SG_ solenoid_problem_detected : 7|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ oil_level_warning : 34|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ actual_dc_current : 48|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+ SG_ dynamic_can_request_data_result : 40|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ warning_states_20000h_service : 63|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_4000h_service : 62|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_1000h_service : 61|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_250h_service : 60|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_air_pressure_out_ : 59|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_oil_temp_out_of_r : 58|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_motor_out_of_rang : 57|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_any_warning_activ : 56|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ air_dryer_govenor_valve : 33|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ air_dryer_regeneration_valve : 32|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ calculated_oil_temperature : 24|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ operating_counter : 8|16@1+ (6,0) [0|393210] "Hrs" Vector__XXX
+ SG_ open_solenoid_valve : 6|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ can_alive_counter : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ error_message_can_rx_fail : 3|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ error_message_motor_error : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_inverter_bootup_r : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_motor_turning : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566878299 TX_to_T6_eServo_CAN: 8 Vector__XXX
+ SG_ max_requested_motor_speed : 56|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ requested_motor_speed : 8|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ vehicle_speed : 32|8@1+ (1,0) [0|255] "kmph" Vector__XXX
+ SG_ dynamic_can_request_data : 24|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ vehicle_can_ok : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ enable_mode : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566877967 RX_from_T6_eServo_CAN: 8 Vector__XXX
+ SG_ actual_dc_current : 48|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+ SG_ dynamic_can_request_data_result : 40|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ uzk_mean : 24|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ warning_states_under_torque : 58|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_motor_out_of_0000 : 57|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_any_warning__0000 : 56|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ operating_counter : 8|16@1+ (6,0) [0|393210] "Hrs" Vector__XXX
+ SG_ can_alive_counter : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ error_message_can_rx_fail : 3|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ error_message_motor_error : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_inverter_boo_0000 : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_motor_turning : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566913807 RX_from_T6_inverter_general_CAN: 8 Vector__XXX
+ SG_ OverloadProtectionStatus : 56|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ HeatSinkTemperature : 48|8@1+ (1,-125) [-125|130] "°C" Vector__XXX
+ SG_ RegenerativeTotalPower : 32|16@1+ (10,0) [0|655350] "W" Vector__XXX
+ SG_ TotalMotorPower : 16|16@1+ (10,0) [0|655350] "W" Vector__XXX
+ SG_ DcLinkVoltage : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+
+BO_ 2565799695 RX_from_T6_CAN_port_init: 8 Vector__XXX
+ SG_ ArbitraryAddressCapable : 63|1@1- (1,0) [0|1] "[]" Vector__XXX
+ SG_ IndustryGroup : 60|3@1+ (1,0) [0|7] "[]" Vector__XXX
+ SG_ VehicleSystemInstance : 56|4@1+ (1,0) [0|15] "[]" Vector__XXX
+ SG_ VehicleSystem : 49|7@1+ (1,0) [0|127] "[]" Vector__XXX
+ SG_ Reserved : 48|1@1- (1,0) [0|1] "[]" Vector__XXX
+ SG_ Function : 40|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ FunctionInstance : 35|5@1+ (1,0) [0|31] "[]" Vector__XXX
+ SG_ EcuInstanceCanPort : 32|3@1+ (1,0) [0|7] "[]" Vector__XXX
+ SG_ ManufacturerCode : 21|11@1+ (1,0) [0|2047] "[]" Vector__XXX
+ SG_ IdentityNrUnique : 0|21@1+ (1,0) [0|2097150] "[]" Vector__XXX
+
+
+
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "SystemSignalLongSymbol" SG_ 2566877455 warning_states_air_pressure_out_ "warning_states_air_pressure_out_of_range";
+BA_ "SystemSignalLongSymbol" SG_ 2566877455 warning_states_oil_temp_out_of_r "warning_states_oil_temp_out_of_range";
+BA_ "SystemSignalLongSymbol" SG_ 2566877455 warning_states_motor_out_of_rang "warning_states_motor_out_of_range";
+BA_ "SystemSignalLongSymbol" SG_ 2566877455 warning_states_any_warning_activ "warning_states_any_warning_active";
+BA_ "SystemSignalLongSymbol" SG_ 2566877455 status_message_inverter_bootup_r "status_message_inverter_bootup_ready";
+BA_ "SystemSignalLongSymbol" SG_ 2566877967 warning_states_motor_out_of_0000 "warning_states_motor_out_of_range";
+BA_ "SystemSignalLongSymbol" SG_ 2566877967 warning_states_any_warning__0000 "warning_states_any_warning_active";
+BA_ "SystemSignalLongSymbol" SG_ 2566877967 status_message_inverter_boo_0000 "status_message_inverter_bootup_ready";
+

@@ -1,0 +1,2058 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: CGW VCVCCU
+
+
+BO_ 2566872960 VCVCCU_V2G_ChargingProfileNext: 3 VCVCCU
+ SG_ VCVCCU_V2G_NextPMaxValue : 0|16@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_NextPMaxMultiplier : 16|8@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566872704 VCVCCU_V2G_ChargingProfileCurr: 7 VCVCCU
+ SG_ VCVCCU_V2G_CurrentPMaxMultiplier : 16|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_CurrentPMaxDuration : 24|32@1+ (1,0) [0|0] "s"  CGW
+ SG_ VCVCCU_V2G_CurrentPMaxValue : 0|16@1- (1,0) [0|0] "W"  CGW
+
+BO_ 2566875266 VCVCCU_LIN_EvMaxMinCurrents: 7 CGW
+ SG_ LIN_EvMinCurrentL3 : 48|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMinCurrentL2 : 40|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMinCurrentL1 : 32|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMaxCurrentN : 24|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMaxCurrentL3 : 16|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMaxCurrentL2 : 8|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvMaxCurrentL1 : 0|8@1+ (1,0) [0|0] "A"  VCVCCU
+
+BO_ 2566874496 VCVCCU_LIN_SeMaxCurrentList: 4 VCVCCU
+ SG_ LIN_SeMaxCurrentN : 24|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeMaxCurrentL3 : 16|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeMaxCurrentL2 : 8|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeMaxCurrentL1 : 0|8@1+ (1,0) [0|0] "A"  CGW
+
+BO_ 2566874240 VCVCCU_LIN_SeNomVoltages: 5 VCVCCU
+ SG_ LIN_SeNomVoltageLL : 16|16@1+ (0.1,0) [0|0] "V"  CGW
+ SG_ LIN_SeNomVoltageL1N : 0|16@1+ (0.1,0) [0|0] "V"  CGW
+ SG_ LIN_SeFrequency : 32|8@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2566873472 VCVCCU_LIN_SeStatus: 6 VCVCCU
+ SG_ LIN_SeSelectedVersion : 8|8@1+ (1,0) [0|0] ""  CGW
+ SG_ LIN_ChargingStatus : 0|8@1+ (1,0) [0|0] ""  CGW
+ SG_ LIN_SeAvailableCurrentN : 40|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeAvailableCurrentL3 : 32|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeAvailableCurrentL2 : 24|8@1+ (1,0) [0|0] "A"  CGW
+ SG_ LIN_SeAvailableCurrentL1 : 16|8@1+ (1,0) [0|0] "A"  CGW
+
+BO_ 2566840450 VD: 8 CGW
+ SG_ TotalVehicleDistance : 32|32@1+ (0.125,0) [0|536870911.88] "km"  VCVCCU
+ SG_ TripDistance : 0|32@1+ (0.125,0) [0|536870911.88] "km"  VCVCCU
+
+BO_ 2566875010 VCVCCU_LIN_EvMinVoltageList: 4 CGW
+ SG_ LIN_EvMinVoltageLL : 16|16@1+ (0.1,0) [0|0] "V"  VCVCCU
+ SG_ LIN_EvMinVoltageL1N : 0|16@1+ (0.1,0) [0|0] "V"  VCVCCU
+
+BO_ 2566874754 VCVCCU_LIN_EvMaxVoltageList: 5 CGW
+ SG_ LIN_EvMaxVoltageLL : 16|16@1+ (0.1,0) [0|0] "V"  VCVCCU
+ SG_ LIN_EvMaxVoltageL1N : 0|16@1+ (0.1,0) [0|0] "V"  VCVCCU
+ SG_ LIN_EvFrequencies : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566873986 VCVCCU_LIN_EvPresentCurrentList: 4 CGW
+ SG_ LIN_EvPresentCurrentN : 24|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvPresentCurrentL3 : 16|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvPresentCurrentL2 : 8|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvPresentCurrentL1 : 0|8@1+ (1,0) [0|0] "A"  VCVCCU
+
+BO_ 2566873730 VCVCCU_LIN_EvStatus: 5 CGW
+ SG_ LIN_EvAwake : 0|1@1+ (1,0) [0|1] ""  VCVCCU
+ SG_ LIN_EvRequestedCurrentN : 32|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvRequestedCurrentL3 : 24|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvRequestedCurrentL2 : 16|8@1+ (1,0) [0|0] "A"  VCVCCU
+ SG_ LIN_EvRequestedCurrentL1 : 8|8@1+ (1,0) [0|0] "A"  VCVCCU
+
+BO_ 2566857346 VCVCCU_V2ICP_VehicleToBackend: 8 CGW
+ SG_ VCVCCU_V2ICP_RequiredEnergyToPre : 32|16@1+ (1,0) [0|1000] "kWh"  VCVCCU
+ SG_ VCVCCU_V2ICP_RequiredEnergyToCha : 16|16@1+ (1,0) [0|1000] "kWh"  VCVCCU
+ SG_ VCVCCU_V2ICP_RequiredDurationToP : 8|8@1+ (1,0) [0|250] "min"  VCVCCU
+ SG_ VCVCCU_V2ICP_RequiredDurati_0000 : 0|8@1+ (1,0) [0|250] "min"  VCVCCU
+
+BO_ 2566855552 VCVCCU_V2ICP_BackendToVehicle: 5 VCVCCU
+ SG_ VCVCCU_V2ICP_ScheduledDepartureT : 0|16@1+ (5,0) [0|1440] "min"  CGW
+ SG_ VCVCCU_V2ICP_PreconditioningDesi : 24|8@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_V2ICP_Preconditionin_0000 : 16|8@1+ (1,0) [0|255] ""  CGW
+ SG_ VCVCCU_V2ICP_AmbientTemperature : 32|8@1- (1,0) [-50|70] "°C"  CGW
+
+BO_ 2566841986 TD: 8 CGW
+ SG_ Year : 40|8@1+ (1,1985) [1985|2235] "years"  VCVCCU
+ SG_ Seconds : 0|8@1+ (0.25,0) [0|59.75] "s"  VCVCCU
+ SG_ Month : 24|8@1+ (1,0) [1|12] "months"  VCVCCU
+ SG_ Minutes : 8|8@1+ (1,0) [0|59] "min"  VCVCCU
+ SG_ LocalMinuteOffset : 48|8@1+ (1,-125) [-59|59] "min"  VCVCCU
+ SG_ LocalHourOffset : 56|8@1+ (1,-125) [-23|23] "h"  VCVCCU
+ SG_ Hours : 16|8@1+ (1,0) [0|23] "h"  VCVCCU
+ SG_ Day : 32|8@1+ (0.25,0) [0.25|31.75] "days"  VCVCCU
+
+BO_ 2566855296 VCVCCU_InletStatus2: 8 VCVCCU
+ SG_ ProtectiveEarth_Offset : 32|16@1+ (1,-32000) [-32000|33533] "mV"  CGW
+ SG_ VCVCCU_ControlPilot_MinVoltage : 16|16@1+ (1,-32000) [-32000|33533] "mV"  CGW
+ SG_ VCVCCU_PlugPresent_Voltage : 0|16@1+ (1,0) [0|65533] "mV"  CGW
+
+BO_ 2566855040 VCVCCU_InternalVoltageRawValues: 8 VCVCCU
+ SG_ VCVCCU_Internal_VCC_SS_Raw : 48|16@1+ (1,0) [0|65533] ""  CGW
+ SG_ VCVCCU_Internal_VCC_KL30_Raw : 32|16@1+ (1,0) [0|65533] ""  CGW
+ SG_ VCVCCU_Internal_VCC_KL15_Raw : 16|16@1+ (1,0) [0|65533] ""  CGW
+ SG_ VCVCCU_Internal_VCC_12V_Raw : 0|16@1+ (1,0) [0|65533] ""  CGW
+
+BO_ 2566854784 VCVCCU_InternalVoltageStatus: 8 VCVCCU
+ SG_ VCVCCU_Internal_VCC_SS_Voltage : 32|16@1+ (1,0) [0|65533] "mV"  CGW
+ SG_ VCVCCU_Internal_VCC_KL30_Voltage : 48|16@1+ (1,0) [0|65533] "mV"  CGW
+ SG_ VCVCCU_Internal_VCC_KL15_Voltage : 16|16@1+ (1,0) [0|65533] "mV"  CGW
+ SG_ VCVCCU_Internal_VCC_12V_Voltage : 0|16@1+ (1,0) [0|65533] "mV"  CGW
+
+BO_ 2566865026 VCVCCU_V2G_DepartureTime: 5 CGW
+ SG_ VCVCCU_V2G_DepartureTimeFlag : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_DepartureTime_Value : 0|32@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566872448 VCVCCU_V2G_StateM: 5 VCVCCU
+ SG_ VCVCCU_V2G_Appl_SccFuncModeReq : 36|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_V2G_Appl_SccChargeModeReq : 33|3@1+ (1,0) [0|6] ""  CGW
+ SG_ VCVCCU_V2G_StateM_StateMachineSt : 24|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_StateM_StateMachineMe : 16|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_StateM_StateMachineEr : 8|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_StateM_InternetAvaila : 32|1@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_StateM_EnergyTransfer : 0|8@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2566872192 VCVCCU_V2G_Core: 7 VCVCCU
+ SG_ VCVCCU_V2G_EthTrcv_TrcvLinkState : 52|1@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_TrcvLinkState : 51|1@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_StackError : 40|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_SDPSecurityTx : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_SAPSchemaID : 24|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_SAPResponseCode : 16|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_MsgStatus : 8|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_MsgState : 0|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_IPAssigned : 50|1@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_CyclicMsgTrig : 49|1@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_Core_CyclicMsgRcvd : 48|1@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEPresentVoltage_Un : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentVolta_0000 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentVoltage_Mu : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentVoltage_Va : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566871936 VCVCCU_V2G_DateTimeNow: 8 VCVCCU
+ SG_ VCVCCU_V2G_DateTimeNow : 0|64@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEPresentCurrent_Un : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentCurre_0000 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentCurrent_Mu : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPresentCurrent_Va : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentRipple: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEPeakCurrentRipple : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPeakCurrentR_0000 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPeakCurrentR_0001 : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPeakCurrentR_0002 : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566870912 VCVCCU_V2G_EVSEMinimumVoltageLim: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEMinimumVoltageLim : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumVolta_0000 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumVolta_0001 : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumVolta_0002 : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566870656 VCVCCU_V2G_EVSEMinimumCurrentLim: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEMinimumCurrentLim : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumCurre_0000 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumCurre_0001 : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMinimumCurre_0002 : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566870400 VCVCCU_V2G_EVSEMaximumVoltageLim: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEMaximumVoltageLim : 4|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumVolta_0000 : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumVolta_0001 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumVolta_0002 : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumVolta_0003 : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566870144 VCVCCU_V2G_EVSEMaximumPowerLimit: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEMaximumPowerLimit : 4|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumPower_0000 : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumPower_0001 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumPower_0002 : 8|8@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumPower_0003 : 16|16@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566869888 VCVCCU_V2G_EVSEMaximumCurrentLim: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEMaximumCurrentLim : 4|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumCurre_0000 : 16|16@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumCurre_0001 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumCurre_0002 : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEMaximumCurre_0003 : 8|8@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDeliver: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSEEnergyToBeDeliver : 4|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEEnergyToBeDe_0000 : 16|16@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEEnergyToBeDe_0001 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEEnergyToBeDe_0002 : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEEnergyToBeDe_0003 : 8|8@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566869376 VCVCCU_V2G_EVSECurrentRegulation: 5 VCVCCU
+ SG_ VCVCCU_V2G_EVSECurrentRegulation : 4|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSECurrentRegul_0000 : 16|16@1- (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSECurrentRegul_0001 : 32|8@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSECurrentRegul_0002 : 0|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSECurrentRegul_0003 : 8|8@1- (1,0) [0|0] ""  CGW
+
+BO_ 2566863234 VCVCCU_V2G_EVMaximumVoltageLimit: 5 CGW
+ SG_ VCVCCU_V2G_EVMaximumVoltageLimit : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumVoltage_0000 : 16|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumVoltage_0001 : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumVoltage_0002 : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumVoltage_0003 : 8|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit: 5 CGW
+ SG_ VCVCCU_V2G_EVMaximumPowerLimitFl : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumPowerLimit_V : 16|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumPowerLimit_U : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumPowerLi_0000 : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumPowerLimit_M : 8|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566862722 VCVCCU_V2G_EVMaximumCurrentLimit: 5 CGW
+ SG_ VCVCCU_V2G_EVMaximumCurrentLimit : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumCurrent_0000 : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumCurrent_0001 : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumCurrent_0002 : 8|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVMaximumCurrent_0003 : 16|16@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566862466 VCVCCU_V2G_EVEnergyRequest: 5 CGW
+ SG_ VCVCCU_V2G_EVEnergyRequestFlag : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyRequest_Unit : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyRequest_UnitF : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyRequest_Multi : 8|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyRequest_Value : 16|16@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566862210 VCVCCU_V2G_EVEnergyCapacity: 5 CGW
+ SG_ VCVCCU_V2G_EVEnergyCapacityFlag : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyCapacity_Unit : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyCapacity_0000 : 32|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyCapacity_Mult : 8|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVEnergyCapacity_Valu : 16|16@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566869120 VCVCCU_V2G_EVSEStatus: 8 VCVCCU
+ SG_ VCVCCU_V2G_DateTimeNowFlag : 20|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_ResponseCode : 24|5@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_NotificationMaxDelay : 32|32@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEPowerLimitAchieve : 18|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEVoltageLimitAchie : 16|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEStatusCode : 12|4@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEProcessing : 10|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSENotification : 8|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEIsolationStatusFl : 5|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSEIsolationStatus : 2|3@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_V2G_EVSECurrentLimitAchie : 0|2@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2566861954 VCVCCU_V2G_EVTargetCurrent: 5 CGW
+ SG_ VCVCCU_V2G_EVTargetCurrent_Value : 0|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetCurrent_UnitF : 24|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetCurrent_Unit : 32|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetCurrent_Multi : 16|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566861698 VCVCCU_V2G_EVTargetVoltage: 5 CGW
+ SG_ VCVCCU_V2G_EVTargetVoltage_Value : 0|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetVoltage_UnitF : 24|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetVoltage_Unit : 32|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVTargetVoltage_Multi : 16|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566861442 VCVCCU_V2G_RemainingTimeToBulkSO: 5 CGW
+ SG_ VCVCCU_V2G_RemainingTimeToBulkSO : 36|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToB_0000 : 0|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToB_0001 : 24|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToB_0002 : 32|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToB_0003 : 16|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566861186 VCVCCU_V2G_RemainingTimeToFullSO: 5 CGW
+ SG_ VCVCCU_V2G_RemainingTimeToFullSO : 36|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToF_0000 : 0|16@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToF_0001 : 24|8@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToF_0002 : 32|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_RemainingTimeToF_0003 : 16|8@1- (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566860930 VCVCCU_V2G_VehicleStatus: 7 CGW
+ SG_ VCVCCU_V2G_StateM_EnergyTra_0000 : 26|4@1+ (1,0) [0|15] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVErrorCode : 0|4@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVPowerDeliveryParame : 24|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVRESSSOC : 48|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVRESSConditioningFla : 22|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVRESSConditioning : 20|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVReady : 18|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVCabinConditioningFl : 16|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_EVCabinConditioning : 14|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_ChargingComplete : 12|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_FullSOCFlag : 10|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_FullSOC : 40|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_BulkSOCFlag : 8|2@1+ (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_BulkSOC : 32|8@1- (1,0) [0|0] ""  VCVCCU
+ SG_ VCVCCU_V2G_BulkChargingCompleteF : 6|2@1+ (1,0) [0|3] "x"  VCVCCU
+ SG_ VCVCCU_V2G_BulkChargingComplete : 4|2@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566857090 VCVCCU_ChargeFromVehicle: 8 CGW
+ SG_ VCVCCU_Vehicle_PwmChargeModeRequ : 48|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ E2E_CRC_ChargeFromVehicle : 56|8@1+ (1,0) [0|255] ""  VCVCCU
+ SG_ E2E_Cnt_ChargeFromVehicle : 52|4@1+ (1,0) [0|15] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_Renegotiate : 46|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_ChargeSelection : 44|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_StopCharge : 42|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_ContactorStatus : 40|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_LinkVoltage : 16|16@1+ (1,0) [0|65533] "V"  VCVCCU
+ SG_ VCVCCU_Vehicle_IsolationMeasurem : 32|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_ContactorVoltage : 0|16@1+ (1,0) [0|65533] "V"  VCVCCU
+ SG_ VCVCCU_Vehicle_PlugUnlockPermiss : 36|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_PlugLockPermissio : 34|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_Vehicle_ChargePermission : 38|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ Placeholder1 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2566854528 VCVCCU_ChargeToVehicle: 8 VCVCCU
+ SG_ E2E_State_ChargeFromVehicle : 44|8@1+ (1,0) [0|255] ""  CGW
+ SG_ VCVCCU_Vehicle_MobilizationStatu : 8|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_Vehicle_ChargingStatus : 6|2@1+ (1,0) [0|3] ""  CGW
+ SG_ E2E_Cnt_ChargeToVehicle : 52|4@1+ (1,0) [0|15] ""  CGW
+ SG_ E2E_CRC_ChargeToVehicle : 56|8@1+ (1,0) [0|255] ""  CGW
+ SG_ VCVCCU_Vehicle_ChargeSelectionAc : 4|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_Vehicle_ContactorRequest : 2|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_Vehicle_IsolationMea_0000 : 0|2@1+ (1,0) [0|3] ""  CGW
+
+BO_ 2566856834 VCVCCU_Requests: 8 CGW
+ SG_ VCVCCU_Inlet_MotorRequest : 53|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCVCCU_ChargeUnit_Request : 51|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCVCCU_ControlPilot_ChargeModeRe : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ VCVCCU_PlugLock_MotorRequest : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ VCVCCU_RTC_TimerValue : 40|8@1+ (1,0) [0|254] "min"  VCVCCU
+ SG_ VCVCCU_RTC_TimerRequest : 34|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_LED2_Request : 16|8@1+ (0.5,0) [0|100] "%"  VCVCCU
+ SG_ VCVCCU_LED1_Request : 8|8@1+ (0.5,0) [0|100] "%"  VCVCCU
+ SG_ VCVCCU_LED0_Request : 0|8@1+ (0.5,0) [0|100] "%"  VCVCCU
+ SG_ VCVCCU_HighSideOut4_Request : 32|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_HighSideOut3_Request : 30|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_HighSideOut2_Request : 28|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_HighSideOut1_Request : 26|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ VCVCCU_HighSideOut0_Request : 24|2@1+ (1,0) [0|3] ""  VCVCCU
+
+BO_ 2566854272 VCVCCU_RTCStatus: 1 VCVCCU
+ SG_ VCVCCU_RTC_Wakeup : 4|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_RTC_TimerStatus : 0|2@1+ (1,0) [0|3] ""  CGW
+
+BO_ 2566854016 VCVCCU_OutputStatus: 7 VCVCCU
+ SG_ VCVCCU_HighSideOut3_Input_Wakeup : 52|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut4_Input_Status : 50|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut4_Input_Deboun : 48|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut3_Input_Status : 46|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut3_Input_Deboun : 44|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut2_Input_Status : 42|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut2_Input_Deboun : 40|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut1_Input_Status : 38|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut1_Input_Deboun : 36|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut0_Input_Status : 34|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_HighSideOut0_Input_Deboun : 32|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_LED2_SelfDiagnosticStatus : 28|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_LED1_SelfDiagnosticStatus : 24|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_LED0_SelfDiagnosticStatus : 20|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_HighSideOut4_SelfDiagnost : 16|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_HighSideOut3_SelfDiagnost : 12|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_HighSideOut2_SelfDiagnost : 8|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_HighSideOut1_SelfDiagnost : 4|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_HighSideOut0_SelfDiagnost : 0|3@1+ (1,0) [0|7] ""  CGW
+
+BO_ 2566853760 VCVCCU_ControlPilotStatus: 7 VCVCCU
+ SG_ VCVCCU_ChargeUnit_State : 45|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_ChargeUnit_Mode : 42|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_ChargeUnit_MaxCurrent : 48|8@1+ (1,0) [0|255] "A"  CGW
+ SG_ VCVCCU_ControlPilot_Wakeup : 40|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_ControlPilot_Voltage : 24|16@1+ (1,-32000) [-32000|33533] "mV"  CGW
+ SG_ VCVCCU_ControlPilot_Frequency : 0|16@1+ (1,0) [0|65533] "Hz"  CGW
+ SG_ VCVCCU_ControlPilot_DutyCycle : 16|8@1+ (0.5,0) [0|100] "%"  CGW
+
+BO_ 2566853504 VCVCCU_InletStatus: 8 VCVCCU
+ SG_ VCVCCU_Inlet_HWVariant : 38|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_S3Switch_Status : 60|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_S3Switch_DebouncedStatus : 62|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_DigitalInput_DebouncedSta : 56|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_Inlet_MaxCurrent : 48|8@1+ (1,0) [0|255] "A"  CGW
+ SG_ VCVCCU_Inlet_MotorStatus : 44|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_Inlet_ConnectionStatus : 58|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_PlugPresent_Wakeup : 24|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_PlugPresent_Status : 22|2@1+ (1,0) [0|0] ""  CGW
+ SG_ VCVCCU_POSFeedback_SelfDiagnosti : 26|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PlugPresent_SelfDiagnosti : 16|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_DigitalInput_Wakeup : 42|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_PlugPresent_Resistance : 19|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PlugLock_Output1_SelfDiag : 35|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_DigitalInput_Status : 40|2@1+ (1,0) [0|3] ""  CGW
+ SG_ VCVCCU_PlugLock_Output0_SelfDiag : 32|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PlugLock_MotorStatus : 29|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_POSFeedback_Voltage : 0|16@1+ (1,0) [0|65533] "mV"  CGW
+
+BO_ 2566853248 VCVCCU_PTC2: 7 VCVCCU
+ SG_ VCVCCU_PTC2_SelfDiagnosticStatus : 48|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PTC2_Temperature : 32|16@1+ (1,-150) [-150|65383] "°C"  CGW
+ SG_ VCVCCU_PTC2_Resistance : 16|16@1+ (1,0) [0|65533] "Ohm"  CGW
+ SG_ VCVCCU_PTC2_Raw : 0|16@1+ (1,0) [0|65533] ""  CGW
+
+BO_ 2566852992 VCVCCU_PTC1: 7 VCVCCU
+ SG_ VCVCCU_PTC1_SelfDiagnosticStatus : 48|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PTC1_Temperature : 32|16@1+ (1,-150) [-150|65383] "°C"  CGW
+ SG_ VCVCCU_PTC1_Resistance : 16|16@1+ (1,0) [0|65533] "Ohm"  CGW
+ SG_ VCVCCU_PTC1_Raw : 0|16@1+ (1,0) [0|65533] ""  CGW
+
+BO_ 2564816770 DM13: 8 CGW
+ SG_ ProprietaryNetwork2 : 18|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ ProprietaryNetwork1 : 20|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ J1939Network4 : 16|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ HoldSignal : 28|4@1+ (1,0) [0|15] ""  VCVCCU
+ SG_ J1939Network3 : 22|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ J1939Network2 : 14|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ ISO9141 : 12|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ SAE_J1850 : 10|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ ManufacturerSpecificPort : 8|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ CurrentDataLink : 6|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ SAE_J1587 : 4|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ SAE_J1922 : 2|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ J1939Network1 : 0|2@1+ (1,0) [0|3] ""  VCVCCU
+ SG_ SuspendSignal : 24|4@1+ (1,0) [0|15] ""  VCVCCU
+ SG_ SuspendDuration : 32|16@1+ (1,0) [0|64255] "s"  VCVCCU
+
+BO_ 2633990274 NM_CGW: 8 CGW
+ SG_ WakeupRsn_CGW : 16|8@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2363228034 DIAG_REQ_GLOBAL: 8 CGW
+ SG_ DIAG_REQ_GLOBAL : 0|64@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2363129986 DIAG_REQ_VCVCCU: 8 CGW
+ SG_ DIAG_REQ_VCCU : 0|64@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2566910080 XCP_RESP_VCVCCU: 8 VCVCCU
+ SG_ XCP_RESP_VCCU : 0|64@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2566910082 XCP_REQ_VCVCCU: 8 CGW
+ SG_ XCP_REQ_VCCU : 0|64@1+ (1,0) [0|0] ""  VCVCCU
+
+BO_ 2363130496 DIAG_RESP_VCVCCU: 8 VCVCCU
+ SG_ DIAG_RESP_VCCU : 0|64@1+ (1,0) [0|0] ""  CGW
+
+BO_ 2633990272 NM_VCVCCU: 8 VCVCCU
+ SG_ Awake_ChargeLin_Actv_VCVCCU : 27|1@1+ (1,0) [0|1] ""  CGW
+ SG_ Awake_Clamp15_Actv_VCVCCU : 26|1@1+ (1,0) [0|1] ""  CGW
+ SG_ Awake_ChargeCom_Actv_VCVCCU : 25|1@1+ (1,0) [0|1] ""  CGW
+ SG_ Awake_Diag_Actv_VCVCCU : 24|1@1+ (1,0) [0|1] ""  CGW
+ SG_ WakeupRsn_VCVCCU : 16|8@1+ (1,0) [0|4] ""  CGW
+
+BO_ 2566834816 DM01_VCVCCU: 1785 VCVCCU
+ SG_ DTC_FailModeID_VCCU : 32|5@1+ (1,0) [0|31] ""  CGW
+ SG_ DTC_SPN_ConvMd_VCCU : 47|1@1+ (1,0) [0|1] ""  CGW
+ SG_ DTC_OccCnt_VCCU : 40|7@1+ (1,0) [0|127] "count(s)"  CGW
+ SG_ DTC_SPN_VCCU : 23|19@0+ (1,0) [0|524287] ""  CGW
+ SG_ DTC_RSL_Flash_Stat_VCCU : 12|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_PL_Flash_Stat_VCCU : 8|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_RSL_Stat_VCCU : 4|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_PL_Stat_VCCU : 0|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_MIL_Stat_VCCU : 6|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_MIL_Flash_Stat_VCCU : 14|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_AWL_Flash_Stat_VCCU : 10|2@1+ (1,0) [0|3] ""  CGW
+ SG_ DTC_AWL_Stat_VCCU : 2|2@1+ (1,0) [0|3] ""  CGW
+
+BO_ 2566852736 VCVCCU_PTC0: 7 VCVCCU
+ SG_ VCVCCU_PTC0_SelfDiagnosticStatus : 48|3@1+ (1,0) [0|7] ""  CGW
+ SG_ VCVCCU_PTC0_Resistance : 16|16@1+ (1,0) [0|65533] "Ohm"  CGW
+ SG_ VCVCCU_PTC0_Raw : 0|16@1+ (1,0) [0|65533] ""  CGW
+ SG_ VCVCCU_PTC0_Temperature : 32|16@1+ (1,-150) [-150|65383] "°C"  CGW
+
+
+
+CM_ BU_ VCVCCU "The VCVCCU node";
+CM_ SG_ 2566872960 VCVCCU_V2G_NextPMaxValue "Next maximum power value that can be retrieved from the EVSE
+value = NextPMaxValue * 10 ^ NextPMaxMultiplier";
+CM_ SG_ 2566872960 VCVCCU_V2G_NextPMaxMultiplier "Multiplier used for calculation of next maximum power value: value = NextPMaxValue * 10 ^NextPMaxMultiplier";
+CM_ SG_ 2566872704 VCVCCU_V2G_CurrentPMaxMultiplier "Multiplier used for calculation of current maximum power value: value = CurrentPMaxValue * 10 ^ CurrentPMaxMultiplier";
+CM_ SG_ 2566872704 VCVCCU_V2G_CurrentPMaxDuration "Time [seconds] left where CurrentPMax value can be retrieved from EVSE.";
+CM_ SG_ 2566872704 VCVCCU_V2G_CurrentPMaxValue "Maximum power value that can be retrieved from the EVSE at the moment
+value = CurrentPMaxValue * 10 ^ CurrentPMaxMultiplier";
+CM_ SG_ 2566840450 TotalVehicleDistance "Accumulated distance traveled by vehicle during its operation.
+
+NOTE See SPN 917 for alternate resolution.
+
+VDV261 parameter Odo";
+CM_ SG_ 2566840450 TripDistance "Distance traveled during all or part of a journey.
+
+NOTE See SPN 918 for alternate resolution.";
+CM_ SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToPre "VDV261 parameter prec_eamount";
+CM_ SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToCha "VDV261 parameter bat_eamount";
+CM_ SG_ 2566857346 VCVCCU_V2ICP_RequiredDurationToP "VDV261 parameter prec_reqtime";
+CM_ SG_ 2566857346 VCVCCU_V2ICP_RequiredDurati_0000 "VDV261 parameter bat_reqtime";
+CM_ SG_ 2566855552 VCVCCU_V2ICP_ScheduledDepartureT "VDV261 parameter Driveoff";
+CM_ SG_ 2566855552 VCVCCU_V2ICP_PreconditioningDesi "VDV261 parameter prec_hvac";
+CM_ SG_ 2566855552 VCVCCU_V2ICP_Preconditionin_0000 "VDV261 parameter prec_dsrd";
+CM_ SG_ 2566855552 VCVCCU_V2ICP_AmbientTemperature "VDV261 parameter Ambienttemp";
+CM_ BO_ 2566841986 "Time/Date";
+CM_ SG_ 2566841986 Year "The year component of the current calendar date.  This should be reported as the year component of the current date at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the year component of the current date at a local time ...";
+CM_ SG_ 2566841986 Seconds "The seconds component of the current time of day.  This should be reported as the seconds component of the current time at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the seconds component of the current time at a ...";
+CM_ SG_ 2566841986 Month "The month component of the current calendar date.  This should be reported as the month component of the current date at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the month component of the current date at a local ...";
+CM_ SG_ 2566841986 Minutes "The minutes component of the current time of day.  This should be reported as the minutes component of the current time at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the minutes component of the current time at a ...";
+CM_ SG_ 2566841986 LocalMinuteOffset "The minute component of the offset between the UTC time and date and a local time zone time and date.  This is the number of minutes to add to UTC (Universal Time Coordinate) time and date to convert to the time and date in the local time zone  ...";
+CM_ SG_ 2566841986 LocalHourOffset "The hour component of the offset between the UTC (Universal Time Coordinate) time and date and a local time zone time and date.  This is the number of hours to add to UTC, a.k.a. GMT, time and date to convert to the time and date in the local time ...";
+CM_ SG_ 2566841986 Hours "The hour component of the current time of day.  This should be reported as the hour component of the current time at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the hour component of the current time at a local time ...";
+CM_ SG_ 2566841986 Day "The day component of the current calendar date.  This should be reported as the day component of the current date at UTC (Universal Time Coordinate), a.k.a. GMT; however, it may be reported as the day component of the current date at a local time ...";
+CM_ SG_ 2566855296 ProtectiveEarth_Offset "Measured offset voltage of the protective earth signal";
+CM_ SG_ 2566855296 VCVCCU_ControlPilot_MinVoltage "Measured min voltage value of control pilot signal";
+CM_ SG_ 2566855296 VCVCCU_PlugPresent_Voltage "Measured voltage value of proximity pin signal";
+CM_ SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Va "Present voltage of EVSE";
+CM_ SG_ 2566871936 VCVCCU_V2G_DateTimeNow "Timestamp of the current SECC time using to the Unix Time Stamp format.";
+CM_ SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0002 "Peak-to-peak magnitude of the current ripple of the EVSE";
+CM_ SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0002 "Minimum voltage the EVSE can deliver with the expected accuracy";
+CM_ SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0002 "Minimum current the EVSE can deliver with the expected accuracy";
+CM_ SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0003 "Maximum voltage the EVSE can deliver";
+CM_ SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0003 "Maximum power the EVSE can deliver";
+CM_ SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0000 "Maximum current the EVSE can deliver";
+CM_ SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0000 "Amount of energy to be delivered by the EVSE";
+CM_ SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0000 "Absolute magnitude of the regulation tolerance of the EVSE";
+CM_ SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0000 "Maximum voltage supported by the EV";
+CM_ SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit_V "Maximum power supported by the EV";
+CM_ SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0003 "Maximum current supported by the EV";
+CM_ SG_ 2566862466 VCVCCU_V2G_EVEnergyRequest_Value "Amount of energy the EV requests from the EVSE";
+CM_ SG_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_Valu "Maximum energy capacity supported by the EV";
+CM_ SG_ 2566869120 VCVCCU_V2G_ResponseCode "Response Code indicating the acknowledgment status of any of the V2G messages received by the SECC.";
+CM_ SG_ 2566869120 VCVCCU_V2G_NotificationMaxDelay "The SECC uses the NotificationMaxDelay element in the EVSEStatus to indicate the time until it expects the EVCC to react on the action request indicated in EVSENotification. To be performed immediately if time is in past.";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSEPowerLimitAchieve "If set to TRUE, the EVSE has reached its power limit";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSEVoltageLimitAchie "If set to TRUE, the EVSE has reached its voltage limit";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSEStatusCode "Indicates if the internal state of the EVSE";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSEProcessing "Parameter  indicating  that  the EVSE has finished the processing that  was  initiated  after  the ContractAuthenticationReq or that  the EVSE is still processing at the time  the  response  message  was sent.";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSENotification "This value is used by the SECC to influence the behaviour of the EVCC. The EVSENotification contains an action that the SECC wants the EVCC to perform within time provided in NotificationMaxDelay. To be performed immediately if time is in past.";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSEIsolationStatus "Indicates the isolation condition (result of the isolation test/monitoring). ";
+CM_ SG_ 2566869120 VCVCCU_V2G_EVSECurrentLimitAchie "If set to TRUE, the EVSE has reached its current limit. ";
+CM_ SG_ 2566861954 VCVCCU_V2G_EVTargetCurrent_Value "Current demanded by EV";
+CM_ SG_ 2566861698 VCVCCU_V2G_EVTargetVoltage_Value "Target Voltage requested by EV";
+CM_ SG_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0000 "Estimated or calculated time until bulk charge (approx. 80 % SOC) is complete";
+CM_ SG_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0000 "Estimated or calculated time until full charge (100 % SOC) is complete";
+CM_ SG_ 2566860930 VCVCCU_V2G_StateM_EnergyTra_0000 "Selected energy transfer mode";
+CM_ SG_ 2566860930 VCVCCU_V2G_EVErrorCode "Indicates the EV internal status.";
+CM_ SG_ 2566860930 VCVCCU_V2G_EVRESSSOC "State of charge of the EVâ€™s battery (RESS) ";
+CM_ SG_ 2566860930 VCVCCU_V2G_EVRESSConditioning "Vehicle RESS Conditioning, The vehicle is using energyfrom the DC charger to condition the RESS to a target temperature.";
+CM_ SG_ 2566860930 VCVCCU_V2G_EVReady "If set to TRUE, the EV is ready to charge. ";
+CM_ SG_ 2566860930 VCVCCU_V2G_EVCabinConditioning "Vehicle Cabin Conditioning, The EV is using energy from the DC supply to heat or cool the passenger compartment. ";
+CM_ SG_ 2566860930 VCVCCU_V2G_ChargingComplete "If set to TRUE, the EV indicates that full  charge  (100 %  SOC)  is complete.";
+CM_ SG_ 2566860930 VCVCCU_V2G_FullSOC "SOC at which the EV considers the battery to be fully charged ";
+CM_ SG_ 2566860930 VCVCCU_V2G_BulkSOC "SOC at which the EV considers a fast charging process to end";
+CM_ SG_ 2566860930 VCVCCU_V2G_BulkChargingComplete "If set to TRUE, the EV indicates that bulk charge (approx. 80 % SOC) is complete.";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_PwmChargeModeRequ "ChargeMode selected for Pwm charging";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_Renegotiate "Triggers a renegotiation of V2G Charging Schedule with EVSE";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_ChargeSelection "Vehicle charge selection signal";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_StopCharge "Stop charging button";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_ContactorStatus "Status of the Charging contactors";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_LinkVoltage "Measured voltage at the battery";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_IsolationMeasurem "Vehicle isolation measurement status";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_ContactorVoltage "Measured voltage at the contactor";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_PlugUnlockPermiss "Permission from the vehicle to unlock the plug";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_PlugLockPermissio "Permission from the vehicle to lock the plug";
+CM_ SG_ 2566857090 VCVCCU_Vehicle_ChargePermission "Permission from the vehicle to charge";
+CM_ SG_ 2566857090 Placeholder1 "Placeholder to fill unused bits for checksum calculation";
+CM_ SG_ 2566854528 VCVCCU_Vehicle_ChargeSelectionAc "Charge selection acknowledge signal";
+CM_ SG_ 2566854528 VCVCCU_Vehicle_ContactorRequest "Request for the Charging contactors";
+CM_ SG_ 2566854528 VCVCCU_Vehicle_IsolationMea_0000 "Vehicle isolation measurement request";
+CM_ SG_ 2566856834 VCVCCU_Inlet_MotorRequest "Requests to control the inlet motor";
+CM_ SG_ 2566856834 VCVCCU_ChargeUnit_Request "Charging mode control of CP";
+CM_ SG_ 2566856834 VCVCCU_ControlPilot_ChargeModeRe "Value of the resistor connected to the Control Pilot which defines the mode used";
+CM_ SG_ 2566856834 VCVCCU_PlugLock_MotorRequest "Request for the plug lock motor movement";
+CM_ SG_ 2566856834 VCVCCU_RTC_TimerValue "RTC timer value";
+CM_ SG_ 2566856834 VCVCCU_RTC_TimerRequest "RTC timer request";
+CM_ SG_ 2566856834 VCVCCU_LED2_Request "Request for the duty cycle of the LED2";
+CM_ SG_ 2566856834 VCVCCU_LED1_Request "Request for the duty cycle of the LED1";
+CM_ SG_ 2566856834 VCVCCU_LED0_Request "Request for the duty cycle of the LED0";
+CM_ SG_ 2566856834 VCVCCU_HighSideOut4_Request "Request for high side output 4";
+CM_ SG_ 2566856834 VCVCCU_HighSideOut3_Request "Request for high side output 3";
+CM_ SG_ 2566856834 VCVCCU_HighSideOut2_Request "Request for high side output 2";
+CM_ SG_ 2566856834 VCVCCU_HighSideOut1_Request "Request for high side output 1";
+CM_ SG_ 2566856834 VCVCCU_HighSideOut0_Request "Request for high side output 0";
+CM_ SG_ 2566854272 VCVCCU_RTC_Wakeup "Wakeup detection of RTC";
+CM_ SG_ 2566854272 VCVCCU_RTC_TimerStatus "Timer status of RTC";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut3_Input_Wakeup "Wakeup detection of high side 3 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut4_Input_Status "Status of the high side 4 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut4_Input_Deboun "Debounced status of the high side 4 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut3_Input_Status "Status of the high side 3 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut3_Input_Deboun "Debounced status of the high side 3 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut2_Input_Status "Status of the high side 2 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut2_Input_Deboun "Debounced status of the high side 2 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut1_Input_Status "Status of the high side 1 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut1_Input_Deboun "Debounced status of the high side 1 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut0_Input_Status "Status of the high side 0 input signal";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut0_Input_Deboun "Debounced status of the high side 0 input signal";
+CM_ SG_ 2566854016 VCVCCU_LED2_SelfDiagnosticStatus "SelfDiagnosticStatus of LED output 2";
+CM_ SG_ 2566854016 VCVCCU_LED1_SelfDiagnosticStatus "SelfDiagnosticStatus of LED output 1";
+CM_ SG_ 2566854016 VCVCCU_LED0_SelfDiagnosticStatus "SelfDiagnosticStatus of LED output 0";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut4_SelfDiagnost "SelfDiagnosticStatus of high side output 4";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut3_SelfDiagnost "SelfDiagnosticStatus of high side output 3";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut2_SelfDiagnost "SelfDiagnosticStatus of high side output 2";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut1_SelfDiagnost "SelfDiagnosticStatus of high side output 1";
+CM_ SG_ 2566854016 VCVCCU_HighSideOut0_SelfDiagnost "SelfDiagnosticStatus of high side output 0";
+CM_ SG_ 2566853760 VCVCCU_ChargeUnit_State "Vehicle state derived from CP voltage and duty cycle";
+CM_ SG_ 2566853760 VCVCCU_ChargeUnit_Mode "Requested charging mode from the EVSE, derived from the CP duty cycle";
+CM_ SG_ 2566853760 VCVCCU_ChargeUnit_MaxCurrent "Max current derived from CP duty cycle";
+CM_ SG_ 2566853760 VCVCCU_ControlPilot_Wakeup "Wakeup detection of control pilot signal";
+CM_ SG_ 2566853760 VCVCCU_ControlPilot_Voltage "Measured voltage value of control pilot signal";
+CM_ SG_ 2566853760 VCVCCU_ControlPilot_Frequency "Measured frequency value of control pilot signal";
+CM_ SG_ 2566853760 VCVCCU_ControlPilot_DutyCycle "Duty cycle of the Control Pilot signal";
+CM_ SG_ 2566853504 VCVCCU_Inlet_HWVariant "Status of the digital input signal";
+CM_ SG_ 2566853504 VCVCCU_S3Switch_Status "Status of the S3 switch signal";
+CM_ SG_ 2566853504 VCVCCU_S3Switch_DebouncedStatus "Debounced status of the S3 switch signal";
+CM_ SG_ 2566853504 VCVCCU_DigitalInput_DebouncedSta "Debounced status of the digital input signal";
+CM_ SG_ 2566853504 VCVCCU_Inlet_MaxCurrent "Max current derived from PP resistance";
+CM_ SG_ 2566853504 VCVCCU_Inlet_MotorStatus "Inlet lock status";
+CM_ SG_ 2566853504 VCVCCU_Inlet_ConnectionStatus "Inlet connection state derived from PP and CP";
+CM_ SG_ 2566853504 VCVCCU_PlugPresent_Wakeup "Wakeup detection of proximity pin signal";
+CM_ SG_ 2566853504 VCVCCU_PlugPresent_Status "Proximity Pin detection";
+CM_ SG_ 2566853504 VCVCCU_POSFeedback_SelfDiagnosti "SelfDiagnosticStatus of position feedback signal";
+CM_ SG_ 2566853504 VCVCCU_PlugPresent_SelfDiagnosti "SelfDiagnostic Status of proximity pin signal";
+CM_ SG_ 2566853504 VCVCCU_DigitalInput_Wakeup "Wakeup detection of digital input signal";
+CM_ SG_ 2566853504 VCVCCU_PlugPresent_Resistance "Value of the resistor connected to the Proximity Pin which defines the diameter of the cable";
+CM_ SG_ 2566853504 VCVCCU_PlugLock_Output1_SelfDiag "SelfDiagnosticStatus of full bridge output 0";
+CM_ SG_ 2566853504 VCVCCU_DigitalInput_Status "Status of the digital input signal";
+CM_ SG_ 2566853504 VCVCCU_PlugLock_Output0_SelfDiag "SelfDiagnosticStatus of full bridge output 0";
+CM_ SG_ 2566853504 VCVCCU_PlugLock_MotorStatus "Status of the plug lock motor movement";
+CM_ SG_ 2566853504 VCVCCU_POSFeedback_Voltage "Measured voltage value of position feedback signal";
+CM_ SG_ 2566853248 VCVCCU_PTC2_SelfDiagnosticStatus "SelfDiagnosticStatus of PTC2 signal";
+CM_ SG_ 2566853248 VCVCCU_PTC2_Temperature "Temperature measurement inside the inlet";
+CM_ SG_ 2566853248 VCVCCU_PTC2_Resistance "Measured resistance value of PTC2";
+CM_ SG_ 2566853248 VCVCCU_PTC2_Raw "Measured raw value of PTC2";
+CM_ SG_ 2566852992 VCVCCU_PTC1_SelfDiagnosticStatus "SelfDiagnosticStatus of PTC1 signal";
+CM_ SG_ 2566852992 VCVCCU_PTC1_Temperature "Temperature measurement inside the inlet";
+CM_ SG_ 2566852992 VCVCCU_PTC1_Resistance "Measured resistance value of PTC1";
+CM_ SG_ 2566852992 VCVCCU_PTC1_Raw "Measured raw value of PTC1";
+CM_ SG_ 2564816770 ProprietaryNetwork2 "Identifies the action to be performed on the Proprietary Network #2 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 ProprietaryNetwork1 "Identifies the action to be performed on the Proprietary Network #1 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 J1939Network4 "Identifies the action to be performed on the J1939 Network #4 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 HoldSignal "Indicator to all nodes that the communication ports that have been acted upon by the Stop Start Broadcast PGN are remaining in the modified state. Therefore all nodes should act accordingly. The Hold signal is required to be broadcast every 5 ...";
+CM_ SG_ 2564816770 J1939Network3 "Identifies the action to be performed on the J1939 Network #3 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 J1939Network2 "Identifies the action to be performed on the J1939 Network #2 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 ISO9141 "Identifies the action to be performed on the ISO 9141 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 SAE_J1850 "Identifies the action to be performed on the J1850 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 ManufacturerSpecificPort "Identifies the action to be performed on the “Other, Manufacture Specified Port” communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 CurrentDataLink "Identifies the action to be performed on the communications port that this parameter was received on.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 SAE_J1587 "Identifies the action to be performed on the J1587 communications port.
+
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 SAE_J1922 "Identifies the action to be performed on the J1922 communications port.
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 J1939Network1 "Identifies the action to be performed on the J1939 Network #1, Primary Vehicle Network” communications port.
+00 Stop Broadcast
+01 Start Broadcast
+10 Reserved
+11 Don’t Care/take no action (leave as is)";
+CM_ SG_ 2564816770 SuspendSignal "Indicator to all nodes that the current communication port broadcast messages are being suspended due to commands other than J1939 DM13. Therefore, the receiving nodes should suspend timeout diagnostics for all messages from the transmitting device ...";
+CM_ SG_ 2564816770 SuspendDuration "Indicates the duration of a suspension of broadcast messages when that duration is known by the transmitting device. If the DM13 message is sent with thee suspend signal value of 2 or 3, the value of this parameter will represent the duration of ...";
+CM_ BO_ 2633990274 "ASR NM message";
+CM_ BO_ 2363228034 "Request message for UDS Diagnostic";
+CM_ SG_ 2363228034 DIAG_REQ_GLOBAL "Request message for UDS Diagnostic";
+CM_ BO_ 2363129986 "Request message for UDS Diagnostic";
+CM_ SG_ 2363129986 DIAG_REQ_VCCU "Request message for UDS Diagnostic";
+CM_ BO_ 2566910080 "Response message for XCP Protocol";
+CM_ SG_ 2566910080 XCP_RESP_VCCU "Response message for XCP Protocol";
+CM_ BO_ 2566910082 "Request message for XCP Protocol";
+CM_ SG_ 2566910082 XCP_REQ_VCCU "Request message for XCP Protocol";
+CM_ BO_ 2363130496 "Response message for UDS Diagnostic";
+CM_ SG_ 2363130496 DIAG_RESP_VCCU "Response message for UDS Diagnostic";
+CM_ BO_ 2633990272 "ASR NM message";
+CM_ SG_ 2566834816 DTC_FailModeID_VCCU "The FMI defines the type of failure detected in the subsystem identified by an SPN.";
+CM_ SG_ 2566834816 DTC_SPN_ConvMd_VCCU "SPN Conversion Method";
+CM_ SG_ 2566834816 DTC_OccCnt_VCCU "Occurrence Count";
+CM_ SG_ 2566834816 DTC_SPN_VCCU "This 19-bit number is used to identify the item for which diagnostics are being reported.";
+CM_ SG_ 2566834816 DTC_RSL_Flash_Stat_VCCU "Flash Red Stop Lamp";
+CM_ SG_ 2566834816 DTC_PL_Flash_Stat_VCCU "Flash Protect Lamp";
+CM_ SG_ 2566834816 DTC_RSL_Stat_VCCU "Red Stop Lamp Status";
+CM_ SG_ 2566834816 DTC_PL_Stat_VCCU "Protect Lamp Status";
+CM_ SG_ 2566834816 DTC_MIL_Stat_VCCU "Malfunction Indicator Lamp Status";
+CM_ SG_ 2566834816 DTC_MIL_Flash_Stat_VCCU "Flash Malfunction Indicator Lamp";
+CM_ SG_ 2566834816 DTC_AWL_Flash_Stat_VCCU "Flash Amber Warning Lamp";
+CM_ SG_ 2566834816 DTC_AWL_Stat_VCCU "Amber Warning Lamp Status";
+CM_ SG_ 2566852736 VCVCCU_PTC0_SelfDiagnosticStatus "SelfDiagnosticStatus of PTC0 signal";
+CM_ SG_ 2566852736 VCVCCU_PTC0_Resistance "Measured resistance value of PTC0";
+CM_ SG_ 2566852736 VCVCCU_PTC0_Raw "Measured raw value of PTC0";
+CM_ SG_ 2566852736 VCVCCU_PTC0_Temperature "Temperature measurement inside the inlet";
+BA_DEF_  "E2EP01SyncCounterInit" INT 0 65535;
+BA_DEF_  "E2EP01DataIdNibbleOffset" INT 0 65535;
+BA_DEF_  "E2EP01DataIdMode" ENUM  "all16Bit","alternating8Bit","lower8Bit","lower12Bit";
+BA_DEF_  "E2EP01CounterOffset" INT 0 65535;
+BA_DEF_  "E2EP01CrcOffset" INT 0 65535;
+BA_DEF_  "E2EP01ProfileBehavior" ENUM  "PRE_R4_2","R4_2";
+BA_DEF_  "E2EP01Offset" INT 0 65535;
+BA_DEF_ BO_  "E2EProfile" STRING ;
+BA_DEF_ BO_  "E2EDataLength" INT 0 65535;
+BA_DEF_ BO_  "E2EDataId01" INT 0 65535;
+BA_DEF_  "E2EP01WindowSize" INT 0 65535;
+BA_DEF_  "E2EP01UpperHeaderBitsToShift" INT 0 65535;
+BA_DEF_  "E2EP01MinOkStateValid" INT 0 65535;
+BA_DEF_  "E2EP01MinOkStateInvalid" INT 0 65535;
+BA_DEF_  "E2EP01MinOkStateInit" INT 0 65535;
+BA_DEF_  "E2EP01MaxNoNewOrRepeatedData" INT 0 65535;
+BA_DEF_  "E2EP01MaxErrorStateValid" INT 0 65535;
+BA_DEF_  "E2EP01MaxErrorStateInvalid" INT 0 65535;
+BA_DEF_  "E2EP01MaxErrorStateInit" INT 0 65535;
+BA_DEF_  "E2EP01MaxDeltaCounter" INT 0 65535;
+BA_DEF_  "E2EP01ProfileName" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagConnection" INT 0 65535;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_  "NmAsrMessageCount" INT 0 256;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "SAE_J1939_21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_71_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_75_SpecVersion" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_  "Baudrate" INT 0 10000000;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_ BO_  "SystemMessageLongSymbol" STRING ;
+BA_DEF_DEF_  "E2EP01SyncCounterInit" 0;
+BA_DEF_DEF_  "E2EP01DataIdNibbleOffset" 0;
+BA_DEF_DEF_  "E2EP01DataIdMode" "all16Bit";
+BA_DEF_DEF_  "E2EP01CounterOffset" 0;
+BA_DEF_DEF_  "E2EP01CrcOffset" 0;
+BA_DEF_DEF_  "E2EP01ProfileBehavior" "R4_2";
+BA_DEF_DEF_  "E2EP01Offset" 0;
+BA_DEF_DEF_  "E2EProfile" "PXX";
+BA_DEF_DEF_  "E2EDataLength" 0;
+BA_DEF_DEF_  "E2EDataId01" 0;
+BA_DEF_DEF_  "E2EP01WindowSize" 0;
+BA_DEF_DEF_  "E2EP01UpperHeaderBitsToShift" 0;
+BA_DEF_DEF_  "E2EP01MinOkStateValid" 0;
+BA_DEF_DEF_  "E2EP01MinOkStateInvalid" 0;
+BA_DEF_DEF_  "E2EP01MinOkStateInit" 0;
+BA_DEF_DEF_  "E2EP01MaxNoNewOrRepeatedData" 15;
+BA_DEF_DEF_  "E2EP01MaxErrorStateValid" 0;
+BA_DEF_DEF_  "E2EP01MaxErrorStateInvalid" 0;
+BA_DEF_DEF_  "E2EP01MaxErrorStateInit" 0;
+BA_DEF_DEF_  "E2EP01MaxDeltaCounter" 15;
+BA_DEF_DEF_  "E2EP01ProfileName" "PROFILE_01";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "J1939_IL.dll";
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrNode" "yes";
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NmAsrBaseAddress" 486506496;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "SAE_J1939_21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_71_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_75_SpecVersion" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_DEF_DEF_  "SystemMessageLongSymbol" "";
+BA_ "E2EP01MaxDeltaCounter" 4;
+BA_ "E2EP01MinOkStateInit" 1;
+BA_ "E2EP01MinOkStateInvalid" 1;
+BA_ "E2EP01MinOkStateValid" 1;
+BA_ "E2EP01WindowSize" 1;
+BA_ "Baudrate" 250000;
+BA_ "NmAsrMessageCount" 256;
+BA_ "BusType" "CAN";
+BA_ "E2EP01CounterOffset" 52;
+BA_ "E2EP01CrcOffset" 56;
+BA_ "E2EP01SyncCounterInit" 1;
+BA_ "E2EP01MaxNoNewOrRepeatedData" 14;
+BA_ "DBName" "J1939";
+BA_ "GenMsgCycleTimeFast" BO_ 2566872960 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566872960 4;
+BA_ "GenMsgSendType" BO_ 2566872960 0;
+BA_ "GenMsgRequestable" BO_ 2566872960 0;
+BA_ "GenMsgCycleTime" BO_ 2566872960 1000;
+BA_ "VFrameFormat" BO_ 2566872960 3;
+BA_ "GenSigSendType" SG_ 2566872960 VCVCCU_V2G_NextPMaxValue 4;
+BA_ "GenSigSendType" SG_ 2566872960 VCVCCU_V2G_NextPMaxMultiplier 4;
+BA_ "GenMsgCycleTimeFast" BO_ 2566872704 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566872704 4;
+BA_ "GenMsgSendType" BO_ 2566872704 0;
+BA_ "GenMsgRequestable" BO_ 2566872704 0;
+BA_ "GenMsgCycleTime" BO_ 2566872704 1000;
+BA_ "GenMsgStartDelayTime" BO_ 2566872704 8;
+BA_ "VFrameFormat" BO_ 2566872704 3;
+BA_ "GenSigSendType" SG_ 2566872704 VCVCCU_V2G_CurrentPMaxMultiplier 4;
+BA_ "GenSigSendType" SG_ 2566872704 VCVCCU_V2G_CurrentPMaxDuration 4;
+BA_ "GenSigSendType" SG_ 2566872704 VCVCCU_V2G_CurrentPMaxValue 4;
+BA_ "GenMsgCycleTimeFast" BO_ 2566875266 20;
+BA_ "GenMsgDelayTime" BO_ 2566875266 0;
+BA_ "GenMsgSendType" BO_ 2566875266 0;
+BA_ "GenMsgRequestable" BO_ 2566875266 0;
+BA_ "GenMsgCycleTime" BO_ 2566875266 200;
+BA_ "VFrameFormat" BO_ 2566875266 3;
+BA_ "GenMsgCycleTimeFast" BO_ 2566874496 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566874496 4;
+BA_ "GenMsgDelayTime" BO_ 2566874496 0;
+BA_ "GenMsgSendType" BO_ 2566874496 0;
+BA_ "GenMsgRequestable" BO_ 2566874496 0;
+BA_ "GenMsgCycleTime" BO_ 2566874496 500;
+BA_ "GenMsgStartDelayTime" BO_ 2566874496 2;
+BA_ "VFrameFormat" BO_ 2566874496 3;
+BA_ "GenSigSendType" SG_ 2566874496 LIN_SeMaxCurrentN 4;
+BA_ "GenSigSendType" SG_ 2566874496 LIN_SeMaxCurrentL3 4;
+BA_ "GenSigSendType" SG_ 2566874496 LIN_SeMaxCurrentL2 4;
+BA_ "GenSigSendType" SG_ 2566874496 LIN_SeMaxCurrentL1 4;
+BA_ "GenMsgCycleTimeFast" BO_ 2566874240 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566874240 4;
+BA_ "GenMsgDelayTime" BO_ 2566874240 0;
+BA_ "GenMsgSendType" BO_ 2566874240 0;
+BA_ "GenMsgRequestable" BO_ 2566874240 0;
+BA_ "GenMsgCycleTime" BO_ 2566874240 500;
+BA_ "GenMsgStartDelayTime" BO_ 2566874240 4;
+BA_ "VFrameFormat" BO_ 2566874240 3;
+BA_ "GenSigSendType" SG_ 2566874240 LIN_SeNomVoltageLL 4;
+BA_ "GenSigSendType" SG_ 2566874240 LIN_SeNomVoltageL1N 4;
+BA_ "GenSigSendType" SG_ 2566874240 LIN_SeFrequency 4;
+BA_ "GenMsgCycleTimeFast" BO_ 2566873472 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566873472 4;
+BA_ "GenMsgDelayTime" BO_ 2566873472 0;
+BA_ "GenMsgSendType" BO_ 2566873472 0;
+BA_ "GenMsgRequestable" BO_ 2566873472 0;
+BA_ "GenMsgCycleTime" BO_ 2566873472 500;
+BA_ "GenMsgStartDelayTime" BO_ 2566873472 6;
+BA_ "VFrameFormat" BO_ 2566873472 3;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_SeSelectedVersion 4;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_ChargingStatus 4;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_SeAvailableCurrentN 4;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_SeAvailableCurrentL3 4;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_SeAvailableCurrentL2 4;
+BA_ "GenSigSendType" SG_ 2566873472 LIN_SeAvailableCurrentL1 4;
+BA_ "GenMsgSendType" BO_ 2566840450 0;
+BA_ "GenMsgRequestable" BO_ 2566840450 0;
+BA_ "GenMsgCycleTime" BO_ 2566840450 100;
+BA_ "VFrameFormat" BO_ 2566840450 3;
+BA_ "SigType" SG_ 2566840450 TotalVehicleDistance 1;
+BA_ "SPN" SG_ 2566840450 TotalVehicleDistance 245;
+BA_ "SigType" SG_ 2566840450 TripDistance 1;
+BA_ "SPN" SG_ 2566840450 TripDistance 244;
+BA_ "GenMsgDelayTime" BO_ 2566875010 0;
+BA_ "GenMsgSendType" BO_ 2566875010 0;
+BA_ "GenMsgRequestable" BO_ 2566875010 0;
+BA_ "GenMsgCycleTime" BO_ 2566875010 200;
+BA_ "VFrameFormat" BO_ 2566875010 3;
+BA_ "GenMsgDelayTime" BO_ 2566874754 0;
+BA_ "GenMsgSendType" BO_ 2566874754 0;
+BA_ "GenMsgRequestable" BO_ 2566874754 0;
+BA_ "GenMsgCycleTime" BO_ 2566874754 200;
+BA_ "VFrameFormat" BO_ 2566874754 3;
+BA_ "GenMsgDelayTime" BO_ 2566873986 0;
+BA_ "GenMsgSendType" BO_ 2566873986 0;
+BA_ "GenMsgRequestable" BO_ 2566873986 0;
+BA_ "GenMsgCycleTime" BO_ 2566873986 200;
+BA_ "VFrameFormat" BO_ 2566873986 3;
+BA_ "GenMsgDelayTime" BO_ 2566873730 0;
+BA_ "GenMsgSendType" BO_ 2566873730 0;
+BA_ "GenMsgRequestable" BO_ 2566873730 0;
+BA_ "GenMsgCycleTime" BO_ 2566873730 200;
+BA_ "VFrameFormat" BO_ 2566873730 3;
+BA_ "GenSigStartValue" SG_ 2566873730 LIN_EvAwake 0;
+BA_ "GenMsgSendType" BO_ 2566857346 0;
+BA_ "GenMsgRequestable" BO_ 2566857346 0;
+BA_ "GenMsgCycleTime" BO_ 2566857346 1000;
+BA_ "VFrameFormat" BO_ 2566857346 3;
+BA_ "GenSigStartValue" SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToPre 65535;
+BA_ "SystemSignalLongSymbol" SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToPre "VCVCCU_V2ICP_RequiredEnergyToPreconditionVehicle";
+BA_ "GenSigStartValue" SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToCha 65535;
+BA_ "SystemSignalLongSymbol" SG_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToCha "VCVCCU_V2ICP_RequiredEnergyToChargeBattery";
+BA_ "GenSigStartValue" SG_ 2566857346 VCVCCU_V2ICP_RequiredDurationToP 255;
+BA_ "SystemSignalLongSymbol" SG_ 2566857346 VCVCCU_V2ICP_RequiredDurationToP "VCVCCU_V2ICP_RequiredDurationToPreconditionVehicle";
+BA_ "GenSigStartValue" SG_ 2566857346 VCVCCU_V2ICP_RequiredDurati_0000 255;
+BA_ "SystemSignalLongSymbol" SG_ 2566857346 VCVCCU_V2ICP_RequiredDurati_0000 "VCVCCU_V2ICP_RequiredDurationToPreconditionBattery";
+BA_ "GenMsgSendType" BO_ 2566855552 0;
+BA_ "GenMsgRequestable" BO_ 2566855552 0;
+BA_ "GenMsgCycleTime" BO_ 2566855552 1000;
+BA_ "VFrameFormat" BO_ 2566855552 3;
+BA_ "GenSigStartValue" SG_ 2566855552 VCVCCU_V2ICP_ScheduledDepartureT 65535;
+BA_ "SystemSignalLongSymbol" SG_ 2566855552 VCVCCU_V2ICP_ScheduledDepartureT "VCVCCU_V2ICP_ScheduledDepartureTime";
+BA_ "GenSigStartValue" SG_ 2566855552 VCVCCU_V2ICP_PreconditioningDesi 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566855552 VCVCCU_V2ICP_PreconditioningDesi "VCVCCU_V2ICP_PreconditioningDesiredHVAC";
+BA_ "GenSigStartValue" SG_ 2566855552 VCVCCU_V2ICP_Preconditionin_0000 255;
+BA_ "SystemSignalLongSymbol" SG_ 2566855552 VCVCCU_V2ICP_Preconditionin_0000 "VCVCCU_V2ICP_PreconditioningDesired";
+BA_ "GenSigStartValue" SG_ 2566855552 VCVCCU_V2ICP_AmbientTemperature 127;
+BA_ "GenMsgSendType" BO_ 2566841986 0;
+BA_ "GenMsgRequestable" BO_ 2566841986 0;
+BA_ "GenMsgCycleTime" BO_ 2566841986 1000;
+BA_ "VFrameFormat" BO_ 2566841986 3;
+BA_ "SigType" SG_ 2566841986 Year 1;
+BA_ "SPN" SG_ 2566841986 Year 964;
+BA_ "SigType" SG_ 2566841986 Seconds 1;
+BA_ "SPN" SG_ 2566841986 Seconds 959;
+BA_ "SigType" SG_ 2566841986 Month 1;
+BA_ "GenSigStartValue" SG_ 2566841986 Month 1;
+BA_ "SPN" SG_ 2566841986 Month 963;
+BA_ "SigType" SG_ 2566841986 Minutes 1;
+BA_ "SPN" SG_ 2566841986 Minutes 960;
+BA_ "SigType" SG_ 2566841986 LocalMinuteOffset 1;
+BA_ "GenSigStartValue" SG_ 2566841986 LocalMinuteOffset 66;
+BA_ "SPN" SG_ 2566841986 LocalMinuteOffset 1601;
+BA_ "SigType" SG_ 2566841986 LocalHourOffset 1;
+BA_ "GenSigStartValue" SG_ 2566841986 LocalHourOffset 102;
+BA_ "SPN" SG_ 2566841986 LocalHourOffset 1602;
+BA_ "SigType" SG_ 2566841986 Hours 1;
+BA_ "SPN" SG_ 2566841986 Hours 961;
+BA_ "SigType" SG_ 2566841986 Day 1;
+BA_ "GenSigStartValue" SG_ 2566841986 Day 1;
+BA_ "SPN" SG_ 2566841986 Day 962;
+BA_ "GenMsgSendType" BO_ 2566855296 0;
+BA_ "GenMsgRequestable" BO_ 2566855296 0;
+BA_ "GenMsgCycleTime" BO_ 2566855296 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566855296 6;
+BA_ "VFrameFormat" BO_ 2566855296 3;
+BA_ "GenSigSendType" SG_ 2566855296 ProtectiveEarth_Offset 7;
+BA_ "GenSigStartValue" SG_ 2566855296 ProtectiveEarth_Offset 65535;
+BA_ "GenSigSendType" SG_ 2566855296 VCVCCU_ControlPilot_MinVoltage 7;
+BA_ "GenSigStartValue" SG_ 2566855296 VCVCCU_ControlPilot_MinVoltage 65535;
+BA_ "GenSigSendType" SG_ 2566855296 VCVCCU_PlugPresent_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566855296 VCVCCU_PlugPresent_Voltage 65535;
+BA_ "GenMsgSendType" BO_ 2566855040 0;
+BA_ "GenMsgRequestable" BO_ 2566855040 0;
+BA_ "GenMsgCycleTime" BO_ 2566855040 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566855040 8;
+BA_ "VFrameFormat" BO_ 2566855040 3;
+BA_ "GenSigSendType" SG_ 2566855040 VCVCCU_Internal_VCC_SS_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566855040 VCVCCU_Internal_VCC_SS_Raw 65535;
+BA_ "GenSigSendType" SG_ 2566855040 VCVCCU_Internal_VCC_KL30_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566855040 VCVCCU_Internal_VCC_KL30_Raw 65535;
+BA_ "GenSigSendType" SG_ 2566855040 VCVCCU_Internal_VCC_KL15_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566855040 VCVCCU_Internal_VCC_KL15_Raw 65535;
+BA_ "GenSigSendType" SG_ 2566855040 VCVCCU_Internal_VCC_12V_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566855040 VCVCCU_Internal_VCC_12V_Raw 65535;
+BA_ "GenMsgSendType" BO_ 2566854784 0;
+BA_ "GenMsgRequestable" BO_ 2566854784 0;
+BA_ "GenMsgCycleTime" BO_ 2566854784 10;
+BA_ "VFrameFormat" BO_ 2566854784 3;
+BA_ "GenSigSendType" SG_ 2566854784 VCVCCU_Internal_VCC_SS_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566854784 VCVCCU_Internal_VCC_SS_Voltage 65535;
+BA_ "GenSigSendType" SG_ 2566854784 VCVCCU_Internal_VCC_KL30_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566854784 VCVCCU_Internal_VCC_KL30_Voltage 65535;
+BA_ "GenSigSendType" SG_ 2566854784 VCVCCU_Internal_VCC_KL15_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566854784 VCVCCU_Internal_VCC_KL15_Voltage 65535;
+BA_ "GenSigSendType" SG_ 2566854784 VCVCCU_Internal_VCC_12V_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566854784 VCVCCU_Internal_VCC_12V_Voltage 65535;
+BA_ "GenMsgDelayTime" BO_ 2566865026 0;
+BA_ "GenMsgSendType" BO_ 2566865026 0;
+BA_ "GenMsgRequestable" BO_ 2566865026 0;
+BA_ "GenMsgCycleTime" BO_ 2566865026 200;
+BA_ "VFrameFormat" BO_ 2566865026 3;
+BA_ "GenMsgCycleTimeFast" BO_ 2566872448 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566872448 4;
+BA_ "GenMsgDelayTime" BO_ 2566872448 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566872448 138;
+BA_ "GenMsgSendType" BO_ 2566872448 0;
+BA_ "GenMsgRequestable" BO_ 2566872448 0;
+BA_ "GenMsgCycleTime" BO_ 2566872448 500;
+BA_ "VFrameFormat" BO_ 2566872448 3;
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_Appl_SccFuncModeReq 4;
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_Appl_SccChargeModeReq 4;
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineSt 4;
+BA_ "GenSigStartValue" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineSt 0;
+BA_ "SystemSignalLongSymbol" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineSt "VCVCCU_V2G_StateM_StateMachineStatus";
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineMe 4;
+BA_ "GenSigStartValue" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineMe 0;
+BA_ "SystemSignalLongSymbol" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineMe "VCVCCU_V2G_StateM_StateMachineMessageState";
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineEr 4;
+BA_ "GenSigStartValue" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineEr 0;
+BA_ "SystemSignalLongSymbol" SG_ 2566872448 VCVCCU_V2G_StateM_StateMachineEr "VCVCCU_V2G_StateM_StateMachineError";
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_StateM_InternetAvaila 4;
+BA_ "GenSigStartValue" SG_ 2566872448 VCVCCU_V2G_StateM_InternetAvaila 0;
+BA_ "SystemSignalLongSymbol" SG_ 2566872448 VCVCCU_V2G_StateM_InternetAvaila "VCVCCU_V2G_StateM_InternetAvailable";
+BA_ "GenSigSendType" SG_ 2566872448 VCVCCU_V2G_StateM_EnergyTransfer 4;
+BA_ "GenSigStartValue" SG_ 2566872448 VCVCCU_V2G_StateM_EnergyTransfer 0;
+BA_ "SystemSignalLongSymbol" SG_ 2566872448 VCVCCU_V2G_StateM_EnergyTransfer "VCVCCU_V2G_StateM_EnergyTransferModeFlags";
+BA_ "GenMsgCycleTimeFast" BO_ 2566872192 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566872192 4;
+BA_ "GenMsgDelayTime" BO_ 2566872192 0;
+BA_ "GenMsgSendType" BO_ 2566872192 0;
+BA_ "GenMsgRequestable" BO_ 2566872192 0;
+BA_ "GenMsgCycleTime" BO_ 2566872192 500;
+BA_ "GenMsgStartDelayTime" BO_ 2566872192 2;
+BA_ "VFrameFormat" BO_ 2566872192 3;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_EthTrcv_TrcvLinkState 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_EthTrcv_TrcvLinkState 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_TrcvLinkState 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_TrcvLinkState 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_StackError 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_StackError 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_SDPSecurityTx 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_SDPSecurityTx 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_SAPSchemaID 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_SAPSchemaID 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_SAPResponseCode 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_SAPResponseCode 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_MsgStatus 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_MsgStatus 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_MsgState 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_MsgState 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_IPAssigned 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_IPAssigned 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_CyclicMsgTrig 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_CyclicMsgTrig 0;
+BA_ "GenSigSendType" SG_ 2566872192 VCVCCU_V2G_Core_CyclicMsgRcvd 4;
+BA_ "GenSigStartValue" SG_ 2566872192 VCVCCU_V2G_Core_CyclicMsgRcvd 0;
+BA_ "GenMsgCycleTimeFast" BO_ 2566871680 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566871680 4;
+BA_ "GenMsgDelayTime" BO_ 2566871680 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566871680 114;
+BA_ "GenMsgSendType" BO_ 2566871680 0;
+BA_ "GenMsgRequestable" BO_ 2566871680 0;
+BA_ "GenMsgCycleTime" BO_ 2566871680 500;
+BA_ "VFrameFormat" BO_ 2566871680 3;
+BA_ "GenSigSendType" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Un 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Un "VCVCCU_V2G_EVSEPresentVoltage_Unit";
+BA_ "GenSigSendType" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVolta_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVolta_0000 "VCVCCU_V2G_EVSEPresentVoltage_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Mu 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Mu "VCVCCU_V2G_EVSEPresentVoltage_Multiplier";
+BA_ "GenSigSendType" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Va 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Va "VCVCCU_V2G_EVSEPresentVoltage_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566871936 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566871936 4;
+BA_ "GenMsgDelayTime" BO_ 2566871936 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566871936 14;
+BA_ "GenMsgSendType" BO_ 2566871936 0;
+BA_ "GenMsgRequestable" BO_ 2566871936 0;
+BA_ "GenMsgCycleTime" BO_ 2566871936 500;
+BA_ "VFrameFormat" BO_ 2566871936 3;
+BA_ "GenSigSendType" SG_ 2566871936 VCVCCU_V2G_DateTimeNow 4;
+BA_ "GenMsgCycleTimeFast" BO_ 2566871424 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566871424 4;
+BA_ "GenMsgDelayTime" BO_ 2566871424 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566871424 102;
+BA_ "GenMsgSendType" BO_ 2566871424 0;
+BA_ "GenMsgRequestable" BO_ 2566871424 0;
+BA_ "GenMsgCycleTime" BO_ 2566871424 500;
+BA_ "VFrameFormat" BO_ 2566871424 3;
+BA_ "GenSigSendType" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Un 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Un "VCVCCU_V2G_EVSEPresentCurrent_Unit";
+BA_ "GenSigSendType" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurre_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurre_0000 "VCVCCU_V2G_EVSEPresentCurrent_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Mu 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Mu "VCVCCU_V2G_EVSEPresentCurrent_Multiplier";
+BA_ "GenSigSendType" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Va 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Va "VCVCCU_V2G_EVSEPresentCurrent_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566871168 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566871168 4;
+BA_ "GenMsgDelayTime" BO_ 2566871168 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566871168 90;
+BA_ "GenMsgSendType" BO_ 2566871168 0;
+BA_ "GenMsgRequestable" BO_ 2566871168 0;
+BA_ "GenMsgCycleTime" BO_ 2566871168 500;
+BA_ "VFrameFormat" BO_ 2566871168 3;
+BA_ "GenSigSendType" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentRipple 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentRipple "VCVCCU_V2G_EVSEPeakCurrentRipple_Unit";
+BA_ "GenSigSendType" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0000 "VCVCCU_V2G_EVSEPeakCurrentRipple_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0001 "VCVCCU_V2G_EVSEPeakCurrentRipple_Multiplier";
+BA_ "GenSigSendType" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0002 "VCVCCU_V2G_EVSEPeakCurrentRipple_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566870912 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566870912 4;
+BA_ "GenMsgDelayTime" BO_ 2566870912 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566870912 88;
+BA_ "GenMsgSendType" BO_ 2566870912 0;
+BA_ "GenMsgRequestable" BO_ 2566870912 0;
+BA_ "GenMsgCycleTime" BO_ 2566870912 500;
+BA_ "VFrameFormat" BO_ 2566870912 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566870912 "VCVCCU_V2G_EVSEMinimumVoltageLimit";
+BA_ "GenSigSendType" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVoltageLim 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVoltageLim "VCVCCU_V2G_EVSEMinimumVoltageLimit_Unit";
+BA_ "GenSigSendType" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0000 "VCVCCU_V2G_EVSEMinimumVoltageLimit_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0001 "VCVCCU_V2G_EVSEMinimumVoltageLimit_Multiplier";
+BA_ "GenSigSendType" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0002 "VCVCCU_V2G_EVSEMinimumVoltageLimit_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566870656 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566870656 4;
+BA_ "GenMsgDelayTime" BO_ 2566870656 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566870656 76;
+BA_ "GenMsgSendType" BO_ 2566870656 0;
+BA_ "GenMsgRequestable" BO_ 2566870656 0;
+BA_ "GenMsgCycleTime" BO_ 2566870656 500;
+BA_ "VFrameFormat" BO_ 2566870656 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566870656 "VCVCCU_V2G_EVSEMinimumCurrentLimit";
+BA_ "GenSigSendType" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurrentLim 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurrentLim "VCVCCU_V2G_EVSEMinimumCurrentLimit_Unit";
+BA_ "GenSigSendType" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0000 "VCVCCU_V2G_EVSEMinimumCurrentLimit_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0001 "VCVCCU_V2G_EVSEMinimumCurrentLimit_Multiplier";
+BA_ "GenSigSendType" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0002 "VCVCCU_V2G_EVSEMinimumCurrentLimit_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566870400 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566870400 4;
+BA_ "GenMsgDelayTime" BO_ 2566870400 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566870400 64;
+BA_ "GenMsgSendType" BO_ 2566870400 0;
+BA_ "GenMsgRequestable" BO_ 2566870400 0;
+BA_ "GenMsgCycleTime" BO_ 2566870400 500;
+BA_ "VFrameFormat" BO_ 2566870400 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566870400 "VCVCCU_V2G_EVSEMaximumVoltageLimit";
+BA_ "GenSigSendType" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVoltageLim 4;
+BA_ "GenSigStartValue" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVoltageLim 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVoltageLim "VCVCCU_V2G_EVSEMaximumVoltageLimitFlag";
+BA_ "GenSigSendType" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0000 "VCVCCU_V2G_EVSEMaximumVoltageLimit_Unit";
+BA_ "GenSigSendType" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0001 "VCVCCU_V2G_EVSEMaximumVoltageLimit_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0002 "VCVCCU_V2G_EVSEMaximumVoltageLimit_Multiplier";
+BA_ "GenSigSendType" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0003 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0003 "VCVCCU_V2G_EVSEMaximumVoltageLimit_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566870144 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566870144 4;
+BA_ "GenMsgDelayTime" BO_ 2566870144 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566870144 52;
+BA_ "GenMsgSendType" BO_ 2566870144 0;
+BA_ "GenMsgRequestable" BO_ 2566870144 0;
+BA_ "GenMsgCycleTime" BO_ 2566870144 500;
+BA_ "VFrameFormat" BO_ 2566870144 3;
+BA_ "GenSigSendType" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPowerLimit 4;
+BA_ "GenSigStartValue" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPowerLimit 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPowerLimit "VCVCCU_V2G_EVSEMaximumPowerLimitFlag";
+BA_ "GenSigSendType" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0000 "VCVCCU_V2G_EVSEMaximumPowerLimit_Unit";
+BA_ "GenSigSendType" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0001 "VCVCCU_V2G_EVSEMaximumPowerLimit_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0002 "VCVCCU_V2G_EVSEMaximumPowerLimit_Multiplier";
+BA_ "GenSigSendType" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0003 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0003 "VCVCCU_V2G_EVSEMaximumPowerLimit_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566869888 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566869888 4;
+BA_ "GenMsgDelayTime" BO_ 2566869888 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566869888 40;
+BA_ "GenMsgSendType" BO_ 2566869888 0;
+BA_ "GenMsgRequestable" BO_ 2566869888 0;
+BA_ "GenMsgCycleTime" BO_ 2566869888 500;
+BA_ "VFrameFormat" BO_ 2566869888 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566869888 "VCVCCU_V2G_EVSEMaximumCurrentLimit";
+BA_ "GenSigSendType" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurrentLim 4;
+BA_ "GenSigStartValue" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurrentLim 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurrentLim "VCVCCU_V2G_EVSEMaximumCurrentLimitFlag";
+BA_ "GenSigSendType" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0000 "VCVCCU_V2G_EVSEMaximumCurrentLimit_Value";
+BA_ "GenSigSendType" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0001 "VCVCCU_V2G_EVSEMaximumCurrentLimit_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0002 "VCVCCU_V2G_EVSEMaximumCurrentLimit_Unit";
+BA_ "GenSigSendType" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0003 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0003 "VCVCCU_V2G_EVSEMaximumCurrentLimit_Multiplier";
+BA_ "GenMsgCycleTimeFast" BO_ 2566869632 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566869632 4;
+BA_ "GenMsgDelayTime" BO_ 2566869632 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566869632 38;
+BA_ "GenMsgSendType" BO_ 2566869632 0;
+BA_ "GenMsgRequestable" BO_ 2566869632 0;
+BA_ "GenMsgCycleTime" BO_ 2566869632 500;
+BA_ "VFrameFormat" BO_ 2566869632 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566869632 "VCVCCU_V2G_EVSEEnergyToBeDelivered";
+BA_ "GenSigSendType" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDeliver 4;
+BA_ "GenSigStartValue" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDeliver 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDeliver "VCVCCU_V2G_EVSEEnergyToBeDeliveredFlag";
+BA_ "GenSigSendType" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0000 "VCVCCU_V2G_EVSEEnergyToBeDelivered_Value";
+BA_ "GenSigSendType" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0001 "VCVCCU_V2G_EVSEEnergyToBeDelivered_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0002 "VCVCCU_V2G_EVSEEnergyToBeDelivered_Unit";
+BA_ "GenSigSendType" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0003 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0003 "VCVCCU_V2G_EVSEEnergyToBeDelivered_Multiplier";
+BA_ "GenMsgCycleTimeFast" BO_ 2566869376 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566869376 4;
+BA_ "GenMsgDelayTime" BO_ 2566869376 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566869376 26;
+BA_ "GenMsgSendType" BO_ 2566869376 0;
+BA_ "GenMsgRequestable" BO_ 2566869376 0;
+BA_ "GenMsgCycleTime" BO_ 2566869376 500;
+BA_ "VFrameFormat" BO_ 2566869376 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566869376 "VCVCCU_V2G_EVSECurrentRegulationTolerance";
+BA_ "GenSigSendType" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegulation 4;
+BA_ "GenSigStartValue" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegulation 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegulation "VCVCCU_V2G_EVSECurrentRegulationToleranceFlag";
+BA_ "GenSigSendType" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0000 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0000 "VCVCCU_V2G_EVSECurrentRegulationTolerance_Value";
+BA_ "GenSigSendType" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0001 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0001 "VCVCCU_V2G_EVSECurrentRegulationTolerance_UnitFlag";
+BA_ "GenSigSendType" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0002 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0002 "VCVCCU_V2G_EVSECurrentRegulationTolerance_Unit";
+BA_ "GenSigSendType" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0003 4;
+BA_ "SystemSignalLongSymbol" SG_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0003 "VCVCCU_V2G_EVSECurrentRegulationTolerance_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566863234 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566863234 50;
+BA_ "GenMsgSendType" BO_ 2566863234 0;
+BA_ "GenMsgRequestable" BO_ 2566863234 0;
+BA_ "GenMsgCycleTime" BO_ 2566863234 200;
+BA_ "VFrameFormat" BO_ 2566863234 3;
+BA_ "GenSigStartValue" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltageLimit 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltageLimit "VCVCCU_V2G_EVMaximumVoltageLimitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0000 "VCVCCU_V2G_EVMaximumVoltageLimit_Value";
+BA_ "SystemSignalLongSymbol" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0001 "VCVCCU_V2G_EVMaximumVoltageLimit_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0002 "VCVCCU_V2G_EVMaximumVoltageLimit_Unit";
+BA_ "SystemSignalLongSymbol" SG_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0003 "VCVCCU_V2G_EVMaximumVoltageLimit_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566862978 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566862978 40;
+BA_ "GenMsgSendType" BO_ 2566862978 0;
+BA_ "GenMsgRequestable" BO_ 2566862978 0;
+BA_ "GenMsgCycleTime" BO_ 2566862978 200;
+BA_ "VFrameFormat" BO_ 2566862978 3;
+BA_ "GenSigStartValue" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimitFl 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimitFl "VCVCCU_V2G_EVMaximumPowerLimitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit_V "VCVCCU_V2G_EVMaximumPowerLimit_Value";
+BA_ "SystemSignalLongSymbol" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit_U "VCVCCU_V2G_EVMaximumPowerLimit_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLi_0000 "VCVCCU_V2G_EVMaximumPowerLimit_Unit";
+BA_ "SystemSignalLongSymbol" SG_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit_M "VCVCCU_V2G_EVMaximumPowerLimit_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566862722 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566862722 30;
+BA_ "GenMsgSendType" BO_ 2566862722 0;
+BA_ "GenMsgRequestable" BO_ 2566862722 0;
+BA_ "GenMsgCycleTime" BO_ 2566862722 200;
+BA_ "VFrameFormat" BO_ 2566862722 3;
+BA_ "GenSigStartValue" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrentLimit 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrentLimit "VCVCCU_V2G_EVMaximumCurrentLimitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0000 "VCVCCU_V2G_EVMaximumCurrentLimit_Unit";
+BA_ "SystemSignalLongSymbol" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0001 "VCVCCU_V2G_EVMaximumCurrentLimit_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0002 "VCVCCU_V2G_EVMaximumCurrentLimit_Multiplier";
+BA_ "SystemSignalLongSymbol" SG_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0003 "VCVCCU_V2G_EVMaximumCurrentLimit_Value";
+BA_ "GenMsgDelayTime" BO_ 2566862466 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566862466 20;
+BA_ "GenMsgSendType" BO_ 2566862466 0;
+BA_ "GenMsgRequestable" BO_ 2566862466 0;
+BA_ "GenMsgCycleTime" BO_ 2566862466 200;
+BA_ "VFrameFormat" BO_ 2566862466 3;
+BA_ "GenSigStartValue" SG_ 2566862466 VCVCCU_V2G_EVEnergyRequestFlag 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566862466 VCVCCU_V2G_EVEnergyRequest_UnitF "VCVCCU_V2G_EVEnergyRequest_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862466 VCVCCU_V2G_EVEnergyRequest_Multi "VCVCCU_V2G_EVEnergyRequest_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566862210 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566862210 10;
+BA_ "GenMsgSendType" BO_ 2566862210 0;
+BA_ "GenMsgRequestable" BO_ 2566862210 0;
+BA_ "GenMsgCycleTime" BO_ 2566862210 200;
+BA_ "VFrameFormat" BO_ 2566862210 3;
+BA_ "GenSigStartValue" SG_ 2566862210 VCVCCU_V2G_EVEnergyCapacityFlag 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_0000 "VCVCCU_V2G_EVEnergyCapacity_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_Mult "VCVCCU_V2G_EVEnergyCapacity_Multiplier";
+BA_ "SystemSignalLongSymbol" SG_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_Valu "VCVCCU_V2G_EVEnergyCapacity_Value";
+BA_ "GenMsgCycleTimeFast" BO_ 2566869120 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566869120 4;
+BA_ "GenMsgDelayTime" BO_ 2566869120 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566869120 126;
+BA_ "GenMsgSendType" BO_ 2566869120 0;
+BA_ "GenMsgRequestable" BO_ 2566869120 0;
+BA_ "GenMsgCycleTime" BO_ 2566869120 500;
+BA_ "VFrameFormat" BO_ 2566869120 3;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_DateTimeNowFlag 4;
+BA_ "GenSigStartValue" SG_ 2566869120 VCVCCU_V2G_DateTimeNowFlag 3;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_ResponseCode 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_NotificationMaxDelay 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEPowerLimitAchieve 4;
+BA_ "GenSigStartValue" SG_ 2566869120 VCVCCU_V2G_EVSEPowerLimitAchieve 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869120 VCVCCU_V2G_EVSEPowerLimitAchieve "VCVCCU_V2G_EVSEPowerLimitAchieved";
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEVoltageLimitAchie 4;
+BA_ "GenSigStartValue" SG_ 2566869120 VCVCCU_V2G_EVSEVoltageLimitAchie 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869120 VCVCCU_V2G_EVSEVoltageLimitAchie "VCVCCU_V2G_EVSEVoltageLimitAchieved";
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEStatusCode 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEProcessing 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSENotification 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEIsolationStatusFl 4;
+BA_ "GenSigStartValue" SG_ 2566869120 VCVCCU_V2G_EVSEIsolationStatusFl 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869120 VCVCCU_V2G_EVSEIsolationStatusFl "VCVCCU_V2G_EVSEIsolationStatusFlag";
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSEIsolationStatus 4;
+BA_ "GenSigSendType" SG_ 2566869120 VCVCCU_V2G_EVSECurrentLimitAchie 4;
+BA_ "GenSigStartValue" SG_ 2566869120 VCVCCU_V2G_EVSECurrentLimitAchie 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566869120 VCVCCU_V2G_EVSECurrentLimitAchie "VCVCCU_V2G_EVSECurrentLimitAchieved";
+BA_ "GenMsgDelayTime" BO_ 2566861954 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566861954 60;
+BA_ "GenMsgSendType" BO_ 2566861954 0;
+BA_ "GenMsgRequestable" BO_ 2566861954 0;
+BA_ "GenMsgCycleTime" BO_ 2566861954 200;
+BA_ "VFrameFormat" BO_ 2566861954 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566861954 VCVCCU_V2G_EVTargetCurrent_UnitF "VCVCCU_V2G_EVTargetCurrent_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861954 VCVCCU_V2G_EVTargetCurrent_Multi "VCVCCU_V2G_EVTargetCurrent_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566861698 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566861698 70;
+BA_ "GenMsgSendType" BO_ 2566861698 0;
+BA_ "GenMsgRequestable" BO_ 2566861698 0;
+BA_ "GenMsgCycleTime" BO_ 2566861698 200;
+BA_ "VFrameFormat" BO_ 2566861698 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566861698 VCVCCU_V2G_EVTargetVoltage_UnitF "VCVCCU_V2G_EVTargetVoltage_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861698 VCVCCU_V2G_EVTargetVoltage_Multi "VCVCCU_V2G_EVTargetVoltage_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566861442 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566861442 80;
+BA_ "GenMsgSendType" BO_ 2566861442 0;
+BA_ "GenMsgRequestable" BO_ 2566861442 0;
+BA_ "GenMsgCycleTime" BO_ 2566861442 200;
+BA_ "VFrameFormat" BO_ 2566861442 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566861442 "VCVCCU_V2G_RemainingTimeToBulkSOC";
+BA_ "GenSigStartValue" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToBulkSO 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToBulkSO "VCVCCU_V2G_RemainingTimeToBulkSOCFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0000 "VCVCCU_V2G_RemainingTimeToBulkSOC_Value";
+BA_ "SystemSignalLongSymbol" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0001 "VCVCCU_V2G_RemainingTimeToBulkSOC_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0002 "VCVCCU_V2G_RemainingTimeToBulkSOC_Unit";
+BA_ "SystemSignalLongSymbol" SG_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0003 "VCVCCU_V2G_RemainingTimeToBulkSOC_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566861186 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566861186 90;
+BA_ "GenMsgSendType" BO_ 2566861186 0;
+BA_ "GenMsgRequestable" BO_ 2566861186 0;
+BA_ "GenMsgCycleTime" BO_ 2566861186 200;
+BA_ "VFrameFormat" BO_ 2566861186 3;
+BA_ "SystemMessageLongSymbol" BO_ 2566861186 "VCVCCU_V2G_RemainingTimeToFullSOC";
+BA_ "GenSigStartValue" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToFullSO 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToFullSO "VCVCCU_V2G_RemainingTimeToFullSOCFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0000 "VCVCCU_V2G_RemainingTimeToFullSOC_Value";
+BA_ "SystemSignalLongSymbol" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0001 "VCVCCU_V2G_RemainingTimeToFullSOC_UnitFlag";
+BA_ "SystemSignalLongSymbol" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0002 "VCVCCU_V2G_RemainingTimeToFullSOC_Unit";
+BA_ "SystemSignalLongSymbol" SG_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0003 "VCVCCU_V2G_RemainingTimeToFullSOC_Multiplier";
+BA_ "GenMsgDelayTime" BO_ 2566860930 0;
+BA_ "GenMsgStartDelayTime" BO_ 2566860930 100;
+BA_ "GenMsgSendType" BO_ 2566860930 0;
+BA_ "GenMsgRequestable" BO_ 2566860930 0;
+BA_ "GenMsgCycleTime" BO_ 2566860930 200;
+BA_ "VFrameFormat" BO_ 2566860930 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_StateM_EnergyTra_0000 15;
+BA_ "SystemSignalLongSymbol" SG_ 2566860930 VCVCCU_V2G_StateM_EnergyTra_0000 "VCVCCU_V2G_StateM_EnergyTransferMode";
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVPowerDeliveryParame 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566860930 VCVCCU_V2G_EVPowerDeliveryParame "VCVCCU_V2G_EVPowerDeliveryParameterFlag";
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVRESSConditioningFla 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566860930 VCVCCU_V2G_EVRESSConditioningFla "VCVCCU_V2G_EVRESSConditioningFlag";
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVRESSConditioning 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVReady 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVCabinConditioningFl 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566860930 VCVCCU_V2G_EVCabinConditioningFl "VCVCCU_V2G_EVCabinConditioningFlag";
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_EVCabinConditioning 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_ChargingComplete 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_FullSOCFlag 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_BulkSOCFlag 3;
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_BulkChargingCompleteF 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566860930 VCVCCU_V2G_BulkChargingCompleteF "VCVCCU_V2G_BulkChargingCompleteFlag";
+BA_ "GenSigStartValue" SG_ 2566860930 VCVCCU_V2G_BulkChargingComplete 3;
+BA_ "GenMsgSendType" BO_ 2566857090 0;
+BA_ "GenMsgRequestable" BO_ 2566857090 0;
+BA_ "GenMsgCycleTime" BO_ 2566857090 20;
+BA_ "E2EProfile" BO_ 2566857090 "P01";
+BA_ "E2EDataLength" BO_ 2566857090 64;
+BA_ "E2EDataId01" BO_ 2566857090 65313;
+BA_ "VFrameFormat" BO_ 2566857090 3;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_PwmChargeModeRequ 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566857090 VCVCCU_Vehicle_PwmChargeModeRequ "VCVCCU_Vehicle_PwmChargeModeRequest";
+BA_ "GenSigStartValue" SG_ 2566857090 E2E_CRC_ChargeFromVehicle 255;
+BA_ "GenSigStartValue" SG_ 2566857090 E2E_Cnt_ChargeFromVehicle 0;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_Renegotiate 3;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_ChargeSelection 3;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_StopCharge 3;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_ContactorStatus 3;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_LinkVoltage 65535;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_IsolationMeasurem 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566857090 VCVCCU_Vehicle_IsolationMeasurem "VCVCCU_Vehicle_IsolationMeasurementStatus";
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_ContactorVoltage 65535;
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_PlugUnlockPermiss 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566857090 VCVCCU_Vehicle_PlugUnlockPermiss "VCVCCU_Vehicle_PlugUnlockPermission";
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_PlugLockPermissio 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566857090 VCVCCU_Vehicle_PlugLockPermissio "VCVCCU_Vehicle_PlugLockPermission";
+BA_ "GenSigStartValue" SG_ 2566857090 VCVCCU_Vehicle_ChargePermission 3;
+BA_ "E2EProfile" BO_ 2566854528 "P01";
+BA_ "E2EDataId01" BO_ 2566854528 65303;
+BA_ "GenMsgCycleTimeFast" BO_ 2566854528 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566854528 4;
+BA_ "GenMsgSendType" BO_ 2566854528 0;
+BA_ "GenMsgRequestable" BO_ 2566854528 0;
+BA_ "GenMsgCycleTime" BO_ 2566854528 20;
+BA_ "E2EDataLength" BO_ 2566854528 64;
+BA_ "VFrameFormat" BO_ 2566854528 3;
+BA_ "GenSigStartValue" SG_ 2566854528 E2E_State_ChargeFromVehicle 0;
+BA_ "GenSigStartValue" SG_ 2566854528 VCVCCU_Vehicle_MobilizationStatu 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854528 VCVCCU_Vehicle_MobilizationStatu "VCVCCU_Vehicle_MobilizationStatus";
+BA_ "GenSigStartValue" SG_ 2566854528 VCVCCU_Vehicle_ChargingStatus 3;
+BA_ "GenSigStartValue" SG_ 2566854528 E2E_Cnt_ChargeToVehicle 0;
+BA_ "GenSigStartValue" SG_ 2566854528 E2E_CRC_ChargeToVehicle 255;
+BA_ "GenSigStartValue" SG_ 2566854528 VCVCCU_Vehicle_ChargeSelectionAc 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854528 VCVCCU_Vehicle_ChargeSelectionAc "VCVCCU_Vehicle_ChargeSelectionAck";
+BA_ "GenSigStartValue" SG_ 2566854528 VCVCCU_Vehicle_ContactorRequest 3;
+BA_ "GenSigStartValue" SG_ 2566854528 VCVCCU_Vehicle_IsolationMea_0000 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854528 VCVCCU_Vehicle_IsolationMea_0000 "VCVCCU_Vehicle_IsolationMeasurementRequest";
+BA_ "GenMsgSendType" BO_ 2566856834 0;
+BA_ "GenMsgRequestable" BO_ 2566856834 0;
+BA_ "GenMsgCycleTime" BO_ 2566856834 250;
+BA_ "VFrameFormat" BO_ 2566856834 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_Inlet_MotorRequest 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_ChargeUnit_Request 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_ControlPilot_ChargeModeRe 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566856834 VCVCCU_ControlPilot_ChargeModeRe "VCVCCU_ControlPilot_ChargeModeRequest";
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_PlugLock_MotorRequest 7;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_RTC_TimerValue 255;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_RTC_TimerRequest 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_LED2_Request 255;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_LED1_Request 255;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_LED0_Request 255;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_HighSideOut4_Request 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_HighSideOut3_Request 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_HighSideOut2_Request 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_HighSideOut1_Request 3;
+BA_ "GenSigStartValue" SG_ 2566856834 VCVCCU_HighSideOut0_Request 3;
+BA_ "GenMsgCycleTimeFast" BO_ 2566854272 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566854272 4;
+BA_ "GenMsgSendType" BO_ 2566854272 0;
+BA_ "GenMsgRequestable" BO_ 2566854272 0;
+BA_ "GenMsgCycleTime" BO_ 2566854272 500;
+BA_ "GenMsgStartDelayTime" BO_ 2566854272 6;
+BA_ "VFrameFormat" BO_ 2566854272 3;
+BA_ "GenSigSendType" SG_ 2566854272 VCVCCU_RTC_Wakeup 4;
+BA_ "GenSigStartValue" SG_ 2566854272 VCVCCU_RTC_Wakeup 3;
+BA_ "GenSigSendType" SG_ 2566854272 VCVCCU_RTC_TimerStatus 4;
+BA_ "GenSigStartValue" SG_ 2566854272 VCVCCU_RTC_TimerStatus 3;
+BA_ "GenMsgCycleTimeFast" BO_ 2566854016 20;
+BA_ "GenMsgNrOfRepetition" BO_ 2566854016 4;
+BA_ "GenMsgStartDelayTime" BO_ 2566854016 8;
+BA_ "GenMsgSendType" BO_ 2566854016 0;
+BA_ "GenMsgRequestable" BO_ 2566854016 0;
+BA_ "GenMsgCycleTime" BO_ 2566854016 500;
+BA_ "VFrameFormat" BO_ 2566854016 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Wakeup 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Wakeup 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut4_Input_Status 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut4_Input_Status 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut4_Input_Deboun 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut4_Input_Deboun 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut4_Input_Deboun "VCVCCU_HighSideOut4_Input_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Status 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Status 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Deboun 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Deboun 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut3_Input_Deboun "VCVCCU_HighSideOut3_Input_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut2_Input_Status 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut2_Input_Status 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut2_Input_Deboun 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut2_Input_Deboun 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut2_Input_Deboun "VCVCCU_HighSideOut2_Input_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut1_Input_Status 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut1_Input_Status 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut1_Input_Deboun 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut1_Input_Deboun 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut1_Input_Deboun "VCVCCU_HighSideOut1_Input_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut0_Input_Status 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut0_Input_Status 3;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut0_Input_Deboun 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut0_Input_Deboun 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut0_Input_Deboun "VCVCCU_HighSideOut0_Input_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_LED2_SelfDiagnosticStatus 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_LED2_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_LED1_SelfDiagnosticStatus 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_LED1_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_LED0_SelfDiagnosticStatus 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_LED0_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut4_SelfDiagnost 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut4_SelfDiagnost 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut4_SelfDiagnost "VCVCCU_HighSideOut4_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut3_SelfDiagnost 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut3_SelfDiagnost 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut3_SelfDiagnost "VCVCCU_HighSideOut3_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut2_SelfDiagnost 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut2_SelfDiagnost 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut2_SelfDiagnost "VCVCCU_HighSideOut2_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut1_SelfDiagnost 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut1_SelfDiagnost 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut1_SelfDiagnost "VCVCCU_HighSideOut1_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566854016 VCVCCU_HighSideOut0_SelfDiagnost 4;
+BA_ "GenSigStartValue" SG_ 2566854016 VCVCCU_HighSideOut0_SelfDiagnost 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566854016 VCVCCU_HighSideOut0_SelfDiagnost "VCVCCU_HighSideOut0_SelfDiagnosticStatus";
+BA_ "GenMsgSendType" BO_ 2566853760 0;
+BA_ "GenMsgRequestable" BO_ 2566853760 0;
+BA_ "GenMsgCycleTime" BO_ 2566853760 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566853760 2;
+BA_ "VFrameFormat" BO_ 2566853760 3;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ChargeUnit_State 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ChargeUnit_State 7;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ChargeUnit_Mode 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ChargeUnit_Mode 7;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ChargeUnit_MaxCurrent 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ChargeUnit_MaxCurrent 255;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ControlPilot_Wakeup 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ControlPilot_Wakeup 3;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ControlPilot_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ControlPilot_Voltage 65535;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ControlPilot_Frequency 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ControlPilot_Frequency 65535;
+BA_ "GenSigSendType" SG_ 2566853760 VCVCCU_ControlPilot_DutyCycle 7;
+BA_ "GenSigStartValue" SG_ 2566853760 VCVCCU_ControlPilot_DutyCycle 255;
+BA_ "GenMsgSendType" BO_ 2566853504 0;
+BA_ "GenMsgRequestable" BO_ 2566853504 0;
+BA_ "GenMsgCycleTime" BO_ 2566853504 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566853504 4;
+BA_ "VFrameFormat" BO_ 2566853504 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_Inlet_HWVariant 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_Inlet_HWVariant 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_S3Switch_Status 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_S3Switch_Status 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_S3Switch_DebouncedStatus 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_S3Switch_DebouncedStatus 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_DigitalInput_DebouncedSta 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_DigitalInput_DebouncedSta 3;
+BA_ "SystemSignalLongSymbol" SG_ 2566853504 VCVCCU_DigitalInput_DebouncedSta "VCVCCU_DigitalInput_DebouncedStatus";
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_Inlet_MaxCurrent 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_Inlet_MaxCurrent 255;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_Inlet_MotorStatus 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_Inlet_MotorStatus 7;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_Inlet_ConnectionStatus 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_Inlet_ConnectionStatus 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugPresent_Wakeup 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugPresent_Wakeup 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugPresent_Status 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugPresent_Status 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_POSFeedback_SelfDiagnosti 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_POSFeedback_SelfDiagnosti 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566853504 VCVCCU_POSFeedback_SelfDiagnosti "VCVCCU_POSFeedback_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugPresent_SelfDiagnosti 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugPresent_SelfDiagnosti 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566853504 VCVCCU_PlugPresent_SelfDiagnosti "VCVCCU_PlugPresent_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_DigitalInput_Wakeup 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_DigitalInput_Wakeup 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugPresent_Resistance 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugPresent_Resistance 7;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugLock_Output1_SelfDiag 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugLock_Output1_SelfDiag 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566853504 VCVCCU_PlugLock_Output1_SelfDiag "VCVCCU_PlugLock_Output1_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_DigitalInput_Status 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_DigitalInput_Status 3;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugLock_Output0_SelfDiag 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugLock_Output0_SelfDiag 7;
+BA_ "SystemSignalLongSymbol" SG_ 2566853504 VCVCCU_PlugLock_Output0_SelfDiag "VCVCCU_PlugLock_Output0_SelfDiagnosticStatus";
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_PlugLock_MotorStatus 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_PlugLock_MotorStatus 7;
+BA_ "GenSigSendType" SG_ 2566853504 VCVCCU_POSFeedback_Voltage 7;
+BA_ "GenSigStartValue" SG_ 2566853504 VCVCCU_POSFeedback_Voltage 65535;
+BA_ "GenMsgSendType" BO_ 2566853248 0;
+BA_ "GenMsgRequestable" BO_ 2566853248 0;
+BA_ "GenMsgCycleTime" BO_ 2566853248 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566853248 4;
+BA_ "VFrameFormat" BO_ 2566853248 3;
+BA_ "GenSigSendType" SG_ 2566853248 VCVCCU_PTC2_SelfDiagnosticStatus 7;
+BA_ "GenSigStartValue" SG_ 2566853248 VCVCCU_PTC2_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566853248 VCVCCU_PTC2_Temperature 7;
+BA_ "GenSigStartValue" SG_ 2566853248 VCVCCU_PTC2_Temperature 65535;
+BA_ "GenSigSendType" SG_ 2566853248 VCVCCU_PTC2_Resistance 7;
+BA_ "GenSigStartValue" SG_ 2566853248 VCVCCU_PTC2_Resistance 65535;
+BA_ "GenSigSendType" SG_ 2566853248 VCVCCU_PTC2_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566853248 VCVCCU_PTC2_Raw 65535;
+BA_ "GenMsgSendType" BO_ 2566852992 0;
+BA_ "GenMsgRequestable" BO_ 2566852992 0;
+BA_ "GenMsgCycleTime" BO_ 2566852992 10;
+BA_ "GenMsgStartDelayTime" BO_ 2566852992 2;
+BA_ "VFrameFormat" BO_ 2566852992 3;
+BA_ "GenSigSendType" SG_ 2566852992 VCVCCU_PTC1_SelfDiagnosticStatus 7;
+BA_ "GenSigStartValue" SG_ 2566852992 VCVCCU_PTC1_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566852992 VCVCCU_PTC1_Temperature 7;
+BA_ "GenSigStartValue" SG_ 2566852992 VCVCCU_PTC1_Temperature 65535;
+BA_ "GenSigSendType" SG_ 2566852992 VCVCCU_PTC1_Resistance 7;
+BA_ "GenSigStartValue" SG_ 2566852992 VCVCCU_PTC1_Resistance 65535;
+BA_ "GenSigSendType" SG_ 2566852992 VCVCCU_PTC1_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566852992 VCVCCU_PTC1_Raw 65535;
+BA_ "GenMsgRequestable" BO_ 2564816770 0;
+BA_ "VFrameFormat" BO_ 2564816770 3;
+BA_ "SigType" SG_ 2564816770 ProprietaryNetwork2 5;
+BA_ "SPN" SG_ 2564816770 ProprietaryNetwork2 5588;
+BA_ "SigType" SG_ 2564816770 ProprietaryNetwork1 5;
+BA_ "SPN" SG_ 2564816770 ProprietaryNetwork1 625;
+BA_ "SigType" SG_ 2564816770 J1939Network4 5;
+BA_ "SPN" SG_ 2564816770 J1939Network4 1668;
+BA_ "SigType" SG_ 2564816770 HoldSignal 0;
+BA_ "SPN" SG_ 2564816770 HoldSignal 1236;
+BA_ "SigType" SG_ 2564816770 J1939Network3 5;
+BA_ "SPN" SG_ 2564816770 J1939Network3 1235;
+BA_ "SigType" SG_ 2564816770 J1939Network2 5;
+BA_ "SPN" SG_ 2564816770 J1939Network2 1231;
+BA_ "SigType" SG_ 2564816770 ISO9141 5;
+BA_ "SPN" SG_ 2564816770 ISO9141 1232;
+BA_ "SigType" SG_ 2564816770 SAE_J1850 5;
+BA_ "SPN" SG_ 2564816770 SAE_J1850 1233;
+BA_ "SigType" SG_ 2564816770 ManufacturerSpecificPort 5;
+BA_ "SPN" SG_ 2564816770 ManufacturerSpecificPort 1234;
+BA_ "SigType" SG_ 2564816770 CurrentDataLink 5;
+BA_ "SPN" SG_ 2564816770 CurrentDataLink 1230;
+BA_ "SigType" SG_ 2564816770 SAE_J1587 5;
+BA_ "SPN" SG_ 2564816770 SAE_J1587 608;
+BA_ "SigType" SG_ 2564816770 SAE_J1922 5;
+BA_ "SPN" SG_ 2564816770 SAE_J1922 622;
+BA_ "SigType" SG_ 2564816770 J1939Network1 5;
+BA_ "SPN" SG_ 2564816770 J1939Network1 639;
+BA_ "SigType" SG_ 2564816770 SuspendSignal 0;
+BA_ "SPN" SG_ 2564816770 SuspendSignal 2618;
+BA_ "SigType" SG_ 2564816770 SuspendDuration 1;
+BA_ "SPN" SG_ 2564816770 SuspendDuration 2619;
+BA_ "NmAsrMessage" BO_ 2633990274 1;
+BA_ "GenMsgILSupport" BO_ 2633990274 0;
+BA_ "GenMsgRequestable" BO_ 2633990274 0;
+BA_ "VFrameFormat" BO_ 2633990274 3;
+BA_ "GenSigStartValue" SG_ 2633990274 WakeupRsn_CGW 0;
+BA_ "DiagConnection" BO_ 2363228034 33280;
+BA_ "DiagState" BO_ 2363228034 1;
+BA_ "GenMsgRequestable" BO_ 2363228034 0;
+BA_ "VFrameFormat" BO_ 2363228034 3;
+BA_ "DiagConnection" BO_ 2363129986 33408;
+BA_ "DiagRequest" BO_ 2363129986 1;
+BA_ "GenMsgRequestable" BO_ 2363129986 0;
+BA_ "VFrameFormat" BO_ 2363129986 3;
+BA_ "GenMsgRequestable" BO_ 2566910080 0;
+BA_ "VFrameFormat" BO_ 2566910080 3;
+BA_ "GenMsgRequestable" BO_ 2566910082 0;
+BA_ "VFrameFormat" BO_ 2566910082 3;
+BA_ "DiagConnection" BO_ 2363130496 33408;
+BA_ "DiagResponse" BO_ 2363130496 1;
+BA_ "GenMsgRequestable" BO_ 2363130496 0;
+BA_ "VFrameFormat" BO_ 2363130496 3;
+BA_ "NmAsrMessage" BO_ 2633990272 1;
+BA_ "GenMsgILSupport" BO_ 2633990272 0;
+BA_ "GenMsgRequestable" BO_ 2633990272 0;
+BA_ "VFrameFormat" BO_ 2633990272 3;
+BA_ "GenSigStartValue" SG_ 2633990272 Awake_ChargeLin_Actv_VCVCCU 0;
+BA_ "GenSigStartValue" SG_ 2633990272 Awake_Clamp15_Actv_VCVCCU 0;
+BA_ "GenSigStartValue" SG_ 2633990272 Awake_ChargeCom_Actv_VCVCCU 0;
+BA_ "GenSigStartValue" SG_ 2633990272 Awake_Diag_Actv_VCVCCU 0;
+BA_ "GenSigStartValue" SG_ 2633990272 WakeupRsn_VCVCCU 255;
+BA_ "TpJ1939VarDlc" BO_ 2566834816 1;
+BA_ "GenMsgRequestable" BO_ 2566834816 0;
+BA_ "VFrameFormat" BO_ 2566834816 3;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_FailModeID_VCCU 31;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_SPN_ConvMd_VCCU 1;
+BA_ "SPN" SG_ 2566834816 DTC_SPN_ConvMd_VCCU 1706;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_OccCnt_VCCU 127;
+BA_ "SPN" SG_ 2566834816 DTC_OccCnt_VCCU 1216;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_SPN_VCCU 524287;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_RSL_Flash_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_RSL_Flash_Stat_VCCU 3039;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_PL_Flash_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_PL_Flash_Stat_VCCU 3041;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_RSL_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_RSL_Stat_VCCU 623;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_PL_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_PL_Stat_VCCU 987;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_MIL_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_MIL_Stat_VCCU 1213;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_MIL_Flash_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_MIL_Flash_Stat_VCCU 3038;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_AWL_Flash_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_AWL_Flash_Stat_VCCU 3040;
+BA_ "GenSigStartValue" SG_ 2566834816 DTC_AWL_Stat_VCCU 3;
+BA_ "SPN" SG_ 2566834816 DTC_AWL_Stat_VCCU 624;
+BA_ "GenMsgSendType" BO_ 2566852736 0;
+BA_ "GenMsgRequestable" BO_ 2566852736 0;
+BA_ "GenMsgCycleTime" BO_ 2566852736 10;
+BA_ "VFrameFormat" BO_ 2566852736 3;
+BA_ "GenSigSendType" SG_ 2566852736 VCVCCU_PTC0_SelfDiagnosticStatus 7;
+BA_ "GenSigStartValue" SG_ 2566852736 VCVCCU_PTC0_SelfDiagnosticStatus 7;
+BA_ "GenSigSendType" SG_ 2566852736 VCVCCU_PTC0_Resistance 7;
+BA_ "GenSigStartValue" SG_ 2566852736 VCVCCU_PTC0_Resistance 65535;
+BA_ "GenSigSendType" SG_ 2566852736 VCVCCU_PTC0_Raw 7;
+BA_ "GenSigStartValue" SG_ 2566852736 VCVCCU_PTC0_Raw 65535;
+BA_ "GenSigSendType" SG_ 2566852736 VCVCCU_PTC0_Temperature 7;
+BA_ "GenSigStartValue" SG_ 2566852736 VCVCCU_PTC0_Temperature 65535;
+BA_ "NmAsrNodeIdentifier" BU_ CGW 130;
+BA_ "NodeLayerModules" BU_ CGW "J1939_IL.dll, ASRNM33.dll";
+BA_ "NmStationAddress" BU_ CGW 130;
+BA_ "NmAsrNodeIdentifier" BU_ VCVCCU 128;
+BA_ "NodeLayerModules" BU_ VCVCCU "J1939_IL.dll, ASRNM33.dll";
+BA_ "ECU" BU_ VCVCCU "VCVCCU";
+BA_ "NmStationAddress" BU_ VCVCCU 128;
+VAL_ 2566874240 LIN_SeFrequency 255 "NotAvailable" 2 "60Hz" 1 "50Hz" ;
+VAL_ 2566874754 LIN_EvFrequencies 255 "NotAvailable" 3 "Both_50Hz_60Hz" 2 "Only60Hz" 1 "Only50Hz" ;
+VAL_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToPre 65535 "SNA" ;
+VAL_ 2566857346 VCVCCU_V2ICP_RequiredEnergyToCha 65535 "SNA" ;
+VAL_ 2566857346 VCVCCU_V2ICP_RequiredDurationToP 255 "SNA" ;
+VAL_ 2566857346 VCVCCU_V2ICP_RequiredDurati_0000 255 "SNA" ;
+VAL_ 2566855552 VCVCCU_V2ICP_ScheduledDepartureT 65535 "SNA" ;
+VAL_ 2566855552 VCVCCU_V2ICP_PreconditioningDesi 3 "SNA" 2 "no warm water, cooling and ventilation" 1 "hot water and heating" 0 "only warm water and ventilation" ;
+VAL_ 2566855552 VCVCCU_V2ICP_Preconditionin_0000 255 "SNA" 1 "Yes" 0 "No" ;
+VAL_ 2566855552 VCVCCU_V2ICP_AmbientTemperature 127 "SNA" ;
+VAL_ 2566855296 ProtectiveEarth_Offset 65535 "SNA" 65534 "Error" ;
+VAL_ 2566855296 VCVCCU_ControlPilot_MinVoltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566855296 VCVCCU_PlugPresent_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566855040 VCVCCU_Internal_VCC_SS_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566855040 VCVCCU_Internal_VCC_KL30_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566855040 VCVCCU_Internal_VCC_KL15_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566855040 VCVCCU_Internal_VCC_12V_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566854784 VCVCCU_Internal_VCC_SS_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566854784 VCVCCU_Internal_VCC_KL30_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566854784 VCVCCU_Internal_VCC_KL15_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566854784 VCVCCU_Internal_VCC_12V_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566865026 VCVCCU_V2G_DepartureTimeFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872448 VCVCCU_V2G_Appl_SccFuncModeReq 2 "Reset" 1 "ChargingMode" 0 "None" ;
+VAL_ 2566872448 VCVCCU_V2G_Appl_SccChargeModeReq 6 "StopCharging" 5 "Renegotiation" 4 "StartWeldingDetection" 3 "StartPowerDelivery" 2 "PreChargeCompleted" 1 "NegotiateChargingParameters" 0 "None" ;
+VAL_ 2566872448 VCVCCU_V2G_StateM_StateMachineSt 32 "PowerDemand" 31 "InitialAlignmentCheck" 30 "Pairing" 29 "FinePositioning" 28 "FinePositioningSetup" 27 "Error_Stopped" 26 "Error_WaitForRetry" 25 "Finished" 24 "StopCommunicationSession" 23 "SessionStop" 22 "WeldingDetection" 21 "MeteringReceipt" 20 "CurrentDemand" 19 "ChargingStatus" 18 "PowerDelivery" 17 "PreCharge" 16 "CableCheck" 15 "ChargeParameterDiscovery" 14 "Authorization" 13 "PaymentDetails" 12 "CertificateUpdate" 11 "CertificateInstallation" 10 "PaymentServiceSelection" 9 "ServiceDetails" 8 "ServiceDiscovery" 7 "SessionSetup" 6 "SupportedAppProtocol" 5 "TLConnection" 4 "SECCDiscoveryProtocol" 3 "WaitForIP" 2 "SLAC" 1 "Initialized" 0 "None" ;
+VAL_ 2566872448 VCVCCU_V2G_StateM_StateMachineMe 3 "SMMS_WaitingForApplication" 2 "SMMS_ProcessingResponse" 1 "SMMS_WaitingForResponse" 0 "SMMS_PreparingRequest" ;
+VAL_ 2566872448 VCVCCU_V2G_StateM_StateMachineEr 20 "SMER_InvalidControlPilotState" 19 "SMER_PaymentServiceSelection_ServiceMismatch" 18 "SMER_Timer_InitialAlignmentCheckOngoingTimer" 17 "SMER_Timer_PairingOngoingTimer" 16 "SMER_Timer_FinePositioningOngoingTimer" 15 "SMER_StackError" 14 "SMER_ServiceDetail_NoContractAndNoInstallationServiceAvailable" 13 "SMER_ServiceDiscovery_NoContractAndNoCertificateServiceAvailable" 12 "SMER_ServiceDiscovery_NoSharedPaymentOption" 11 "SMER_ServiceDiscovery_InvalidEnergyTransferMode" 10 "SMER_SECCDiscoveryProtocol_NoSharedSecurityOption" 9 "SMER_Initialization_ContractSelectionFailed" 8 "SMER_Timer_PreChargeOngoingTimer" 7 "SMER_Timer_CableCheckOngoingTimer" 6 "SMER_Timer_ChargeParameterDiscoveryOngoingTimer" 5 "SMER_Timer_AuthorizationOngoingTimer" 4 "SMER_Timer_ReadyToChargeTimer" 3 "SMER_Timer_CommunicationSetupTimer" 2 "SMER_Timer_SequencePerformanceTimer" 1 "SMER_Timer_IPAddressWaitTimer" 0 "SMER_NoError" ;
+VAL_ 2566872448 VCVCCU_V2G_StateM_InternetAvaila 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872448 VCVCCU_V2G_StateM_EnergyTransfer 32 "EnergyTransferMode_DC_Unique" 16 "EnergyTransferMode_DC_Combo_Core" 8 "EnergyTransferMode_DC_Extended" 4 "EnergyTransferMode_DC_Core" 2 "EnergyTransferMode_AC_3P" 1 "EnergyTransferMode_AC_1P" 0 "EnergyTransferMode_None" ;
+VAL_ 2566872192 VCVCCU_V2G_EthTrcv_TrcvLinkState 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_TrcvLinkState 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_StackError 16 "StackError_PBufToSmall" 15 "StackError_InvalidKeyPair" 14 "StackError_NvM" 13 "StackError_NegativeResponseCode" 12 "StackError_InvalidRxParameter" 11 "StackError_InvalidRxMessage" 10 "StackError_Crypto" 9 "StackError_XmlSecurity" 8 "StackError_Exi" 7 "StackError_IpBase" 6 "StackError_Timeout" 5 "StackError_Timeout_RequestNotAcknowledged" 4 "StackError_Timeout_RequestAcknowledged" 3 "StackError_InvalidTxParameter" 2 "StackError_TransportLayer" 1 "StackError_SLAC" 0 "StackError_NoError" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_SDPSecurityTx 16 "SDPSecurity_None" 0 "SDPSecurity_Tls" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_SAPSchemaID 4 "SAPSchemaIDs_None" 3 "SAPSchemaIDs_NumOfSupportedSchemas" 2 "SAPSchemaIDs_DIN" 1 "SAPSchemaIDs_ISO_Ed2_CD" 0 "SAPSchemaIDs_ISO" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_SAPResponseCode 2 "FAILED_NO_NEGOTIATION" 1 "OK_SUCCESSFUL_NEGOTIATION_WITH_MINOR_DEVIATION" 0 "OK_SUCCESSFUL_NEGOTIATION" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_MsgStatus 50 "MsgStatus_StopCommunicationSession_Failed" 49 "MsgStatus_StopCommunicationSession_OK" 48 "MsgStatus_SessionStop_Failed" 47 "MsgStatus_SessionStop_OK" 46 "MsgStatus_WeldingDetection_Failed" 45 "MsgStatus_WeldingDetection_OK" 44 "MsgStatus_CurrentDemand_Failed" 43 "MsgStatus_CurrentDemand_OK" 42 "MsgStatus_PreCharge_Failed" 41 "MsgStatus_PreCharge_OK" 40 "MsgStatus_CableCheck_Failed" 39 "MsgStatus_CableCheck_OK" 38 "MsgStatus_ChargingStatus_Failed" 37 "MsgStatus_ChargingStatus_OK" 36 "MsgStatus_MeteringReceipt_Failed" 35 "MsgStatus_MeteringReceipt_OK" 34 "MsgStatus_PowerDelivery_Failed" 33 "MsgStatus_PowerDelivery_OK" 32 "MsgStatus_ChargeParameterDiscovery_Failed" 31 "MsgStatus_ChargeParameterDiscovery_OK" 30 "MsgStatus_Authorization_Failed" 29 "MsgStatus_Authorization_OK" 28 "MsgStatus_PaymentDetails_Failed" 27 "MsgStatus_PaymentDetails_OK" 26 "MsgStatus_CertificateUpdate_Failed" 25 "MsgStatus_CertificateUpdate_OK" 24 "MsgStatus_CertificateInstallation_Failed" 23 "MsgStatus_CertificateInstallation_OK" 22 "MsgStatus_ReadProvCert_Failed" 21 "MsgStatus_ReadProvCert_OK" 20 "ApplSccWrapper_MsgStatus_ReadRootCerts_Failed" 19 "MsgStatus_ReadRootCerts_OK" 18 "MsgStatus_PaymentServiceSelection_Failed" 17 "MsgStatus_PaymentServiceSelection_OK" 16 "MsgStatus_ServiceDetail_Failed" 15 "MsgStatus_ServiceDetail_OK" 14 "MsgStatus_ReadContrCertChain_Failed" 13 "MsgStatus_ReadContrCertChain_OK" 12 "MsgStatus_ServiceDiscovery_Failed" 11 "MsgStatus_ServiceDiscovery_OK" 10 "MsgStatus_SessionSetup_Failed" 9 "MsgStatus_SessionSetup_OK" 8 "MsgStatus_SupportedAppProtocol_Failed" 7 "MsgStatus_SupportedAppProtocol_OK" 6 "MsgStatus_TransportLayer_Failed" 5 "MsgStatus_TransportLayer_OK" 4 "MsgStatus_SECCDiscoveryProtocol_Failed" 3 "MsgStatus_SECCDiscoveryProtocol_OK" 2 "MsgStatus_SLAC_Failed" 1 "MsgStatus_SLAC_OK" 0 "MsgStatus_None" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_MsgState 5 "MsgState_Timeout" 4 "MsgState_ResponseReceived" 3 "MsgState_TransmissionConfirmed" 2 "MsgState_RequestSent" 1 "MsgState_StreamingRequest" 0 "MsgState_WaitForNextRequest" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_IPAssigned 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_CyclicMsgTrig 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566872192 VCVCCU_V2G_Core_CyclicMsgRcvd 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Un 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566871680 VCVCCU_V2G_EVSEPresentVolta_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566871680 VCVCCU_V2G_EVSEPresentVoltage_Mu 127 "SNA" ;
+VAL_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Un 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566871424 VCVCCU_V2G_EVSEPresentCurre_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566871424 VCVCCU_V2G_EVSEPresentCurrent_Mu 127 "SNA" ;
+VAL_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentRipple 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566871168 VCVCCU_V2G_EVSEPeakCurrentR_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870912 VCVCCU_V2G_EVSEMinimumVoltageLim 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566870912 VCVCCU_V2G_EVSEMinimumVolta_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870656 VCVCCU_V2G_EVSEMinimumCurrentLim 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566870656 VCVCCU_V2G_EVSEMinimumCurre_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870400 VCVCCU_V2G_EVSEMaximumVoltageLim 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0000 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566870400 VCVCCU_V2G_EVSEMaximumVolta_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870144 VCVCCU_V2G_EVSEMaximumPowerLimit 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0000 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566870144 VCVCCU_V2G_EVSEMaximumPower_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869888 VCVCCU_V2G_EVSEMaximumCurrentLim 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869888 VCVCCU_V2G_EVSEMaximumCurre_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDeliver 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869632 VCVCCU_V2G_EVSEEnergyToBeDe_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566869376 VCVCCU_V2G_EVSECurrentRegulation 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869376 VCVCCU_V2G_EVSECurrentRegul_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566863234 VCVCCU_V2G_EVMaximumVoltageLimit 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566863234 VCVCCU_V2G_EVMaximumVoltage_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimitFl 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862978 VCVCCU_V2G_EVMaximumPowerLimit_U 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862978 VCVCCU_V2G_EVMaximumPowerLi_0000 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566862722 VCVCCU_V2G_EVMaximumCurrentLimit 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0000 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566862722 VCVCCU_V2G_EVMaximumCurrent_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862466 VCVCCU_V2G_EVEnergyRequestFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862466 VCVCCU_V2G_EVEnergyRequest_Unit 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566862466 VCVCCU_V2G_EVEnergyRequest_UnitF 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862210 VCVCCU_V2G_EVEnergyCapacityFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_Unit 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566862210 VCVCCU_V2G_EVEnergyCapacity_0000 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869120 VCVCCU_V2G_DateTimeNowFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869120 VCVCCU_V2G_ResponseCode 26 "FAILED_CERTIFICATE_REVOKED" 25 "FAILED_CERTIFICATE_NOT_ALLOWED_AT_THIS_EVSE" 24 "FAILED_CONTACTOR_ERROR" 22 "FAILED_WRONG_ENERGY_TRANSFER_TYPE" 21 "FAILED_NO_CHARGE_SERVICE_SELECTED" 20 "FAILED_METERING_SIGNATURE_NOT_VALID" 19 "FAILED_CHARGING_PROFILE_INVALID" 18 "FAILED_TARIFF_SELECTION_INVALID" 17 "FAILED_POWER_DELIVERY_NOT_APPLIED" 16 "FAILED_WRONG_CHARGE_PARAMETER" 15 "FAILED_CONTRACT_CANCELED" 14 "FAILED_CHALLENGE_INVALID" 13 "FAILED_CERT_CHAIN_ERROR" 12 "FAILED_NO_CERTIFICATE_AVAILABLE" 11 "FAILED_SIGNATURE_ERROR" 10 "FAILED_CERTIFICATE_EXPIRED" 9 "FAILED_PAYMENT_SELECTION_INVALID" 8 "FAILED_SERVICE_SELECTION_INVALID" 7 "FAILED_UNKNOWN_SESSION" 6 "FAILED_SERVICE_IDINVALID" 5 "FAILED_SEQUENCE_ERROR" 4 "FAILED" 3 "OK_CERTIFICATE_EXPIRES_SOON" 2 "OK_OLD_SESSION_JOINED" 1 "OK_NEW_SESSION_ESTABLISHED" 0 "OK" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEPowerLimitAchieve 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEVoltageLimitAchie 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEStatusCode 11 "RESERVED_C" 10 "RESERVED_B" 9 "RESERVED_A" 8 "RESERVED_9" 7 "RESERVED_8" 6 "EVSE_MALFUNCTION" 5 "EVSE_EMERGENCY_SHUTDOWN" 4 "EVSE_ISOLATION_MONITORING_ACTIVE" 3 "EVSE_UTILITY_INTERRUPT_EVENT" 2 "EVSE_SHUTDOWN" 1 "EVSE_READY" 0 "EVSE_NOT_READY" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEProcessing 1 "ONGOING" 0 "FINISHED" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSENotification 2 "RE_NEGOTIATION" 1 "STOP_CHARGING" 0 "NONE" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEIsolationStatusFl 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSEIsolationStatus 4 "NO_IMD" 3 "FAULT" 2 "WARNING" 1 "VALID" 0 "INVALID" ;
+VAL_ 2566869120 VCVCCU_V2G_EVSECurrentLimitAchie 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861954 VCVCCU_V2G_EVTargetCurrent_UnitF 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861954 VCVCCU_V2G_EVTargetCurrent_Unit 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566861698 VCVCCU_V2G_EVTargetVoltage_UnitF 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861698 VCVCCU_V2G_EVTargetVoltage_Unit 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566861442 VCVCCU_V2G_RemainingTimeToBulkSO 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861442 VCVCCU_V2G_RemainingTimeToB_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566861186 VCVCCU_V2G_RemainingTimeToFullSO 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0001 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566861186 VCVCCU_V2G_RemainingTimeToF_0002 9 "WH" 8 "W_S" 7 "W" 6 "VA" 5 "V" 4 "AH" 3 "A" 2 "S" 1 "M" 0 "H" ;
+VAL_ 2566860930 VCVCCU_V2G_StateM_EnergyTra_0000 15 "Undetermined" 5 "DC_unique" 4 "DC_combo_core" 3 "DC_extended" 2 "DC_core" 1 "AC_three_phase_core" 0 "AC_single_phase_core" ;
+VAL_ 2566860930 VCVCCU_V2G_EVErrorCode 11 "NO_DATA" 10 "FAILED_CHARGING_SYSTEM_INCOMPATIBILITY" 9 "RESERVED_C" 8 "RESERVED_B" 7 "RESERVED_A" 6 "FAILED_CHARGING_VOLTAGE_OUT_OF_RANGE" 5 "FAILED_CHARGING_CURRENTDIFFERENTIAL" 4 "FAILED_EVRESSMALFUNCTION" 3 "FAILED_CHARGER_CONNECTOR_LOCK_FAULT" 2 "FAILED_EVSHIFT_POSITION" 1 "FAILED_RESSTEMPERATURE_INHIBIT" 0 "NO_ERROR" ;
+VAL_ 2566860930 VCVCCU_V2G_EVPowerDeliveryParame 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_EVRESSConditioningFla 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_EVRESSConditioning 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_EVReady 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_EVCabinConditioningFl 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_EVCabinConditioning 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_ChargingComplete 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_FullSOCFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_FullSOC 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_BulkSOCFlag 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_BulkChargingCompleteF 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566860930 VCVCCU_V2G_BulkChargingComplete 1 "TRUE" 0 "FALSE" ;
+VAL_ 2566857090 VCVCCU_Vehicle_PwmChargeModeRequ 3 "SNA" 2 "Error" 1 "PwmChargeModeRequestD" 0 "PwmChargeModeRequestC" ;
+VAL_ 2566857090 VCVCCU_Vehicle_Renegotiate 3 "SNA" 2 "Reserved" 1 "Requested" 0 "Not_requested" ;
+VAL_ 2566857090 VCVCCU_Vehicle_ChargeSelection 3 "SNA" 2 "Error" 1 "SecondaryNode" 0 "PrimaryNode" ;
+VAL_ 2566857090 VCVCCU_Vehicle_StopCharge 3 "SNA" 2 "Error" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566857090 VCVCCU_Vehicle_ContactorStatus 3 "SNA" 2 "Stuck" 1 "Closed" 0 "Opened" ;
+VAL_ 2566857090 VCVCCU_Vehicle_LinkVoltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566857090 VCVCCU_Vehicle_IsolationMeasurem 3 "SNA" 2 "Error" 1 "Active" 0 "Not_Active" ;
+VAL_ 2566857090 VCVCCU_Vehicle_ContactorVoltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566857090 VCVCCU_Vehicle_PlugUnlockPermiss 3 "SNA" 2 "Reserved" 1 "Allowed" 0 "Not_allowed" ;
+VAL_ 2566857090 VCVCCU_Vehicle_PlugLockPermissio 3 "SNA" 2 "Reserved" 1 "Allowed" 0 "Not_allowed" ;
+VAL_ 2566857090 VCVCCU_Vehicle_ChargePermission 3 "SNA" 2 "EmergencyStop" 1 "Allowed" 0 "Not_allowed" ;
+VAL_ 2566854528 E2E_State_ChargeFromVehicle 119 "SOFT_RUNTIMEERROR" 69 "INVALID_NND" 67 "INVALID_ERR" 66 "INVALID_SEQ" 65 "INVALID_REP" 64 "INVALID_OK" 53 "INIT_NND" 51 "INIT_ERR" 50 "INIT_SEQ" 49 "INIT_REP" 48 "INIT_OK" 37 "NODATA_NND" 35 "NODATA_ERR" 34 "NODATA_SEQ" 33 "NODATA_REP" 32 "NODATA_OK" 5 "VALID_NND" 3 "VALID_ERR" 2 "VALID_SEQ" 1 "VALID_REP" 0 "VALID_OK" 255 "HARD_RUNTIMEERROR" ;
+VAL_ 2566854528 VCVCCU_Vehicle_MobilizationStatu 3 "SNA" 2 "Vehicle_immobile_fault" 1 "Vehicle_immobile" 0 "Vehicle_mobile" ;
+VAL_ 2566854528 VCVCCU_Vehicle_ChargingStatus 3 "SNA" 2 "Reserved" 1 "StartCharging" 0 "StopCharging" ;
+VAL_ 2566854528 VCVCCU_Vehicle_ChargeSelectionAc 3 "SNA" 2 "Error" 1 "SecondaryNode" 0 "PrimaryNode" ;
+VAL_ 2566854528 VCVCCU_Vehicle_ContactorRequest 3 "SNA" 2 "ForceOpen" 1 "Close" 0 "Open" ;
+VAL_ 2566854528 VCVCCU_Vehicle_IsolationMea_0000 3 "SNA" 2 "Reserved" 1 "Requested" 0 "Not_requested" ;
+VAL_ 2566856834 VCVCCU_Inlet_MotorRequest 3 "SNA" 2 "Reserved" 1 "Unlock" 0 "Lock" ;
+VAL_ 2566856834 VCVCCU_ChargeUnit_Request 3 "SNA" 2 "EnableVentilation" 1 "Enable" 0 "Disable" ;
+VAL_ 2566856834 VCVCCU_ControlPilot_ChargeModeRe 7 "SNA" 6 "Error" 5 "Reserved3" 4 "Reserved2" 3 "Reserved1" 2 "ModeD" 1 "ModeC" 0 "ModeB" ;
+VAL_ 2566856834 VCVCCU_PlugLock_MotorRequest 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "Measurement" 2 "DirectionB" 1 "DirectionA" 0 "Stop" ;
+VAL_ 2566856834 VCVCCU_RTC_TimerValue 255 "SNA" ;
+VAL_ 2566856834 VCVCCU_RTC_TimerRequest 3 "SNA" 2 "Reserved" 1 "Requested" 0 "Not_requested" ;
+VAL_ 2566856834 VCVCCU_LED2_Request 255 "SNA" ;
+VAL_ 2566856834 VCVCCU_LED1_Request 255 "SNA" ;
+VAL_ 2566856834 VCVCCU_LED0_Request 255 "SNA" ;
+VAL_ 2566856834 VCVCCU_HighSideOut4_Request 3 "SNA" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566856834 VCVCCU_HighSideOut3_Request 3 "SNA" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566856834 VCVCCU_HighSideOut2_Request 3 "SNA" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566856834 VCVCCU_HighSideOut1_Request 3 "SNA" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566856834 VCVCCU_HighSideOut0_Request 3 "SNA" 2 "Reserved" 1 "Enable" 0 "Disable" ;
+VAL_ 2566854272 VCVCCU_RTC_Wakeup 3 "SNA" 2 "Error" 1 "Wakeup_detected" 0 "Wakeup_not_detected" ;
+VAL_ 2566854272 VCVCCU_RTC_TimerStatus 3 "SNA" 2 "Elapsed" 1 "Running" 0 "Stopped" ;
+VAL_ 2566854016 VCVCCU_HighSideOut3_Input_Wakeup 3 "SNA" 2 "Reserved" 1 "Wakeup_detected" 0 "Wakeup_not_detected" ;
+VAL_ 2566854016 VCVCCU_HighSideOut4_Input_Status 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut4_Input_Deboun 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut3_Input_Status 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut3_Input_Deboun 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut2_Input_Status 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut2_Input_Deboun 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut1_Input_Status 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut1_Input_Deboun 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut0_Input_Status 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_HighSideOut0_Input_Deboun 3 "SNA" 2 "Reserved" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566854016 VCVCCU_LED2_SelfDiagnosticStatus 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_LED1_SelfDiagnosticStatus 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_LED0_SelfDiagnosticStatus 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_HighSideOut4_SelfDiagnost 7 "SNA" 6 "Reserved" 5 "CurrentLimitation" 4 "InverseCurrent" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_HighSideOut3_SelfDiagnost 7 "SNA" 6 "Reserved" 5 "CurrentLimitation" 4 "InverseCurrent" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_HighSideOut2_SelfDiagnost 7 "SNA" 6 "Reserved" 5 "CurrentLimitation" 4 "InverseCurrent" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_HighSideOut1_SelfDiagnost 7 "SNA" 6 "Reserved" 5 "CurrentLimitation" 4 "InverseCurrent" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566854016 VCVCCU_HighSideOut0_SelfDiagnost 7 "SNA" 6 "Reserved" 5 "CurrentLimitation" 4 "InverseCurrent" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853760 VCVCCU_ChargeUnit_State 7 "SNA" 6 "EVSEStateF" 5 "EVSEStateE" 4 "EVSEStateD" 3 "EVSEStateC" 2 "EVSEStateB2" 1 "EVSEStateB1" 0 "EVSEStateA" ;
+VAL_ 2566853760 VCVCCU_ChargeUnit_Mode 7 "SNA" 6 "Error" 5 "Reserved3" 4 "ChargePantograph" 3 "ChargeLIN" 2 "ChargingNotAllowed" 1 "ChargePwm" 0 "ChargeV2G" ;
+VAL_ 2566853760 VCVCCU_ChargeUnit_MaxCurrent 255 "SNA" 254 "Error" ;
+VAL_ 2566853760 VCVCCU_ControlPilot_Wakeup 3 "SNA" 2 "Error" 1 "Wakeup_detected" 0 "Wakeup_not_detected" ;
+VAL_ 2566853760 VCVCCU_ControlPilot_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566853760 VCVCCU_ControlPilot_Frequency 65535 "SNA" 65534 "Error" ;
+VAL_ 2566853760 VCVCCU_ControlPilot_DutyCycle 255 "SNA" 254 "Error" ;
+VAL_ 2566853504 VCVCCU_Inlet_HWVariant 3 "SNA" 2 "Reserved1" 1 "Combo1" 0 "Combo2" ;
+VAL_ 2566853504 VCVCCU_S3Switch_Status 3 "SNA" 2 "Error" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566853504 VCVCCU_S3Switch_DebouncedStatus 3 "SNA" 2 "Error" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566853504 VCVCCU_DigitalInput_DebouncedSta 3 "SNA" 2 "Error" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566853504 VCVCCU_Inlet_MaxCurrent 255 "SNA" 254 "Error" ;
+VAL_ 2566853504 VCVCCU_Inlet_MotorStatus 7 "SNA" 6 "Error" 5 "Reserved3" 4 "Reserved2" 3 "Reserved1" 2 "Moving" 1 "Locked" 0 "Unlocked" ;
+VAL_ 2566853504 VCVCCU_Inlet_ConnectionStatus 3 "SNA" 2 "Error" 1 "Connected" 0 "Not_connected" ;
+VAL_ 2566853504 VCVCCU_PlugPresent_Wakeup 3 "SNA" 2 "Error" 1 "Wakeup_detected" 0 "Wakeup_not_detected" ;
+VAL_ 2566853504 VCVCCU_PlugPresent_Status 3 "SNA" 2 "Error" 1 "Connected" 0 "Not_connected" ;
+VAL_ 2566853504 VCVCCU_POSFeedback_SelfDiagnosti 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "OutOfRange" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853504 VCVCCU_PlugPresent_SelfDiagnosti 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853504 VCVCCU_DigitalInput_Wakeup 3 "SNA" 2 "Error" 1 "Wakeup_detected" 0 "Wakeup_not_detected" ;
+VAL_ 2566853504 VCVCCU_PlugPresent_Resistance 7 "SNA" 6 "Error" 5 "S3_480_Ohm" 4 "S3_150_Ohm" 3 "1500_Ohm" 2 "680_Ohm" 1 "220_Ohm" 0 "100_Ohm" ;
+VAL_ 2566853504 VCVCCU_PlugLock_Output1_SelfDiag 7 "SNA" 6 "Reserved2" 5 "ShortBtwPins" 4 "SupplyVoltageFailure" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853504 VCVCCU_DigitalInput_Status 3 "SNA" 2 "Error" 1 "Pressed" 0 "Not_pressed" ;
+VAL_ 2566853504 VCVCCU_PlugLock_Output0_SelfDiag 7 "SNA" 6 "Reserved2" 5 "ShortBtwPins" 4 "SupplyVoltageFailure" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853504 VCVCCU_PlugLock_MotorStatus 7 "SNA" 6 "Error" 5 "Reserved2" 4 "Reserved1" 3 "Measurement" 2 "DirectionB" 1 "DirectionA" 0 "Idle" ;
+VAL_ 2566853504 VCVCCU_POSFeedback_Voltage 65534 "Error" 65535 "SNA" ;
+VAL_ 2566853248 VCVCCU_PTC2_SelfDiagnosticStatus 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566853248 VCVCCU_PTC2_Temperature 65534 "Error" 65535 "SNA" ;
+VAL_ 2566853248 VCVCCU_PTC2_Resistance 65534 "Error" 65535 "SNA" ;
+VAL_ 2566853248 VCVCCU_PTC2_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566852992 VCVCCU_PTC1_SelfDiagnosticStatus 7 "SNA" 6 "Reserved3" 5 "Reserved2" 4 "Reserved1" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566852992 VCVCCU_PTC1_Temperature 65534 "Error" 65535 "SNA" ;
+VAL_ 2566852992 VCVCCU_PTC1_Resistance 65534 "Error" 65535 "SNA" ;
+VAL_ 2566852992 VCVCCU_PTC1_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2564816770 ProprietaryNetwork2 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 ProprietaryNetwork1 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 J1939Network4 3 "Don’t Care/take no action (leave as is)" 2 "Reserved" 1 "Start Broadcast" 0 "Stop Broadcast" ;
+VAL_ 2564816770 HoldSignal 15 "Not available" 1 "Devices whose broadcast state ha" 0 "All devices" ;
+VAL_ 2564816770 J1939Network3 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 J1939Network2 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 ISO9141 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 SAE_J1850 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 ManufacturerSpecificPort 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 CurrentDataLink 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 SAE_J1587 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 SAE_J1922 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 J1939Network1 3 "Don't care" 2 "Reserved" 1 "Start broadcast" 0 "Stop broadcast" ;
+VAL_ 2564816770 SuspendSignal 15 "NotAvailable" 14 "ResumingNormalBroadcastPattern" 3 "TemporarySuspensionOfSomeMessages" 2 "TemporarySuspensionOfAllBroadcasts" 1 "IndefiniteSuspensionOfSomeMessages" 0 "IndefiniteSuspensionOfAllBroadcasts" ;
+VAL_ 2633990272 Awake_ChargeLin_Actv_VCVCCU 1 "ChargeLin_active" 0 "ChargeLin_not_active" ;
+VAL_ 2633990272 Awake_Clamp15_Actv_VCVCCU 1 "Clamp15_active" 0 "Clamp15_not_active" ;
+VAL_ 2633990272 Awake_ChargeCom_Actv_VCVCCU 1 "ChargeCom_active" 0 "ChargeCom_not_active" ;
+VAL_ 2633990272 Awake_Diag_Actv_VCVCCU 1 "Diag_active" 0 "Diag_not_active" ;
+VAL_ 2633990272 WakeupRsn_VCVCCU 5 "CLAMP15" 255 "SNA" 4 "SWITCH" 3 "RTC" 2 "PLUG_PRESENT" 1 "CONTROL_PILOT" 0 "NETWORK" ;
+VAL_ 2566834816 DTC_SPN_ConvMd_VCCU 1 "Version 1, 2 or 3" 0 "Version 4" ;
+VAL_ 2566834816 DTC_OccCnt_VCCU 127 "SNA" ;
+VAL_ 2566834816 DTC_RSL_Flash_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "Fast Flash" 0 "Slow Flash" ;
+VAL_ 2566834816 DTC_PL_Flash_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "Fast Flash" 0 "Slow Flash" ;
+VAL_ 2566834816 DTC_RSL_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2566834816 DTC_PL_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2566834816 DTC_MIL_Stat_VCCU 3 "SNA" 2 "Short MIL for WWH OBD
+" 1 "On" 0 "Off" ;
+VAL_ 2566834816 DTC_MIL_Flash_Stat_VCCU 3 "SNA" 2 "Class C DTC" 1 "Fast Flash" 0 "Slow Flash" ;
+VAL_ 2566834816 DTC_AWL_Flash_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "Fast Flash" 0 "Slow Flash" ;
+VAL_ 2566834816 DTC_AWL_Stat_VCCU 3 "SNA" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2566852736 VCVCCU_PTC0_SelfDiagnosticStatus 7 "SNA" 6 "Reserved2" 5 "Reserved1" 4 "OutOfRange" 3 "OpenLoad" 2 "ShortToBat" 1 "ShortToGnd" 0 "OK" ;
+VAL_ 2566852736 VCVCCU_PTC0_Resistance 65534 "Error" 65535 "SNA" ;
+VAL_ 2566852736 VCVCCU_PTC0_Raw 65534 "Error" 65535 "SNA" ;
+VAL_ 2566852736 VCVCCU_PTC0_Temperature 65534 "Error" 65535 "SNA" ;
+

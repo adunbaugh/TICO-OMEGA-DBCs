@@ -1,0 +1,112 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ EStop1_AN37 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EStop2_AN39 : 31|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ InertiaSw_AN19 : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1 WakesAndSources: 8 Vector__XXX
+ SG_ DG33_st : 3|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DRVPVolt_IM : 7|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ XDRPVolt_IM : 11|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2 AccelPedal: 8 Vector__XXX
+ SG_ AN30_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN29_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 3 Contactors: 8 Vector__XXX
+ SG_ AN5_adc_cnt : 7|8@0+ (2,0) [0|1] "" Vector__XXX
+ SG_ AN6_adc_cnt : 15|8@0+ (2,0) [0|1] "" Vector__XXX
+ SG_ AN7_adc_cnt : 23|8@0+ (2,0) [0|1] "" Vector__XXX
+ SG_ AN9_adc_cnt : 31|8@0+ (2,0) [0|1] "" Vector__XXX
+ SG_ AN10_adc_cnt : 39|8@0+ (2,0) [0|1] "" Vector__XXX
+ SG_ AN11_adc_cnt : 47|8@0+ (2,0) [0|1] "" Vector__XXX
+
+BO_ 4 Brake: 8 Vector__XXX
+ SG_ AN23_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN2_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 5 PRNDL: 8 Vector__XXX
+ SG_ AN3_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN4_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN12_adc_cnt : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN13_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 6 CruiseControl: 8 Vector__XXX
+ SG_ AN14_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN15_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN16_adc_cnt : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN17_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 7 HVAC: 8 Vector__XXX
+ SG_ AN24_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN27_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN8_adc_cnt : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN16_adc_cnt : 55|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 8 EStop1: 8 Vector__XXX
+ SG_ DG1_frequency_st : 7|32@0+ (1,0) [0|1] "0.01 Hz" Vector__XXX
+
+BO_ 9 ThermalManagement: 8 Vector__XXX
+ SG_ AN28_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN21_adc_cnt : 23|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AN22_adc_cnt : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 10 EStop2: 8 Vector__XXX
+ SG_ AN19_adc_cnt : 7|16@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG37_st : 19|4@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DG39_st : 23|4@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 11 IntlMeasurement_RCM112: 8 Vector__XXX
+ SG_ SENSORPOWERA : 0|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERB : 8|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERC : 16|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ SENSORPOWERD : 24|8@1+ (0.05,0) [0|10] "V" Vector__XXX
+ SG_ VBATT : 32|10@1+ (0.1,0) [0|75] "V" Vector__XXX
+ SG_ DRVP : 42|10@1+ (0.1,0) [0|75] "V" Vector__XXX
+
+BO_ 12 IntlMeasurement_GCM196: 8 Vector__XXX
+ SG_ BATTERY_VOLTAGE : 0|8@1+ (1,0) [0|0] "V" Vector__XXX
+ SG_ VSENS_SUPPLY : 8|8@1+ (1,0) [0|0] "V" Vector__XXX
+ SG_ LAST_RESET : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RESET_CNT : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+

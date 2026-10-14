@@ -1,0 +1,222 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ HwType : 24|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 529 Wakes_and_Modes: 8 VCU
+ SG_ Wake : 0|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ WakeChgr : 2|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ RunMode : 4|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ ActualDriveMode : 6|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ ChargeMode : 8|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ ActualControlMode_DC1 : 16|4@1+ (1,0) [0|0] "Enum" Vector__XXX
+ SG_ ActualControlMode_DC2 : 20|4@1+ (1,0) [0|0] "Enum" Vector__XXX
+
+BO_ 530 Speed_and_Distance: 8 VCU
+ SG_ VehicleSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "kph" Vector__XXX
+ SG_ Odometer : 16|32@1+ (0.005,0) [0|21055400] "km" Vector__XXX
+
+BO_ 531 Energy: 8 VCU
+ SG_ BattSysEnergySystem : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ StateOfCharge : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ BattSysEnergySysInitial : 24|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ StateOfChrgInitial : 40|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 532 Temperature: 8 VCU
+ SG_ AmbientTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+
+BO_ 533 Energy2: 8 VCU
+ SG_ PTCHtr_Energy : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ LV12V_Energy : 16|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ LV24V_Energy : 32|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+
+BO_ 534 Energy3: 8 VCU
+ SG_ LiftSysEnergy : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ PSSysEnergy : 16|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+
+BO_ 535 BuildInfo: 8 VCU
+ SG_ SwID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CalID : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BuildNumber : 16|32@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ DateStamp : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 536 BMS1: 8 VCU
+ SG_ BATT_Cnc_SOC_String_Avg : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ BATT_Cnc_Volt_String_Avg : 8|11@1+ (1,0) [0|1250] "V" Vector__XXX
+ SG_ BATT_Sys_Volt_String_Avg : 19|11@1+ (1,0) [0|1250] "V" Vector__XXX
+ SG_ APP_State_ReqMode : 30|5@1+ (1,0) [0|4] "Enum" Vector__XXX
+ SG_ BATT_Contactor_StringsConnected : 35|5@1+ (1,0) [0|24] "Count" Vector__XXX
+ SG_ BATT_Comm_StringsAddressed : 40|5@1+ (1,0) [0|24] "Count" Vector__XXX
+ SG_ BATT_SysState : 45|4@1+ (1,0) [0|15] "Enum" Vector__XXX
+ SG_ BATT_01_PosDcContWeldedPri : 49|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_02_PosDcContWeldedPri : 51|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_03_PosDcContWeldedPri : 53|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_01_TempBrickImbalance : 55|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_02_PosDcContWeldedSec : 57|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_01_PosDcContWeldedSec : 59|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_03_PosDcContWeldedSec : 61|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+
+BO_ 537 BMS2: 8 VCU
+ SG_ BATT_01_IsolationExtFault : 0|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_01_IsolationIntFault : 2|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_02_IsolationExtFault : 4|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_02_IsolationIntFault : 6|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_03_IsolationExtFault : 8|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ BATT_03_IsolationIntFault : 10|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+
+BO_ 538 TMS1: 8 VCU
+ SG_ reported_HV_voltage : 0|16@1+ (0.005,0) [0|3276.75] "V" Vector__XXX
+ SG_ TMS_Fault_Code : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TMS_Cab_Mode_Status : 24|3@1+ (1,0) [0|7] "Enum" Vector__XXX
+ SG_ TMS_Batt_Mode_Status : 27|3@1+ (1,0) [0|7] "Enum" Vector__XXX
+ SG_ TMS_State_Status : 30|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ TMS_PE_Temp_setpoint : 32|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ TMS_ESSMinModuleTemp_setpoint : 40|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ TMS_ESSMinModuleTemp_feedback : 48|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+
+BO_ 539 TMS2: 8 VCU
+ SG_ TMS_ESSMaxModuleTemp_setpoint : 0|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ TMS_ESSMaxModuleTemp_feedback : 8|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+
+BO_ 540 Drivetrain_ZF1: 8 VCU
+ SG_ CruiseCtrlEnableSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseCtrlSetSwitch : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseCtrlSetSpeed : 8|8@1+ (1,0) [0|250] "km/h" Vector__XXX
+ SG_ CruiseCtrlStatesRequest : 4|3@1+ (1,0) [0|7] "sts" Vector__XXX
+ SG_ SpeedLimiterFunctionActive : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlFunctionActive : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CruiseControlSetSpeed : 24|8@1+ (1,0) [0|250] "km/h" Vector__XXX
+ SG_ ABSFullyOperational : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CeTraxSystemReady : 32|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActualDriveMode_ZF : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 541 Drivetrain_ZF2: 8 VCU
+ SG_ DCL_Max_Current_Charge : 0|16@1+ (0.05,-1600) [-1600|1612.8] "A" Vector__XXX
+ SG_ DCL_Max_Current_DisCharge : 16|16@1+ (0.05,-1600) [-1600|1612.8] "A" Vector__XXX
+
+BO_ 542 Drivetrain_Dana1: 8 VCU
+ SG_ Driveline_Mode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ DCU_Functional_Safety_Status : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Driveline_Health : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Consolidated_Mtr_Inv_Stat : 11|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Regeneration_Bias : 16|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Maximum_Vehicle_Speed_Limit : 24|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ Thermal_Indicator : 40|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Motor_Cooling_Flow_Request : 48|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Drive_Cooling_Flow_Request : 56|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+
+BO_ 543 Drivetrain_Dana2: 8 VCU
+ SG_ Max_Discharge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 16|12@1+ (1,0) [0|4094] "A" Vector__XXX
+
+
+
+CM_ SG_ 3221225472 HwType "Hardware type for this target";
+CM_ BO_ 529 "1000 ms";
+CM_ SG_ 529 Wake "Indicates that modules wake signal is acitve.
+";
+CM_ SG_ 529 WakeChgr "Indicates that modules wake signal is acitve due to a charge event.";
+CM_ SG_ 529 RunMode "Indicates that run mode is active.";
+CM_ SG_ 529 ActualDriveMode "Working mode of propulsion system";
+CM_ SG_ 529 ChargeMode "Indicates that charge mode is active.";
+CM_ SG_ 529 ActualControlMode_DC1 "DCDC 1 control state";
+CM_ SG_ 529 ActualControlMode_DC2 "DCDC 2 control state";
+CM_ BO_ 530 "1000 ms";
+CM_ BO_ 531 "1000 ms";
+CM_ SG_ 531 BattSysEnergySysInitial "Initial battery energy at system start.";
+CM_ SG_ 531 StateOfChrgInitial "Initial battery state of charge at system start.";
+CM_ BO_ 532 "1000 ms";
+CM_ SG_ 532 AmbientTemp "Temperature of air surrounding vehicle.";
+CM_ BO_ 533 "1000 ms";
+CM_ SG_ 533 PTCHtr_Energy "Energy consumed by the cabin heater this drive cycle.";
+CM_ SG_ 533 LV12V_Energy "Energy consumed by the 12V system this drive cycle.";
+CM_ SG_ 533 LV24V_Energy "Energy consumed by the 24V system this drive cycle.";
+CM_ BO_ 534 "1000 ms";
+CM_ SG_ 534 LiftSysEnergy "Energy consumed by the fifth wheel system this drive cycle.";
+CM_ SG_ 534 PSSysEnergy "Energy consumed by the power steering and air compressor inverter this drive cycle.";
+CM_ BO_ 535 "1000 ms";
+CM_ SG_ 535 SwID "Software name for this build";
+CM_ SG_ 535 CalID "Calibration ID for this software package";
+CM_ SG_ 535 BuildNumber "Unique build ID for this software package";
+CM_ SG_ 535 DateStamp "Date and time stamp the model was built
+";
+CM_ BO_ 536 "1000 ms";
+CM_ BO_ 537 "1000 ms";
+CM_ BO_ 538 "1000 ms";
+CM_ BO_ 539 "1000 ms";
+CM_ BO_ 540 "1000 ms";
+CM_ SG_ 540 CruiseCtrlEnableSwitch "Set Switch indication 
+(Activate EVCU specific function, e.g. Speed Limitation, depending on the current send Cruise Control State Request)";
+CM_ SG_ 540 CruiseCtrlSetSwitch "Set Switch indication 
+(Activate EVCU specific function, e.g. Speed Limitation, depending on the current send Cruise Control State Request)";
+CM_ SG_ 540 CruiseCtrlSetSpeed "Cruise Control Set Speed
+(Speed Signal to EVCU for Limiting or keep the Speed)";
+CM_ SG_ 540 CruiseCtrlStatesRequest "1 - Cruise Control Request 
+6- Speed Limiter Request";
+CM_ SG_ 540 SpeedLimiterFunctionActive "Indication that speed limiter is active";
+CM_ SG_ 540 CruiseControlFunctionActive "Indication that cruise control is active
+";
+CM_ SG_ 540 CruiseControlSetSpeed "Speed limiter set speed in kph
+";
+CM_ SG_ 540 ABSFullyOperational "Signal which indicates whether an ABS system is fully operational or whether its functionality is reduced by a defect or by";
+CM_ SG_ 540 CeTraxSystemReady "Ready status of system
+";
+CM_ SG_ 540 ActualDriveMode_ZF "Working mode of CeTrax-System";
+CM_ BO_ 541 "1000 ms";
+CM_ BO_ 542 "1000 ms";
+CM_ BO_ 543 "1000 ms";
+VAL_ 529 Wake 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 WakeChgr 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 RunMode 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 ActualDriveMode 0 "Stop" 1 "Driving" 2 "Regen" 3 "Error" ;
+VAL_ 529 ChargeMode 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 ActualControlMode_DC1 0 "Standby" 1 "VoltageControl" 2 "CurrentControl" 13 "ErrorState" 14 "Not Available" 15 "Error Indicator" 12 "ShuttingDown" ;
+VAL_ 529 ActualControlMode_DC2 0 "Standby" 1 "VoltageControl" 2 "CurrentControl" 12 "ShuttingDown" 13 "ErrorState" 14 "NotAvailable" 15 "ErrorIndicator" ;
+VAL_ 536 APP_State_ReqMode 0 "Off" 1 "Idle" 2 "Charge" 3 "Discharge" ;
+VAL_ 536 BATT_SysState 0 "StandByNotReady" 1 "StandByReady" 10 "Drive" 11 "Charge" 13 "Cooldown" ;
+VAL_ 538 TMS_Cab_Mode_Status 0 "Off" 1 "Cool Only" 2 "Heat Only" 3 "Heat and Cool (Defrost)" ;
+VAL_ 538 TMS_Batt_Mode_Status 0 "Standby" 1 "Circulate" 2 "Passive Cooling" 3 "Active Cooling" 4 "Heating" 5 "Coolant Fill" 6 "Auto" ;
+VAL_ 538 TMS_State_Status 0 "Off" 1 "On" 2 "Reserved" 3 "Fault" ;
+VAL_ 540 CeTraxSystemReady 0 "Not Ready" 1 "Ready" ;
+VAL_ 540 ActualDriveMode_ZF 0 "Stop" 1 "Driving" 2 "Regen" 3 "Error" ;
+VAL_ 542 Driveline_Mode 0 "Neutral" 1 "Forward traction" 2 "Forward coast" 3 "Forward brake" 4 "Reverse traction" 5 "Reverse coast" 6 "Reverse brake" 7 "Direction change to forward" 8 "Direction change to reverse" 9 "Transitional" ;
+VAL_ 542 DCU_Functional_Safety_Status 0 "No safe state" 1 "Safe state" 2 "Error" 3 "Not available" ;
+VAL_ 542 Driveline_Health 0 "Normal Operation" 1 "Degraded operation DCU" 2 "Degraded operation drive mot/inv" 3 "Degraded oper drv mot/inv or DCU" 4 "Driveline disabled" ;
+VAL_ 542 Consolidated_Mtr_Inv_Stat 0 "Initializing" 1 "Standby" 2 "Wait for high voltage" 3 "Activation" 4 "Deactivation" 5 "Operational" 6 "Failure" 7 "Shutdown" 8 "Ready to power off" 9 "Wait for safe condition" ;
+

@@ -1,0 +1,504 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SCS200 Host
+
+
+BO_ 2565840896 CAN_Tx_Query: 8 Host
+ SG_ CAN_Tx_Query_Mux M : 0|16@1+ (1,0) [0|0] ""  SCS200
+ SG_ Switch_OUT_01 m55299 : 20|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_02 m55299 : 16|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_03 m55299 : 28|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_04 m55299 : 24|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_05 m55299 : 36|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_06 m55299 : 32|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_07 m55299 : 44|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_08 m55299 : 40|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_09 m55299 : 52|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_10 m55299 : 48|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_11 m55299 : 60|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Switch_OUT_12 m55299 : 56|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Query_OUT_01_Data m55315 : 20|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_02_Data m55315 : 16|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_03_Data m55315 : 28|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_04_Data m55315 : 24|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_05_Data m55315 : 36|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_06_Data m55315 : 32|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_07_Data m55315 : 44|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_08_Data m55315 : 40|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_09_Data m55315 : 52|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_10_Data m55315 : 48|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_11_Data m55315 : 60|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_OUT_12_Data m55315 : 56|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Query_AI_Module_Data m55331 : 16|2@1+ (1,0) [0|2] ""  SCS200
+ SG_ Safe_State_Configuration m55347 : 24|8@1+ (1,0) [0|15] ""  SCS200
+ SG_ Advanced_Options m55347 : 16|8@1+ (1,0) [0|13] ""  SCS200
+ SG_ Safe_State_Output_Options m55347 : 32|3@1+ (1,0) [0|3] ""  SCS200
+ SG_ Safe_State_Heartbeat_Time m55347 : 32|4@1+ (1,0) [0|15] ""  SCS200
+ SG_ Safe_State_Heartbeat_Mode m55347 : 32|2@1+ (1,0) [0|2] ""  SCS200
+ SG_ Mode m55395 : 16|8@1+ (1,0) [0|10] ""  SCS200
+ SG_ New_ID m55395 : 24|8@1+ (1,0) [0|255] ""  SCS200
+ SG_ Multiplier_ON_Delay m55395 : 32|4@1+ (1,0) [0|10] ""  SCS200
+ SG_ Multiplier_OFF_Delay m55395 : 40|4@1+ (1,0) [0|10] ""  SCS200
+ SG_ Base_OFF_Delay m55395 : 44|4@1+ (1,0) [0|7] ""  SCS200
+ SG_ Base_ON_Delay m55395 : 36|4@1+ (1,0) [0|7] ""  SCS200
+ SG_ PMA_Mode m55395 : 24|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ OUT_Number m55395 : 24|4@1+ (1,0) [0|12] ""  SCS200
+ SG_ Bitrate m55395 : 24|8@1+ (1,0) [2|8] ""  SCS200
+ SG_ OUT_Number_Low_Current_1 m55395 : 24|8@1+ (1,0) [4|12] ""  SCS200
+ SG_ OUT_Number_Low_Current_2 m55395 : 32|8@1+ (1,0) [4|12] ""  SCS200
+ SG_ Open_Load_Message m55395 : 32|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Trip_2 m55395 : 32|1@1+ (1,0) [0|1] ""  SCS200
+ SG_ Nominal_Current m55395 : 32|3@1+ (1,0) [0|7] ""  SCS200
+ SG_ Bootloader_Mode m55427 : 56|8@1+ (1,0) [56|56] ""  SCS200
+ SG_ Bootoader_Options m55427 : 16|8@1+ (1,0) [0|255] ""  SCS200
+
+BO_ 2565537536 J1939_RQST: 3 Host
+ SG_ J1939_RQST : 8|8@1+ (1,0) [0|255] ""  SCS200
+
+BO_ 2566849793 Module_Data: 8 SCS200
+ SG_ Total_Current : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Module_Temperature : 48|16@1+ (0.01,0) [0|655.35] "°C"  Host
+ SG_ Voltage_Power_Supply : 32|16@1+ (10,0) [0|65535] "mV"  Host
+ SG_ CAN_ID : 0|8@1+ (1,0) [0|255] ""  Host
+
+BO_ 2566850049 Analog_Inputs_1_4: 8 SCS200
+ SG_ AI_01 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ AI_02 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ AI_03 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ AI_04 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850305 AI_5_6_PMA_Mode: 8 SCS200
+ SG_ AI_05 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ AI_06 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ PMA_Mode : 56|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566850561 Output_Voltage_1_4: 8 SCS200
+ SG_ Voltage_OUT_01 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_02 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_03 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_04 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566851073 Output_Voltage_5_8: 8 SCS200
+ SG_ Voltage_OUT_05 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_06 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_07 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_08 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566851585 Output_Voltage_9_12: 8 SCS200
+ SG_ Voltage_OUT_09 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_10 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_11 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Voltage_OUT_12 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850817 Output_Current_1_4: 8 SCS200
+ SG_ Current_OUT_01 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_02 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_03 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_04 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566851329 Output_Current_5_8: 8 SCS200
+ SG_ Current_OUT_05 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_06 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_07 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_08 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566851841 Output_Current_9_12: 8 SCS200
+ SG_ Current_OUT_09 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_10 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_11 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Current_OUT_12 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566852097 Output_Module_Diagnostic: 8 SCS200
+ SG_ Diagnostic_OUT_01 : 4|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_02 : 0|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_03 : 12|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_04 : 8|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_05 : 20|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_06 : 16|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_07 : 28|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_08 : 24|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_09 : 36|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_10 : 32|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_11 : 44|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_OUT_12 : 40|3@1+ (1,0) [0|4] ""  Host
+ SG_ Diagnostic_Supply_Overvoltage : 52|1@1+ (1,0) [0|1] ""  Host
+ SG_ Diagnostic_Supply_Undervoltage : 48|1@1+ (1,0) [0|1] ""  Host
+ SG_ Diagnostic_Module_Current : 56|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566852353 Output_Switching_States: 8 SCS200
+ SG_ Switching_State_OUT_01 : 4|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_02 : 0|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_03 : 12|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_04 : 8|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_05 : 20|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_06 : 16|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_07 : 28|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_08 : 24|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_09 : 36|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_10 : 32|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_11 : 44|1@1+ (1,0) [0|1] ""  Host
+ SG_ Switching_State_OUT_12 : 40|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566855169 SW_Version_Info: 8 SCS200
+ SG_ SW_Version : 48|16@1+ (1,0) [0|65535] ""  Host
+
+BO_ 2566852609 Config_Data_0x60_0x67: 8 SCS200
+ SG_ OUT_01_Trip_2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_01_Delay_ON_Base : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_01_Delay_ON_Multiplier : 0|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_01_Delay_OFF_Base : 12|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_01_Delay_OFF_Multiplier : 8|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_02_Trip_2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_02_Delay_ON_Base : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_02_Delay_ON_Multiplier : 16|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_02_Delay_OFF_Base : 28|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_02_Delay_OFF_Multiplier : 24|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_03_Trip_2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_03_Delay_ON_Base : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_03_Delay_ON_Multiplier : 32|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_03_Delay_OFF_Base : 44|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_03_Delay_OFF_Multiplier : 40|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_04_Trip_2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_04_Delay_ON_Base : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_04_Delay_ON_Multiplier : 48|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_04_Delay_OFF_Base : 60|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_04_Delay_OFF_Multiplier : 56|4@1+ (1,0) [0|10] ""  Host
+
+BO_ 2566852865 Config_Data_0x68_0x6F: 8 SCS200
+ SG_ OUT_05_Trip_2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_05_Delay_ON_Base : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_05_Delay_ON_Multiplier : 0|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_05_Delay_OFF_Base : 12|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_05_Delay_OFF_Multiplier : 8|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_06_Trip_2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_06_Delay_ON_Base : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_06_Delay_ON_Multiplier : 16|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_06_Delay_OFF_Base : 28|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_06_Delay_OFF_Multiplier : 24|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_07_Trip_2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_07_Delay_ON_Base : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_07_Delay_ON_Multiplier : 32|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_07_Delay_OFF_Base : 44|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_07_Delay_OFF_Multiplier : 40|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_08_Trip_2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_08_Delay_ON_Base : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_08_Delay_ON_Multiplier : 48|4@1+ (1,0) [0|15] ""  Host
+ SG_ OUT_08_Delay_OFF_Base : 60|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_08_Delay_OFF_Multiplier : 56|4@1+ (1,0) [0|10] ""  Host
+
+BO_ 2566853121 Config_Data_0x70_0x77: 8 SCS200
+ SG_ OUT_09_Trip_2 : 7|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_09_Delay_ON_Base : 4|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_09_Delay_ON_Multiplier : 0|4@1+ (1,0) [0|15] ""  Host
+ SG_ OUT_09_Delay_OFF_Base : 12|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_09_Delay_OFF_Multiplier : 8|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_10_Trip_2 : 23|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_10_Delay_ON_Base : 20|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_10_Delay_ON_Multiplier : 16|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_10_Delay_OFF_Base : 28|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_10_Delay_OFF_Multiplier : 24|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_11_Trip_2 : 39|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_11_Delay_ON_Base : 36|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_11_Delay_ON_Multiplier : 32|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_11_Delay_OFF_Base : 44|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_11_Delay_OFF_Multiplier : 40|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_12_Trip_2 : 55|1@1+ (1,0) [0|1] ""  Host
+ SG_ OUT_12_Delay_ON_Base : 52|3@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_12_Delay_ON_Multiplier : 48|4@1+ (1,0) [0|10] ""  Host
+ SG_ OUT_12_Delay_OFF_Base : 60|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_12_Delay_OFF_Multiplier : 56|4@1+ (1,0) [0|10] ""  Host
+
+BO_ 2566853377 Config_Data_0x78_0x7F: 8 SCS200
+ SG_ OUT_01_Nominal_Current : 4|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_02_Nominal_Current : 0|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_03_Nominal_Current : 12|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_04_Nominal_Current : 8|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_05_Nominal_Current : 20|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_06_Nominal_Current : 16|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_07_Nominal_Current : 28|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_08_Nominal_Current : 24|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_09_Nominal_Current : 36|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_10_Nominal_Current : 32|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_11_Nominal_Current : 44|4@1+ (1,0) [0|7] ""  Host
+ SG_ OUT_12_Nominal_Current : 40|4@1+ (1,0) [0|7] ""  Host
+ SG_ Checksum_Config : 48|16@1+ (1,0) [0|65535] ""  Host
+
+BO_ 2566856193 Safe_State_Configuration: 8 SCS200
+ SG_ Safe_State_OUT_01 : 4|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_02 : 0|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_03 : 12|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_04 : 8|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_05 : 20|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_06 : 16|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_07 : 28|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_08 : 24|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_09 : 36|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_10 : 32|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_11 : 44|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_OUT_12 : 40|4@1+ (1,0) [0|3] ""  Host
+ SG_ Safe_State_Heartbeat_Mode : 52|2@1+ (1,0) [0|2] ""  Host
+ SG_ Safe_State_Heartbeat_Time : 60|4@1+ (1,0) [0|15] ""  Host
+
+BO_ 2566855425 Parallel_Connections: 8 SCS200
+ SG_ OUT_04_Parallel_Connection : 8|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_05_Parallel_Connection : 20|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_06_Parallel_Connection : 16|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_07_Parallel_Connection : 28|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_08_Parallel_Connection : 24|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_09_Parallel_Connection : 36|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_10_Parallel_Connection : 32|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_11_Parallel_Connection : 44|4@1+ (1,0) [4|12] ""  Host
+ SG_ OUT_12_Parallel_Connection : 40|4@1+ (1,0) [4|12] ""  Host
+ SG_ Max_Total_Current_Allowed : 12|4@1+ (10,0) [0|150] "A"  Host
+ SG_ Controller_Revision : 0|8@1+ (1,0) [0|255] ""  Host
+ SG_ Checksum_Config : 48|16@1+ (1,0) [0|65535] ""  Host
+
+
+
+CM_ BO_ 2565840896 "All Tx messages for control and configuration";
+CM_ SG_ 2565840896 CAN_Tx_Query_Mux "Switch Outputs";
+CM_ BO_ 2565537536 "Request Message for Address Claimed";
+CM_ BO_ 2566849793 "Total current, UBat and module temperature";
+CM_ SG_ 2566849793 Total_Current "Total current in mA";
+CM_ SG_ 2566849793 Module_Temperature "Module temperature in °C";
+CM_ BO_ 2566850049 "Voltage values at analog inputs 1 - 4";
+CM_ BO_ 2566850305 "Voltage value at analog input 5 / 6 and PMA Mode information";
+CM_ BO_ 2566850561 "Voltage values Output 1 - 4";
+CM_ BO_ 2566851073 "Voltage values Output 5 - 8";
+CM_ BO_ 2566851585 "Voltage values Output 9 - 12";
+CM_ BO_ 2566850817 "Current values Output 1 - 4";
+CM_ BO_ 2566851329 "Current values Output 5 - 8";
+CM_ BO_ 2566851841 "Current values Output 9 - 12";
+CM_ BO_ 2566852097 "Output and module status and troubleshooting";
+CM_ BO_ 2566852353 "Switching status of outputs";
+CM_ BO_ 2566855169 "Information about the Software Version";
+CM_ BO_ 2566852609 "Output config data from EEPROM 0x60-0x67";
+CM_ BO_ 2566852865 "Output config data from EEPROM 0x68-0x6F";
+CM_ BO_ 2566853121 "Output config data from EEPROM 0x70-0x77";
+CM_ BO_ 2566853377 "Output config data from EEPROM 0x78-0x7F";
+CM_ BO_ 2566856193 "Information about the Safe State Configuration";
+CM_ BO_ 2566855425 "Information about the Parallel Connections";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2565840896 100;
+BA_ "GenSigStartValue" SG_ 2565840896 Bitrate 2;
+BA_ "GenSigStartValue" SG_ 2565840896 OUT_Number_Low_Current_1 4;
+BA_ "GenSigStartValue" SG_ 2565840896 OUT_Number_Low_Current_2 4;
+BA_ "GenSigStartValue" SG_ 2565840896 Bootloader_Mode 56;
+BA_ "GenSigStartValue" SG_ 2565537536 J1939_RQST 238;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_04_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_05_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_06_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_07_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_08_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_09_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_10_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_11_Parallel_Connection 4;
+BA_ "GenSigStartValue" SG_ 2566855425 OUT_12_Parallel_Connection 4;
+VAL_ 2565840896 CAN_Tx_Query_Mux 55299 "Switch_Outputs" 55315 "Query_Output_Data" 55331 "Query_AI_Module_Data" 55347 "Advanced_Options" 55395 "Send_Config" 55427 "Bootloader_Mode" ;
+VAL_ 2565840896 Switch_OUT_01 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_02 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_03 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_04 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_05 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_06 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_07 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_08 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_09 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_10 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_11 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Switch_OUT_12 0 "IDLE" 1 "ON" 2 "OFF" 7 "FORCED OFF" ;
+VAL_ 2565840896 Query_OUT_01_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_02_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_03_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_04_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_05_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_06_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_07_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_08_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_09_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_10_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_11_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_OUT_12_Data 0 "IDLE" 1 "QUERY" ;
+VAL_ 2565840896 Query_AI_Module_Data 0 "IDLE" 1 "ANALOG INPUTS" 2 "MODULE VALUES" ;
+VAL_ 2565840896 Safe_State_Configuration 0 "DEFAULT SAFE STATES" 1 "WRITE SAFE STATE OUT 1" 2 "WRITE SAFE STATE OUT 2" 3 "WRITE SAFE STATE OUT 3" 4 "WRITE SAFE STATE OUT 4" 5 "WRITE SAFE STATE OUT 5" 6 "WRITE SAFE STATE OUT 6" 7 "WRITE SAFE STATE OUT 7" 8 "WRITE SAFE STATE OUT 8" 9 "WRITE SAFE STATE OUT 9" 10 "WRITE SAFE STATE OUT 10" 11 "WRITE SAFE STATE OUT 11" 12 "WRITE SAFE STATE OUT 12" 13 "WRITE SAFE STATE ALL OUTPUTS" 14 "HEARTBEAT MODE" 15 "WRITE HEARTBEAT TIME" ;
+VAL_ 2565840896 Advanced_Options 0 "IDLE" 1 "ACTIVATE SLEEP MODE" 2 "QUERY CONFIG DATA" 3 "QUERY DIAGNOSTIC DATA" 4 "RESET DIAGNOSTIC DATA" 5 "QUERY SWITCHING STATES" 8 "QUERY PMA MODE" 9 "QUERY SW VERSION" 10 "QUERY PARALLEL CONNECTIONS" 11 "RESET PARALLEL CONNECTIONS" 12 "QUERY SAFE STATES" 13 "CONFIGURE SAFE STATES" ;
+VAL_ 2565840896 Safe_State_Output_Options 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2565840896 Safe_State_Heartbeat_Time 1 "1 s" 2 "2 s" 3 "3 s" 4 "4 s" 5 "5 s" 6 "6 s" 7 "7 s" 8 "8 s" 9 "9 s" 10 "10 s" 11 "11 s" 12 "12 s" 13 "13 s" 14 "14 s" 15 "15 s" ;
+VAL_ 2565840896 Safe_State_Heartbeat_Mode 0 "NO HEARTBEAT" 2 "HEARTBEAT SERVER MODE" ;
+VAL_ 2565840896 Mode 1 "DELAY" 2 "NOMINAL CURRENT" 3 "CHANGE ID" 4 "DEFAULT CONFIG" 5 "TRIP 2 ACTIVATION" 6 "CHANGE PMA MODE" 7 "PARALLEL CONNECTION" 8 "CHANGE BITRATE" 9 "OPENLOAD DIAGNOSTIC MESSAGE" 10 "MASTER RESET" ;
+VAL_ 2565840896 Multiplier_ON_Delay 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2565840896 Multiplier_OFF_Delay 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2565840896 Base_OFF_Delay 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2565840896 Base_ON_Delay 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2565840896 PMA_Mode 0 "ON" 1 "OFF" ;
+VAL_ 2565840896 OUT_Number 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2565840896 Bitrate 2 "50 kBits/s" 3 "100 kBits/s" 4 "125 kBits/s" 5 "250 kBits/s" 6 "500 kBits/s" 8 "1 MBit/s" ;
+VAL_ 2565840896 OUT_Number_Low_Current_1 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2565840896 OUT_Number_Low_Current_2 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2565840896 Open_Load_Message 0 "ON" 1 "OFF" ;
+VAL_ 2565840896 Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2565840896 Nominal_Current 0 "30 A / 10 A" 1 "5 A / 1 A" 2 "7.5 A / 2 A" 3 "10 A / 3 A" 4 "15 A / 4 A" 5 "20 A / 5 A" 6 "25 A / 7.5 A" 7 "30 A / 10 A" ;
+VAL_ 2565840896 Bootoader_Options 1 "RESET" 0 "IDLE" ;
+VAL_ 2566850305 PMA_Mode 0 "ON" 1 "OFF" ;
+VAL_ 2566852097 Diagnostic_OUT_01 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_02 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_03 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_04 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_05 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_06 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_07 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_08 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_09 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_10 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_11 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_OUT_12 0 "NORMAL" 1 "OVERCURRENT (TRIP 1)" 2 "OPENLOAD" 4 "SHORT CIRCUIT (TRIP 2)" ;
+VAL_ 2566852097 Diagnostic_Supply_Overvoltage 0 "NORMAL" 1 "OVERVOLTAGE" ;
+VAL_ 2566852097 Diagnostic_Supply_Undervoltage 0 "NORMAL" 1 "UNDERVOLTAGE" ;
+VAL_ 2566852097 Diagnostic_Module_Current 0 "NORMAL" 1 "OVERCURRENT" ;
+VAL_ 2566852353 Switching_State_OUT_01 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_02 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_03 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_04 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_05 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_06 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_07 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_08 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_09 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_10 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_11 0 "OFF" 1 "ON" ;
+VAL_ 2566852353 Switching_State_OUT_12 0 "OFF" 1 "ON" ;
+VAL_ 2566852609 OUT_01_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852609 OUT_01_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_01_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_01_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_01_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_02_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852609 OUT_02_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_02_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_02_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_02_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_03_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852609 OUT_03_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_03_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_03_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_03_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_04_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852609 OUT_04_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_04_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852609 OUT_04_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852609 OUT_04_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_05_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852865 OUT_05_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_05_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_05_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_05_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_06_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852865 OUT_06_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_06_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_06_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_06_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_07_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852865 OUT_07_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_07_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_07_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_07_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_08_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566852865 OUT_08_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_08_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566852865 OUT_08_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566852865 OUT_08_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_09_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566853121 OUT_09_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_09_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_09_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_09_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_10_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566853121 OUT_10_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_10_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_10_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_10_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_11_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566853121 OUT_11_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_11_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_11_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_11_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_12_Trip_2 0 "ON" 1 "OFF" ;
+VAL_ 2566853121 OUT_12_Delay_ON_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_12_Delay_ON_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853121 OUT_12_Delay_OFF_Base 0 "0.5 s" 1 "1 s" 2 "5 s" 3 "10 s" 4 "50 s" 5 "100 s" 6 "500 s" 7 "1000 s" ;
+VAL_ 2566853121 OUT_12_Delay_OFF_Multiplier 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" ;
+VAL_ 2566853377 OUT_01_Nominal_Current 0 "30 A" 1 "5 A" 2 "7.5 A" 3 "10 A" 4 "15 A" 5 "20 A" 6 "25 A" 7 "30 A" ;
+VAL_ 2566853377 OUT_02_Nominal_Current 0 "30 A" 1 "5 A" 2 "7.5 A" 3 "10 A" 4 "15 A" 5 "20 A" 6 "25 A" 7 "30 A" ;
+VAL_ 2566853377 OUT_03_Nominal_Current 0 "30 A" 1 "5 A" 2 "7.5 A" 3 "10 A" 4 "15 A" 5 "20 A" 6 "25 A" 7 "30 A" ;
+VAL_ 2566853377 OUT_04_Nominal_Current 0 "30 A" 1 "5 A" 2 "7.5 A" 3 "10 A" 4 "15 A" 5 "20 A" 6 "25 A" 7 "30 A" ;
+VAL_ 2566853377 OUT_05_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_06_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_07_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_08_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_09_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_10_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_11_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566853377 OUT_12_Nominal_Current 0 "10 A" 1 "1 A" 2 "2 A" 3 "3 A" 4 "4 A" 5 "5 A" 6 "7.5 A" 7 "10 A" ;
+VAL_ 2566856193 Safe_State_OUT_01 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_02 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_03 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_04 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_05 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_06 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_07 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_08 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_09 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_10 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_11 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_OUT_12 0 "NO CHANGE" 1 "ON" 2 "OFF" 3 "ALL OUTPUTS INDIVIDUAL" ;
+VAL_ 2566856193 Safe_State_Heartbeat_Mode 0 "NO HEARTBEAT" 2 "HEARTBEAT SERVER MODE" ;
+VAL_ 2566856193 Safe_State_Heartbeat_Time 1 "1 s" 2 "2 s" 3 "3 s" 4 "4 s" 5 "5 s" 6 "6 s" 7 "7 s" 8 "8 s" 9 "9 s" 10 "10 s" 11 "11 s" 12 "12 s" 13 "13 s" 14 "14 s" 15 "15 s" ;
+VAL_ 2566855425 OUT_04_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_05_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_06_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_07_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_08_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_09_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_10_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_11_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+VAL_ 2566855425 OUT_12_Parallel_Connection 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "9" 10 "10" 11 "11" 12 "12" ;
+

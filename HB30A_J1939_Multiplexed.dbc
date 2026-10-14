@@ -1,0 +1,106 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HB30 Supervisor
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ContinuousCurrentLimit m80 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ConfigureCommTimeout m64 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566848640 HB30_WakeUp: 8 HB30
+ SG_ HB30_Awake : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565800064 HB30_OutputStatus: 8 HB30
+ SG_ HB30_OutputStatusMUXID : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HB30_CurrentDirection : 8|8@1+ (1,0) [0|2] "Enum" Vector__XXX
+ SG_ HB30_ActiveFrequency : 16|8@1+ (1,0) [0|255] "Hz" Vector__XXX
+ SG_ HB30_ActiveDutyCycle : 24|16@1+ (0.1,0) [0|100] "%DC" Vector__XXX
+ SG_ HB30_MeasuredCurrent : 40|8@1+ (0.1,0) [0|25] "A" Vector__XXX
+ SG_ HB30_CurrentLimit : 48|8@1+ (0.1,0) [0|25] "A" Vector__XXX
+ SG_ HB30_FWDContFault : 56|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ HB30_FWDPeak : 57|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ HB30_REVContFault : 58|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ HB30_REVPeak : 59|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ HB30_CommFault : 60|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+
+BO_ 2565832704 HB30_MultiplexedCommand: 8 Supervisor
+ SG_ HB30_CommandID M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HB30_OutputStatusRequest m16 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HB30_DirectionCmd m32 : 8|8@1+ (1,0) [0|2] "Enum" Vector__XXX
+ SG_ HB30_FrequencyCmd m32 : 16|8@1+ (1,0) [0|250] "Hz" Vector__XXX
+ SG_ HB30_DutyCycleCmd m32 : 24|16@1+ (0.1,0) [0|100] "%DC" Vector__XXX
+ SG_ HB30_ResetOutputsCmd m48 : 8|8@1+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ HB30_CommFaultTimeLimit m64 : 8|8@1+ (0.1,0) [0|25] "sec" Vector__XXX
+ SG_ HB30_ContCurrentLimit m80 : 8|8@1+ (0.1,0) [0|25] "A" Vector__XXX
+
+
+
+CM_ SG_ 3221225472 ContinuousCurrentLimit "Continuous Current Limit before fault occurs
+Default limit is 25.0A
+Resolution: 0.1A/bit
+Data Range: 0.1A to 25.0A";
+CM_ SG_ 2566848640 HB30_Awake "x01 identifies this as a wake up message";
+CM_ SG_ 2565800064 HB30_CurrentDirection "Stopped: Output1 Disconnected, Output2 Disconnected
+Forward: Output1 BATT, Output2 GND
+Reverse: Output1 GND, Output2 BATT";
+CM_ SG_ 2565800064 HB30_ActiveDutyCycle "The active duty cycle of the devices output";
+CM_ SG_ 2565832704 HB30_DirectionCmd "Stopped: Output1 Disconnected, Output2 Disconnected
+Forward: Output1 BATT, Output2 GND
+Reverse: Output1 GND, Output2 BATT";
+CM_ SG_ 2565832704 HB30_FrequencyCmd "Resolution: 1Hz/bit
+Data Range: 2Hz to 250Hz (0=PWM Disabled)";
+CM_ SG_ 2565832704 HB30_DutyCycleCmd "Resolution: 0.1%/bit
+Data Range: 0.0% to 100.0%";
+CM_ SG_ 2565832704 HB30_CommFaultTimeLimit "Resolution: 0.1 second/bit
+Data Range: 0.1 seconds to 25.0 seconds
+Default time is 7 seconds";
+CM_ SG_ 2565832704 HB30_ContCurrentLimit "default = 25A";
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "VFrameFormat" BO_ 2566848640 1;
+BA_ "VFrameFormat" BO_ 2565800064 1;
+BA_ "VFrameFormat" BO_ 2565832704 1;
+VAL_ 2565800064 HB30_CurrentDirection 0 "Stopped" 1 "Forward" 2 "Reverse" ;
+VAL_ 2565832704 HB30_DirectionCmd 0 "Stopped" 1 "Forward" 2 "Reverse" ;
+

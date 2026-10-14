@@ -1,0 +1,490 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: OffBoardDiagnosticTool1 Modine_BTMS
+VAL_TABLE_ Evap_SV_values 255 "OVERRRIDE DISABLED" 3 "FAULT" 2 "RESERVED" 1 "OPEN" 0 "CLOSED" ;
+VAL_TABLE_ exv_state_machine 3 "Complete" 2 "In Process" 1 "Start Request" 0 "Idle" ;
+VAL_TABLE_ Manual_off_16 65535 "Manual mode disabled" ;
+VAL_TABLE_ Manual_off_8 255 "Manual mode disabled" ;
+VAL_TABLE_ cond_pressure_override 1 "On - set to 1450 kPa-g" 0 "Off - Auto pressure SP" ;
+VAL_TABLE_ Pressure_switch 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_TABLE_ Digital_in 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ debug_next_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ debug_target_power : 0|16@1+ (1,0) [0|65535] "w" Vector__XXX
+ SG_ HV_under_voltage : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HV_over_voltage : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ compressor_discharge_temp_high : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ heating_lockout : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ active_cooling_lockout : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ J1939_lost : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CAN_Gateway_Enable_Proprietary_2 : 0|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Enable_Proprietary_1 : 0|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Enable_Public : 0|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Enable_Private : 0|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ pump_2_speed_command : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ pump_1_speed_command : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ pump_2_speed : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ pump_1_speed : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ heater_2_voltage : 0|8@1+ (4,0) [0|1020] "V" Vector__XXX
+ SG_ heater_1_voltage : 0|8@1+ (4,0) [0|1020] "V" Vector__XXX
+ SG_ HVIL_sink_current : 0|16@1+ (0.001,0) [0|65.535] "mA" Vector__XXX
+ SG_ PWM2 : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ PWM1_COND_fans : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ heater_power_command : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ heater_2_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ heater_1_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ compressor_speed_command : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ compressor_speed : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ compressor_voltage : 0|8@1+ (4,0) [0|1020] "V" Vector__XXX
+ SG_ compressor_current : 0|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+ SG_ D14_fire : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D13_reverse : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D05_HVIL : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D04_LP_switch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D03_HP_switch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D02_fan_2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D01_fan_1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ level_sensor_voltage : 0|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ A4_valve_pos : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ A3_coolant_level : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ A1_cond_pressure_legacy : 0|16@1+ (1.09019,-430.625) [0|71014.97665] "kPa-g" Vector__XXX
+ SG_ T5_coolant_in : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T4_coolant_out : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T3_evap_out : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T2_discharge : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T1_ambient : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ Dial_Debug_old_state : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Dial_Debug_new_value : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Dial_Debug_Mapped_Value : 0|8@1+ (1,-10) [0|0] "C" Vector__XXX
+
+BO_ 2160132069 debug_comp_demand: 4 Vector__XXX
+ SG_ debug_comp_BATT : 16|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ debug_comp_HVAC : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+
+BO_ 2160132068 salDHouQWHd: 2 Vector__XXX
+ SG_ heater_1_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+
+BO_ 2160132067 debug_get_cab_target_power: 4 Vector__XXX
+ SG_ inv_ratio : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ratio : 16|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ target_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+
+BO_ 2160132066 debug_process_cab_heating: 6 Vector__XXX
+ SG_ debug_min_check : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ debug_step_check : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ target_power : 16|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ next_power : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+
+BO_ 2561326329 ACSwitchCommand_debug: 8 Vector__XXX
+ SG_ debug_analog_pos : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ AC_switch_state : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2160132079 debug_cab_logic: 8 Vector__XXX
+ SG_ step : 48|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ target_power : 32|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ next_power : 16|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ current_power : 8|8@1+ (1,0) [0|255] "W" Vector__XXX
+ SG_ ratio : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
+
+BO_ 2160132078 Dial_Debug_message: 3 Vector__XXX
+ SG_ Dial_Debug_Ratio : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ Dial_Debug_K77V : 16|8@1+ (1,0) [0|0] "V" Vector__XXX
+ SG_ Dial_Debug_K76V : 8|8@1+ (1,0) [0|0] "V" Vector__XXX
+
+BO_ 2562718206 Modine_proprietary_status_11: 8 Modine_BTMS
+ SG_ cpu_load_max_core_3 : 56|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_max_core_2 : 40|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_max_core_1 : 24|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_current_core_3 : 48|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_current_core_2 : 32|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_current_core_1 : 16|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_max_core_0 : 8|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ cpu_load_current_core_0 : 0|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+
+BO_ 2562654206 Modine_proprietary_status_10: 8 Modine_BTMS
+ SG_ EXV_state_machine_status : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CAN_Gateway_Public_Status : 58|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Proprietary_2_Status : 62|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Proprietary_1_Status : 60|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ CAN_Gateway_Private_Status : 56|2@1+ (1,0) [0|3] "<none>" Vector__XXX
+ SG_ HVIL_Voltage : 32|8@1+ (0.2,0) [0|51] "V" Vector__XXX
+ SG_ Compressor_suction_superheat : 16|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ Compressor_discharge_superheat : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+
+BO_ 2562588670 Modine_proprietary_status_09: 8 Modine_BTMS
+ SG_ DFES_fault_memory : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ fault_code : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ firmware_prefix : 8|8@1+ (1,0) [0|255] "<none>" Vector__XXX
+ SG_ firmware_rev_number : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ firmware_id_number : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ controller_input_voltage : 0|8@1+ (0.2,0) [0|51] "V" Vector__XXX
+
+BO_ 2562195454 Modine_proprietary_status_03: 8 Vector__XXX
+ SG_ Active_Cool_Lockout_Cycle_Count : 60|4@1+ (1,0) [0|15] "<none>" Vector__XXX
+ SG_ Comp_Dis_Therm_Fault_Counter : 56|4@1+ (1,0) [0|15] "<none>" Vector__XXX
+ SG_ HP_Switch_Fault_Counter : 52|4@1+ (1,0) [0|15] "<none>" Vector__XXX
+ SG_ LP_Switch_Fault_Counter : 48|4@1+ (1,0) [0|15] "<none>" Vector__XXX
+ SG_ D14_fire : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D13_reverse : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D05_HVIL : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D04_LP_switch : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D03_HP_switch : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D02_fan_2 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ D01_fan_1 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ level_sensor_voltage : 16|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ A4_valve_pos : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 2562129918 Modine_proprietary_status_02: 8 Vector__XXX
+ SG_ A1_cond_pressure : 16|16@1+ (0.1,0) [0|6553.5] "kPa-a" Vector__XXX
+ SG_ A3_coolant_level : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ A2_evap_pressure : 32|16@1+ (0.1,0) [0|6553.5] "kPa-a" Vector__XXX
+ SG_ T5_coolant_in : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+
+BO_ 2562064382 Modine_proprietary_status_01: 8 Vector__XXX
+ SG_ T4_coolant_out : 48|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T3_evap_out : 32|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T2_discharge : 16|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+ SG_ T1_ambient : 0|16@1+ (0.03125,-273) [-273|1774.96875] "C" Vector__XXX
+
+BO_ 2562523134 Modine_proprietary_status_08: 8 Modine_BTMS
+ SG_ PID_elapsed_time : 48|16@1+ (0.01,0) [0|655.35] "ms" Vector__XXX
+ SG_ PID_I_term : 32|16@1+ (0.01,-100) [-100|555.35] "" Vector__XXX
+ SG_ PID_P_term : 16|16@1+ (0.01,-100) [-100|555.35] "" Vector__XXX
+ SG_ PID_set_point : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2561999865 Modine_proprietary_command_2: 8 OffBoardDiagnosticTool1
+ SG_ OVR_cab_heater_power_command : 40|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ OVR_batt_heater_power_command : 24|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ OVR_EXV_position_command : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ OVR_SV_position : 0|8@1+ (1,0) [0|255] ""  Modine_BTMS
+
+BO_ 2561999609 Modine_proprietary_command_1: 8 OffBoardDiagnosticTool1
+ SG_ OVR_pe_pump_speed_command : 40|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ OVR_cab_pump_speed_command : 32|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ OVR_COND_fan_SP : 24|8@1+ (16,0) [0|4000] "kPa-a" Vector__XXX
+ SG_ OVR_compressor_speed_command : 48|16@1+ (1,0) [0|65535] "RPM"  Modine_BTMS
+ SG_ OVR_PWM2 : 16|8@1+ (0.5,0) [0|127.5] "%"  Modine_BTMS
+ SG_ OVR_PWM1_COND_fans : 8|8@1+ (0.5,0) [0|127.5] "%"  Modine_BTMS
+ SG_ OVR_batt_pump_speed_command : 0|8@1+ (0.5,0) [0|127.5] "%"  Modine_BTMS
+
+BO_ 2562457598 Modine_proprietary_status_07: 8 Modine_BTMS
+ SG_ pump_2_speed_command : 56|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ pump_1_speed_command : 48|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+ SG_ pump_2_speed : 32|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ pump_1_speed : 16|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ heater_2_voltage : 8|8@1+ (4,0) [0|1020] "V" Vector__XXX
+ SG_ heater_1_voltage : 0|8@1+ (4,0) [0|1020] "V" Vector__XXX
+
+BO_ 2562392062 Modine_proprietary_status_06: 8 Modine_BTMS
+ SG_ pump_2_average_power : 32|16@1+ (0.5,0) [0|32767.5] "W" Vector__XXX
+ SG_ pump_1_average_power : 16|16@1+ (0.5,0) [0|32767.5] "W" Vector__XXX
+ SG_ HVIL_sink_current : 48|16@1+ (0.001,0) [0|65.535] "mA" Vector__XXX
+ SG_ PWM2 : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ PWM1_COND_fans : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+
+BO_ 2562326526 Modine_proprietary_status_05: 8 Modine_BTMS
+ SG_ heater_2_current : 56|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+ SG_ heater_1_current : 48|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+ SG_ heater_power_command : 0|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ heater_2_power : 32|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ heater_1_power : 16|16@1+ (1,0) [0|65535] "W" Vector__XXX
+
+BO_ 2562260990 Modine_proprietary_status_04: 8 Modine_BTMS
+ SG_ EXV_position_status : 48|16@1+ (1,0) [0|576] "" Vector__XXX
+ SG_ compressor_speed_command : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ compressor_speed : 16|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+ SG_ compressor_voltage : 32|8@1+ (4,0) [0|1020] "V" Vector__XXX
+ SG_ compressor_current : 40|8@1+ (0.1,0) [0|25.5] "A" Vector__XXX
+
+
+
+CM_ "v1.13.0 ZJF: Removed OVR_COND_pressure_SP, replaced by OVR_COND_fan_SP
+v1.12.0 ZJF: Added OVR_COND_fan_SP
+V1.10 ZJF(2023.3.8) Added Modine_proprietary_status_11 for CPU core load
+V1.9 ZJF (2023.2.11) Mapped A2_evap_pressure to SPN 517217";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 CAN_Gateway_Enable_Proprietary_2 "Enables heater update gateway for current ignition cycle";
+CM_ SG_ 3221225472 CAN_Gateway_Enable_Proprietary_1 "Enables compressor update gateway for current ignition cycle";
+CM_ SG_ 3221225472 CAN_Gateway_Enable_Public "Enables pre-defined public CAN gatewayed to private CAN unmodified
+Gateway disables when command is not received for 10 consecutive seconds ";
+CM_ SG_ 3221225472 CAN_Gateway_Enable_Private "Enables pre-defined private CAN gateway to public CAN unmodified
+Gateway disables when command is not received for 10 consecutive seconds ";
+CM_ SG_ 2562654206 CAN_Gateway_Public_Status "Status of pre-defined public CAN gateway to private CAN";
+CM_ SG_ 2562654206 CAN_Gateway_Proprietary_2_Status "Status of heater update CAN gateway";
+CM_ SG_ 2562654206 CAN_Gateway_Proprietary_1_Status "Status of compressor update CAN gateway";
+CM_ SG_ 2562654206 CAN_Gateway_Private_Status "Status of pre-defined private CAN gateway to public CAN";
+CM_ SG_ 2562588670 DFES_fault_memory "Indicates how many faults are currently held in the Diagnostic Fault Event Storage (DFES). Includes both active and previously active. Maximum is 32.";
+CM_ SG_ 2562588670 fault_code "Inidicates the highest active fault number. A return of 0 indicates that no faults are active.";
+CM_ SG_ 2562588670 firmware_rev_number "This is the second number in our firmware file name. For example, if the firmware file is 40BF00220033, this signal would return 33.";
+CM_ SG_ 2562588670 firmware_id_number "This is the first number in our firmware file name. For example, if the firmware file is 40BF00220033, this signal would return 22.";
+CM_ SG_ 2561999609 OVR_pe_pump_speed_command "Transmit 0xFF to disable";
+CM_ SG_ 2561999609 OVR_cab_pump_speed_command "Transmit 0xFF to disable";
+CM_ SG_ 2561999609 OVR_PWM1_COND_fans "3% - Fan off
+20% - Fan reverse
+40% - Minimum forward speed
+90%+ - Maximum forward speed";
+CM_ SG_ 2561999609 OVR_batt_pump_speed_command "Transmit 0xFF to disable";
+CM_ SG_ 2562392062 pump_2_average_power "May be used for low flow detection";
+CM_ SG_ 2562392062 pump_1_average_power "May be used for low flow detection";
+BA_DEF_ SG_  "J1939SLOT" STRING ;
+BA_DEF_  "BaudRate" STRING ;
+BA_DEF_  "DatabaseVersionDate" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "J1939SLOT" "-";
+BA_DEF_DEF_  "BaudRate" "500K";
+BA_DEF_DEF_  "DatabaseVersionDate" "1-March-2022";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DatabaseVersionDate" "5-July-2024";
+BA_ "DatabaseVersion" "1.13.0";
+BA_ "BusType" "CAN";
+BA_ "BaudRate" "<any>";
+BA_ "DBName" "Modine_proprietary";
+BA_ "NmStationAddress" BU_ OffBoardDiagnosticTool1 249;
+BA_ "NmStationAddress" BU_ Modine_BTMS 254;
+BA_ "VFrameFormat" BO_ 2160132069 3;
+BA_ "VFrameFormat" BO_ 2160132068 3;
+BA_ "VFrameFormat" BO_ 2160132067 3;
+BA_ "VFrameFormat" BO_ 2160132066 3;
+BA_ "VFrameFormat" BO_ 2561326329 3;
+BA_ "VFrameFormat" BO_ 2160132079 3;
+BA_ "VFrameFormat" BO_ 2160132078 3;
+BA_ "VFrameFormat" BO_ 2562718206 3;
+BA_ "VFrameFormat" BO_ 2562654206 3;
+BA_ "VFrameFormat" BO_ 2562588670 3;
+BA_ "VFrameFormat" BO_ 2562195454 3;
+BA_ "VFrameFormat" BO_ 2562129918 3;
+BA_ "VFrameFormat" BO_ 2562064382 3;
+BA_ "VFrameFormat" BO_ 2562523134 3;
+BA_ "GenMsgCycleTime" BO_ 2561999865 100;
+BA_ "VFrameFormat" BO_ 2561999865 3;
+BA_ "GenMsgCycleTime" BO_ 2561999609 100;
+BA_ "VFrameFormat" BO_ 2561999609 3;
+BA_ "VFrameFormat" BO_ 2562457598 3;
+BA_ "VFrameFormat" BO_ 2562392062 3;
+BA_ "VFrameFormat" BO_ 2562326526 3;
+BA_ "VFrameFormat" BO_ 2562260990 3;
+BA_ "SigType" SG_ 3221225472 HV_under_voltage 7;
+BA_ "SPN" SG_ 3221225472 HV_under_voltage 517207;
+BA_ "SigType" SG_ 3221225472 HV_over_voltage 7;
+BA_ "SPN" SG_ 3221225472 HV_over_voltage 517206;
+BA_ "SPN" SG_ 3221225472 compressor_discharge_temp_high 517414;
+BA_ "SigType" SG_ 3221225472 compressor_discharge_temp_high 7;
+BA_ "SPN" SG_ 3221225472 heating_lockout 517240;
+BA_ "SigType" SG_ 3221225472 heating_lockout 7;
+BA_ "SPN" SG_ 3221225472 active_cooling_lockout 517208;
+BA_ "SigType" SG_ 3221225472 active_cooling_lockout 7;
+BA_ "SPN" SG_ 3221225472 J1939_lost 517200;
+BA_ "SigType" SG_ 3221225472 J1939_lost 7;
+BA_ "SPN" SG_ 3221225472 pump_2_speed 517219;
+BA_ "SPN" SG_ 3221225472 pump_1_speed 517218;
+BA_ "SPN" SG_ 3221225472 heater_1_power 517241;
+BA_ "SPN" SG_ 3221225472 compressor_speed 517215;
+BA_ "SPN" SG_ 3221225472 D05_HVIL 517261;
+BA_ "SPN" SG_ 3221225472 D04_LP_switch 517217;
+BA_ "SPN" SG_ 3221225472 D03_HP_switch 517214;
+BA_ "SPN" SG_ 3221225472 D02_fan_2 517502;
+BA_ "SPN" SG_ 3221225472 D01_fan_1 517503;
+BA_ "SPN" SG_ 3221225472 A4_valve_pos 517251;
+BA_ "SPN" SG_ 3221225472 A3_coolant_level 517229;
+BA_ "SPN" SG_ 3221225472 A1_cond_pressure_legacy 517216;
+BA_ "SigType" SG_ 3221225472 A1_cond_pressure_legacy 0;
+BA_ "GenSigStartValue" SG_ 3221225472 A1_cond_pressure_legacy 395;
+BA_ "SPN" SG_ 3221225472 T5_coolant_in 517275;
+BA_ "GenSigStartValue" SG_ 3221225472 T5_coolant_in 8736;
+BA_ "SPN" SG_ 3221225472 T4_coolant_out 517274;
+BA_ "GenSigStartValue" SG_ 3221225472 T4_coolant_out 8736;
+BA_ "GenSigStartValue" SG_ 3221225472 T3_evap_out 8736;
+BA_ "SPN" SG_ 3221225472 T2_discharge 517272;
+BA_ "GenSigStartValue" SG_ 3221225472 T2_discharge 8736;
+BA_ "SPN" SG_ 3221225472 T1_ambient 517271;
+BA_ "GenSigStartValue" SG_ 3221225472 T1_ambient 8736;
+BA_ "GenSigStartValue" SG_ 3221225472 Dial_Debug_Mapped_Value 10;
+BA_ "SPN" SG_ 2160132068 heater_1_power 517241;
+BA_ "GenSigStartValue" SG_ 2562654206 Compressor_suction_superheat 8736;
+BA_ "SPN" SG_ 2562654206 Compressor_suction_superheat 517271;
+BA_ "GenSigStartValue" SG_ 2562654206 Compressor_discharge_superheat 8736;
+BA_ "SPN" SG_ 2562654206 Compressor_discharge_superheat 517271;
+BA_ "GenSigStartValue" SG_ 2562588670 controller_input_voltage 255;
+BA_ "J1939SLOT" SG_ 2562588670 controller_input_voltage "SAEev08";
+BA_ "SPN" SG_ 2562588670 controller_input_voltage 7497;
+BA_ "SPN" SG_ 2562195454 D05_HVIL 517261;
+BA_ "SPN" SG_ 2562195454 D04_LP_switch 517217;
+BA_ "SPN" SG_ 2562195454 D03_HP_switch 517214;
+BA_ "SPN" SG_ 2562195454 D02_fan_2 517502;
+BA_ "SPN" SG_ 2562195454 D01_fan_1 517503;
+BA_ "SPN" SG_ 2562195454 A4_valve_pos 517251;
+BA_ "SPN" SG_ 2562129918 A1_cond_pressure 517216;
+BA_ "GenSigStartValue" SG_ 2562129918 A1_cond_pressure 0;
+BA_ "SigType" SG_ 2562129918 A1_cond_pressure 0;
+BA_ "SPN" SG_ 2562129918 A3_coolant_level 517229;
+BA_ "SPN" SG_ 2562129918 A2_evap_pressure 517217;
+BA_ "SPN" SG_ 2562129918 T5_coolant_in 517275;
+BA_ "GenSigStartValue" SG_ 2562129918 T5_coolant_in 8736;
+BA_ "SPN" SG_ 2562064382 T4_coolant_out 517274;
+BA_ "GenSigStartValue" SG_ 2562064382 T4_coolant_out 8736;
+BA_ "GenSigStartValue" SG_ 2562064382 T3_evap_out 8736;
+BA_ "SPN" SG_ 2562064382 T2_discharge 517272;
+BA_ "GenSigStartValue" SG_ 2562064382 T2_discharge 8736;
+BA_ "SPN" SG_ 2562064382 T1_ambient 517271;
+BA_ "GenSigStartValue" SG_ 2562064382 T1_ambient 8736;
+BA_ "GenSigStartValue" SG_ 2562523134 PID_elapsed_time 0;
+BA_ "GenSigStartValue" SG_ 2562523134 PID_I_term 10000;
+BA_ "GenSigStartValue" SG_ 2562523134 PID_P_term 10000;
+BA_ "GenSigStartValue" SG_ 2561999865 OVR_cab_heater_power_command 65535;
+BA_ "GenSigStartValue" SG_ 2561999865 OVR_batt_heater_power_command 65535;
+BA_ "GenSigStartValue" SG_ 2561999865 OVR_EXV_position_command 65535;
+BA_ "GenSigStartValue" SG_ 2561999865 OVR_SV_position 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_pe_pump_speed_command 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_cab_pump_speed_command 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_COND_fan_SP 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_compressor_speed_command 65535;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_PWM2 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_PWM1_COND_fans 255;
+BA_ "GenSigStartValue" SG_ 2561999609 OVR_batt_pump_speed_command 255;
+BA_ "SPN" SG_ 2562457598 pump_2_speed 517219;
+BA_ "SPN" SG_ 2562457598 pump_1_speed 517218;
+BA_ "SPN" SG_ 2562326526 heater_1_power 517241;
+BA_ "SPN" SG_ 2562260990 compressor_speed 517215;
+VAL_ 3221225472 CAN_Gateway_Enable_Proprietary_2 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 3221225472 CAN_Gateway_Enable_Proprietary_1 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 3221225472 CAN_Gateway_Enable_Public 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 3221225472 CAN_Gateway_Enable_Private 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 3221225472 D14_fire 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 3221225472 D13_reverse 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 3221225472 D05_HVIL 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 3221225472 D04_LP_switch 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 3221225472 D03_HP_switch 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 3221225472 D02_fan_2 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 3221225472 D01_fan_1 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 3221225472 A4_valve_pos 100 "Passive" 50 "50/50" 0 "Active or Heat" 255 "Valve override disabled" ;
+VAL_ 2562654206 EXV_state_machine_status 3 "Complete" 2 "In Process" 1 "Start Request" 0 "Idle" ;
+VAL_ 2562654206 CAN_Gateway_Public_Status 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 2562654206 CAN_Gateway_Proprietary_2_Status 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 2562654206 CAN_Gateway_Proprietary_1_Status 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 2562654206 CAN_Gateway_Private_Status 2 "Invalid or Not Defined" 1 "Enable" 0 "Disable" ;
+VAL_ 2562588670 firmware_prefix 50 "Reserved" 48 "Reserved" 47 "Reserved" 46 "Reserved" 45 "Reserved" 44 "Reserved" 43 "Reserved" 41 "Reserved" 40 "Reserved" 39 "Reserved" 38 "Reserved" 37 "Reserved" 36 "Reserved" 34 "Reserved" 33 "Reserved" 32 "Reserved" 31 "Reserved" 30 "Reserved" 29 "Reserved" 27 "Reserved" 26 "Reserved" 25 "40TB" 24 "40RB" 23 "40MF" 22 "40TC" 20 "40EF" 19 "Reserved" 18 "Reserved" 17 "Reserved" 16 "Reserved" 13 "Reserved" 11 "Reserved" 10 "Reserved" 49 "Reserved" 42 "Reserved" 35 "Reserved" 28 "Reserved" 21 "40BF" 15 "Reserved" 14 "Reserved" 12 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 255 "Invalid or Not Used" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "30MF" 2 "30TC" 1 "30BF" 0 "30EF" ;
+VAL_ 2562195454 Active_Cool_Lockout_Cycle_Count 15 "Not Used or Invalid" ;
+VAL_ 2562195454 Comp_Dis_Therm_Fault_Counter 15 "Not Used or Invalid" ;
+VAL_ 2562195454 HP_Switch_Fault_Counter 15 "Not Used or Invalid" ;
+VAL_ 2562195454 LP_Switch_Fault_Counter 15 "Not Used or Invalid" ;
+VAL_ 2562195454 D14_fire 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 2562195454 D13_reverse 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 2562195454 D05_HVIL 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 2562195454 D04_LP_switch 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 2562195454 D03_HP_switch 3 "Invalid" 1 "Closed (OK)" 0 "Open (fault)" ;
+VAL_ 2562195454 D02_fan_2 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 2562195454 D01_fan_1 3 "Invalid" 1 "High (24V)" 0 "Low (0V)" ;
+VAL_ 2562195454 A4_valve_pos 100 "Passive" 50 "50/50" 0 "Active or Heat" 255 "Valve override disabled" ;
+VAL_ 2561999865 OVR_cab_heater_power_command 65535 "Manual mode disabled" ;
+VAL_ 2561999865 OVR_batt_heater_power_command 65535 "Manual mode disabled" ;
+VAL_ 2561999865 OVR_EXV_position_command 65535 "Manual mode disabled" ;
+VAL_ 2561999865 OVR_SV_position 255 "OVERRRIDE DISABLED" 3 "FAULT" 2 "RESERVED" 1 "OPEN" 0 "CLOSED" ;
+VAL_ 2561999609 OVR_pe_pump_speed_command 255 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_cab_pump_speed_command 255 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_COND_fan_SP 255 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_compressor_speed_command 65535 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_PWM2 255 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_PWM1_COND_fans 255 "Manual mode disabled" ;
+VAL_ 2561999609 OVR_batt_pump_speed_command 255 "Manual mode disabled" ;
+

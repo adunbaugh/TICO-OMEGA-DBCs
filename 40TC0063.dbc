@@ -1,0 +1,288 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU Modine_TMC
+VAL_TABLE_ PWM_FAN_Values 255 "Not Available or Not Applicable" 254 "Error" 184 "Full Speed [92% PWM]" 40 "Reverse [20% PWM]" 6 "Off [3% PWM]" ;
+VAL_TABLE_ Cab_Modes 3 "Heat and Cool (Defrost)" 2 "Heat Only" 1 "Cool Only" 0 "Off" ;
+VAL_TABLE_ Cab_Heater_detection_values 1 "HEATER_DETECTED" 0 "HEATER_NOT_DETECTED" ;
+VAL_TABLE_ BattRatedEnergy_values 3 "RESERVED" 2 "BATT_280KWH" 1 "BATT_140KWH" 0 "BATT_RATED_ENERGY_UNCONFIGURED" ;
+VAL_TABLE_ VehicleType_values 3 "RESERVED" 2 "LOOMIS" 1 "STEP_VAN" 0 "VEHICLE_TYPE_UNCONFIGURED" ;
+VAL_TABLE_ CabAcConfig_values 3 "RESERVED" 2 "CAB_AC_INSTALLED" 1 "CAB_AC_NOT_INSTALLED" 0 "CAB_AC_UNCONFIGURED" ;
+VAL_TABLE_ EXV_modes 4 "EXV_MODE_MIN_OPEN" 3 "EXV_MODE_EVAP_PRIORITIZE" 2 "EXV_MODE_BATTERY_PRIORITIZE" 1 "EXV_MODE_SHUTOFF" 0 "EXV_MODE_STARTUP_SEQUENCE" ;
+VAL_TABLE_ pwm_pump_status 5 "PWM heartbeat lost" 4 "Unknown Fault" 3 "Over Temperature" 2 "Over Current" 1 "Dry Run" 0 "Pump OK" ;
+VAL_TABLE_ fault_code_status 3 "(N/A)" 1 "Fault Active" 0 "No Fault" ;
+VAL_TABLE_ CabModes 3 "Heat and Cool (Defrost)" 2 "Heat Only" 1 "Cool Only" 0 "Off" ;
+VAL_TABLE_ ModeStatBatt 6 "Auto" 5 "Coolant Fill" 4 "Heating" 3 "Active Cooling" 2 "Passive Cooling" 1 "Circulate" 0 "Standby" ;
+VAL_TABLE_ SensorValidity_u8 255 "(invalid value)" ;
+VAL_TABLE_ SensorValidity_u16 65535 "(invalid value)" ;
+VAL_TABLE_ FMI 0 "Above normal (most severe)" 1 "Below normal (most severe)" 2 "Data erratic" 3 "Voltage above normal" 4 "Voltage below normal" 5 "Current below normal" 6 "Current above normal" 7 "Mechanical system not responding" 8 "Abnormal frequency" 9 "Abnormal update rate" 10 "Abnormal rate of change" 11 "Root cause not known" 12 "Bad intelligent device" 13 "Out of calibration" 14 "Special intstructions" 15 "Above normal (least severe)" 16 "Above normal (moderately severe)" 17 "Below normal (least severe)" 18 "Below normal (moderately severe)" 19 "Received network data in error" 20 "Data drifted high" 21 "Data drifted low" 31 "Condition exists" ;
+VAL_TABLE_ Ports 21 "Global (All ports)" 0 "Local" ;
+VAL_TABLE_ WrkStOpMode 15 "Not Available" 14 "Error" 2 "Speed" 1 "Temperature" 0 "Off" ;
+VAL_TABLE_ HvSysStat 3 "HV Shutdown" 2 "HV Shutdown Pending" 1 "HV Ready" 0 "Wait" ;
+
+
+BO_ 2566887100 TMS_Status_Refrigerant: 8 Vector__XXX
+ SG_ EXV_Mode : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EXV_Position : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Evap_SOV_State : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Compressor_Speed_Status : 0|16@1+ (1,0) [0|65535] "RPM" Vector__XXX
+
+BO_ 2566886844 TMS_Status_Heaters: 8 Vector__XXX
+ SG_ Cab_Heater_Core_Temp : 56|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Cab_Heater_Outlet_Temp : 48|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Cab_Heater_Inlet_Temp : 40|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Cab_Heater_Power : 32|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
+ SG_ Batt_Heater_Core_Temp : 24|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Batt_Heater_Outlet_Temp : 16|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Batt_Heater_Inlet_Temp : 8|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Batt_Heater_Power : 0|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
+
+BO_ 2566886588 TMS_Status_Pumps: 8 Vector__XXX
+ SG_ PE_Pump_4_Speed : 48|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+ SG_ Cab_Pump_3_Speed : 32|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+ SG_ Batt_Pump_2_Speed : 16|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+ SG_ Batt_Pump_1_Speed : 0|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+
+BO_ 2565848155 TMS_Command: 8 VCU
+ SG_ TMS_Mode_Command_Cab : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TMS_Cab_Temp_Error : 16|8@1+ (1,-40) [-40|215] "캜" Vector__XXX
+ SG_ TMS_PE_Temp_setpoint : 56|8@1+ (1,-40) [-40|215] "캜" Vector__XXX
+ SG_ TMS_State_Command : 0|2@1+ (1,0) [0|3] ""  Modine_TMC
+ SG_ TMS_ESSMinModuleTemp_setpoint : 24|8@1+ (1,-40) [-40|215] "째C"  Modine_TMC
+ SG_ TMS_ESSMinModuleTemp_feedback : 40|8@1+ (1,-40) [-40|215] "째C"  Modine_TMC
+ SG_ TMS_ESSMaxModuleTemp_setpoint : 32|8@1+ (1,-40) [-40|215] "째C"  Modine_TMC
+ SG_ TMS_ESSMaxModuleTemp_feedback : 48|8@1+ (1,-40) [-40|215] "째C"  Modine_TMC
+ SG_ TMS_Mode_Command_Batt : 2|3@1+ (1,0) [0|7] ""  Modine_TMC
+ SG_ TMS_HV_System_Command : 5|3@1+ (1,0) [0|7] ""  Modine_TMC
+
+BO_ 2566886076 TMS_Status_PT_Refrigerant: 8 Modine_TMC
+ SG_ P_RefrigCompSuction : 32|16@1+ (0.1,0) [0|6553.5] "kPa-a"  VCU
+ SG_ T_RefrigCompSuction : 48|16@1+ (0.03125,-273) [-273|1774.96875] "degC"  VCU
+ SG_ T_RefrigCompDischarge : 16|16@1+ (0.03125,-273) [-273|1774.96875] "degC"  VCU
+ SG_ P_RefrigCompDischarge : 0|16@1+ (0.1,0) [0|6553.5] "kPa-a"  VCU
+
+BO_ 2566886332 TMS_Status_Temperatures: 8 Modine_TMC
+ SG_ T_PERadOut : 32|16@1+ (0.03125,-273) [-273|1774.96875] "degC"  VCU
+ SG_ T_BattOut : 16|16@1+ (0.03125,-273) [-273|1774.96875] "degC"  VCU
+ SG_ T_BattIn : 0|16@1+ (0.03125,-273) [-273|1774.96875] "degC"  VCU
+
+BO_ 2566885820 TMS_Status_Fans: 8 Modine_TMC
+ SG_ Fan_4_Status : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fan_3_Status : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fan_2_Status : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fan_1_Status : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FanSpeed_Bank2_COND : 32|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+ SG_ FanSpeed_Bank1_RAD : 16|16@1+ (0.5,0) [0|32767.5] "RPM" Vector__XXX
+ SG_ Fan_Bank_2_COND_Command : 8|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Fan_Bank_1_RAD_Command : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 2566885564 TMS_Status_General: 8 Modine_TMC
+ SG_ reported_HV_voltage : 48|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ TMS_Fault_Code : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TMS_LV_Voltage : 32|8@1+ (0.2,0) [0|50] "V" Vector__XXX
+ SG_ TMS_HV_Power_Consumption : 24|8@1+ (0.1,0) [0|25] "kW" Vector__XXX
+ SG_ CoolLvl_PE : 11|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CoolLvl_Cab : 13|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CoolLvl_Batt : 16|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TMS_Cab_Mode_Status : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TMS_Batt_Mode_Status : 4|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TMS_Shutdown_Ready : 2|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TMS_State_Status : 0|2@1+ (1,0) [0|3] "-" Vector__XXX
+
+
+
+CM_ "V1.0.0 - Initial Creation";
+CM_ SG_ 2565848155 TMS_Cab_Temp_Error "The desired ESS minimum module temperature setpoint. This signal is combined with the feedback signal to process an error for the closed-loop heating algorithm. ";
+CM_ SG_ 2565848155 TMS_PE_Temp_setpoint "The desired ESS minimum module temperature setpoint. This signal is combined with the feedback signal to process an error for the closed-loop heating algorithm. ";
+CM_ SG_ 2565848155 TMS_ESSMinModuleTemp_setpoint "The desired ESS minimum module temperature setpoint. This signal is combined with the feedback signal to process an error for the closed-loop heating algorithm. ";
+CM_ SG_ 2565848155 TMS_ESSMinModuleTemp_feedback "The minimum module temperature as reported by the ESS. This is the feedback for the TMS closed-loop heating algorithm.";
+CM_ SG_ 2565848155 TMS_ESSMaxModuleTemp_setpoint "The desired ESS maximum module temperature setpoint. This signal is combined with the feedback signal to process an error for the closed-loop cooling algorithm.";
+CM_ SG_ 2565848155 TMS_ESSMaxModuleTemp_feedback "The maximum module temperature as reported by the ESS. This is the feedback for the TMS closed-loop cooling algorithm. ";
+CM_ SG_ 2565848155 TMS_HV_System_Command "Used to explicitly shut down high voltage to thermal management system. Useful for normal shutdown, emergency shutdown, and also to ensure no HV current draw during pre-charge. ";
+CM_ SG_ 2566886076 P_RefrigCompSuction "Compressor suction pressure for the battery or shared compressor";
+CM_ SG_ 2566886076 T_RefrigCompSuction "Compressor suction temperature for the battery or shared compressor";
+CM_ SG_ 2566886076 T_RefrigCompDischarge "Compressor discharge temperature for the battery or shared compressor";
+CM_ SG_ 2566886076 P_RefrigCompDischarge "Compressor discharge pressure for the battery or shared compressorCompressor discharge pressure";
+CM_ SG_ 2566885820 FanSpeed_Bank2_COND "Pelican - LTR and HTR
+Blacksphere - PSOC, Batt COND, HTR";
+CM_ SG_ 2566885820 FanSpeed_Bank1_RAD "Pelican - Combined condenser and HTR
+Blacksphere - Cab condenser, LTR, HTR";
+CM_ SG_ 2566885564 TMS_LV_Voltage "Low voltage (+Vbatt) read at thermal management controller";
+CM_ SG_ 2566885564 CoolLvl_PE "Type: Fozmula S298";
+CM_ SG_ 2566885564 CoolLvl_Cab "Type: Fozmula S298";
+CM_ SG_ 2566885564 CoolLvl_Batt "Type: Fozmula S298";
+CM_ SG_ 2566885564 TMS_Batt_Mode_Status "Operating mode of the TMC based on Mode Command, various temperatures, and available power. ";
+CM_ SG_ 2566885564 TMS_State_Status "The current overall operating state of the BTMS. Confirmation of tmStateCommand. Can be used as a catch-all signal for the presence of any fault. ";
+BA_DEF_ SG_  "J1939SLOT" STRING ;
+BA_DEF_  "BaudRate" STRING ;
+BA_DEF_  "DatabaseVersionDate" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "J1939SLOT" "-";
+BA_DEF_DEF_  "BaudRate" "500K";
+BA_DEF_DEF_  "DatabaseVersionDate" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DatabaseVersionDate" "21-Mar-2024";
+BA_ "DatabaseVersion" "1.0.0";
+BA_ "BusType" "CAN";
+BA_ "BaudRate" "500k";
+BA_ "DBName" "__TC0063";
+BA_ "NmStationAddress" BU_ VCU 91;
+BA_ "NmStationAddress" BU_ Modine_TMC 188;
+BA_ "GenMsgCycleTime" BO_ 2566887100 100;
+BA_ "VFrameFormat" BO_ 2566887100 3;
+BA_ "GenMsgCycleTime" BO_ 2566886844 100;
+BA_ "VFrameFormat" BO_ 2566886844 3;
+BA_ "GenMsgCycleTime" BO_ 2566886588 100;
+BA_ "VFrameFormat" BO_ 2566886588 3;
+BA_ "GenMsgCycleTime" BO_ 2565848155 100;
+BA_ "VFrameFormat" BO_ 2565848155 3;
+BA_ "GenMsgCycleTime" BO_ 2566886076 1000;
+BA_ "VFrameFormat" BO_ 2566886076 3;
+BA_ "GenMsgCycleTime" BO_ 2566886332 1000;
+BA_ "VFrameFormat" BO_ 2566886332 3;
+BA_ "GenMsgCycleTime" BO_ 2566885820 1000;
+BA_ "VFrameFormat" BO_ 2566885820 3;
+BA_ "GenMsgCycleTime" BO_ 2566885564 100;
+BA_ "VFrameFormat" BO_ 2566885564 3;
+BA_ "SPN" SG_ 2566886588 PE_Pump_4_Speed 517218;
+BA_ "SPN" SG_ 2566886588 Cab_Pump_3_Speed 517218;
+BA_ "SPN" SG_ 2566886588 Batt_Pump_2_Speed 517218;
+BA_ "SPN" SG_ 2566886588 Batt_Pump_1_Speed 517218;
+BA_ "SPN" SG_ 2566886076 P_RefrigCompSuction 517290;
+BA_ "SPN" SG_ 2566886076 T_RefrigCompSuction 517276;
+BA_ "GenSigStartValue" SG_ 2566886076 T_RefrigCompSuction 0;
+BA_ "SPN" SG_ 2566886076 T_RefrigCompDischarge 517276;
+BA_ "GenSigStartValue" SG_ 2566886076 T_RefrigCompDischarge 0;
+BA_ "SPN" SG_ 2566886076 P_RefrigCompDischarge 517291;
+BA_ "GenSigStartValue" SG_ 2566886332 T_PERadOut 0;
+BA_ "SPN" SG_ 2566886332 T_PERadOut 517276;
+BA_ "SPN" SG_ 2566886332 T_BattOut 517276;
+BA_ "GenSigStartValue" SG_ 2566886332 T_BattOut 0;
+BA_ "SPN" SG_ 2566886332 T_BattIn 517276;
+BA_ "GenSigStartValue" SG_ 2566886332 T_BattIn 0;
+VAL_ 2566887100 EXV_Mode 4 "EXV_MODE_MIN_OPEN" 3 "EXV_MODE_EVAP_PRIORITIZE" 2 "EXV_MODE_BATTERY_PRIORITIZE" 1 "EXV_MODE_SHUTOFF" 0 "EXV_MODE_STARTUP_SEQUENCE" ;
+VAL_ 2566887100 Evap_SOV_State 2 "Fault" 3 "Not Installed" 1 "Open" 0 "Closed" ;
+VAL_ 2566886588 PE_Pump_4_Speed 65535 "(invalid value)" ;
+VAL_ 2566886588 Cab_Pump_3_Speed 65535 "(invalid value)" ;
+VAL_ 2566886588 Batt_Pump_2_Speed 65535 "(invalid value)" ;
+VAL_ 2566886588 Batt_Pump_1_Speed 65535 "(invalid value)" ;
+VAL_ 2565848155 TMS_Mode_Command_Cab 3 "Heat and Cool (Defrost)" 2 "Heat Only" 1 "Cool Only" 0 "Off" ;
+VAL_ 2565848155 TMS_State_Command 1 "On" 0 "Off" ;
+VAL_ 2565848155 TMS_Mode_Command_Batt 7 "Sleep" 6 "Auto" 5 "Coolant Fill" 4 "Heating" 3 "Active Cooling" 2 "Passive Cooling" 1 "Circulate" 0 "Standby" ;
+VAL_ 2565848155 TMS_HV_System_Command 3 "(Not Available)" 2 "Active Discharge Request" 1 "HV Disable" 0 "HV Enable" ;
+VAL_ 2566886076 P_RefrigCompSuction 65535 "(invalid value)" ;
+VAL_ 2566886076 T_RefrigCompSuction 65535 "(invalid value)" ;
+VAL_ 2566886076 T_RefrigCompDischarge 65535 "(invalid value)" ;
+VAL_ 2566886076 P_RefrigCompDischarge 65535 "(invalid value)" ;
+VAL_ 2566886332 T_PERadOut 65535 "(invalid value)" ;
+VAL_ 2566886332 T_BattOut 65535 "(invalid value)" ;
+VAL_ 2566886332 T_BattIn 65535 "(invalid value)" ;
+VAL_ 2566885564 TMS_Fault_Code 79 "Chiller Refrig Solenoid A High" 78 "Chiller Refrig Solenoid A Low" 77 " Evap Refrig Solenoid A Low " 76 "Evap Refrig Solenoid A Low" 75 "BTMS Coolant In Therm SCG" 74 "BTMS Coolant In Therm OC or SCB" 73 "Coolant Out 3 Therm SCG" 72 "Coolant Out 3 Therm OC or SCB" 71 "Coolant Out 2 Therm SCG" 70 "Coolant Out 2 Therm OC or SCB" 69 "Coolant Out 1 Therm SCG" 68 "Coolant Out 1 Therm OC or SCB" 67 "C1 Ref Suc Therm SCG" 66 "C1 Ref Suc Therm OC or SCB" 65 "C1 Ref Dis Therm SCG" 64 "C1 Ref Dis Therm OC or SCB" 63 "Ambient Air Thermistor SCG" 62 "Ambient Air Thermistor OC or SCB" 61 "C1 Suc Pres Sensor Installed Bad " 60 "C1 Suc Pres Sensor Volt Low" 59 "C1 Suc Pres Sensor Volt High" 58 "C1 Dis Pres Sensor Installed Bad" 57 "C1 Dis Pres Sensor Volt Low" 56 "C1 Dis Pres Sensor Volt High" 55 "Coolant lvl Sensor 3 volt Low" 54 "Coolant lvl Sensor 3 volt High" 53 "Coolant lvl Sensor 2 volt Low" 52 "Coolant lvl Sensor 2 volt High" 51 "Coolant lvl Sensor 1 volt Low" 50 "Coolant lvl Sensor 1 volt High" 49 "3-way valve status lost" 48 "3-way valve position fault" 47 "Fan 4 Runaway" 46 "Fan 4 Inoperable" 45 "Fan 3 Runaway" 44 "Fan 3 Inoperable" 43 "Fan 2 Runaway" 42 "Fan 2 Inoperable" 41 "Fan 1 Runaway" 40 "Fan 1 Inoperable" 39 "Pump 3 Low coolant flow" 38 "Pump 3 General Fault or De-rated" 37 "Pump 3 Inoperable" 36 "Pump 3 Status Lost" 35 "Pump 2 Low coolant flow" 34 "Pump 2 General Fault or De-rated" 33 "Pump 2 Inoperable" 32 "Pump 2 Status Lost" 31 "Pump 1 Low coolant flow" 30 "Pump 1 General Fault or De-rated" 29 "Pump 1 Inoperable" 28 "Pump 1 Status Lost" 27 "Heater 2 Lockout - Permanent" 26 "Heater 2 Lockout - Service" 25 "Heater 2 Lockout - Next Start" 24 "Heater 2 HV Under-Voltage" 23 "Heater 2 HV Over-Voltage" 22 "Heater 2 General Fault" 21 "Heater 2 Status Lost" 20 "Heater 1 Lockout - Permanent" 19 "Heater 1 Lockout - Service" 18 "Heater 1 Lockout - Next Start" 17 "Heater 1 HV Under-Voltage" 16 "Heater 1 HV Over-Voltage" 15 "Heater 1 General Fault" 14 "Heater 1 Status Lost" 13 "Compressor 1 Low Charge Warning" 12 "Compressor 1 Discharge Temp High" 11 "Compressor 1 Lockout" 10 "Compressor 1 Speed Fault" 9 "Compressor 1 HV Under-Voltage" 8 "Compressor 1 HV Over-Voltage" 7 "Refrigerant Low Pressure Limit" 6 "Refrigerant High Pressure Limit" 5 "Compressor 1 General Fault" 4 "Compressor 1 Status Lost" 3 "LV Under-Voltage" 2 "LV Over-Voltage" 1 "TMS Command Lost" 0 "No Fault" ;
+VAL_ 2566885564 TMS_LV_Voltage 255 "(invalid value)" ;
+VAL_ 2566885564 TMS_HV_Power_Consumption 255 "(invalid value)" ;
+VAL_ 2566885564 CoolLvl_PE 3 "Sensor Fault" 1 "Low Coolant" 0 "Coolant Level OK" ;
+VAL_ 2566885564 CoolLvl_Cab 3 "Sensor Fault" 1 "Low Coolant" 0 "Coolant Level OK" ;
+VAL_ 2566885564 CoolLvl_Batt 3 "Sensor Fault" 1 "Low Coolant" 0 "Coolant Level OK" ;
+VAL_ 2566885564 TMS_Cab_Mode_Status 3 "Heat and Cool (Defrost)" 2 "Heat Only" 1 "Cool Only" 0 "Off" ;
+VAL_ 2566885564 TMS_Batt_Mode_Status 6 "Auto" 5 "Coolant Fill" 4 "Heating" 3 "Active Cooling" 2 "Passive Cooling" 1 "Circulate" 0 "Standby" ;
+VAL_ 2566885564 TMS_Shutdown_Ready 1 "HV Shutdown Ready" 0 "Wait for HV Shutdown" ;
+VAL_ 2566885564 TMS_State_Status 3 "Fault" 2 "Reserved" 1 "On" 0 "Off" ;
+

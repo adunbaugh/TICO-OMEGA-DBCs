@@ -1,0 +1,425 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BU_: mVEC_Unit PC
+
+
+BO_ 2566889904 Relay_Status: 8 mVEC_Unit
+ SG_ Grid_Address : 0|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ Relay_01_Status : 8|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_02_Status : 12|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_03_Status : 16|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_04_Status : 20|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_05_Status : 24|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_06_Status : 28|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_07_Status : 32|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_08_Status : 36|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_09_Status : 40|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_10_Status : 44|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_11_Status : 48|4@1+ (1,0) [0|15] "NA" Vector__XXX
+ SG_ Relay_12_Status : 52|4@1+ (1,0) [0|15] "NA" Vector__XXX
+
+BO_ 2566889648 Fuse_Status: 8 mVEC_Unit
+ SG_ Grid_Address : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse_01_Status : 8|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_02_Status : 10|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_03_Status : 12|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_04_Status : 14|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_05_Status : 16|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_06_Status : 18|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_07_Status : 20|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_08_Status : 22|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_09_Status : 24|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_10_Status : 26|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_11_Status : 28|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_12_Status : 30|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_13_Status : 32|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_14_Status : 34|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_15_Status : 36|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_16_Status : 38|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_17_Status : 40|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_18_Status : 42|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_19_Status : 44|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_20_Status : 46|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_21_Status : 48|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_22_Status : 50|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_23_Status : 52|2@1+ (1,0) [0|3] "NA" Vector__XXX
+ SG_ Fuse_24_Status : 54|2@1+ (1,0) [0|3] "NA" Vector__XXX
+
+BO_ 2566890160 Error_Status: 8 mVEC_Unit
+ SG_ Grid_Address : 0|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ Error_Status : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ Error_Status_Extended : 16|8@1+ (1,0) [0|0] "NA" Vector__XXX
+
+BO_ 2565800112 Response: 8 mVEC_Unit
+ SG_ DB0_x_Message_ID M : 0|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R96_DB1_x_Grid_Address m150 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R96_DB2_0_Relay_1_State m150 : 16|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_1_Relay_2_State m150 : 17|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_2_Relay_3_State m150 : 18|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_3_Relay_4_State m150 : 19|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_4_Relay_5_State m150 : 20|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_5_Relay_6_State m150 : 21|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_6_Relay_7_State m150 : 22|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB2_7_Relay_8_State m150 : 23|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_0_Relay_9_State m150 : 24|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_1_Relay_10_State m150 : 25|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_2_Relay_11_State m150 : 26|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_3_Relay_12_State m150 : 27|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_4_Hi_Side_Output m150 : 28|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB3_5_Reserved m150 : 29|3@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_0_Relay_1_Def_State m150 : 32|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_1_Relay_2_Def_State m150 : 33|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_2_Relay_3_Def_State m150 : 34|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_3_Relay_4_Def_State m150 : 35|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_4_Relay_5_Def_State m150 : 36|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_5_Relay_6_Def_State m150 : 37|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_6_Relay_7_Def_State m150 : 38|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB4_7_Relay_8_Def_State m150 : 39|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_0_Relay_9_Def_State m150 : 40|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_1_Relay_10_Def_State m150 : 41|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_2_Relay_11_Def_State m150 : 42|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_3_Relay_12_Def_State m150 : 43|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_4_Hi_Side_Def_Output m150 : 44|1@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB5_5_Reserved m150 : 45|3@1+ (1,0) [0|1] "NA" Vector__XXX
+ SG_ R96_DB6_x_Startup_Delay m150 : 48|16@1+ (0.001,0) [0|0] "Sec" Vector__XXX
+ SG_ R01_DB1_x_Command_ID m1 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R01_DB2_x_Status m1 : 16|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R13_DB1_x_Operating_Mode m19 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ R13_DB2_x_SW_Version m19 : 16|16@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R13_DB4_x_Alternate_Version m19 : 32|16@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R97_DB1_x_Circuit_Board_Config m151 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R97_DB2_x_CAN_SA_Offset_Cable_Select m151 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ R97_DB3_x_CAN_SA_Base m151 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ R97_DB4_x_CAN_Msg_Count_Threshold_LSB m151 : 32|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R97_DB5_x_CAN_Msg_Count_Threshold_MSB m151 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ R97_DB6_x_CAN_Timeout_Source_Address m151 : 48|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R97_DB7_x_Status_PGN_Base m151 : 56|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB1_x_Grid_Address m148 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_0_Fuse_01_Populated m148 : 16|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_1_Fuse_02_Populated m148 : 17|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_2_Fuse_03_Populated m148 : 18|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_3_Fuse_04_Populated m148 : 19|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_4_Fuse_05_Populated m148 : 20|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_5_Fuse_06_Populated m148 : 21|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_6_Fuse_07_Populated m148 : 22|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB2_7_Fuse_08_Populated m148 : 23|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_0_Fuse_09_Populated m148 : 24|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_1_Fuse_10_Populated m148 : 25|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_2_Fuse_11_Populated m148 : 26|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_3_Fuse_12_Populated m148 : 27|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_4_Fuse_13_Populated m148 : 28|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_5_Fuse_14_Populated m148 : 29|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_6_Fuse_15_Populated m148 : 30|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB3_7_Fuse_16_Populated m148 : 31|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_0_Fuse_17_Populated m148 : 32|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_1_Fuse_18_Populated m148 : 33|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_2_Fuse_19_Populated m148 : 34|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_3_Fuse_20_Populated m148 : 35|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_4_Fuse_21_Populated m148 : 36|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_5_Fuse_22_Populated m148 : 37|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_6_Fuse_23_Populated m148 : 38|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB4_7_Fuse_24_Populated m148 : 39|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_0_Relay_01_Populated m148 : 48|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_1_Relay_02_Populated m148 : 49|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_2_Relay_03_Populated m148 : 50|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_3_Relay_04_Populated m148 : 51|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_4_Relay_05_Populated m148 : 52|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_5_Relay_06_Populated m148 : 53|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_6_Relay_07_Populated m148 : 54|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB6_7_Relay_08_Populated m148 : 55|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB7_0_Relay_09_Populated m148 : 56|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB7_1_Relay_10_Populated m148 : 57|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB7_2_Relay_11_Populated m148 : 58|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB7_3_Relay_12_Populated m148 : 59|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ R94_DB7_4_HS_Output_Populated m148 : 60|1@1+ (1,0) [0|0] "NA" Vector__XXX
+
+BO_ 2565845077 Command: 8 PC
+ SG_ DB0_x_Message_ID M : 0|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C99_DB1_x_Delay_Time m153 : 8|16@1+ (0.001,0) [0|0] "NA" Vector__XXX
+ SG_ C96_DB1_x_Grid_Address m150 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB1_x_Grid_Address m136 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ C98_DB1_x_CAN_Msg_Count_Thresh_LSB m152 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C98_DB2_x_CAN_Msg_Count_Thresh_MSB m152 : 16|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C98_DB3_x_CAN_Timeout_Source_Address m152 : 24|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB2_0_Relay_1_State m136 : 16|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB2_2_Relay_2_State m136 : 18|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB2_4_Relay_3_State m136 : 20|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB2_6_Relay_4_State m136 : 22|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB3_0_Relay_5_State m136 : 24|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB3_2_Relay_6_State m136 : 26|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB3_4_Relay_7_State m136 : 28|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB3_6_Relay_8_State m136 : 30|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB4_0_Relay_9_State m136 : 32|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB4_2_Relay_10_State m136 : 34|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB4_4_Relay_11_State m136 : 36|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB4_6_Relay_12_State m136 : 38|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C88_DB5_0_HS_Output_State m136 : 40|2@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C90_DB1_x_SA_Base m144 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C90_DB2_x_Status_PGN_Base m144 : 16|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C92_DB1_x_Grid_Address m146 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB1_x_Grid_Address m148 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_0_Fuse_01_Populated m148 : 16|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_1_Fuse_02_Populated m148 : 17|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_2_Fuse_03_Populated m148 : 18|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_3_Fuse_04_Populated m148 : 19|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_4_Fuse_05_Populated m148 : 20|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_5_Fuse_06_Populated m148 : 21|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_6_Fuse_07_Populated m148 : 22|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB2_7_Fuse_08_Populated m148 : 23|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_0_Fuse_09_Populated m148 : 24|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_1_Fuse_10_Populated m148 : 25|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_2_Fuse_11_Populated m148 : 26|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_3_Fuse_12_Populated m148 : 27|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_4_Fuse_13_Populated m148 : 28|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_5_Fuse_14_Populated m148 : 29|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_6_Fuse_15_Populated m148 : 30|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB3_7_Fuse_16_Populated m148 : 31|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_0_Fuse_17_Populated m148 : 32|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_1_Fuse_18_Populated m148 : 33|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_2_Fuse_19_Populated m148 : 34|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_3_Fuse_20_Populated m148 : 35|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_4_Fuse_21_Populated m148 : 36|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_5_Fuse_22_Populated m148 : 37|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_6_Fuse_23_Populated m148 : 38|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB4_7_Fuse_24_Populated m148 : 39|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_0_Relay_01_Populated m148 : 48|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_1_Relay_02_Populated m148 : 49|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_2_Relay_03_Populated m148 : 50|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_3_Relay_04_Populated m148 : 51|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_4_Relay_05_Populated m148 : 52|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_5_Relay_06_Populated m148 : 53|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_6_Relay_07_Populated m148 : 54|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB6_7_Relay_08_Populated m148 : 55|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB7_0_Relay_09_Populated m148 : 56|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB7_1_Relay_10_Populated m148 : 57|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB7_2_Relay_11_Populated m148 : 58|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB7_3_Relay_12_Populated m148 : 59|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C94_DB7_4_HS_Output_Populated m148 : 60|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB1_x_Grid_Address m149 : 8|8@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_0_Relay_01_Default_State m149 : 16|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_1_Relay_02_Default_State m149 : 17|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_2_Relay_03_Default_State m149 : 18|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_3_Relay_04_Default_State m149 : 19|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_4_Relay_05_Default_State m149 : 20|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_5_Relay_06_Default_State m149 : 21|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_6_Relay_07_Default_State m149 : 22|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB2_7_Relay_08_Default_State m149 : 23|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB3_0_Relay_09_Default_State m149 : 24|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB3_1_Relay_10_Default_State m149 : 25|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB3_2_Relay_11_Default_State m149 : 26|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB3_3_Relay_12_Default_State m149 : 27|1@1+ (1,0) [0|0] "NA" Vector__XXX
+ SG_ C95_DB3_4_HS_Output_Default_State m149 : 28|1@1+ (1,0) [0|0] "NA" Vector__XXX
+
+BO_ 2566838960 Software_ID: 8 mVEC_Unit
+ SG_ Message_Field_Designator : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SW_Version_Minor_Low_Nibble : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SW_Version_Minor_High_Nibble : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SW_Version_Major_Low_Nibble : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SW_Version_Major_High_Nibble : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Delimiter : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2633952176 Component_ID: 8 mVEC_Unit
+ SG_ Make_Hex1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Make_Hex2 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Make_Hex3 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Make_Hex4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565517397 Request_for_PGN: 3 PC
+ SG_ MSB : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Middle_byte : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LSB : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+CM_ SG_ 2566889904 Grid_Address "";
+VAL_ 2566889904 Relay_01_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_02_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_03_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_04_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_05_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_06_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_07_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_08_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_09_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_10_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_11_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889904 Relay_12_Status 0 "OK" 1 "Coil Open NP" 2 "Coil Shorted" 3 "N O Open" 4 "N C Open" 5 "Coil No Power" 6 "N O Shorted" 7 "N C Shorted" 8 "Ground Not Zero" 9 "On But Low" 10 "Off But High" 11 "Fault" 12 "Open Load" 13 "Off Overvoltage" 14 "Reserved" 15 "Not Used" ;
+VAL_ 2566889648 Fuse_01_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_02_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_03_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_04_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_05_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_06_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_07_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_08_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_09_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_10_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_11_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_12_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_13_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_14_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_15_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_16_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_17_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_18_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_19_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_20_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_21_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_22_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_23_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889648 Fuse_24_Status 0 "OK" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566890160 Error_Status 1 "Invalid Configuration" 2 "Grid ID Changed" 4 "Cable Select Changed" 8 "CAN Rx Fault" 16 "CAN Tx Fault" 32 "Unexpected Reset" 64 "Over Voltage" 128 "SPI Error" ;
+VAL_ 2566890160 Error_Status_Extended 1 "Short Message" 2 "Bad Flash Address" 4 "Invalid Data Length" 8 "Flash Miscompare" ;
+VAL_ 2565800112 DB0_x_Message_ID 1 "Success/Failure Response" 19 "Software Version" 148 "Population Table" 150 "Relay State Command" 153 "Set Startup Delay Command" ;
+VAL_ 2565800112 R96_DB2_0_Relay_1_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_1_Relay_2_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_2_Relay_3_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_3_Relay_4_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_4_Relay_5_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_5_Relay_6_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_6_Relay_7_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB2_7_Relay_8_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB3_0_Relay_9_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB3_1_Relay_10_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB3_2_Relay_11_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB3_3_Relay_12_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB3_4_Hi_Side_Output 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_0_Relay_1_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_1_Relay_2_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_2_Relay_3_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_3_Relay_4_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_4_Relay_5_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_5_Relay_6_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_6_Relay_7_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB4_7_Relay_8_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB5_0_Relay_9_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB5_1_Relay_10_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB5_2_Relay_11_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R96_DB5_3_Relay_12_Def_State 0 "OFF" 1 "ON" ;
+VAL_ 2565800112 R01_DB1_x_Command_ID 18 "SW Version" 136 "Change Relay State" 144 "Change SA/PGN Base" 146 "View Population Table" 148 "Change Population Table" 149 "Change Default Relay State" 150 "View Relay State" 151 "View SA/PGN Base" 152 "Change Count Threshold / Timeout SA" 153 "Set Startup Delay" ;
+VAL_ 2565800112 R01_DB2_x_Status 0 "Failure" 1 "Success" ;
+VAL_ 2565800112 R13_DB1_x_Operating_Mode 0 "Run (Application)" 1 "Reserved" 2 "Test Mode" ;
+VAL_ 2565800112 R94_DB2_0_Fuse_01_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_1_Fuse_02_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_2_Fuse_03_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_3_Fuse_04_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_4_Fuse_05_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_5_Fuse_06_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_6_Fuse_07_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB2_7_Fuse_08_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_0_Fuse_09_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_1_Fuse_10_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_2_Fuse_11_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_3_Fuse_12_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_4_Fuse_13_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_5_Fuse_14_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_6_Fuse_15_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB3_7_Fuse_16_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_0_Fuse_17_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_1_Fuse_18_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_2_Fuse_19_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_3_Fuse_20_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_4_Fuse_21_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_5_Fuse_22_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_6_Fuse_23_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB4_7_Fuse_24_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_0_Relay_01_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_1_Relay_02_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_2_Relay_03_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_3_Relay_04_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_4_Relay_05_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_5_Relay_06_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_6_Relay_07_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB6_7_Relay_08_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB7_0_Relay_09_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB7_1_Relay_10_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB7_2_Relay_11_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB7_3_Relay_12_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565800112 R94_DB7_4_HS_Output_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 DB0_x_Message_ID 18 "SW Version" 136 "Change Relay State" 144 "Change SA/PGN Base" 146 "View Population Table" 148 "Change Population Table" 149 "Change Default Relay State" 150 "View Relay States" 151 "View SA/PGN Base" 152 "Change Count Threshold / Timeout SA" 153 "Set Startup Delay" 242 "Set Final PN" ;
+VAL_ 2565845077 C88_DB2_0_Relay_1_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB2_2_Relay_2_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB2_4_Relay_3_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB2_6_Relay_4_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB3_0_Relay_5_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB3_2_Relay_6_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB3_4_Relay_7_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB3_6_Relay_8_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB4_0_Relay_9_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB4_2_Relay_10_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB4_4_Relay_11_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB4_6_Relay_12_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C88_DB5_0_HS_Output_State 0 "Turn Relay OFF" 1 "Turn Relay ON" 2 "No Change" 3 "No Change" ;
+VAL_ 2565845077 C94_DB2_0_Fuse_01_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_1_Fuse_02_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_2_Fuse_03_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_3_Fuse_04_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_4_Fuse_05_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_5_Fuse_06_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_6_Fuse_07_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB2_7_Fuse_08_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_0_Fuse_09_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_1_Fuse_10_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_2_Fuse_11_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_3_Fuse_12_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_4_Fuse_13_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_5_Fuse_14_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_6_Fuse_15_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB3_7_Fuse_16_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_0_Fuse_17_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_1_Fuse_18_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_2_Fuse_19_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_3_Fuse_20_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_4_Fuse_21_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_5_Fuse_22_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_6_Fuse_23_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB4_7_Fuse_24_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_0_Relay_01_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_1_Relay_02_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_2_Relay_03_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_3_Relay_04_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_4_Relay_05_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_5_Relay_06_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_6_Relay_07_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB6_7_Relay_08_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB7_0_Relay_09_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB7_1_Relay_10_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB7_2_Relay_11_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB7_3_Relay_12_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C94_DB7_4_HS_Output_Populated 1 "Populated" 0 "Not populated" ;
+VAL_ 2565845077 C95_DB2_0_Relay_01_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_1_Relay_02_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_2_Relay_03_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_3_Relay_04_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_4_Relay_05_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_5_Relay_06_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_6_Relay_07_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB2_7_Relay_08_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB3_1_Relay_10_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB3_2_Relay_11_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB3_3_Relay_12_Default_State 0 "OFF" 1 "ON" ;
+VAL_ 2565845077 C95_DB3_4_HS_Output_Default_State 0 "OFF" 1 "ON" ;

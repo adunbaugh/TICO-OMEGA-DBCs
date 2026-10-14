@@ -1,0 +1,94 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2566889472 FuseStatus: 8 Vector__XXX
+ SG_ Fuse1Status : 9|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse2Status : 11|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse3Status : 13|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse4Status : 15|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse5Status : 17|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse6Status : 19|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse7Status : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse8Status : 23|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse9Status : 25|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse10Status : 27|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse11Status : 29|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse12Status : 31|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse13Status : 33|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse14Status : 35|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse15Status : 37|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fuse16Status : 39|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566889728 RelayStatus: 8 Vector__XXX
+ SG_ Relay1Status : 11|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay2Status : 15|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay3Status : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay4Status : 23|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay5Status : 27|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay6Status : 31|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay7Status : 35|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay8Status : 39|4@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565799936 RelayCommand: 6 Vector__XXX
+ SG_ MessageID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GridAddress : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Relay1 : 17|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay2 : 19|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay3 : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay4 : 23|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay5 : 25|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay6 : 27|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay7 : 29|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Relay8 : 31|2@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 2565799936 MessageID "always send 0x80";
+CM_ SG_ 2565799936 GridAddress "always send 0x00";
+CM_ SG_ 2565799936 Relay1 "top left relay looking at black connector";
+CM_ SG_ 2565799936 Relay2 "2nd from right, top row";
+CM_ SG_ 2565799936 Relay3 "bottom left when looking at black connector";
+CM_ SG_ 2565799936 Relay4 "2nd from left, top row";
+CM_ SG_ 2565799936 Relay5 "upper right";
+CM_ SG_ 2565799936 Relay6 "2nd from right, bottom row";
+CM_ SG_ 2565799936 Relay7 "2nd from left on bottom row";
+CM_ SG_ 2565799936 Relay8 "bottom right";
+VAL_ 2566889472 Fuse1Status 0 "No Fault" 1 "Blown" 2 "Not Powered" 3 "Not Used" ;
+VAL_ 2566889728 Relay1Status 0 "OK" 1 "Coil Open" 2 "Coil Shorted" 3 "Normally Open contact is open but it should be connected to the Common Terminal" 4 "Normally Closed contact is open but it should be connected to the Common Terminal" 5 "Coil Not Receiving Power" 6 "Normally Open contact is shorted when it should not be connected to the Common Terminal" 7 "Normally Closed contact is shorted when it should not be connected to the Common Terminal" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "High-side driver is reporting a fault condition" 12 "High-side driver has an open-load" 13 "High-side driver is over-voltage" 14 "Reserved" 15 "Relay location not used" ;
+VAL_ 2565799936 Relay1 0 "Turn relay off" 1 "Turn relay on" 2 "Do not change relay state" 3 "Do not change relay state" ;
+

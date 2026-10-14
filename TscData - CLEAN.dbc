@@ -1,0 +1,141 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BO_ 2566914046 T6StatusInfo: 8 Vector__XXX
+ SG_ OverloadProtectionStatus : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HeatSinkTemp : 48|8@1+ (1,-125) [0|0] "" Vector__XXX
+ SG_ RegenerativeTotalPower : 32|16@1+ (10,0) [0|0] "" Vector__XXX
+ SG_ TotalMotorPower : 16|16@1+ (10,0) [0|0] "" Vector__XXX
+ SG_ DcLinkVoltage : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+
+
+
+BO_ 2566852862 PropB_ECU_To_N1: 8 Vector__XXX
+ SG_ MaxTorqueN1 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN1 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+ SG_ ControlModeN1 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566856958 PropB_ECU_To_N2: 8 Vector__XXX
+ SG_ ControlModeN2 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxTorqueN2 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN2 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566861054 PropB_ECU_To_N3: 8 Vector__XXX
+ SG_ ControlModeN3 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxTorqueN3 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN3 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566865150 PropB_ECU_To_N4: 8 Vector__XXX
+ SG_ ControlModeN4 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxTorqueN4 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN4 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566869246 PropB_ECU_To_N5: 8 Vector__XXX
+ SG_ ControlModeN5 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxTorqueN5 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN5 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566873342 PropB_ECU_To_N6: 8 Vector__XXX
+ SG_ ControlModeN6 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxTorqueN6 : 24|16@1+ (0.1,0) [0|6425.5] "%" Vector__XXX
+ SG_ SetVelocityN6 : 8|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+
+
+BO_ 2566852944 PropB_T6APD_N1: 8 T6APD
+ SG_ ElPowerN1 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN1 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN1 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN1 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN1 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566857040 PropB_T6APD_N2: 8 T6APD
+ SG_ ElPowerN2 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN2 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN2 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN2 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN2 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566861136 PropB_T6APD_N3: 8 T6APD
+ SG_ ElPowerN3 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN3 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN3 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN3 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN3 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566865232 PropB_T6APD_N4: 8 T6APD
+ SG_ ElPowerN4 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN4 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN4 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN4 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN4 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566869328 PropB_T6APD_N5: 8 T6APD
+ SG_ ElPowerN5 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN5 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN5 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN5 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN5 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+BO_ 2566873424 PropB_T6APD_N6: 8 T6APD
+ SG_ ElPowerN6 : 48|16@1+ (2,-64254) [-64254|64256] "W" Vector__XXX
+ SG_ ActMotorTempN6 : 32|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActHeatSinkTempN6 : 40|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ ActTorqueN6 : 16|16@1+ (0.1,-3212.7) [-3212.7|3212.8] "%" Vector__XXX
+ SG_ ActVelocityN6 : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+
+
+
+BO_ 2566834942 DM01: 22 Vector__XXX
+ SG_ FlashRedStopLamp : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FlashProtectLamp : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FlashMalfuncIndicatorLamp : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RedStopLampState : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ProtectLampStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DTC5 : 144|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ DTC4 : 112|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ DTC3 : 80|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ DTC2 : 48|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ DTC1 : 16|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+
+
+VAL_ 2566852862 ControlModeN1 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+VAL_ 2566856958 ControlModeN2 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+VAL_ 2566861054 ControlModeN3 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+VAL_ 2566865150 ControlModeN4 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+VAL_ 2566869246 ControlModeN5 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+VAL_ 2566873342 ControlModeN6 3 "Speed/torque limit control" 2 "Torque control" 1 "Speed control" 0 "Override disabled" ;
+

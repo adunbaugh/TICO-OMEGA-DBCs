@@ -1,0 +1,432 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCM HPULSE
+
+
+BO_ 2154168320 CONFIG_1_RX: 8 VCM
+ SG_ pump_mode_rx : 0|2@1+ (1,0) [0|1] ""  HPULSE
+ SG_ invert_direction_rx : 2|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ invert_pressure_sense_rx : 3|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ unidirectional_mode_rx : 4|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ heartbeat_disable_rx : 7|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ can_scheduling_rx : 24|4@1+ (1,0) [0|0] ""  HPULSE
+ SG_ tuning_parameters_rx : 32|4@1+ (1,0) [0|0] ""  HPULSE
+
+BO_ 2364719204 CONFIG_1_TX: 8 HPULSE
+ SG_ pump_mode_tx : 0|2@1+ (1,0) [0|1] ""  VCM
+ SG_ invert_direction_tx : 2|1@1+ (1,0) [0|0] ""  VCM
+ SG_ invert_pressure_sense_tx : 3|1@1+ (1,0) [0|0] ""  VCM
+ SG_ unidirectional_mode_tx : 4|1@1+ (1,0) [0|0] ""  VCM
+ SG_ heartbeat_disable_tx : 7|1@1+ (1,0) [0|0] ""  VCM
+ SG_ can_scheduling_tx : 24|4@1+ (1,0) [0|0] ""  VCM
+ SG_ tuning_parameters_tx : 32|4@1+ (1,0) [0|0] ""  VCM
+
+BO_ 2154233856 CONFIG_2_RX: 8 VCM
+ SG_ acceleration_p_rx : 0|8@1+ (1,0) [1|50] "rpm/msec"  HPULSE
+ SG_ acceleration_n_rx : 8|8@1+ (1,0) [1|50] "rpm/msec"  HPULSE
+ SG_ deceleration_p_rx : 16|8@1+ (1,0) [1|50] "rpm/msec"  HPULSE
+ SG_ deceleration_n_rx : 24|8@1+ (1,0) [1|50] "rpm/msec"  HPULSE
+ SG_ max_pressure_fault_rx : 32|8@1+ (1,100) [20|100] "%"  HPULSE
+
+BO_ 2364723300 CONFIG_2_TX: 8 HPULSE
+ SG_ acceleration_p_tx : 0|8@1+ (1,0) [1|50] "rpm/msec"  VCM
+ SG_ acceleration_n_tx : 8|8@1+ (1,0) [1|50] "rpm/msec"  VCM
+ SG_ deceleration_p_tx : 16|8@1+ (1,0) [1|50] "rpm/msec"  VCM
+ SG_ deceleration_n_tx : 24|8@1+ (1,0) [1|50] "rpm/msec"  VCM
+ SG_ max_pressure_fault_tx : 32|8@1+ (1,100) [20|100] "%"  VCM
+
+BO_ 2154299392 CONFIG_3_RX: 8 VCM
+ SG_ max_speed_p_rx : 0|16@1+ (1,0) [500|4000] "rpm"  HPULSE
+ SG_ max_speed_n_rx : 16|16@1+ (1,0) [500|4000] "rpm"  HPULSE
+ SG_ max_pressure_p_rx : 32|16@1+ (1,0) [200|4000] "psi"  HPULSE
+ SG_ max_pressure_n_rx : 48|16@1+ (1,0) [200|4000] "psi"  HPULSE
+
+BO_ 2364727396 CONFIG_3_TX: 8 HPULSE
+ SG_ max_speed_p_tx : 0|16@1+ (1,0) [500|4000] "rpm"  VCM
+ SG_ max_speed_n_tx : 16|16@1+ (1,0) [500|4000] "rpm"  VCM
+ SG_ max_pressure_p_tx : 32|16@1+ (1,0) [200|4000] "psi"  VCM
+ SG_ max_pressure_n_tx : 48|16@1+ (1,0) [200|4000] "psi"  VCM
+
+BO_ 2154364928 CONFIG_4_RX: 8 VCM
+
+BO_ 2364731492 CONFIG_4_TX: 8 HPULSE
+
+BO_ 2154037248 OP_CTRL_1_RX: 8 VCM
+ SG_ device_enable_cmd : 0|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ start_stop : 1|1@1+ (1,0) [0|0] ""  HPULSE
+ SG_ command_setpoint : 8|16@1- (1,0) [0|4000] "rpm/psi"  HPULSE
+
+BO_ 2154102784 OP_CTRL_2_RX: 8 VCM
+
+BO_ 2154430464 AUX_CMD_RX: 8 VCM
+ SG_ group_2 : 56|4@1+ (1,0) [0|0] ""  HPULSE
+ SG_ group_1 : 60|4@1+ (1,0) [0|0] ""  HPULSE
+
+BO_ 2364690532 PROC_DATA_1_TX: 8 HPULSE
+ SG_ time_1 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+ SG_ pump_mode_fbk : 8|2@1+ (1,0) [0|0] ""  VCM
+ SG_ enable_state : 10|1@1+ (1,0) [0|0] ""  VCM
+ SG_ in_motion : 11|1@1+ (1,0) [0|0] ""  VCM
+ SG_ stopping : 12|1@1+ (1,0) [0|0] ""  VCM
+ SG_ command_setpoint_fbk : 32|16@1- (1,0) [0|4000] "rpm/psi"  VCM
+
+BO_ 2364694628 PROC_DATA_2_TX: 8 HPULSE
+ SG_ time_2 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+ SG_ flowrate : 16|16@1- (1,0) [0|0] "rpm"  VCM
+ SG_ high_side_pressure : 32|16@1+ (1,0) [0|0] "psi"  VCM
+ SG_ low_side_pressure : 48|16@1+ (1,0) [0|0] "psi"  VCM
+
+BO_ 2364698724 PROC_DATA_3_TX: 8 HPULSE
+ SG_ time_3 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+ SG_ position : 16|16@1- (4,0) [0|0] "revs"  VCM
+
+BO_ 2364702820 PROC_DATA_4_TX: 8 HPULSE
+ SG_ time_4 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+ SG_ device_temperature : 8|8@1+ (1,0) [0|0] "degree C"  VCM
+ SG_ fluid_temperature : 16|8@1+ (1,0) [0|0] "degree C"  VCM
+ SG_ dc_bus_voltage : 48|16@1+ (1,0) [0|0] "Volts"  VCM
+
+BO_ 2364706916 PROC_DATA_5_TX: 8 HPULSE
+ SG_ time_5 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+
+BO_ 2364715108 SYS_DATA_TX: 8 HPULSE
+ SG_ time_since_last_burn : 0|16@1+ (100,0) [0|0] "ms"  VCM
+
+BO_ 2364686436 FAULTS_WARNINGS_TX: 8 HPULSE
+ SG_ time_6 : 0|8@1+ (100,0) [0|0] "ms"  VCM
+ SG_ over_voltage_fault : 8|1@1+ (1,0) [0|0] ""  VCM
+ SG_ under_voltage_fault : 9|1@1+ (1,0) [0|0] ""  VCM
+ SG_ over_temperature_fault : 10|1@1+ (1,0) [0|0] ""  VCM
+ SG_ fluid_over_temperature_fault : 11|1@1+ (1,0) [0|0] ""  VCM
+ SG_ over_pressure_fault : 12|1@1+ (1,0) [0|0] ""  VCM
+ SG_ safe_torque_off : 16|1@1+ (1,0) [0|0] ""  VCM
+ SG_ heartbeat_in_not_detected : 17|1@1+ (1,0) [0|0] ""  VCM
+ SG_ device_hardware_fault : 25|1@1+ (1,0) [0|0] ""  VCM
+ SG_ over_current_fault : 26|1@1+ (1,0) [0|0] ""  VCM
+ SG_ inverter_fault : 24|1@1+ (1,0) [0|0] ""  VCM
+ SG_ pressure_flow_limiting : 40|1@1+ (1,0) [0|0] ""  VCM
+ SG_ torque_output_limiting : 41|1@1+ (1,0) [0|0] ""  VCM
+ SG_ any_fault : 63|1@1+ (1,0) [0|0] ""  VCM
+
+BO_ 2364711012 DEVICE_ID_TX: 8 HPULSE
+ SG_ device_id : 0|8@1+ (1,0) [0|0] ""  VCM
+ SG_ firmware_version : 8|24@1+ (1,0) [0|0] ""  VCM
+ SG_ device_serial_number : 32|16@1+ (1,0) [0|0] ""  VCM
+
+CM_ SG_ 2154168320 pump_mode_rx "00: Constant Flow (default); 01: Constant Pressure; 10 & 11: Reserved";
+CM_ SG_ 2154168320 invert_direction_rx "0:CCW is positive direction (default); 1:CW is positive direction; Rotation when looking down at the pump";
+CM_ SG_ 2154168320 invert_pressure_sense_rx "0: Port A is HIGH-SIDE PRESSURE(default); 1: Port B is HIGH-SIDE PRESSURE";
+CM_ SG_ 2154168320 unidirectional_mode_rx "0: Bidirectional mode (default); 1: Unidirectional mode; When set, unidirectional mode only allows motion in the + direction";
+CM_ SG_ 2154168320 heartbeat_disable_rx "0: Heartbeat mode is enabled (default); 1: Heartbeat mode is disabled";
+CM_ SG_ 2154168320 can_scheduling_rx "Range: 0x1 - 0xE; Default: 0x5; All scheduled PGNs at 0x1(100 msec)";
+CM_ SG_ 2154168320 tuning_parameters_rx "0x1 Default Tuning";
+
+CM_ BO_ 2364719204 "Sent after CONFIG_1_RX. Also on request.";
+CM_ SG_ 2364719204 pump_mode_tx "00: Constant Flow (default); 01: Constant Pressure; 10 & 11: Reserved";
+CM_ SG_ 2364719204 invert_direction_tx "0:CCW is positive direction (default); 1:CW is positive direction; Rotation when looking down at the pump";
+CM_ SG_ 2364719204 invert_pressure_sense_tx "0: Port A is HIGH-SIDE PRESSURE(default); 1: Port B is HIGH-SIDE PRESSURE";
+CM_ SG_ 2364719204 unidirectional_mode_tx "0: Bidirectional mode (default); 1: Unidirectional mode; When set, unidirectional mode only allows motion in the + direction";
+CM_ SG_ 2364719204 heartbeat_disable_tx "0: Heartbeat mode is enabled (default); 1: Heartbeat mode is disabled";
+CM_ SG_ 2364719204 can_scheduling_tx "Range: 0x1 - 0xE; Default: 0x5; All scheduled PGNs at 0x1(100 msec)";
+CM_ SG_ 2364719204 tuning_parameters_tx "0x1 Default Tuning";
+
+CM_ SG_ 2154233856 acceleration_p_rx "Range: 1-50; Default 20";
+CM_ SG_ 2154233856 acceleration_n_rx "Range: 1-50; Default 20";
+CM_ SG_ 2154233856 deceleration_p_rx "Range: 1-50; Default 20";
+CM_ SG_ 2154233856 deceleration_p_rx "Range: 1-50; Default 20";
+CM_ SG_ 2154233856 max_pressure_fault_rx "Range 20-100; Default 50";
+
+CM_ BO_ 2364723300 "Sent after CONFIG_2_RX. Also on request.";
+CM_ SG_ 2364723300 acceleration_p_tx "Range: 1-50; Default 20";
+CM_ SG_ 2364723300 acceleration_n_tx "Range: 1-50; Default 20";
+CM_ SG_ 2364723300 deceleration_p_tx "Range: 1-50; Default 20";
+CM_ SG_ 2364723300 deceleration_p_tx "Range: 1-50; Default 20";
+CM_ SG_ 2364723300 max_pressure_fault_tx "Range 20-100; Default 50";
+
+CM_ SG_ 2154299392 max_speed_p_rx "Max speed in + direction. Unsigned 16 bit, little endian. Example: 0x07D0 sets max speed of 2000 rpm.";
+CM_ SG_ 2154299392 max_speed_n_rx "Max speed in - direction. Unsigned 16 bit, little endian.";
+CM_ SG_ 2154299392 max_pressure_p_rx "Max pressure in + direction. Unsigned 16 bit, little endian. Example: 0x03E8 sets max pressure of 1000 PSI.";
+CM_ SG_ 2154299392 max_pressure_n_rx "Max pressure in - direction. Unsigned 16 bit, little endian.";
+
+CM_ BO_ 2364727396 "Sent after CONFIG_3_RX. Also on request.";
+CM_ SG_ 2364727396 max_speed_p_tx "Max speed in + direction. Unsigned 16 bit, little endian. Example: 0x07D0 sets max speed of 2000 rpm.";
+CM_ SG_ 2364727396 max_speed_n_tx "Max speed in - direction. Unsigned 16 bit, little endian.";
+CM_ SG_ 2364727396 max_pressure_p_tx "Max pressure in + direction. Unsigned 16 bit, little endian. Example: 0x03E8 sets max pressure of 1000 PSI.";
+CM_ SG_ 2364727396 max_pressure_n_tx "Max pressure in - direction. Unsigned 16 bit, little endian.";
+
+CM_ BO_ 2364731492 "Sent after CONFIG_4_RX.  Also on request.";
+
+CM_ SG_ 2154037248 device_enable_cmd "0: Disable device; 1: Enable device";
+CM_ SG_ 2154037248 start_stop "0: Command Stop; 1: Command Motion";
+CM_ SG_ 2154037248 command_setpoint "Signed 16 bit, little endian; Pump Mode determines units. Constant Flow sets rpm/Constant Pressure sets psi";
+
+CM_ SG_ 2154430464 group_1 "0000: No Function; 0001: Clear Faults";
+CM_ SG_ 2154430464 group_2 "0000: No Function; 0001: Burn to EEPROM; 0010 Reset factory default parameters";
+
+CM_ BO_ 2364690532 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364690532 time_1 "Time at which data was sampled. 100ms/bit";
+CM_ SG_ 2364690532 pump_mode_fbk "00: Constant Flow; 01: Constant Pressure; 10 & 11: Reserved";
+CM_ SG_ 2364690532 enable_state "0: Device Disabled; 1: Device Enabled";
+CM_ SG_ 2364690532 in_motion "0: Device not in motion; 1: Device in motion";
+CM_ SG_ 2364690532 stopping "0: Device not decelerating; 1: Device decelerating";
+CM_ SG_ 2364690532 command_setpoint_fbk "pump_mode_fbk determines units";
+
+CM_ BO_ 2364694628 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364694628 time_2 "Time at which data was sampled. 100ms/bit";
+CM_ SG_ 2364694628 flowrate "Signed 16 bit, little endian";
+CM_ SG_ 2364694628 high_side_pressure "Unsigned 16 bit, little endian";
+CM_ SG_ 2364694628 low_side_pressure "Unsigned 16 bit, little endian";
+
+CM_ BO_ 2364698724 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364698724 time_3 "Time at which data was sampled. 100ms/bit";
+CM_ SG_ 2364698724 position "Signed 16 bit, little endian. 4 revs/bit";
+
+CM_ BO_ 2364702820 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364702820 time_4 "Time at which data was sampled. 100ms/bit";
+CM_ SG_ 2364702820 device_temperature "In Celsius. 1C/bit";
+CM_ SG_ 2364702820 fluid_temperature "In Celsius. 1C/bit";
+CM_ SG_ 2364702820 dc_bus_voltage "Volts. 1V/bot";
+
+CM_ BO_ 2364706916 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364706916 time_5 "Time at which data was sampled. 100ms/bit";
+
+CM_ BO_ 2364715108 "Request only.";
+CM_ SG_ 2364715108 time_since_last_burn "Time at which last ‘Burn to EEPROM’ command was completed.";
+
+CM_ BO_ 2364686436 "Broadcasted at frequency set by can_scheduling.";
+CM_ SG_ 2364686436 time_6 "Time at which data was sampled. 100ms/bit";
+CM_ SG_ 2364686436 over_voltage_fault "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 under_voltage_fault "0: No Fault; 1: Fault occurred; Automatically clears when bus voltage returns to proper range.";
+CM_ SG_ 2364686436 over_temperature_fault "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 fluid_over_temperature_fault "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 over_pressure_fault "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 safe_torque_off "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 heartbeat_in_not_detected "0: No Fault; 1: Fault occurred; Clear error with ‘Clear Error’ command.";
+CM_ SG_ 2364686436 device_hardware_fault "0: No Fault; 1: Fault occurred; Consult Factory.";
+CM_ SG_ 2364686436 over_current_fault "0: No Fault; 1: Fault occurred; Consult Factory.";
+CM_ SG_ 2364686436 inverter_fault "0: No Fault; 1: Fault occurred; Consult Factory.";
+CM_ SG_ 2364686436 pressure_flow_limiting "continued operation with reduced output";
+CM_ SG_ 2364686436 torque_output_limiting "continued operation with reduced output";
+CM_ SG_ 2364686436 any_fault "0: No Fault; 1: A Fault has occurred; Refer to above fault flags for specific fault ";
+
+CM_ BO_ 2364711012 "Request only.";
+CM_ SG_ 2364711012 device_id "0x00: EHSU-1";
+CM_ SG_ 2364711012 device_serial_number "Unsigned integer. Only represents last 4 digits of device serial number. Example: 0x01D8 is serial number 472.";
+CM_ SG_ 2364711012 firmware_version "Divided in to 3 byte unsigned values.  Example: 0x010001 is Version 1.0.1";
+
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1300;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 500;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "HPULSE";
+BA_ "NmStationAddress" BU_ VCM 0;
+BA_ "NmStationAddress" BU_ HPULSE 100;
+BA_ "GenMsgSendType" BO_ 2154168320 7;
+BA_ "GenMsgCycleTime" BO_ 2154168320 500;
+BA_ "VFrameFormat" BO_ 2154168320 3;
+BA_ "GenMsgSendType" BO_ 2364719204 7;
+BA_ "GenMsgCycleTime" BO_ 2364719204 500;
+BA_ "VFrameFormat" BO_ 2364719204 3;
+BA_ "GenMsgSendType" BO_ 2154233856 7;
+BA_ "GenMsgCycleTime" BO_ 2154233856 500;
+BA_ "VFrameFormat" BO_ 2154233856 3;
+BA_ "GenMsgSendType" BO_ 2364723300 7;
+BA_ "GenMsgCycleTime" BO_ 2364723300 500;
+BA_ "VFrameFormat" BO_ 2364723300 3;
+BA_ "GenMsgSendType" BO_ 2154299392 7;
+BA_ "GenMsgCycleTime" BO_ 2154299392 500;
+BA_ "VFrameFormat" BO_ 2154299392 3;
+BA_ "GenMsgSendType" BO_ 2364727396 7;
+BA_ "GenMsgCycleTime" BO_ 2364727396 500;
+BA_ "VFrameFormat" BO_ 2364727396 3;
+BA_ "GenMsgSendType" BO_ 2154364928 7;
+BA_ "GenMsgCycleTime" BO_ 2154364928 500;
+BA_ "VFrameFormat" BO_ 2154364928 3;
+BA_ "GenMsgSendType" BO_ 2364731492 7;
+BA_ "GenMsgCycleTime" BO_ 2364731492 500;
+BA_ "VFrameFormat" BO_ 2364731492 3;
+BA_ "GenMsgSendType" BO_ 2154037248 7;
+BA_ "GenMsgCycleTime" BO_ 2154037248 500;
+BA_ "VFrameFormat" BO_ 2154037248 3;
+BA_ "GenMsgSendType" BO_ 2154102784 7;
+BA_ "GenMsgCycleTime" BO_ 2154102784 500;
+BA_ "VFrameFormat" BO_ 2154102784 3;
+BA_ "GenMsgSendType" BO_ 2154430464 7;
+BA_ "GenMsgCycleTime" BO_ 2154430464 500;
+BA_ "VFrameFormat" BO_ 2154430464 3;
+BA_ "GenMsgSendType" BO_ 2364690532 7;
+BA_ "GenMsgCycleTime" BO_ 2364690532 500;
+BA_ "VFrameFormat" BO_ 2364690532 3;
+BA_ "GenMsgSendType" BO_ 2364694628 7;
+BA_ "GenMsgCycleTime" BO_ 2364694628 500;
+BA_ "VFrameFormat" BO_ 2364694628 3;
+BA_ "GenMsgSendType" BO_ 2364698724 7;
+BA_ "GenMsgCycleTime" BO_ 2364698724 500;
+BA_ "VFrameFormat" BO_ 2364698724 3;
+BA_ "GenMsgSendType" BO_ 2364702820 7;
+BA_ "GenMsgCycleTime" BO_ 2364702820 500;
+BA_ "VFrameFormat" BO_ 2364702820 3;
+BA_ "GenMsgSendType" BO_ 2364706916 7;
+BA_ "GenMsgCycleTime" BO_ 2364706916 500;
+BA_ "VFrameFormat" BO_ 2364706916 3;
+BA_ "GenMsgSendType" BO_ 2364715108 7;
+BA_ "GenMsgCycleTime" BO_ 2364715108 500;
+BA_ "VFrameFormat" BO_ 2364715108 3;
+BA_ "GenMsgSendType" BO_ 2364686436 7;
+BA_ "GenMsgCycleTime" BO_ 2364686436 500;
+BA_ "VFrameFormat" BO_ 2364686436 3;
+BA_ "GenMsgSendType" BO_ 2364711012 7;
+BA_ "GenMsgCycleTime" BO_ 2364711012 500;
+BA_ "VFrameFormat" BO_ 2364711012 3;
+
+BA_ "GenSigStartValue" SG_ 2154233856 acceleration_p_rx 1;
+BA_ "GenSigStartValue" SG_ 2154233856 acceleration_n_rx 1;
+BA_ "GenSigStartValue" SG_ 2154233856 deceleration_p_rx 1;
+BA_ "GenSigStartValue" SG_ 2154233856 deceleration_n_rx 1;
+
+BA_ "GenSigStartValue" SG_ 2364723300 acceleration_p_tx 1;
+BA_ "GenSigStartValue" SG_ 2364723300 acceleration_n_tx 1;
+BA_ "GenSigStartValue" SG_ 2364723300 deceleration_p_tx 1;
+BA_ "GenSigStartValue" SG_ 2364723300 deceleration_n_tx 1;
+
+BA_ "GenSigStartValue" SG_ 2154299392 max_speed_p_rx 4000;
+BA_ "GenSigStartValue" SG_ 2154299392 max_speed_n_rx 4000;
+BA_ "GenSigStartValue" SG_ 2154299392 max_pressure_p_rx 3000;
+BA_ "GenSigStartValue" SG_ 2154299392 max_pressure_n_rx 3000;
+
+BA_ "GenSigStartValue" SG_ 2364727396 max_speed_p_tx 4000;
+BA_ "GenSigStartValue" SG_ 2364727396 max_speed_n_tx 4000;
+BA_ "GenSigStartValue" SG_ 2364727396 max_pressure_p_tx 3000;
+BA_ "GenSigStartValue" SG_ 2364727396 max_pressure_n_tx 3000;
+
+VAL_ 2154168320 pump_mode_rx 0 "constant_flow" 1 "constant_pressure" ;
+VAL_ 2154168320 invert_direction_rx 0 "ccw_+_direction" 1 "cw_+_direction" ;
+VAL_ 2154168320 invert_pressure_sense_rx 0 "port_A_high_side" 1 "port_B_high_side" ;
+VAL_ 2154168320 unidirectional_mode_rx 0 "bidirectional_mode" 1 "unidirectional_mode" ;
+VAL_ 2154168320 heartbeat_disable_rx 0 "heartbeat_enabled" 1 "heartbeat_disabled" ;
+VAL_ 2154168320 can_scheduling_rx 0 "no_effect" 1 "100ms_broadcast" 2 "200ms_broadcast" 3 "300ms_broadcast" 4 "400ms_broadcast" 5 "500ms_broadcast" 6 "600ms_broadcast" 7 "700ms_broadcast" 8 "800ms_broadcast" 9 "900ms_broadcast" 10 "1s_broadcast" 11 "1.1s_broadcast" 12 "1.2s_broadcast" 13 "1.3s_broadcast" 14 "no_effect" ;
+VAL_ 2154168320 tuning_parameters_rx 0 "no_effect" 1 "default_tuning" 2 "reserved" 3 "reserved" 4 "reserved" 5 "reserved" 6 "reserved" 7 "reserved" 8 "reserved" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "no_effect" ;
+VAL_ 2364719204 pump_mode_tx 0 "constant_flow" 1 "constant_pressure" ;
+VAL_ 2364719204 invert_direction_tx 0 "ccw_+_direction" 1 "cw_+_direction" ;
+VAL_ 2364719204 invert_pressure_sense_tx 0 "port_A_high_side" 1 "port_B_high_side" ;
+VAL_ 2364719204 unidirectional_mode_tx 0 "bidirectional_mode" 1 "unidirectional_mode" ;
+VAL_ 2364719204 heartbeat_disable_tx 0 "heartbeat_enabled" 1 "heartbeat_disabled" ;
+VAL_ 2364719204 can_scheduling_tx 0 "no_effect" 1 "100ms_broadcast" 2 "200ms_broadcast" 3 "300ms_broadcast" 4 "400ms_broadcast" 5 "500ms_broadcast" 6 "600ms_broadcast" 7 "700ms_broadcast" 8 "800ms_broadcast" 9 "900ms_broadcast" 10 "1s_broadcast" 11 "1.1s_broadcast" 12 "1.2s_broadcast" 13 "1.3s_broadcast" 14 "no_effect" ;
+VAL_ 2364719204 tuning_parameters_tx 0 "no_effect" 1 "default_tuning" 2 "reserved" 3 "reserved" 4 "reserved" 5 "reserved" 6 "reserved" 7 "reserved" 8 "reserved" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "no_effect" ;
+VAL_ 2154037248 device_enable_cmd 0 "disable_device" 1 "enable_device" ;
+VAL_ 2154037248 start_stop 0 "command_stop" 1 "command_motion" ;
+VAL_ 2154430464 group_2 0 "no_function" 1 "clear_faults" ;
+VAL_ 2154430464 group_1 0 "no_function" 1 "burn_to_eeprom" 2 "factory_reset" ;
+VAL_ 2364690532 pump_mode_fbk 0 "constant_flow" 1 "constant_pressure" ;
+VAL_ 2364690532 enable_state 0 "device_disabled" 1 "device_enabled" ;
+VAL_ 2364690532 in_motion 0 "device_not_in_motion" 1 "device_in_motion" ;
+VAL_ 2364690532 stopping 0 "device_not_decelerating" 1 "device_decelerating" ;
+VAL_ 2364686436 over_voltage_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 under_voltage_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 over_temperature_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 fluid_over_temperature_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 over_pressure_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 safe_torque_off 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 heartbeat_in_not_detected 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 device_hardware_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 over_current_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 inverter_fault 0 "no_fault" 1 "fault" ;
+VAL_ 2364686436 pressure_flow_limiting 0 "no_warning" 1 "warning" ;
+VAL_ 2364686436 torque_output_limiting 0 "no_warning" 1 "warning" ;
+VAL_ 2364686436 any_fault 0 "no_fault" 1 "any_fault" ;
+VAL_ 2364711012 device_id 0 "HP-015-001" ;

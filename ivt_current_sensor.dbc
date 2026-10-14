@@ -1,0 +1,144 @@
+VERSION ""
+
+
+NS_ :
+
+BS_:
+
+BU_: Vector__XXX
+
+BO_ 1041 cs_ivt_msg_cmd: 8 Vector__XXX
+SG_ cs_ivt_cmd : 7|64@0+ (1,0) [0|18446744073709551616] "" Vector__XXX
+
+
+BO_ 1297 cs_ivt_msg_cmd_response: 8 Vector__XXX
+SG_ cs_ivt_cmd_response : 7|64@0+ (1,0) [0|18446744073709551616] "" Vector__XXX
+
+
+BO_ 1313 cs_ivt_msg_result_current: 6 Vector__XXX
+SG_ result_current_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_current_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_current_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_current_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_current_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_current_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_current_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1314 cs_ivt_msg_result_voltage_ch1: 6 Vector__XXX
+SG_ result_volt_ch1_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch1_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch1_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_volt_ch1_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_volt_ch1_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_volt_ch1_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch1_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1315 cs_ivt_msg_result_voltage_ch2: 6 Vector__XXX
+SG_ result_volt_ch2_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch2_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch2_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_volt_ch2_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_volt_ch2_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_volt_ch2_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch2_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1316 cs_ivt_msg_result_voltage_ch3: 6 Vector__XXX
+SG_ result_volt_ch3_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch3_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch3_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_volt_ch3_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_volt_ch3_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_volt_ch3_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_volt_ch3_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1317 cs_ivt_msg_result_temperature: 6 Vector__XXX
+SG_ result_temperature_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_temperature_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_temperature_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_temperature_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_temperature_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_temperature_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_temperature_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1318 cs_ivt_msg_result_power: 6 Vector__XXX
+SG_ result_power_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_power_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_power_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_power_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_power_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_power_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_power_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1319 cs_ivt_msg_result_coulomb: 6 Vector__XXX
+SG_ result_coulomb_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_coulomb_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_coulomb_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_coulomb_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_coulomb_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_coulomb_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_coulomb_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BO_ 1320 cs_ivt_msg_result_energy: 6 Vector__XXX
+SG_ result_energy_channel_error : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_energy_meas_error : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_energy_meas_value : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+SG_ result_energy_msg_count : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+SG_ result_energy_mux_id : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+SG_ result_energy_system_error : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+SG_ result_energy_ocs : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+BA_DEF_ "BusType" STRING ;
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+
+BA_DEF_DEF_ "BusType" "CAN";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+
+BA_ "BusType" "CAN";
+
+BA_ "GenMsgCycleTime" BO_ 1041 0;
+BA_ "GenMsgCycleTime" BO_ 1297 0;
+
+VAL_ 1313 result_current_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1313 result_current_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1313 result_current_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1313 result_current_ocs 0 "OK" 1 "FAULT";
+VAL_ 1314 result_volt_ch1_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1314 result_volt_ch1_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1314 result_volt_ch1_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1314 result_volt_ch1_ocs 0 "OK" 1 "FAULT";
+VAL_ 1315 result_volt_ch2_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1315 result_volt_ch2_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1315 result_volt_ch2_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1315 result_volt_ch2_ocs 0 "OK" 1 "FAULT";
+VAL_ 1316 result_volt_ch3_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1316 result_volt_ch3_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1316 result_volt_ch3_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1316 result_volt_ch3_ocs 0 "OK" 1 "FAULT";
+VAL_ 1317 result_temperature_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1317 result_temperature_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1317 result_temperature_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1317 result_temperature_ocs 0 "OK" 1 "FAULT";
+VAL_ 1318 result_power_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1318 result_power_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1318 result_power_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1318 result_power_ocs 0 "OK" 1 "FAULT";
+VAL_ 1319 result_coulomb_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1319 result_coulomb_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1319 result_coulomb_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1319 result_coulomb_ocs 0 "OK" 1 "FAULT";
+VAL_ 1320 result_energy_channel_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1320 result_energy_meas_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1320 result_energy_system_error 0 "NO_ERROR" 1 "ERROR";
+VAL_ 1320 result_energy_ocs 0 "OK" 1 "FAULT";
+
+

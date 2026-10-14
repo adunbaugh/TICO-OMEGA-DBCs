@@ -1,0 +1,212 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCM Inverter
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ MachineAccel : 48|16@1+ (2,0) [0|64255] "RPM/s" Vector__XXX
+
+BO_ 2432695808 InverterStatus2: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotorControlUnitState : 16|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ DCBusVolts : 24|16@1+ (0.03125,0) [0|2007.97] "V" Vector__XXX
+ SG_ DerateOwner : 40|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ DiagnosticsFunction : 48|13@1+ (1,0) [0|8186] "" Vector__XXX
+ SG_ DiagnosticsStatus : 61|3@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 2432695040 InverterStatus3: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AverageAbsoluteTorque : 16|16@1+ (0.1,-3200) [4294964096|3255.5] "Nm" Vector__XXX
+ SG_ MachineSpeed : 32|16@1+ (0.5,-16000) [4294951296|16127.5] "RPM" Vector__XXX
+
+BO_ 2432693248 InverterStatus4: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ NegativeTorqueAvailable : 16|16@1+ (0.1,-3200) [4294964096|3255.5] "Nm" Vector__XXX
+ SG_ PositiveTorqueAvailable : 32|16@1+ (0.1,-3200) [4294964096|3255.5] "Nm" Vector__XXX
+ SG_ PowerStageStatus : 48|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ OverloadPercent : 56|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+
+BO_ 2566913536 InverterTemp1: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IGBT1Temp : 8|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ IGBT2Temp : 16|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ IGBT3Temp : 24|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ IGBT4Temp : 32|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ IGBT5Temp : 40|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ IGBT6Temp : 48|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ BrakeChopperTemp : 56|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+
+BO_ 2566913792 InverterTemp2: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotorTemp1 : 8|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ MotorTemp2 : 16|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ BrakeResistorTemp : 40|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+ SG_ ControlBoardTemp : 48|8@1+ (1,-40) [4294967256|210] "degC" Vector__XXX
+
+BO_ 2566913536 Prognostics1: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MachineRMSCurrentPhaseA : 8|16@1+ (0.0625,0) [0|4015.94] "A" Vector__XXX
+ SG_ MachineRMSCurrentPhaseB : 24|16@1+ (0.0625,0) [0|4015.94] "A" Vector__XXX
+ SG_ MachineRMSCurrentPhaseC : 40|16@1+ (0.0625,0) [0|4015.94] "A" Vector__XXX
+ SG_ BrakeResistorRMSCurrent : 56|8@1+ (1,0) [0|64255] "A" Vector__XXX
+
+BO_ 2566913536 Prognostics2: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BrakeResistance : 8|16@1+ (0.5,0) [0|32127.5] "mohm" Vector__XXX
+ SG_ DCLinkCapacitance : 24|16@1+ (0.5,0) [0|32127.5] "uF" Vector__XXX
+ SG_ MotorBEMF : 40|16@1+ (3.05176e-05,0) [0|1.96] "V/RPM" Vector__XXX
+ SG_ EMICapacitance : 56|8@1+ (32,0) [0|8000] "nF" Vector__XXX
+
+BO_ 2499802112 DCLinkCurrentStatus: 8 Inverter
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ActualCurrent : 16|16@1+ (0.001,-32) [-32.255|32.255] "Ratio" Vector__XXX
+ SG_ MaxCurrentGenerating : 32|16@1+ (0.001,0) [0|64.255] "Ratio" Vector__XXX
+ SG_ MaxCurrentMotoring : 48|16@1+ (0.001,0) [0|64.255] "Ratio" Vector__XXX
+
+BO_ 2297364480 InverterCommand2: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SpeedCommand : 16|16@1+ (0.5,-16000) [4294951296|16127.5] "RPM" Vector__XXX
+ SG_ StateTransitionCommand : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2297364480 InverterCommand7: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TorqueCommandNm : 16|16@1+ (0.1,-3200) [4294964096|3255.5] "Nm" Vector__XXX
+ SG_ StateTransitionCommand : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365586944 BrakeResistorCommand: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ BrakeResistorOnVolts : 8|16@1+ (0.03125,0) [0|2007.96875] "V" Vector__XXX
+ SG_ BrakeResistorOffVolts : 24|16@1+ (0.03125,0) [0|2007.96875] "V" Vector__XXX
+ SG_ BrakeResistorDuty : 40|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+ SG_ BrakeResistorMode : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2297364480 TorqueLimitingCommand: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotoringTorqueLimit : 16|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+ SG_ GeneratingTorqueLimit : 24|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+ SG_ SecondaryVoltageLimitingSetpoint : 32|8@1+ (0.03125,0) [0|2007.9] "V" Vector__XXX
+ SG_ SecondarySpeedLimitingSetpoint : 40|8@1+ (1,0) [0|64255] "RPM" Vector__XXX
+
+BO_ 2364473344 DCLinkCurrentLimiting: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CurrentLimitRatioGenerating : 32|16@1+ (0.001,0) [0|64.225] "Ratio" Vector__XXX
+ SG_ CurrentLimitRatioMotoring : 48|16@1+ (0.001,0) [0|64.225] "Ratio" Vector__XXX
+
+BO_ 2297364480 BusDissipationCommand: 8 VCM
+ SG_ CommandByte1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CommandByte2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ StateTransitionCommand : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566834688 CANRawMsg1: 8 Vector__XXX
+ SG_ NewSignal_0001 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0002 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2565668608 CANRawMsg2: 8 Vector__XXX
+ SG_ NewSignal_0003 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0004 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 2432695808 MotorControlUnitState "See manual for definition.";
+CM_ SG_ 2432695808 DerateOwner "See manual for definition.";
+CM_ SG_ 2432695808 DiagnosticsFunction "See manual for definition.";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SigType" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "GenSigEVName" "@Nodename_@Msgname_@Signame";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SigType" "";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "PhoenixDrives";
+BA_ "VFrameFormat" BO_ 2432695808 1;
+BA_ "VFrameFormat" BO_ 2432695808 3;
+BA_ "VFrameFormat" BO_ 2432695808 3;
+BA_ "VFrameFormat" BO_ 2432695808 3;
+BA_ "VFrameFormat" BO_ 2432695808 3;
+BA_ "VFrameFormat" BO_ 2432695808 3;
+BA_ "VFrameFormat" BO_ 2297364480 1;
+BA_ "VFrameFormat" BO_ 2297364480 1;
+BA_ "VFrameFormat" BO_ 2566834688 1;
+BA_ "VFrameFormat" BO_ 2565668608 1;
+BA_ "NmStationAddress" BU_ VCM 128;
+BA_ "NmStationAddress" BU_ Inverter 1;
+VAL_ 2432695808 DiagnosticsStatus 0 "Not running" 1 "Running" 2 "Failed" 3 "Passed" 4 "Unable to start" ;
+VAL_ 2432693248 PowerStageStatus 0 "Outputs Off" 1 "Normal Switching" 2 "High Side Three Phase Short" 3 "Low Side Three Phase Short" ;
+

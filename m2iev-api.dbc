@@ -1,0 +1,292 @@
+VERSION "created by canmatrix"
+
+
+NS_ :
+
+BS_:
+
+BU_: M2IEV BCC 
+
+
+BO_ 128 BCC_Command: 8 BCC
+ SG_ CurrentState : 0|8@1+ (1,0) [0|255] "Enum" M2IEV
+ SG_ Command : 8|4@1+ (1,0) [0|8] "Enum" M2IEV
+ SG_ AC_ContactorsState : 13|1@1+ (1,0) [0|1] "Boolean" M2IEV
+ SG_ DC_ContactorsState : 14|1@1+ (1,0) [0|1] "Boolean" M2IEV
+ SG_ ErrorCode : 17|8@1+ (1,0) [0|255] "Enum" M2IEV
+ SG_ ErrorInfo : 25|8@1+ (1,0) [0|255] "Enum" M2IEV
+
+BO_ 129 M2IEV_Command: 8 M2IEV
+ SG_ CurrentState : 0|8@1+ (1,0) [0|255] "Enum" BCC
+ SG_ ChargerType : 8|3@1+ (1,0) [0|3] "Enum" BCC
+ SG_ AC_CloseContactorsRequest : 11|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ DC_CloseContactorsRequest : 12|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ PrechargeReady : 13|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ SocketLockState : 24|3@1+ (1,0) [0|5] "Enum" BCC
+ SG_ ErrorCode : 32|16@1+ (1,0) [0|65535] "Enum" BCC
+
+BO_ 130 M2IEV_Info: 8 M2IEV
+ SG_ PP_State : 0|4@1+ (1,0) [0|7] "Enum" BCC
+ SG_ CP_State : 4|4@1+ (1,0) [0|7] "Enum" BCC
+ SG_ CP_PWM : 8|8@1+ (1,0) [0|100] "%" BCC
+ SG_ CP_Voltage : 16|9@1- (0.1,0) [-25.6|25.5] "V" BCC
+
+BO_ 256 EV_DC_ChargeInfo1: 8 BCC
+ SG_ EVErrorCode : 4|4@1+ (1,0) [0|11] "Enum" M2IEV
+ SG_ EVRESSSOC : 8|8@1+ (0.5,0) [0|127.5] "%" M2IEV
+ SG_ EVTargetVoltage : 16|16@1+ (0.05,0) [0.00|3276.75] "V" M2IEV
+ SG_ EVTargetCurrent : 32|16@1- (0.05,0) [-1638.40|1638.35] "A" M2IEV
+ SG_ RemainingTimeToFullSoC : 48|8@1+ (0.5,0) [0|127.5] "minutes" M2IEV
+ SG_ RemainingTimeToBulkSoC : 56|8@1+ (0.5,0) [0|127.5] "minutes" M2IEV
+
+BO_ 257 EVSE_DC_ChargeInfo1: 8 M2IEV
+ SG_ ResponseCode : 0|5@1+ (1,0) [0|26] "Enum" BCC
+ SG_ EVSECurrentLimitAchieved : 5|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ EVSEVoltageLimitAchieved : 6|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ EVSEPowerLimitAchieved : 7|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ EVSEStatusCode : 8|4@1+ (1,0) [0|11] "Enum" BCC
+ SG_ EVSEIsolationStatus : 12|2@1+ (1,0) [0|3] "Enum" BCC
+ SG_ EVSEPresentVoltage : 16|16@1+ (0.05,0) [0.00|3276.75] "V" BCC
+ SG_ EVSEPresentCurrent : 32|16@1- (0.05,0) [-1638.40|1638.35] "A" BCC
+
+BO_ 259 EVSE_AC_ChargeInfo1: 8 M2IEV
+ SG_ EVSEMaxCurrent : 0|16@1+ (0.05,0) [0|3276.75] "A" BCC
+
+BO_ 260 M2IEV_Alerts: 8 M2IEV
+ SG_ TemperatureDC1HighAlarm : 0|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC1HighFault : 1|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC1LowAlarm : 2|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC1LowFault : 3|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC2HighAlarm : 4|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC2HighFault : 5|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC2LowAlarm : 6|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureDC2LowFault : 7|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ TemperatureACFault : 8|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ EmergencyStopFault : 9|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ PilotFault : 10|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ ProximityFault : 11|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ CanRxFault : 12|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ SocketLatchSensorFault : 13|1@1+ (1,0) [0|1] "Boolean" BCC
+ SG_ EvccError : 14|1@1+ (1,0) [0|1] "Boolean" BCC
+
+BO_ 512 EV_ChargeParameters1: 8 BCC
+ SG_ EVMaximumCurrentLimit : 0|16@1- (0.05,0) [-1638.40|1638.35] "A" M2IEV
+ SG_ EVMaximumPowerLimit : 16|16@1+ (0.05,0) [0.00|3276.75] "kW" M2IEV
+ SG_ EVMaximumVoltageLimit : 32|16@1+ (0.05,0) [0.00|3276.75] "V" M2IEV
+ SG_ EVEnergyRequest : 48|16@1+ (0.05,0) [0.00|3276.75] "kWh" M2IEV
+
+BO_ 513 EV_ChargeParameters2: 8 BCC
+ SG_ EVEnergyCapacity : 0|16@1+ (0.05,0) [0.00|3276.75] "kWh" M2IEV
+ SG_ FullSOC : 16|8@1+ (0.5,0) [0|100] "%" M2IEV
+ SG_ BulkSOC : 24|8@1+ (0.5,0) [0|100] "%" M2IEV
+ SG_ AllowedACCharging : 43|1@1+ (1,0) [0|1] "Boolean" M2IEV
+ SG_ AllowedSmartDCCharging : 45|1@1+ (1,0) [0|1] "Boolean" M2IEV
+
+BO_ 514 EVSE_ChargeParameters1: 8 M2IEV
+ SG_ EVSEMaximumCurrentLimit : 0|16@1- (0.05,0) [-1638.40|1638.35] "A" BCC
+ SG_ EVSEMaximumVoltageLimit : 16|16@1+ (0.05,0) [0.00|3276.75] "V" BCC
+ SG_ EVSEMaximumPowerLimit : 32|16@1+ (0.05,0) [0.00|3276.75] "kW" BCC
+ SG_ EVSEEnergyToBeDelivered : 48|16@1+ (0.05,0) [0.00|3276.75] "kWh" BCC
+
+BO_ 515 EVSE_ChargeParameters2: 8 M2IEV
+ SG_ EVSEMinimumCurrentLimit : 0|16@1- (0.05,0) [-1638.40|1638.35] "A" BCC
+ SG_ EVSEMinimumVoltageLimit : 16|16@1+ (0.05,0) [0.00|3276.75] "V" BCC
+ SG_ EVSECurrentRegulationTolerance : 32|8@1+ (0.5,0) [0|127.5] "A" BCC
+ SG_ EVSEPeakCurrentRipple : 40|8@1+ (0.5,0) [0|127.5] "A" BCC
+
+BO_ 517 BCC_OutputControl: 8 BCC
+ SG_ LED_DRV0 : 0|8@1+ (1,0) [0|100] "%" M2IEV
+ SG_ LED_DRV1 : 8|8@1+ (1,0) [0|100] "%" M2IEV
+ SG_ LED_DRV2 : 16|8@1+ (1,0) [0|100] "%" M2IEV
+ SG_ LED_DRV3 : 24|8@1+ (1,0) [0|100] "%" M2IEV
+ SG_ OD_OUT1 : 32|1@1+ (1,0) [0|1] "" M2IEV
+ SG_ OD_OUT2 : 33|1@1+ (1,0) [0|1] "" M2IEV
+ SG_ OD_OUT3 : 34|1@1+ (1,0) [0|1] "" M2IEV
+
+BO_ 518 M2IEV_VersionInfo1: 8 M2IEV
+ SG_ EvccAppVersion : 0|32@1+ (1,0) [0|0] "Hash" BCC
+ SG_ EvccLibVersion : 32|32@1+ (1,0) [0|0] "Hash" BCC
+
+BO_ 519 M2IEV_VersionInfo2: 8 M2IEV
+ SG_ EvicVersion : 0|32@1+ (1,0) [0|0] "Hash" BCC
+
+BO_ 768 M2IEV_TemperatureInfo: 8 M2IEV
+ SG_ TemperatureDC1 : 0|16@1- (1,0) [-50|350] "degC" BCC
+ SG_ TemperatureDC2 : 16|16@1- (1,0) [-50|350] "degC" BCC
+ SG_ TemperatureAC : 32|1@1+ (1,0) [0|1] "" BCC
+
+
+CM_ BO_ 128  "BCC_Command";
+CM_ BO_ 129  "M2IEV_Command";
+CM_ BO_ 130  "M2IEV_Info";
+CM_ BO_ 256  "EV_DC_ChargeInfo1";
+CM_ BO_ 257  "EVSE_DC_ChargeInfo1";
+CM_ BO_ 259  "EVSE_AC_ChargeInfo1";
+CM_ BO_ 260  "M2IEV_Alerts";
+CM_ BO_ 512  "EV_ChargeParameters1";
+CM_ BO_ 513  "EV_ChargeParameters2";
+CM_ BO_ 514  "EVSE_ChargeParameters1";
+CM_ BO_ 515  "EVSE_ChargeParameters2";
+CM_ BO_ 518  "M2IEV_VersionInfo1";
+CM_ BO_ 519  "M2IEV_VersionInfo2";
+CM_ BO_ 768  "M2IEV_TemperatureInfo";
+
+CM_ SG_ 128 CurrentState "Current state of BCC (vendor specific). Is not analyzed but logged to get overall picture";
+CM_ SG_ 128 Command "Command from BCC to M2IEV (used to start, stop charging, putting the module into low power modes and etc.)";
+CM_ SG_ 128 AC_ContactorsState "Current state of AC contactors";
+CM_ SG_ 128 DC_ContactorsState "Current state of DC contactors";
+CM_ SG_ 128 ErrorCode "Internal BCC error code (vendor specific)";
+CM_ SG_ 128 ErrorInfo "Supplementary error information";
+CM_ SG_ 129 CurrentState "Current state of M2IEV module";
+CM_ SG_ 129 ChargerType "Type of the charger connected";
+CM_ SG_ 129 AC_CloseContactorsRequest "Request to close AC contactors (i.e. request to start power transfer)";
+CM_ SG_ 129 DC_CloseContactorsRequest "Request to close DC contactors (i.e. request to start power transfer)";
+CM_ SG_ 129 PrechargeReady "Indicator that cable check has successfully passed and we are ready to start precharging (valid only in case of smart DC charging)";
+CM_ SG_ 129 SocketLockState "Current socket state";
+CM_ SG_ 129 ErrorCode "Internal M2IEV or EVCC error code";
+CM_ SG_ 130 PP_State "Current proximity state";
+CM_ SG_ 130 CP_State "Current control pilot state";
+CM_ SG_ 130 CP_PWM "Current control pilot PWM duty ratio";
+CM_ SG_ 130 CP_Voltage "Current voltage on control pilot line";
+CM_ SG_ 256 EVErrorCode "Internal EV error code reported to EVSE";
+CM_ SG_ 256 EVRESSSOC "Current state of charge";
+CM_ SG_ 256 EVTargetVoltage "Voltage to be supplied by EVSE";
+CM_ SG_ 256 EVTargetCurrent "Current to be supplied by EVSE";
+CM_ SG_ 256 RemainingTimeToFullSoC "Time left until charging complete";
+CM_ SG_ 256 RemainingTimeToBulkSoC "Time left until bulk charging complete";
+CM_ SG_ 257 ResponseCode "Response code from EVSE";
+CM_ SG_ 257 EVSECurrentLimitAchieved "Indicator that EVSE is in current limiting mode";
+CM_ SG_ 257 EVSEVoltageLimitAchieved "Indicator that EVSE is in voltage limiting mode";
+CM_ SG_ 257 EVSEPowerLimitAchieved "Indicator that EVSE is in power limiting mode";
+CM_ SG_ 257 EVSEStatusCode "Status code reported by EVSE";
+CM_ SG_ 257 EVSEIsolationStatus "Isolation status detected by EVSE";
+CM_ SG_ 257 EVSEPresentVoltage "Voltage supplied by EVSE (read on EVSE side)";
+CM_ SG_ 257 EVSEPresentCurrent "Current supplied by EVSE (read on EVSE side)";
+CM_ SG_ 259 EVSEMaxCurrent "Maximum current EV may draw from EVSE";
+CM_ SG_ 260 TemperatureDC1HighAlarm "Temperature on DC+ terminal >=80 degC";
+CM_ SG_ 260 TemperatureDC1HighFault "Temperature on DC+ terminal >=90 degC";
+CM_ SG_ 260 TemperatureDC1LowAlarm "Temperature on DC+ terminal <=-20 degC";
+CM_ SG_ 260 TemperatureDC1LowFault "Temperature on DC+ terminal <=-30 degC";
+CM_ SG_ 260 TemperatureDC2HighAlarm "Temperature on DC- terminal >=80 degC";
+CM_ SG_ 260 TemperatureDC2HighFault "Temperature on DC- terminal >=90 degC";
+CM_ SG_ 260 TemperatureDC2LowAlarm "Temperature on DC- terminal <=-20 degC";
+CM_ SG_ 260 TemperatureDC2LowFault "Temperature on DC- terminal <=-30 degC";
+CM_ SG_ 260 TemperatureACFault "Temperature on AC terminals is too high";
+CM_ SG_ 260 EmergencyStopFault "Emergency stop";
+CM_ SG_ 260 PilotFault "Pilot fault";
+CM_ SG_ 260 ProximityFault "Proximity fault";
+CM_ SG_ 260 CanRxFault "Can Rx fault";
+CM_ SG_ 260 SocketLatchSensorFault "Socket latch sensor fault";
+CM_ SG_ 260 EvccError "Received EVCC error";
+CM_ SG_ 512 EVMaximumCurrentLimit "Maximim current EV may request from EVSE";
+CM_ SG_ 512 EVMaximumPowerLimit "Maximum power EV may request from EVSE";
+CM_ SG_ 512 EVMaximumVoltageLimit "Maximum voltage EV may request from EVSE";
+CM_ SG_ 512 EVEnergyRequest "Energy that EV wants to transfer into the battery";
+CM_ SG_ 513 EVEnergyCapacity "Capacity of the EV's battery pack";
+CM_ SG_ 513 FullSOC "State of fully charged battery pack (must be 100%)";
+CM_ SG_ 513 BulkSOC "Bulk charging threshold (e.g. 80%)";
+CM_ SG_ 513 AllowedACCharging "Indication whether basic AC charging is allowed";
+CM_ SG_ 513 AllowedSmartDCCharging "Indication whether smart DC charging is allowed";
+CM_ SG_ 514 EVSEMaximumCurrentLimit "Maximim current EVSE is able to supply";
+CM_ SG_ 514 EVSEMaximumVoltageLimit "Maximim voltage EVSE is able to supply";
+CM_ SG_ 514 EVSEMaximumPowerLimit "Maximum power EVSE is able to supply";
+CM_ SG_ 514 EVSEEnergyToBeDelivered "Approximation of energy to be delivered";
+CM_ SG_ 515 EVSEMinimumCurrentLimit "Minimum current EVSE is able to supply";
+CM_ SG_ 515 EVSEMinimumVoltageLimit "Minimum voltage EVSE is able to supply";
+CM_ SG_ 515 EVSECurrentRegulationTolerance "Tolerance of the current regulation";
+CM_ SG_ 515 EVSEPeakCurrentRipple "Peak current ripple that may occur on EVSE output";
+CM_ SG_ 518 EvccAppVersion "Version information of the EVCC application";
+CM_ SG_ 518 EvccLibVersion "Version information of the EVCC library";
+CM_ SG_ 519 EvicVersion "Version information of the co-processor";
+CM_ SG_ 768 TemperatureDC1 "Temperature of the DC+ terminal";
+CM_ SG_ 768 TemperatureDC2 "Temperature of the DC- terminal";
+CM_ SG_ 768 TemperatureAC "Overtemperature of the sensor on AC terminals";
+
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 0;
+BA_DEF_ "Baudrate" INT 0 1000000;
+BA_DEF_ "BusType" STRING;
+BA_DEF_DEF_ "Baudrate" 500000;
+BA_DEF_DEF_ "BusType" "CAN";
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+
+
+BA_ "GenMsgCycleTime" BO_ 128 50;
+BA_ "GenMsgCycleTime" BO_ 129 50;
+BA_ "GenMsgCycleTime" BO_ 130 50;
+BA_ "GenMsgCycleTime" BO_ 256 50;
+BA_ "GenMsgCycleTime" BO_ 257 50;
+BA_ "GenMsgCycleTime" BO_ 259 50;
+BA_ "GenMsgCycleTime" BO_ 260 50;
+BA_ "GenMsgCycleTime" BO_ 512 1000;
+BA_ "GenMsgCycleTime" BO_ 513 1000;
+BA_ "GenMsgCycleTime" BO_ 514 1000;
+BA_ "GenMsgCycleTime" BO_ 515 1000;
+BA_ "GenMsgCycleTime" BO_ 518 1000;
+BA_ "GenMsgCycleTime" BO_ 519 1000;
+BA_ "GenMsgCycleTime" BO_ 768 1000;
+
+
+VAL_ 128 Command 0 "NOP" 1 "SLEEP" 2 "STANDBY" 3 "START" 4 "PRECHARGE" 5 "CHARGE" 6 "ENDCHARGE" 8 "DO_WELDING_DETECTION";
+VAL_ 128 AC_ContactorsState 0 "OPEN" 1 "CLOSED";
+VAL_ 128 DC_ContactorsState 0 "OPEN" 1 "CLOSED";
+VAL_ 129 CurrentState 0 "STANDBY_CABLE_DISCONNECTED" 1 "STANDBY_CABLE_CONNECTED_EVSE_NOT_READY" 2 "ACTIVE_INIT_SLACK" 3 "ACTIVE_INIT_CHARGE_PARAMS" 4 "ACTIVE_INIT_SOCKET_LOCKING" 5 "ACTIVE_CABLE_CHECK" 6 "ACTIVE_READY_FOR_PRECHARGE" 7 "ACTIVE_PRECHARGE" 8 "ACTIVE_READY_TO_CHARGE" 9 "ACTIVE_CHARGING" 10 "ACTIVE_WELDING_DETECTION" 11 "ACTIVE_SOCKET_UNLOCKING" 12 "FAULT" 13 "ACTIVE_OPENING_CONTACTORS" 14 "SLEEP" 15 "STANDBY_CABLE_CONNECTED_EVSE_READY_FOR_HLC" 16 "STANDBY_CABLE_CONNECTED_EVSE_READY_FOR_BASICAC" 17 "STANDBY_CABLE_CONNECTED_EVSE_FAULTED";
+VAL_ 129 ChargerType 0 "NONE" 1 "BASIC_AC" 3 "SMART_DC";
+VAL_ 129 AC_CloseContactorsRequest 0 "OPEN" 1 "CLOSE";
+VAL_ 129 DC_CloseContactorsRequest 0 "OPEN" 1 "CLOSE";
+VAL_ 129 PrechargeReady 0 "NOT_READY" 1 "READY";
+VAL_ 129 SocketLockState 0 "UNKNOWN" 1 "UNLOCKED" 2 "LOCKED" 3 "FAILED_OPEN" 4 "FAILED_SHORT" 5 "UNAVAILABLE";
+VAL_ 129 ErrorCode 0 "M2IEV_INTERNAL_REASON_NONE" 1 "M2IEV_INTERNAL_REASON_EMERGENCY_STOP" 2 "M2IEV_INTERNAL_REASON_LOW_TEMP_SOCKET" 3 "M2IEV_INTERNAL_REASON_LOW_TEMP_PAD1" 4 "M2IEV_INTERNAL_REASON_LOW_TEMP_PAD2" 5 "M2IEV_INTERNAL_REASON_HIGH_TEMP_SOCKET" 6 "M2IEV_INTERNAL_REASON_HIGH_TEMP_PAD1" 7 "M2IEV_INTERNAL_REASON_HIGH_TEMP_PAD2" 9 "M2IEV_INTERNAL_REASON_CONTACTORS_OPEN" 10 "M2IEV_INTERNAL_REASON_CONTACTORS_CLOSED" 11 "M2IEV_INTERNAL_REASON_BCC_COMMAND" 12 "M2IEV_INTERNAL_REASON_BCC_COMMAND_SLEEP" 13 "M2IEV_INTERNAL_REASON_BCC_COMMAND_STANDBY" 14 "M2IEV_INTERNAL_REASON_BCC_COMMAND_START" 15 "M2IEV_INTERNAL_REASON_BCC_COMMAND_PRECHARGE" 16 "M2IEV_INTERNAL_REASON_BCC_COMMAND_CHARGE" 17 "M2IEV_INTERNAL_REASON_BCC_COMMAND_ENDCHARGE" 18 "M2IEV_INTERNAL_REASON_BCC_COMMAND_FAULT" 19 "M2IEV_INTERNAL_REASON_BCC_COMMAND_DO_WELDING_DETECTION" 20 "M2IEV_INTERNAL_REASON_BCC_COMMAND_UNKNOWN" 21 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_A" 22 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_B" 23 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_C" 24 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_D" 25 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_E" 26 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_INVALID" 27 "M2IEV_INTERNAL_REASON_COMMAND_PILOT_STATE_ACK_ERROR" 28 "M2IEV_INTERNAL_REASON_COMMAND_SOCKET_LOCK" 29 "M2IEV_INTERNAL_REASON_COMMAND_SOCKET_UNLOCK" 30 "M2IEV_INTERNAL_REASON_SOCKET_LOCKED" 31 "M2IEV_INTERNAL_REASON_SOCKET_UNLOCKED" 32 "M2IEV_INTERNAL_REASON_PILOT_PWM_DUTY_RATIO" 33 "M2IEV_INTERNAL_REASON_READY_FOR_PRECHARGE" 36 "M2IEV_INTERNAL_REASON_UNHANDLED_TIMER_TIMEOUT" 37 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_UNKNOWN" 38 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_CABLE_UNPLUGGED" 39 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_CABLE_PLUGGED_LATCH_RELEASED" 40 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_CABLE_PLUGGED_LATCH_DEPRESSED" 41 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_SOCKET_FAILURE_SHORT" 42 "M2IEV_INTERNAL_REASON_PROXIMITY_STATE_INVALID" 43 "M2IEV_INTERNAL_REASON_PILOT_STATE_A" 44 "M2IEV_INTERNAL_REASON_PILOT_STATE_B" 45 "M2IEV_INTERNAL_REASON_PILOT_STATE_C" 46 "M2IEV_INTERNAL_REASON_PILOT_STATE_D" 47 "M2IEV_INTERNAL_REASON_PILOT_STATE_E" 48 "M2IEV_INTERNAL_REASON_PILOT_STATE_F" 49 "M2IEV_INTERNAL_REASON_PILOT_STATE_INVALID" 50 "M2IEV_INTERNAL_REASON_PILOT_STATE_ACK_ERROR" 51 "M2IEV_INTERNAL_REASON_CAN_RX_TIMEOUT" 52 "M2IEV_INTERNAL_REASON_LOCKING_FAILED" 53 "M2IEV_INTERNAL_REASON_LOCKING_BLOCKED_BY_LATCH" 54 "M2IEV_INTERNAL_REASON_UNLOCKING_FAILED" 55 "M2IEV_INTERNAL_REASON_BCC_ERROR" 56 "M2IEV_INTERNAL_REASON_UNKNOWN" 32769 "M2IEV_INTERNAL_REASON_EVCC_UNKNOWN" 32770 "M2IEV_INTERNAL_REASON_INTERNAL_ERROR_V2G_SEND_TIMEOUT" 32771 "M2IEV_INTERNAL_REASON_INTERNAL_ERROR_OTHER" 32772 "M2IEV_INTERNAL_REASON_EV_INITIATED_SHUTDOWN" 32773 "M2IEV_INTERNAL_REASON_EVSE_INITIATED_SHUTDOWN" 32774 "M2IEV_INTERNAL_REASON_CP_STATE_AEF" 32775 "M2IEV_INTERNAL_REASON_UNEXPECTED_CP_STATE_CHANGE" 32776 "M2IEV_INTERNAL_REASON_CONNECTOR_LOCK_FAILURE" 32777 "M2IEV_INTERNAL_REASON_EV_ERROR" 32778 "M2IEV_INTERNAL_REASON_EVSE_V2G_RECEIVE_TIMEOUT" 32779 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_SCHEMA_ERROR" 32780 "M2IEV_INTERNAL_REASON_EVSE_INVALID_CHARGE_PARAMETER_DISCOVERY_RES" 32781 "M2IEV_INTERNAL_REASON_EVSE_ERROR_OTHER" 32782 "M2IEV_INTERNAL_REASON_CONNECTION_LOST" 32783 "M2IEV_INTERNAL_REASON_SLAC_COMMUNICATION_FAILURE" 32784 "M2IEV_INTERNAL_REASON_SDP_COMMUNICATION_FAILURE" 32785 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_ERROR" 32786 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_SEQUENCE_ERROR" 32787 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_SERVICE_ID_INVALID" 32788 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_UNKNOWN_SESSION" 32789 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_SERVICE_SELECTION_INVALID" 32790 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_PAYMENT_SELECTION_INVALID" 32791 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CERTIFICATE_EXPIRED" 32792 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_SIGNATURE_ERROR" 32793 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_NO_CERTIFICATE_AVAILABLE" 32794 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CERT_CHAIN_ERROR" 32795 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CHALLENGE_INVALID" 32796 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CONTRACT_CANCELED" 32797 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_WRONG_CHARGE_PARAMETER" 32798 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_POWER_DELIVERY_NOT_APPLIED" 32799 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_TARIFF_SELECTION_INVALID" 32800 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CHARGING_PROFILE_INVALID" 32801 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_EVSE_PRESENT_VOLTAGE_TO_LOW" 32802 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_METERING_SIGNATURE_NOT_VALID" 32803 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_WRONG_ENERGY_TRANSFER_TYPE" 32804 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_NO_CHARGE_SERVICE_SELECTED" 32805 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_WRONG_ENERGY_TRANSFER_MODE" 32806 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CONTACTOR_ERROR" 32807 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CERTIFICATE_NOT_ALLOWED_AT_THIS_EVSE" 32808 "M2IEV_INTERNAL_REASON_EVSE_RESPONSE_CODE_CERTIFICATE_REVOKED";
+VAL_ 130 PP_State 0 "DISCONNECTED" 1 "R1500" 2 "R680" 3 "R220" 4 "R100" 5 "INVALID" 6 "CABLE_PLUGGED_LATCH_RELEASED" 7 "CABLE_PLUGGED_LATCH_DEPRESSED";
+VAL_ 130 CP_State 0 "A" 1 "B" 2 "C" 3 "D" 4 "E" 5 "F" 6 "INVALID" 7 "ERROR";
+VAL_ 256 EVErrorCode 0 "NO_ERROR" 1 "FAILED_RESSTemperatureInhibit" 2 "FAILED_EVShiftPosition" 3 "FAILED_ChargerConnectorLockFault" 4 "FAILED_EVRESSMalfunction" 5 "FAILED_ChargingCurrentdifferential" 6 "FAILED_ChargingVoltageOutOfRange" 7 "Reserved_A" 8 "Reserved_B" 9 "Reserved_C" 10 "FAILED_ChargingSystemIncompatibility" 11 "NoData";
+VAL_ 256 EVRESSSOC 0 "UNKNOWN";
+VAL_ 256 EVTargetVoltage 0 "UNKNOWN";
+VAL_ 256 EVTargetCurrent 0 "UNKNOWN";
+VAL_ 256 RemainingTimeToFullSoC 0 "UNKNOWN";
+VAL_ 256 RemainingTimeToBulkSoC 0 "UNKNOWN";
+VAL_ 257 ResponseCode 0 "NoData" 1 "OK" 2 "OK_CertificateExpiresSoon" 3 "OK_NewSessionEstablished" 4 "OK_OldSessionJoined" 5 "FAILED" 6 "FAILED_SequenceError" 7 "FAILED_SignatureError" 8 "FAILED_UnknownSession" 9 "FAILED_ServiceIDInvalid" 10 "FAILED_PaymentSelectionInvalid" 11 "FAILED_ServiceSelectionInvalid" 12 "FAILED_CertificateExpired" 13 "FAILED_CertificateRevoked" 14 "FAILED_NoCertificateAvailable" 15 "FAILED_CertChainError" 16 "FAILED_ContractCanceled" 17 "FAILED_ChallengeInvalid" 18 "FAILED_WrongEnergyTransferMode" 19 "FAILED_WrongChargeParameter" 20 "FAILED_ChargingProfileInvalid" 21 "FAILED_TariffSelectionInvalid" 22 "FAILED_PowerDeliveryNotApplied" 23 "FAILED_MeteringSignatureNotValid" 24 "FAILED_NoChargeServiceSelected" 25 "FAILED_ContactorError" 26 "FAILED_CertificateNotAllowedAtThisEVSE";
+VAL_ 257 EVSECurrentLimitAchieved 0 "OKAY" 1 "LIMIT_ACHIEVED";
+VAL_ 257 EVSEVoltageLimitAchieved 0 "OKAY" 1 "LIMIT_ACHIEVED";
+VAL_ 257 EVSEPowerLimitAchieved 0 "OKAY" 1 "LIMIT_ACHIEVED";
+VAL_ 257 EVSEStatusCode 0 "EVSE_NotReady" 1 "EVSE_Ready" 2 "EVSE_Shutdown" 3 "EVSE_UtilityInterruptEvent" 4 "EVSE_IsolationMonitoringActive" 5 "EVSE_EmergencyShutdown" 6 "EVSE_Malfunction" 7 "Reserved_8" 8 "Reserved_9" 9 "Reserved_A" 10 "Reserved_B" 11 "Reserved_C";
+VAL_ 257 EVSEIsolationStatus 0 "Valid" 1 "Warning" 2 "Fault" 3 "No_IMD";
+VAL_ 257 EVSEPresentVoltage 0 "UNKNOWN";
+VAL_ 257 EVSEPresentCurrent 0 "UNKNOWN";
+VAL_ 259 EVSEMaxCurrent 0 "UNKNOWN";
+VAL_ 260 TemperatureDC1HighAlarm 0 "OKAY" 1 "ALARM";
+VAL_ 260 TemperatureDC1HighFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 TemperatureDC1LowAlarm 0 "OKAY" 1 "ALARM";
+VAL_ 260 TemperatureDC1LowFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 TemperatureDC2HighAlarm 0 "OKAY" 1 "ALARM";
+VAL_ 260 TemperatureDC2HighFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 TemperatureDC2LowAlarm 0 "OKAY" 1 "ALARM";
+VAL_ 260 TemperatureDC2LowFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 TemperatureACFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 EmergencyStopFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 PilotFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 ProximityFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 CanRxFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 SocketLatchSensorFault 0 "OKAY" 1 "FAULT";
+VAL_ 260 EvccError 0 "OKAY" 1 "FAULT";
+VAL_ 512 EVMaximumCurrentLimit 0 "UNKNOWN";
+VAL_ 512 EVMaximumPowerLimit 0 "UNKNOWN";
+VAL_ 512 EVMaximumVoltageLimit 0 "UNKNOWN";
+VAL_ 512 EVEnergyRequest 0 "UNKNOWN";
+VAL_ 513 EVEnergyCapacity 0 "UNKNOWN";
+VAL_ 513 AllowedACCharging 0 "NOT_ALLOWED" 1 "ALLOWED";
+VAL_ 513 AllowedSmartDCCharging 0 "NOT_ALLOWED" 1 "ALLOWED";
+VAL_ 514 EVSEMaximumCurrentLimit 0 "UNKNOWN";
+VAL_ 514 EVSEMaximumVoltageLimit 0 "UNKNOWN";
+VAL_ 514 EVSEMaximumPowerLimit 0 "UNKNOWN";
+VAL_ 514 EVSEEnergyToBeDelivered 0 "UNKNOWN";
+VAL_ 515 EVSEMinimumCurrentLimit 0 "UNKNOWN";
+VAL_ 515 EVSEMinimumVoltageLimit 0 "UNKNOWN";
+VAL_ 515 EVSECurrentRegulationTolerance 0 "UNKNOWN";
+VAL_ 515 EVSEPeakCurrentRipple 0 "UNKNOWN";
+VAL_ 517 OD_OUT1 0 "DISABLED" 1 "ENABLED";
+VAL_ 517 OD_OUT2 0 "DISABLED" 1 "ENABLED";
+VAL_ 517 OD_OUT3 0 "DISABLED" 1 "ENABLED";
+VAL_ 518 EvccAppVersion 0 "UNKNOWN";
+VAL_ 518 EvccLibVersion 0 "UNKNOWN";
+VAL_ 519 EvicVersion 0 "UNKNOWN";

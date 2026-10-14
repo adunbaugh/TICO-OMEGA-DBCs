@@ -1,0 +1,261 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+VAL_TABLE_ False_True 1 "True" 0 "False" ;
+VAL_TABLE_ CAN_Enable 1 "On or True" 0 "Off or False" ;
+
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ cntHours : 0|16@0+ (1,0) [0|65535] "hours" Vector__XXX
+ SG_ OVP : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1813 Stst1: 8 Vector__XXX
+ SG_ PFCEnable : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LogTempHigh : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LogTempLow : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ uvloLog : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ therLowFail : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ rx618Fail : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk1_fail : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk2_fail : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk3_fail : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolingFail1 : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolingFail2 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolingFail3 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ uvloLogLV : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BatOver : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BatUnder : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1812 Act4: 8 Vector__XXX
+ SG_ TemplogFAN_A : 7|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ Iout1_A : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Iout2_A : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Iout3_A : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1560 Ctl: 7 Vector__XXX
+ SG_ CanEnable : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED3_A : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IacMaxSet : 15|16@0+ (0.1,0) [0|50] "A" Vector__XXX
+ SG_ VoutMaxSet : 31|16@0+ (0.1,0) [0|1000] "V" Vector__XXX
+ SG_ IoutMaxSet : 47|16@0+ (0.1,0) [0|150] "A" Vector__XXX
+
+BO_ 1552 Stat: 4 Vector__XXX
+ SG_ PowerEnable : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ErrorLatch : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WarnLimit : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LimTemp : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ WarningHV : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Bulks : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1553 Act1: 8 Vector__XXX
+ SG_ Iacm : 7|16@0+ (0.1,0) [0|50] "A" Vector__XXX
+ SG_ Temp : 23|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ VOut : 39|16@0+ (0.1,0) [0|1000] "V" Vector__XXX
+ SG_ IOut : 55|16@0+ (0.1,0) [0|150] "A" Vector__XXX
+
+BO_ 1810 Act3: 8 Vector__XXX
+ SG_ FANVoltage : 7|16@0+ (0.1,0) [0|30] "V" Vector__XXX
+ SG_ Iacm1 : 23|16@0+ (0.1,0) [0|50] "A" Vector__XXX
+ SG_ Iacm2 : 39|16@0+ (0.1,0) [0|50] "A" Vector__XXX
+ SG_ Iacm3 : 55|16@0+ (0.1,0) [0|50] "A" Vector__XXX
+
+BO_ 1811 Temp: 8 Vector__XXX
+ SG_ LogHV : 7|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ Power1 : 23|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ Power2 : 39|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ Power3 : 55|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+
+BO_ 1556 Act2: 8 Vector__XXX
+ SG_ TempLogLV : 7|16@0+ (0.005188,-40) [-40|300] "degC" Vector__XXX
+ SG_ AcPower : 23|16@0+ (0.01,0) [0|10] "kW" Vector__XXX
+ SG_ ProxcurrentLimit : 39|16@0+ (0.1,0) [0|100] "A" Vector__XXX
+ SG_ PilotcurrentLimit : 55|16@0+ (0.1,0) [0|100] "A" Vector__XXX
+
+BO_ 1557 Tst1: 8 Vector__XXX
+ SG_ ACok : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrCompl : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PwrOk : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VoutOK : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Neutral : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED3 : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED618 : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ovp : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ connOpen : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TherFail : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ rx618Fail : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk1_fail : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk2_fail : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ bulk3_fail : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PUMPon : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FANon : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVrxFail : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CoolingFail : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rx619fail : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Neutro1 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Neutro2 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ThreePhase : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IacFail : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Ignition : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LVBatteryNP : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ProxOk : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PilotOk : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ S2Ok : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ cntHours : 55|16@0+ (1,0) [0|65535] "hours" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 1813 PFCEnable "PFC Stage enable flag";
+CM_ SG_ 1813 LogTempHigh "Thermal Fail flag, True if the Logic temperature is over the maximum level";
+CM_ SG_ 1813 LogTempLow "Thermal Fail flag, True if the Logic temperature is under the maximum level";
+CM_ SG_ 1813 uvloLog "UVLO (under voltage HV logic) flag";
+CM_ SG_ 1813 rx618Fail "RX internal ID618 fail flag";
+CM_ SG_ 1813 bulk1_fail "DC bulk1 fail flag";
+CM_ SG_ 1813 bulk2_fail "DC bulk2  fail flag";
+CM_ SG_ 1813 bulk3_fail "DC bulk3 fail flag";
+CM_ SG_ 1813 CoolingFail1 "Cooling fail detected over power stage 1";
+CM_ SG_ 1813 CoolingFail2 "Cooling fail detected over power stage 2";
+CM_ SG_ 1813 CoolingFail3 "Cooling fail detected over power stage 3";
+CM_ SG_ 1813 uvloLogLV "UVLO (under voltage LV logic) flag";
+CM_ SG_ 1813 BatOver "True if the voltage of Always hot Battery is over 32Vdc (only when EN61851/SAEJ1772 enabled)";
+CM_ SG_ 1813 BatUnder "True if the voltage of Always hot Battery is under 8Vdc (only when EN61851/SAEJ1772 enabled)";
+CM_ BO_ 1812 "Tx = 100ms";
+CM_ SG_ 1812 TemplogFAN_A "Temperature over Logic Board FAN Supplier Side";
+CM_ SG_ 1812 Iout1_A "Output current of channel 1 measured on the HVDC output stage";
+CM_ SG_ 1812 Iout2_A "Output current of channel 2  measured on the HVDC output stage";
+CM_ SG_ 1812 Iout3_A "Output current of channel 3  measured on the HVDC output stage";
+CM_ BO_ 1560 "Tx = 100ms";
+CM_ BO_ 1552 "Tx = 1000ms";
+CM_ SG_ 1552 PowerEnable "Indicates if the hardware enable pin is active. From 25 July 2016 (serial number ME292830152203) the HVIL signal management is passive. So, it is not still monitored and the flag value is always equal to 1.";
+CM_ SG_ 1552 ErrorLatch "If True, a failure or a soft failure has occurred (See the table 1 of Fault Code)";
+CM_ SG_ 1552 WarnLimit "If True, a warning condition is present (See the table 1 of Fault Code)";
+CM_ SG_ 1552 LimTemp "If True, the de-rating characteristic is active";
+CM_ SG_ 1552 WarningHV "If True, the communication with HV side of charger is erratic or the HV side is not powered";
+CM_ SG_ 1552 Bulks "If True, a Bulk error is present (See the table 1 of Fault Code)";
+CM_ BO_ 1553 "Tx = 100ms";
+CM_ SG_ 1553 Iacm "AC Input Current";
+CM_ SG_ 1553 Temp "Temperature over Power Stage";
+CM_ SG_ 1553 VOut "DC Output Voltage";
+CM_ SG_ 1553 IOut "DC Output Current";
+CM_ BO_ 1810 "Tx = 100ms";
+CM_ SG_ 1810 FANVoltage "DC voltage applied to the FAN (only for EVO11KA)";
+CM_ SG_ 1810 Iacm1 "AC Input Current Phase 1";
+CM_ SG_ 1810 Iacm3 "AC Input Current Phase 3";
+CM_ BO_ 1811 "Tx = 100ms";
+CM_ SG_ 1811 LogHV "Temperature over Logic Board HV Side";
+CM_ SG_ 1811 Power1 "Temperature over Power Stage 1";
+CM_ SG_ 1811 Power2 "Temperature over Power Stage 2
+";
+CM_ SG_ 1811 Power3 "Temperature over Power Stage 3";
+CM_ BO_ 1556 "Tx = 1000ms";
+CM_ SG_ 1556 TempLogLV "Temperature over Logic LV Stage";
+CM_ SG_ 1556 AcPower "AC input power";
+CM_ SG_ 1556 ProxcurrentLimit "It defines the maximum AC input current available considering Proximity Signal (EN61851 only)";
+CM_ SG_ 1556 PilotcurrentLimit "It defines the maximum AC input current available considering Pilot Signal";
+CM_ BO_ 1557 "Tx = 100ms";
+CM_ SG_ 1557 ACok "True if AC Mains is connected (this flag became true a little time before (300ms) the precharge starts)";
+CM_ SG_ 1557 PrCompl "True if AC Mains connected and pre-charge completed";
+CM_ SG_ 1557 PwrOk "True if the charger starts to provide output power";
+CM_ SG_ 1557 Neutral "If T, the Neutral is connected correctly. It is referred to the correct connection of the Neutral in the following AC conf 3 phase star conf ";
+CM_ SG_ 1557 LED3 "This flag becomes true when: Tst1.LED618 is True, charger supplied with AC Mains and 12Vdc are provided to the pins 10 and one of 13, 14, 15.";
+CM_ SG_ 1557 LED618 "This flag became true when Ctl.lED3 is True. Tst1.LED618 represents an echo of the Ctl.lED3 command. If True, a Led connected to the pins 10 and one of 13, 14, 15 could be powered when AC Mains is provided";
+CM_ SG_ 1557 ovp "True if there is a DC output over voltage flag (the overvoltage is referred to the maximum output voltage allowed by the charger range)";
+CM_ SG_ 1557 connOpen "Control loop Fail flag (HVIL on DC output connector), true if the output connector is not connected. From 25 July 2016 (serial number ME292830152203) the HVIL signal management is passive. ";
+CM_ SG_ 1557 TherFail "If True, the charger is working in de-rating condition (see page 45, chapter 5.12 of the User’s Manual)";
+CM_ SG_ 1557 rx618Fail "RX ID618 fail flag, true if the control message is not received for more than 600ms.";
+CM_ SG_ 1557 bulk1_fail "If True, a Bulk error related to the channel 1 is present (See the table 1 of Fault Code)";
+CM_ SG_ 1557 bulk2_fail "If True, a Bulk error related to the channel 2 is present (See the table 1 of Fault Code)";
+CM_ SG_ 1557 PUMPon "True if there is a Pump active request (when Act1.Temp or Act2.TempLogLV value is over 35°C)";
+CM_ SG_ 1557 FANon "True if there is a Fan active request (when Act1.Temp or Act2.TempLogLV value is over 40°C)";
+CM_ SG_ 1557 HVrxFail "If true, the communication with HV side of charger is erratic";
+CM_ SG_ 1557 CoolingFail "If true, the cooling circuit is not connected or the liquid coolant is not present";
+CM_ SG_ 1557 Neutro1 "If true, there is a good connection on neutral cable. Tst.1Neutro1 and Tst.1Neutro2 are linked to an internal system that detects the neutral disconnection";
+CM_ SG_ 1557 Neutro2 "If true, there is a good connection on neutral cable. Tst.1Neutro1 and Tst.1Neutro2 are linked to an internal system that detects the neutral disconnection";
+CM_ SG_ 1557 IacFail "If True, the Iac current value is over the maximum Iac value permitted";
+CM_ SG_ 1557 Ignition "If True, the ignition run signal wakes up the charger from SLEEP when SAE J1772 or EN61851 is enabled (see page 29, chapter 5.9.4.2 of the User’s Manual)";
+CM_ SG_ 1557 LVBatteryNP "If True, the LV Battery always hot is not present";
+CM_ SG_ 1557 ProxOk "True if Proximity level is correct (only when EN61851/SAEJ1772 enabled)";
+CM_ SG_ 1557 PilotOk "True if pilot signal is correct (only when EN61851/SAEJ1772 enabled)";
+CM_ SG_ 1557 S2Ok "True if S2 is closed (only when EN61851/SAEJ1772 enabled)";
+VAL_ 1813 PFCEnable 1 "True" 0 "False" ;
+VAL_ 1813 LogTempHigh 1 "On or True" 0 "Off or False" ;
+VAL_ 1813 LogTempLow 1 "On or True" 0 "Off or False" ;
+VAL_ 1813 uvloLog 1 "On or True" 0 "Off or False" ;
+VAL_ 1813 therLowFail 1 "True" 0 "False" ;
+VAL_ 1813 rx618Fail 1 "True" 0 "False" ;
+VAL_ 1813 bulk1_fail 1 "True" 0 "False" ;
+VAL_ 1813 bulk2_fail 1 "True" 0 "False" ;
+VAL_ 1813 bulk3_fail 1 "True" 0 "False" ;
+VAL_ 1813 CoolingFail1 1 "True" 0 "False" ;
+VAL_ 1813 CoolingFail2 1 "True" 0 "False" ;
+VAL_ 1813 CoolingFail3 1 "True" 0 "False" ;
+VAL_ 1813 uvloLogLV 1 "True" 0 "False" ;
+VAL_ 1813 BatOver 1 "True" 0 "False" ;
+VAL_ 1813 BatUnder 1 "True" 0 "False" ;
+VAL_ 1560 CanEnable 1 "On or True" 0 "Off or False" ;
+VAL_ 1552 WarnLimit 1 "True" 0 "False" ;
+VAL_ 1552 LimTemp 1 "True" 0 "False" ;
+VAL_ 1552 WarningHV 1 "True" 0 "False" ;
+VAL_ 1552 Bulks 1 "True" 0 "False" ;
+VAL_ 1557 ACok 1 "True" 0 "False" ;
+VAL_ 1557 PrCompl 1 "True" 0 "False" ;
+VAL_ 1557 PwrOk 1 "True" 0 "False" ;
+VAL_ 1557 VoutOK 1 "True" 0 "False" ;
+VAL_ 1557 Neutral 1 "True" 0 "False" ;
+VAL_ 1557 LED3 1 "True" 0 "False" ;
+VAL_ 1557 LED618 1 "True" 0 "False" ;
+VAL_ 1557 ovp 1 "True" 0 "False" ;
+VAL_ 1557 connOpen 1 "True" 0 "False" ;
+VAL_ 1557 TherFail 1 "True" 0 "False" ;
+VAL_ 1557 rx618Fail 1 "True" 0 "False" ;
+VAL_ 1557 bulk1_fail 1 "True" 0 "False" ;
+VAL_ 1557 bulk2_fail 1 "True" 0 "False" ;
+VAL_ 1557 PUMPon 1 "True" 0 "False" ;
+VAL_ 1557 FANon 1 "True" 0 "False" ;
+VAL_ 1557 HVrxFail 1 "True" 0 "False" ;
+VAL_ 1557 CoolingFail 1 "True" 0 "False" ;
+VAL_ 1557 Neutro1 1 "True" 0 "False" ;
+VAL_ 1557 Neutro2 1 "True" 0 "False" ;
+VAL_ 1557 IacFail 1 "True" 0 "False" ;
+VAL_ 1557 Ignition 1 "True" 0 "False" ;
+VAL_ 1557 LVBatteryNP 1 "True" 0 "False" ;
+VAL_ 1557 ProxOk 1 "True" 0 "False" ;
+VAL_ 1557 PilotOk 1 "True" 0 "False" ;
+VAL_ 1557 S2Ok 1 "True" 0 "False" ;
+

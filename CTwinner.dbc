@@ -1,0 +1,71 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: LR_CT2 RR_CT2
+
+BO_ 81 LR_A: 8 LR_CT2
+ SG_ LR_X_Force : 0|16@1- (3.08728101654053,0) [-101164|101164] "lbf" Vector__XXX
+ SG_ LR_Y_Force : 16|16@1- (1.54364050827026,0) [-50582|50582] "lbf" Vector__XXX
+ SG_ LR_Z_Force : 32|16@1- (3.08728101654053,0) [-101164|101164] "lbf" Vector__XXX
+ SG_ LR_MX_Moment : 48|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+
+BO_ 82 LR_B: 8 LR_CT2
+ SG_ LR_MY_Moment : 0|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+ SG_ LR_MZ_Moment : 16|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+ SG_ LR_Velocity : 32|16@1- (0.06103515625,0) [-2000|2000] "rpm" Vector__XXX
+ SG_ LR_Position : 48|16@1- (0.010986328125,0) [0|360] "degrees" Vector__XXX
+
+BO_ 83 LR_C: 4 LR_CT2
+ SG_ LR_X_Acceleration : 0|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+ SG_ LR_Z_Acceleration : 16|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+
+
+
+BO_ 97 RR_A: 8 RR_CT2
+ SG_ RR_X_Force : 0|16@1- (3.08728101654053,0) [-101164|101164] "lbf" Vector__XXX
+ SG_ RR_Y_Force : 16|16@1- (1.54364050827026,0) [-50582|50582] "lbf" Vector__XXX
+ SG_ RR_Z_Force : 32|16@1- (3.08728101654053,0) [-101164|101164] "lbf" Vector__XXX
+ SG_ RR_MX_Moment : 48|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+
+BO_ 98 RR_B: 8 RR_CT2
+ SG_ RR_MY_Moment : 0|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+ SG_ RR_MZ_Moment : 16|16@1- (3.15120547058105,0) [-103259|103259] "lb-ft" Vector__XXX
+ SG_ RR_Velocity : 32|16@1- (0.06103515625,0) [-2000|2000] "rpm" Vector__XXX
+ SG_ RR_Position : 48|16@1- (0.010986328125,0) [0|360] "degrees" Vector__XXX
+
+BO_ 99 RR_C: 4 RR_CT2
+ SG_ RR_X_Acceleration : 0|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+ SG_ RR_Z_Acceleration : 16|16@1- (0.0030517578125,0) [-100|100] "g" Vector__XXX
+

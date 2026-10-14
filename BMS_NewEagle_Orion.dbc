@@ -1,0 +1,107 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 257 Batt101: 8 Vector__XXX
+ SG_ BattBalancingActv : 0|1@0+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ BattChgPwrSignal : 1|1@0+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ BattChgrSafety : 2|1@0+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ BattMPI1 : 3|1@0+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ BattMPI2 : 4|1@0+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ BattFault : 15|24@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ BattSOC : 39|16@0+ (0.01,0) [0|655.35] "%" Vector__XXX
+ SG_ BattSOH : 55|16@0+ (0.01,0) [0|655.35] "%" Vector__XXX
+
+BO_ 258 Batt102: 8 Vector__XXX
+ SG_ BattVolt : 7|16@0+ (0.02,0) [0|1310.7] "V" Vector__XXX
+ SG_ BattCellVoltAvg : 23|16@0+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ BattCellVoltMx : 39|16@0+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ BattCellVoltMn : 55|16@0+ (0.001,0) [0|65.535] "V" Vector__XXX
+
+BO_ 259 Batt103: 8 Vector__XXX
+ SG_ BattCur : 7|16@0+ (0.05,-1000) [-1000|2276.75] "A" Vector__XXX
+ SG_ BattDCL : 23|16@0+ (0.05,0) [0|3276.75] "A" Vector__XXX
+ SG_ BattCCL : 39|16@0+ (0.05,0) [0|3276.75] "A" Vector__XXX
+ SG_ BattIsolation : 55|8@0+ (0.02,0) [0|5.1] "" Vector__XXX
+
+BO_ 260 Batt104: 8 Vector__XXX
+ SG_ BattCellTempAvg : 7|16@0+ (0.01,-40) [-40|615.35] "degC" Vector__XXX
+ SG_ BattCellTempMx : 23|16@0+ (0.01,-40) [-40|615.35] "degC" Vector__XXX
+ SG_ BattCellTempMn : 39|16@0+ (0.01,-40) [-40|615.35] "degC" Vector__XXX
+ SG_ BattRes : 55|16@0+ (0.001,0) [0|65.535] "ohm" Vector__XXX
+
+BO_ 261 Batt105: 1 Vector__XXX
+ SG_ BattMPO1 : 0|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+
+
+
+CM_ BO_ 257 "BMS tx at 48ms";
+CM_ SG_ 257 BattChgPwrSignal "state of pin3 on Orion BMS
+(VCM sends BMS pin3 power when in charge mode)";
+CM_ SG_ 257 BattMPI1 "State of multi-purpose input 1";
+CM_ SG_ 257 BattMPI2 "State of multi-purpose input 2";
+CM_ SG_ 257 BattFault "Bit1: Discharge-Enable Relay Fault
+Bit2: Charger Safety Relay Fault
+Bit3: Internal Hardware Fault
+Bit4: Internal Heatsink Thermistor Fault
+Bit5: Internal Logic Fault
+Bit6: Highest Cell Voltage Too High Fault
+Bit7: Lowest Cell Voltage Too Low Fault
+Bit8: Pack Too Hot Fault
+Bit9: Weak Pack Fault
+Bit10: Fan Monitor Fault
+Bit11: Thermistor Fault
+Bit12: CAN Communication Fault
+Bit13: Redundant Power Supply Fault
+Bit14: High Voltage Isolation Fault
+Bit15: Invalid Input Supply Voltage Fault
+Bit16: Charge-Enable Relay Fault
+Bit17: Internal Cell Communication Fault
+Bit18: Cell Balancing Stuck Off Fault
+Bit19: Weak Cell Fault
+Bit20: Low Cell Voltage Fault
+Bit21: Cell Open Wiring Fault
+Bit22: Current Sensor Fault
+Bit23: Cell Voltage Over 5V Fault
+Bit24: Cell Bank Fault";
+CM_ BO_ 258 "BMS tx at 48ms";
+CM_ BO_ 259 "BMS tx at 24ms";
+CM_ SG_ 259 BattIsolation "unitless; readings are generally between 1.4 to 4.8 with the higher number meaning better isolation";
+CM_ BO_ 260 "BMS tx at 496ms";
+CM_ BO_ 261 "VCM tx at 48ms";
+CM_ SG_ 261 BattMPO1 "State of multi-purpose output 1";
+

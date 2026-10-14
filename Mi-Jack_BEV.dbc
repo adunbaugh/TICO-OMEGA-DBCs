@@ -1,0 +1,337 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU MCU_WF2 MCU_eAxle_Drive DCU Dashboard_PC_TOOL Transmission1 ShiftConsolePrimary
+
+
+VAL_TABLE_ FMI 31 "Not available" 19 "Received network data in error" 18 "Below normal (moderately severe)" 17 "Below normal (least severe)" 16 "Above normal (moderately severe)" 15 "Above normal (least severe)" 14 "Special intstructions" 13 "Out of calibration" 12 "Bad intelligent device" 11 "Root cause not known" 10 "Abnormal rate of change" 9 "Abnormal update rate" 8 "Abnormal frequency" 7 "Mechanical system not responding" 6 "Current above normal" 5 "Current below normal" 4 "Voltage below normal" 3 "Voltage above normal" 2 "Data erratic" 1 "Below normal (most severe)" 0 "Above normal (most severe)" ;
+
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ brake_current_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ drive_current_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ mech_tq_based_on_output_spd : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ Reserved : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ acceleration_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ outputSpeed_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ saf_framew_sm_all_data_vref_5V : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Reserved : 0|14@1+ (1,0) [0|16383] "" Vector__XXX
+ SG_ Safety_contactor_feedback : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCU_SW_command_safety_contactor : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ WF2_Health : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WF1_Health : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Requested_Power_For_WF1 : 16|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Requested_Power_For_WF2 : 32|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Requested_Power_For_Drive : 0|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Available_Power_For_WF2 : 32|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Available_Power_For_WF1 : 16|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Available_Power_For_Drive : 0|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Torque_Limit : 40|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Speed_Command : 24|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Torque_Command : 8|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Operation_Request : 3|3@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Command_Mode : 0|3@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Torque_Limit : 40|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Speed_Command : 24|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Torque_Command : 8|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Operation_Request : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Command_Mode : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Thermal_Indicator : 16|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Motor_Cooling_Flow_Request : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Drive_Cooling_Flow_Request : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Emergency_Stop : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Speed_Reduction_Request : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Current_Command_Mode : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ State : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Motor_Current_Torque : 16|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Motor_Current_Speed : 0|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Torque_Available : 8|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Torque_Available : 24|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Derating : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Derating : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Thermal_Indicator : 16|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Motor_Cooling_Flow_Request : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Drive_Cooling_Flow_Request : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Speed_Reduction_Request : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Emergency_Stop : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Current_Command_Mode : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ State : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Motor_Current_Torque : 16|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Motor_Current_Speed : 0|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Torque_Available : 8|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Torque_Available : 24|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Derating : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Derating : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MCU_Temperature : 24|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ EMI_Temperature : 16|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Ambient_Temperature : 8|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Motor_Temperature : 0|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ MCU_Temperature : 24|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ EMI_Temperature : 16|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ambient_Temperature : 8|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Motor_Temperature : 0|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Low_Power_Voltage : 0|8@1+ (0.5,0) [0|127] "" Vector__XXX
+ SG_ High_Power_Voltage : 8|16@1+ (1,0) [0|65000] "" Vector__XXX
+ SG_ High_Power_Current : 24|16@1+ (0.25,-8100) [-8100|8100] "" Vector__XXX
+ SG_ Fault_Phase_To_Chassis : 52|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Motor_Cable : 56|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Battery_Cable : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Drive_Cover_Opened : 58|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Low_Power_Voltage : 0|8@1+ (0.5,0) [0|127] "" Vector__XXX
+ SG_ High_Power_Voltage : 8|16@1+ (1,0) [0|65000] "" Vector__XXX
+ SG_ High_Power_Current : 24|16@1+ (0.25,-8100) [-8100|8100] "" Vector__XXX
+ SG_ Fault_Phase_To_Chassis : 52|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Motor_Cable : 56|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Battery_Cable : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Drive_Cover_Opened : 58|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SDM_Data_CRC : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Inverted_SDM_PF_Value : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_PS_Value : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_Source_Address : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Sequence_Number : 3|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Reserved : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Extended_Data_Page : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Data_Page : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SDM_Data_CRC : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Inverted_SDM_PF_Value : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_PS_Value : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_Source_Address : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Sequence_Number : 3|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Reserved : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Extended_Data_Page : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Data_Page : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Torque_Limit_Per_Wheel_Drive : 48|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ WF2_Speed_Request : 32|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ WF1_Speed_Request : 8|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ WF2_Operation_Request : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WF1_Operation_Request : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Accelerator_Pedal_Percentage : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Regeneration_Bias : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Shift_Lever_Fault : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Auto_Manual_Shift_Request : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Maximum_Vehicle_Speed_Limit : 32|16@1+ (0.00390625,0) [0|250.99609375] "km/h" Vector__XXX
+ SG_ Regeneration_Percentage : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Safety_Monitoring_Bypass_Mode : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Immediate_Safe_State_Request : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Park_Brake_Status : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Driveline_Operation_Request : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Shift_Lever_Range : 3|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Shift_Lever_Direction : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Driveline_Mode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Transmission_Range_Position : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Tm_Output_Spd_Q_Factor : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Tm_Output_Spd_Direction : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Tm_Output_Shaft_Speed : 24|16@1+ (0.125,0) [0|8031.875] "" Vector__XXX
+ SG_ Consolidated_Mtr_Inv_Stat : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Driveline_Health : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ DCU_Functional_Safety_Status : 11|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FuSa_Monitoring_Bypass_Mode : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TransCurrentRange : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TransMode8 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode7 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode6 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode5 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode4 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode3 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode2 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode1 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransRequestedGear : 16|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ TransWarningIndicator : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode8Indicator : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode7Indicator : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode6Indicator : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode5Indicator : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode1Indicator : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode2Indicator : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode3Indicator : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransMode4Indicator : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ActiveShiftConsoleIndicator : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransReadyForBrakeRelease : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsRqstedRangeDisplayFlashState : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrnsRqstedRangeDisplayBlankState : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TransServiceIndicator : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2365550595 SDM_DCU_to_VCU_1: 8 DCU
+ SG_ Actual_Vehicle_Speed : 40|16@1+ (0.00390625,0) [0|250.99609375] "" Vector__XXX
+
+BO_ 2565866755 ETC2: 8 Transmission1
+ SG_ TransCurrentRange : 48|16@1+ (1,0) [0|255] "per byte" Vector__XXX
+ SG_ TransRequestedRange : 32|16@1+ (1,0) [0|255] "per byte" Vector__XXX
+ SG_ TransCurrentGear : 24|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ TransSelectedGear : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 TransMode8 "Indicates whether transmission mode 8 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode7 "Indicates whether transmission mode 7 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode6 "Indicates whether transmission mode 6 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode5 "Indicates whether transmission mode 5 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode4 "Indicates whether transmission mode 4 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode3 "Indicates whether transmission mode 3 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode2 "Indicates whether transmission mode 2 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode1 "Indicates whether transmission mode 1 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransRequestedGear "Gear requested by the operator, ABS, or engine.";
+CM_ SG_ 3221225472 TransWarningIndicator "Signal from transmission indicating that some aspect of its operation is not functioning correctly, and as a result,";
+CM_ SG_ 3221225472 TransMode8Indicator "Indicates whether transmission mode 8 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode7Indicator "Indicates whether transmission mode 7 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode6Indicator "Indicates whether transmission mode 6 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode5Indicator "Indicates whether transmission mode 5 is enabled. Modes are manufacturer specific and are not necessarily mutually";
+CM_ SG_ 3221225472 TransMode1Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 1 (SPN 1852) as";
+CM_ SG_ 3221225472 TransMode2Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 2 (SPN 1853) as";
+CM_ SG_ 3221225472 TransMode3Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 3 (SPN 1854) as";
+CM_ SG_ 3221225472 TransMode4Indicator "This state signal is the transmission’s indication that it is operating under transmission mode 4 (SPN 1855) as";
+CM_ SG_ 3221225472 ActiveShiftConsoleIndicator "Signal from transmission control unit indicating which shift console (primary or secondary) it currently considers as the";
+CM_ SG_ 3221225472 TransReadyForBrakeRelease "This parameter indicates that enough torque / motive force is available at the transmission output shaft to release all the";
+CM_ SG_ 3221225472 TrnsRqstedRangeDisplayFlashState "State signal indicating a transmission request for the display of the Transmission Requested Range parameter (SPN 162)";
+CM_ SG_ 3221225472 TrnsRqstedRangeDisplayBlankState "State signal indicating a transmission request for the display of the Transmission Requested Range parameter (SPN162)";
+CM_ SG_ 3221225472 TransServiceIndicator "Signal from transmission indicating that some aspect of the gearbox requires servicing, such as the oil, filter, clutch(es) or";
+CM_ BO_ 2365550595 "EAxle Controller";
+CM_ BO_ 2565866755 "Electronic Transmission Controller 2";
+CM_ SG_ 2565866755 TransCurrentRange "Range currently being commanded by the transmission control system. Characters may include P, Rx, Rx-1...R2, R1, R,";
+CM_ SG_ 2565866755 TransRequestedRange "Range selected by the operator. Characters may include P, Rx, Rx-1...R2, R1, R, Nx, Nx-1...N2, N1, N, D, D1, D2..., Dx,";
+CM_ SG_ 2565866755 TransCurrentGear "The gear currently engaged in the transmission or the last gear engaged while the transmission is in the process of";
+CM_ SG_ 2565866755 TransSelectedGear "The gear that the transmission will attempt to achieve during the current shift if a shift is in progress, or the next shift if one";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "Yes","No";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","reserved","OnChange","reserved","reserved","reserved","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_  "SAE_J1939-71_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-75_SpecVersion" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ SG_  "value" INT 0 1024;
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "SAE_J1939-71_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-75_SpecVersion" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "value" 0;
+BA_ "BusType" "CAN";
+BA_ "VFrameFormat" BO_ 2365550595 3;
+BA_ "NmStationAddress" BU_ VCU 229;
+BA_ "NmStationAddress" BU_ MCU_WF2 36;
+BA_ "NmStationAddress" BU_ MCU_eAxle_Drive 15;
+BA_ "NmStationAddress" BU_ DCU 3;
+BA_ "NmStationAddress" BU_ Dashboard_PC_TOOL 249;
+

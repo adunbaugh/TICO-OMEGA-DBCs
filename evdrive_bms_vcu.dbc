@@ -1,0 +1,219 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ charger_power_line_status 3 "NA" 2 "Error" 1 "Connected to Charger" 0 "Disconnected from Charger" ;
+VAL_TABLE_ active_isolation_command 3 "Take no action" 2 "Inhibit isolation test" 1 "Isolation test requested" 0 "Isolation test not requested" ;
+VAL_TABLE_ operating_status 15 "NA" 14 "Error" 6 "Disabled by fault" 5 "Disabled by external command" 4 "Emergency power down" 3 "Normal power down" 2 "Operational" 1 "Ready" 0 "Initialization" ;
+VAL_TABLE_ HV_bus_connection_status 15 "NA" 14 "Error" 4 "HV bus precharge failed" 3 "HV bus disconnection in progress" 2 "HV bus connection in progress" 1 "HV bus connected" 0 "HV bus disconnected" ;
+VAL_TABLE_ cell_balancing_active 3 "NA" 2 "Error" 1 "Cell balancing active" 0 "Cell balancing not active" ;
+VAL_TABLE_ cell_balance_status 3 "NA" 2 "Error" 1 "Cells unbalanced" 0 "Cells balanced" ;
+VAL_TABLE_ HVIL_status 3 "NA" 2 "Error" 1 "Open" 0 "Closed" ;
+VAL_TABLE_ disconnect_warn 15 "NA" 14 "Error" 13 "Disconnect just because" 7 "Disconnect pack current high" 6 "Disconnect cell volt high" 5 "Disconnect cell volt low" 4 "Disconnect mod volt high" 3 "Disconnect mod volt low" 2 "Disconnect pack volt high" 1 "Disconnect pack volt low" 0 "Disconnect not pending" ;
+VAL_TABLE_ contactor_status 3 "NA" 2 "Error" 1 "Closed" 0 "Open" ;
+VAL_TABLE_ bms_state 8 "Fault" 7 "Charge" 6 "Run" 5 "Precharge" 4 "Idle" 3 "Init" 2 "Recover" 1 "Sleep" 0 "Unknown" ;
+VAL_TABLE_ operation_consent 3 "No change" 2 "Error" 1 "Consent given" 0 "Consent revoked" ;
+VAL_TABLE_ cell_balancing_command 3 "No change" 2 "Reserved" 1 "Cell balancing requested" 0 "Cell balancing not requested" ;
+VAL_TABLE_ power_down_command 3 "No change" 2 "Emergency power down" 1 "Normal power down" 0 "Power down not requested" ;
+VAL_TABLE_ contactor_control 3 "No change" 2 "Emergency closure request" 1 "Close contactors" 0 "Open contactors" ;
+
+
+BO_ 2566722889 BCH1: 8 Vector__XXX
+ SG_ vcu_chrgr1_powerline_state_4991 : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2364607731 bms_data_10: 8 Vector__XXX
+ SG_ bms_hv_bus_actv_iso_8431 : 0|16@1+ (0.1,0) [0|6553.5] "Ohm/V" Vector__XXX
+
+BO_ 2364577523 bms_s1: 8 Vector__XXX
+ SG_ bms_prechg_rly_status_8094 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ bms_operation_status_8414 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ bms_hvil_status_8098 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ bms_hv_bus_status_8413 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ bms_disconnect_warn_8093 : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ bms_cont_pos_status_8091 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ bms_cont_neg_status_8092 : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ bms_cell_balance_status_8101 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ bms_cell_balance_active_8102 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2633785075 bms_soh: 8 Vector__XXX
+ SG_ bms_soh_8121 : 0|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+
+BO_ 2365522419 bms_state: 8 Vector__XXX
+ SG_ bms_state : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2364607475 bms_data_9: 8 Vector__XXX
+ SG_ bms_min_temp_mod_8243 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_min_temp_cell_8244 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_max_temp_mod_8241 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_max_temp_cell_8242 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2364607219 bms_data_8: 8 Vector__XXX
+ SG_ bms_min_volt_mod_8238 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_min_volt_cell_8239 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_max_volt_mod_8236 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_max_volt_cell_8237 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ bms_avg_cell_volt_8240 : 32|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+
+BO_ 2364577011 bms_data_5: 8 Vector__XXX
+ SG_ bms_dischage_limit_8082 : 0|16@1+ (0.05,-1600) [-1600|1676.75] "A" Vector__XXX
+ SG_ bms_charge_limit_8083 : 16|16@1+ (0.05,-1600) [-1600|1676.75] "A" Vector__XXX
+
+BO_ 2364576499 bms_data_3: 8 Vector__XXX
+ SG_ bms_low_cell_temp_8076 : 16|16@1+ (0.03125,-273) [-273|1774.96875] "degC" Vector__XXX
+ SG_ bms_high_cell_temp_8075 : 0|16@1+ (0.03125,-273) [-273|1774.96875] "degC" Vector__XXX
+ SG_ bms_avg_cell_temp_8077 : 32|16@1+ (0.03125,-273) [-273|1774.96875] "degC" Vector__XXX
+
+BO_ 2364576243 bms_data_2: 8 Vector__XXX
+ SG_ bms_soc_5921 : 0|16@1+ (0.0015625,0) [0|102.3984375] "%" Vector__XXX
+ SG_ bms_low_cell_volt_5923 : 32|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+ SG_ bms_high_cell_volt_5922 : 16|16@1+ (0.001,0) [0|65.535] "V" Vector__XXX
+
+BO_ 2364575987 bms_data_1: 8 Vector__XXX
+ SG_ bms_pack_voltage_5919 : 32|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ bms_pack_current_5920 : 48|16@1+ (0.05,-1600) [-1600|1676.75] "A" Vector__XXX
+
+BO_ 2350642011 vcu_command: 8 Vector__XXX
+ SG_ vcu_hv_bus_actv_iso_en_8125 : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ vcu_power_down_ctrl_8124 : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ vcu_contactor_ctrl_8123 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ vcu_cell_balance_ctrl_8127 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+
+
+
+CM_ SG_ 2566722889 vcu_chrgr1_powerline_state_4991 "Command for the BMS to enter Charge state if the Power Line is Connected.";
+CM_ SG_ 2350642011 vcu_hv_bus_actv_iso_en_8125 "Command for the High Voltage Energy Storage 1 pack (or system) to perform an active electrical isolation test on the high voltage bus";
+CM_ SG_ 2350642011 vcu_power_down_ctrl_8124 "Command to shut down the High Voltage Energy Storage 1 pack (or system).  A normal power-down may involve steps that take some period of time.  However, an emergency power-down should shut down the storage system as quickly as possible.";
+CM_ SG_ 2350642011 vcu_contactor_ctrl_8123 "Command to connect the High Voltage Energy Storage 1 pack (or system) to the high-voltage bus.";
+CM_ SG_ 2350642011 vcu_cell_balance_ctrl_8127 "Command for the High Voltage Energy Storage 1 pack (or system) to perform cell balancing.";
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "evdrive_bms_vcu";
+BA_ "VFrameFormat" BO_ 2566722889 3;
+BA_ "VFrameFormat" BO_ 2364607731 3;
+BA_ "VFrameFormat" BO_ 2364577523 3;
+BA_ "VFrameFormat" BO_ 2633785075 3;
+BA_ "VFrameFormat" BO_ 2365522419 3;
+BA_ "VFrameFormat" BO_ 2364607475 3;
+BA_ "VFrameFormat" BO_ 2364607219 3;
+BA_ "VFrameFormat" BO_ 2364577011 3;
+BA_ "VFrameFormat" BO_ 2364576499 3;
+BA_ "VFrameFormat" BO_ 2364576243 3;
+BA_ "VFrameFormat" BO_ 2364575987 3;
+BA_ "VFrameFormat" BO_ 2350642011 3;
+BA_ "GenSigStartValue" SG_ 2364577011 bms_dischage_limit_8082 32000;
+BA_ "GenSigStartValue" SG_ 2364577011 bms_charge_limit_8083 32000;
+BA_ "GenSigStartValue" SG_ 2364576499 bms_low_cell_temp_8076 8736;
+BA_ "GenSigStartValue" SG_ 2364576499 bms_high_cell_temp_8075 8736;
+BA_ "GenSigStartValue" SG_ 2364576499 bms_avg_cell_temp_8077 8736;
+BA_ "GenSigStartValue" SG_ 2364575987 bms_pack_current_5920 32000;
+VAL_ 2364577523 bms_prechg_rly_status_8094 3 "NA" 2 "Error" 1 "Closed" 0 "Open" ;
+VAL_ 2364577523 bms_operation_status_8414 15 "NA" 14 "Error" 6 "Disabled by fault" 5 "Disabled by external command" 4 "Emergency power down" 3 "Normal power down" 2 "Operational" 1 "Ready" 0 "Initialization" ;
+VAL_ 2364577523 bms_hvil_status_8098 3 "NA" 2 "Error" 1 "Open" 0 "Closed" ;
+VAL_ 2364577523 bms_hv_bus_status_8413 15 "NA" 14 "Error" 4 "HV bus precharge failed" 3 "HV bus disconnection in progress" 2 "HV bus connection in progress" 1 "HV bus connected" 0 "HV bus disconnected" ;
+VAL_ 2364577523 bms_disconnect_warn_8093 15 "NA" 14 "Error" 13 "Disconnect just because" 7 "Disconnect pack current high" 6 "Disconnect cell volt high" 5 "Disconnect cell volt low" 4 "Disconnect mod volt high" 3 "Disconnect mod volt low" 2 "Disconnect pack volt high" 1 "Disconnect pack volt low" 0 "Disconnect not pending" ;
+VAL_ 2364577523 bms_cont_pos_status_8091 3 "NA" 2 "Error" 1 "Closed" 0 "Open" ;
+VAL_ 2364577523 bms_cont_neg_status_8092 3 "NA" 2 "Error" 1 "Closed" 0 "Open" ;
+VAL_ 2364577523 bms_cell_balance_status_8101 3 "NA" 2 "Error" 1 "Cells unbalanced" 0 "Cells balanced" ;
+VAL_ 2364577523 bms_cell_balance_active_8102 3 "NA" 2 "Error" 1 "Cell balancing active" 0 "Cell balancing not active" ;
+VAL_ 2365522419 bms_state 8 "Fault" 7 "Charge" 6 "Run" 5 "Precharge" 4 "Idle" 3 "Init" 2 "Recover" 1 "Sleep" 0 "Unknown" ;
+VAL_ 2350642011 vcu_hv_bus_actv_iso_en_8125 3 "Take no action" 2 "Inhibit isolation test" 1 "Isolation test requested" 0 "Isolation test not requested" ;
+VAL_ 2350642011 vcu_power_down_ctrl_8124 3 "No change" 2 "Emergency power down" 1 "Normal power down" 0 "Power down not requested" ;
+VAL_ 2350642011 vcu_contactor_ctrl_8123 3 "No change" 2 "Emergency closure request" 1 "Close contactors" 0 "Open contactors" ;
+VAL_ 2350642011 vcu_cell_balance_ctrl_8127 3 "No change" 2 "Reserved" 1 "Cell balancing requested" 0 "Cell balancing not requested" ;
+

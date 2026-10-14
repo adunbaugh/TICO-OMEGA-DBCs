@@ -1,0 +1,341 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU N40S6_Inverter
+VAL_TABLE_ InfoSafety_MCU_HVILStatus 3 "Reserved" 2 "Reserved" 1 "HVIL Open" 0 "HVIL Closed" ;
+VAL_TABLE_ InfoSafety_SafeState_Status 3 "SafeState Disabled" 2 "SafeStateEnabled_ASC_HS" 1 "SafeStateEnabled_ASC_LS" 0 "SafeState Enabled_FreeWheel" ;
+VAL_TABLE_ VT_Cmd2Resp_MotionState 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reverse Braking" 3 "Reverse Drive" 2 "Braking" 1 "Drive" 0 "Neutral" ;
+VAL_TABLE_ VT_Cmd2Resp_DirectionState 3 "Reserved" 2 "Reserved" 1 "Forward" 0 "Reverse" ;
+VAL_TABLE_ VT_Cmd1Resp_ActDischStatus 5 "Discharge failure" 4 "Discharge complete" 3 "Discharge active" 2 "Speed checking" 1 "Discharge enabled, waiting" 0 "Discharge disabled" ;
+VAL_TABLE_ VT_Cmd1Resp_Work_Status 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Wait For Cooling" 7 "Ready To Power Off" 6 "Shutdown" 5 "Failure" 4 "Operational" 3 "Deactivation" 2 "Activation" 1 "Standby" 0 "Initialization" ;
+VAL_TABLE_ VT_Cmd2_Power_Mode 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Generation Mode" 2 "Traction Mode" 1 "Standby" 0 "No Request" ;
+VAL_TABLE_ VT_Cmd1_Control_Mode 3 "Reserved" 2 "Speed Mode" 1 "Torque Mode" 0 "Reserved" ;
+VAL_TABLE_ VT_Cmd1_Control_State 3 "Offset Alignment" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_TABLE_ VT_Cmd1_Ignition_Status 3 "Reserved" 2 "Key Error" 1 "Off" 0 "On" ;
+VAL_TABLE_ VT_Cmd1_Active_Discharge 3 "Reserved" 2 "Reserved" 1 "Active discharge enabled" 0 "Active dicharge disabled" ;
+VAL_TABLE_ VT_Cmd2_Direction 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Forward" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_TABLE_ VT_Em_St_Inverter_Status 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Failure" 5 "Shutdown" 4 "Deactivation" 3 "Operational" 2 "Activation" 1 "Standby" 0 "Initialization" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ InfoFault_LSD_Error : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ InfoFault_Digital_Input_Error : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 18 MCU_InfoRequest: 8 Vector__XXX
+ SG_ InfoRequest_SinCosCnt_Tot : 24|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ InfoRequest_SinCosCnt : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ InfoRequest_Rolling_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ InfoRequest_OffsetAngle : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 31 MCU_Info_Safety: 8 N40S6_Inverter
+ SG_ InfoSafety_DeratingCause : 10|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ InfoSafety_WorkState : 3|2@1+ (1,0) [0|3] ""  VCU
+ SG_ InfoSafety_SafeState_Status : 8|2@1+ (1,0) [0|3] ""  VCU
+ SG_ InfoSafety_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoSafety_OperationStatus : 0|3@1+ (1,0) [0|7] ""  VCU
+ SG_ InfoSafety_HVIL_Status : 5|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 33 MCU_Info_Fault: 8 N40S6_Inverter
+ SG_ InfoFault_SinCos_CalcError : 33|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsC_TempSensingErr : 32|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsC_CurrSensingErr : 29|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsB_TempSensingErr : 31|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsB_CurrSensingErr : 28|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsA_TempSensingErr : 30|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsA_CurrSensingErr : 27|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Motor_Temp2SensingErr : 26|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Motor_Temp1SensingErr : 25|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DriBrd_VoltSensingErr : 24|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DC_VoltSensingErr : 22|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DC_CurrSensingErr : 23|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_CANMsg_Timeout : 21|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_CANMsg_Error : 20|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoFault_Motor_UnderTemp : 14|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PosSensor_NonConnected : 35|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Motor_OverTemp : 13|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Motor_OverPosSpeed : 17|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Motor_OverNegSpeed : 18|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Inverter_UnderTemp : 16|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsC_OverCurrent : 7|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsC_GateDriver : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsB_OverCurrent : 6|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsB_GateDriver : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsA_OverCurrent : 5|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_PhsA_GateDriver : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_Inverter_OverTemp : 15|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_LSD2 : 12|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_LSD1 : 11|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DischrgOvertime : 19|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DC_UnderVoltage : 3|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DC_OverVoltage : 2|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_DC_OverCurrent : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_AuxUnderVoltage : 1|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_AuxOverVoltage : 0|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoFault_SinCos_SensingErr : 34|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 32 MCU_Info_Warning: 8 N40S6_Inverter
+ SG_ InfoWarning_CAN1_CmdMsg2 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ InfoWarning_CAN1_CmdMsg1 : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ InfoWarning_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoWarning_Motor_UnderTemp : 8|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_Motor_OverTemp : 7|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_Motor_OverPosSpeed : 6|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_Motor_OverNegSpeed : 5|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_Inverter_UnderTemp : 10|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_DC_OverCurrent : 4|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_Inverter_OverTemp : 9|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_DC_UnderVoltage : 3|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_DC_OverVoltage : 2|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_AuxUnderVoltage : 1|1@1+ (1,0) [0|1] ""  VCU
+ SG_ InfoWarning_AuxOverVoltage : 0|1@1+ (1,0) [0|1] ""  VCU
+
+BO_ 30 MCU_Info_Temp3: 8 N40S6_Inverter
+ SG_ InfoTemp3_Tj_Estimated_PhsC : 36|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp3_Tj_Estimated_PhsB : 24|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp3_Tj_Estimated_PhsA : 12|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp3_Tj_Estimated_Max : 0|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp3_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+
+BO_ 29 MCU_Info_Temp2: 8 N40S6_Inverter
+ SG_ InfoTemp2_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoTemp2_MotorT2 : 12|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp2_MotorT1 : 0|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp2_INV_PhsC : 48|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp2_INV_PhsB : 36|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+ SG_ InfoTemp2_INV_PhsA : 24|12@1+ (0.25,-511) [-511|512.75] "degC"  VCU
+
+BO_ 25 MCU_Info_Voltage2: 8 N40S6_Inverter
+ SG_ InfoVoltage_Vq_Feedback : 16|16@1+ (0.025,-819) [-819|819.375] "V"  VCU
+ SG_ InfoVoltage_Vd_Feedback : 0|16@1+ (0.025,-819) [-819|819.375] "V"  VCU
+ SG_ InfoVoltage2_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+
+BO_ 28 MCU_Info_Temp1: 8 N40S6_Inverter
+ SG_ InfoTemp1_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoTemp1_Motor : 0|16@1+ (0.025,-819) [-819|819.375] "degC"  VCU
+ SG_ InfoTemp1_Inverter : 16|16@1+ (0.025,-819) [-819|819.375] "degC"  VCU
+
+BO_ 23 MCU_Info_Digital: 8 N40S6_Inverter
+ SG_ InfoDigital_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Info_Ignition_Status : 0|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Info_DIN4_Status : 6|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Info_DIN3_Status : 4|2@1+ (1,0) [0|3] ""  VCU
+ SG_ Info_DIN2_Status : 2|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 27 MCU_Info_Current2: 8 N40S6_Inverter
+ SG_ InfoCurr2_Iq_Ref : 30|15@1+ (0.1,-1638) [-1638|1638.7] "A"  VCU
+ SG_ InfoCurr2_Id_Ref : 0|15@1+ (0.1,-1638) [-1638|1638.7] "A"  VCU
+ SG_ InfoCurr2_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoCurr2_Iq_Feedback : 45|15@1+ (0.1,-1638) [-1638|1638.7] "A"  VCU
+ SG_ InfoCurr2_Id_Feedback : 15|15@1+ (0.1,-1638) [-1638|1638.7] "A"  VCU
+
+BO_ 26 MCU_Info_Current1: 8 N40S6_Inverter
+ SG_ InfoCurr1_Rolling_Counter : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoCurr1_PhsC : 32|16@1+ (0.05,-1638) [-1638|1638.75] "A"  VCU
+ SG_ InfoCurr1_PhsB : 16|16@1+ (0.05,-1638) [-1638|1638.75] "A"  VCU
+ SG_ InfoCurr1_PhsA : 0|16@1+ (0.05,-1638) [-1638|1638.75] "A"  VCU
+
+BO_ 24 MCU_Info_Voltage1: 8 N40S6_Inverter
+ SG_ InfoVoltage_DC_Link : 0|16@1+ (0.025,0) [0|1638.375] "V"  VCU
+ SG_ InfoVoltage1_Rolling_Counter : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ InfoVoltage_LSD2 : 28|12@1+ (0.05,0) [0|204.75] "V"  VCU
+ SG_ InfoVoltage_LSD1 : 16|12@1+ (0.05,0) [0|204.75] "V"  VCU
+ SG_ InfoVoltage_Aux : 40|12@1+ (0.05,0) [0|204.75] "V"  VCU
+
+BO_ 22 MCU_Command2Response: 8 N40S6_Inverter
+ SG_ Cmd2Resp_Rolling_Counter : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Cmd2Resp_CRC32 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Cmd2Resp_MaxAvailTorque : 40|16@1+ (0.025,0) [0|1638.375] "Nm"  VCU
+ SG_ Cmd2Resp_TorqueEstimated : 8|16@1+ (0.05,-1638) [-1638|1638.75] "Nm"  VCU
+ SG_ Cmd2Resp_SpeedMeasured : 24|16@1+ (1,-32768) [-32768|32767] "rpm"  VCU
+ SG_ Cmd2Resp_Motion_State : 2|3@1+ (1,0) [0|7] ""  VCU
+ SG_ Cmd2Resp_DirectionStatus : 0|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 21 MCU_Command1Response: 8 N40S6_Inverter
+ SG_ Cmd1Resp_DC_Current : 32|16@1+ (0.025,-819) [-819|819.375] "A"  VCU
+ SG_ Cmd1Resp_TorqueCompensated : 16|16@1+ (0.025,-819) [-819|819.375] "Nm"  VCU
+ SG_ Cmd1Resp_Rolling_Counter : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Cmd1Resp_CRC32 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Cmd1Resp_ActDischargeStatus : 8|3@1+ (1,0) [0|7] ""  VCU
+ SG_ Cmd1Resp_Work_State : 3|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Cmd1Resp_Work_Mode : 0|3@1+ (1,0) [0|7] ""  VCU
+
+BO_ 17 VMU_Command2: 8 VCU
+ SG_ Cmd2_Speed_Dynamic_Speed_limit : 40|16@1+ (1,-32768) [-32768|32768] "rpm" Vector__XXX
+ SG_ Cmd2_Torque_Request : 8|16@1+ (0.025,0) [0|1638.375] "Nm"  VCU,N40S6_Inverter
+ SG_ Cmd2_Speed_Request : 24|16@1+ (0.5,0) [0|32767.5] "rpm"  VCU,N40S6_Inverter
+ SG_ Cmd2_Rolling_Counter : 56|4@1+ (1,0) [0|15] ""  VCU,N40S6_Inverter
+ SG_ Cmd2_PowerMode_Request : 2|2@1+ (1,0) [0|3] ""  VCU,N40S6_Inverter
+ SG_ Cmd2_Direction_Request : 0|2@1+ (1,0) [0|3] ""  VCU,N40S6_Inverter
+ SG_ Cmd2_CRC32 : 60|4@1+ (1,0) [0|15] ""  VCU,N40S6_Inverter
+
+BO_ 16 VMU_Command1: 8 VCU
+ SG_ Cmd1_CRC32 : 60|4@1+ (1,0) [0|15] ""  VCU,N40S6_Inverter
+ SG_ Cmd1_Rolling_Counter : 56|4@1+ (1,0) [0|15] ""  VCU,N40S6_Inverter
+ SG_ Cmd1_Id_Request : 24|16@1+ (0.05,-1638) [-1638|1638.75] "A"  VCU,N40S6_Inverter
+ SG_ Cmd1_Iq_Request : 8|16@1+ (0.05,-1638) [-1638|1638.75] "A"  VCU,N40S6_Inverter
+ SG_ Cmd1_ActDischarge_Request : 5|2@1+ (1,0) [0|3] ""  VCU,N40S6_Inverter
+ SG_ Cmd1_Control_Mode : 3|2@1+ (1,0) [0|3] ""  VCU,N40S6_Inverter
+ SG_ Cmd1_Control_State : 0|3@1+ (1,0) [0|7] ""  VCU,N40S6_Inverter
+
+BO_TX_BU_ 17 : N40S6_Inverter,VCU;
+BO_TX_BU_ 16 : N40S6_Inverter,VCU;
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 InfoFault_LSD_Error "At least one fault on Low Side Driver";
+CM_ SG_ 3221225472 InfoFault_Digital_Input_Error "At least one fault on Digital Input";
+CM_ SG_ 23 Info_Ignition_Status "Used by Digital 1";
+CM_ SG_ 23 Info_DIN4_Status "Used by Digital 4";
+CM_ SG_ 23 Info_DIN3_Status "Used by Digital 3";
+CM_ SG_ 23 Info_DIN2_Status "Used by Digital 2";
+CM_ BO_ 22 "Standard - MCU Command 2 Response";
+CM_ BO_ 21 "Standard - MCU Command 1 Response";
+CM_ BO_ 17 "Standard - VMU Command 2";
+CM_ BO_ 16 "Standard - VMU Command 1";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "BusType" "CAN";
+BA_ "DBName" "MAGELEC_Inverter";
+BA_ "GenMsgCycleTime" BO_ 31 10;
+BA_ "GenMsgSendType" BO_ 31 0;
+BA_ "GenMsgCycleTime" BO_ 33 10;
+BA_ "GenMsgSendType" BO_ 33 0;
+BA_ "GenMsgCycleTime" BO_ 32 100;
+BA_ "GenMsgSendType" BO_ 32 0;
+BA_ "GenMsgCycleTime" BO_ 30 100;
+BA_ "GenMsgSendType" BO_ 30 0;
+BA_ "GenMsgCycleTime" BO_ 29 100;
+BA_ "GenMsgSendType" BO_ 29 0;
+BA_ "GenMsgCycleTime" BO_ 25 100;
+BA_ "GenMsgSendType" BO_ 25 0;
+BA_ "GenMsgCycleTime" BO_ 28 100;
+BA_ "GenMsgCycleTime" BO_ 23 100;
+BA_ "GenMsgSendType" BO_ 23 0;
+BA_ "GenMsgCycleTime" BO_ 27 100;
+BA_ "GenMsgSendType" BO_ 27 0;
+BA_ "GenMsgCycleTime" BO_ 26 100;
+BA_ "GenMsgSendType" BO_ 26 0;
+BA_ "GenMsgCycleTime" BO_ 24 100;
+BA_ "GenMsgSendType" BO_ 24 0;
+BA_ "GenMsgCycleTime" BO_ 22 1;
+BA_ "GenMsgSendType" BO_ 22 0;
+BA_ "GenMsgCycleTime" BO_ 21 10;
+BA_ "GenMsgSendType" BO_ 21 0;
+BA_ "GenMsgCycleTime" BO_ 17 1;
+BA_ "GenMsgSendType" BO_ 17 0;
+BA_ "GenMsgCycleTime" BO_ 16 10;
+BA_ "GenMsgSendType" BO_ 16 0;
+VAL_ 3221225472 InfoFault_LSD_Error 1 "Fault" 0 "No Fault" ;
+VAL_ 3221225472 InfoFault_Digital_Input_Error 1 "Fault" 0 "No Fault" ;
+VAL_ 31 InfoSafety_DeratingCause 5 "DynamSpeed Derating" 4 "Juntc Temp Derating" 3 "Invrt Temp Derating" 2 "Motor Temp Derating" 1 "Operation Range" 0 "Inactive" ;
+VAL_ 31 InfoSafety_WorkState 3 "Reserved" 2 "Safety State" 1 "Monitoring State" 0 "Idle State" ;
+VAL_ 31 InfoSafety_SafeState_Status 3 "SafeStateEnabled_ASC_HS" 2 "SafeStateEnabled_ASC_LS" 1 "SafeState Enabled_FreeWheel" 0 "SafeState Disabled" ;
+VAL_ 31 InfoSafety_OperationStatus 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Emergency Stop" 2 "Derating Status" 1 "Warning Status" 0 "Normal Status" ;
+VAL_ 31 InfoSafety_HVIL_Status 3 "Reserved" 2 "HVIL Open" 1 "HVIL Closed" 0 "HVIL NonMonitored by MCU" ;
+VAL_ 33 InfoFault_SinCos_CalcError 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsC_TempSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsC_CurrSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsB_TempSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsB_CurrSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsA_TempSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsA_CurrSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_Temp2SensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_Temp1SensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DriBrd_VoltSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DC_VoltSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DC_CurrSensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_CANMsg_Timeout 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_CANMsg_Error 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_UnderTemp 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PosSensor_NonConnected 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_OverTemp 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_OverPosSpeed 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Motor_OverNegSpeed 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Inverter_UnderTemp 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsC_OverCurrent 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsC_GateDriver 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsB_OverCurrent 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsB_GateDriver 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsA_OverCurrent 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_PhsA_GateDriver 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_Inverter_OverTemp 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_LSD2 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_LSD1 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DischrgOvertime 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DC_UnderVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DC_OverVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_DC_OverCurrent 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_AuxUnderVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_AuxOverVoltage 1 "Fault" 0 "No Fault" ;
+VAL_ 33 InfoFault_SinCos_SensingErr 1 "Fault" 0 "No Fault" ;
+VAL_ 32 InfoWarning_CAN1_CmdMsg2 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_CAN1_CmdMsg1 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Motor_UnderTemp 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Motor_OverTemp 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Motor_OverPosSpeed 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Motor_OverNegSpeed 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Inverter_UnderTemp 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_DC_OverCurrent 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_Inverter_OverTemp 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_DC_UnderVoltage 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_DC_OverVoltage 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_AuxUnderVoltage 1 "Warning" 0 "No Warning" ;
+VAL_ 32 InfoWarning_AuxOverVoltage 1 "Warning" 0 "No Warning" ;
+VAL_ 23 Info_Ignition_Status 0 "On" 1 "Off" 2 "Error" 3 "Reserved" ;
+VAL_ 23 Info_DIN4_Status 3 "Reserved" 2 "Error" 1 "Off" 0 "On" ;
+VAL_ 23 Info_DIN3_Status 3 "Reserved" 2 "Error" 1 "Off" 0 "On" ;
+VAL_ 23 Info_DIN2_Status 3 "Reserved" 2 "Error" 1 "Off" 0 "On" ;
+VAL_ 22 Cmd2Resp_Motion_State 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reverse Braking" 3 "Reverse Driving" 2 "Forward Braking" 1 "Forward Driving" 0 "Neutral State" ;
+VAL_ 22 Cmd2Resp_DirectionStatus 3 "D_Forward" 2 "N_Neutral" 1 "R_Reverse" 0 "P_Parked" ;
+VAL_ 21 Cmd1Resp_ActDischargeStatus 7 "Reserved" 6 "Reserved" 5 "Discharge failure" 4 "Discharge completed" 3 "Discharge active" 2 "Speed checking" 1 "Discharge enabled" 0 "Discharge disabled" ;
+VAL_ 21 Cmd1Resp_Work_State 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "OffsetAlignment" 7 "Failure" 6 "Power Off" 5 "Shutdown" 4 "ActDischarge" 3 "Operational" 2 "HVStandby" 1 "LVStandby" 0 "Initialization" ;
+VAL_ 21 Cmd1Resp_Work_Mode 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Speed Mode" 0 "Torque Mode" ;
+VAL_ 17 Cmd2_PowerMode_Request 3 "Reserved" 2 "Reserved" 1 "Regeneration Mode" 0 "Traction Mode" ;
+VAL_ 17 Cmd2_Direction_Request 3 "D_Forward" 2 "N_Neutral" 1 "R_Reverse" 0 "P_Park" ;
+VAL_ 16 Cmd1_ActDischarge_Request 3 "Reserved" 2 "Reserved" 1 "Enable ActDischarge" 0 "Disable ActDischarge" ;
+VAL_ 16 Cmd1_Control_Mode 3 "Reserved" 2 "Current Mode" 1 "Speed Mode" 0 "Torque Mode" ;
+VAL_ 16 Cmd1_Control_State 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "OffsetAlignment" 3 "Shutdown" 2 "ActDischarge" 1 "Operational" 0 "Standby" ;
+

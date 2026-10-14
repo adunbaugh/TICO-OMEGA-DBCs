@@ -1,0 +1,431 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Therm_Indicator_WF2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Therm_Indicator_WF1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Therm_Indicator_drive_EM2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Therm_Indicator_drive_EM1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Red_FuSa_SpdMeas_Ratio_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exc_HillHold_cant_hold_vehicle : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_NotOper_AuxMtrInv_NotOper : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exc_SlippingTorqueLimiterClutch : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_TractionControlRequest : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_GuidingWheelStatus : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exc_NotOper_aux_WF1_Inv_NotOper : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MtrCurTorque___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MtrCurTorque___f_wf_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_TorqueLimClutchPrs : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_WF2_NearOverspeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_WF1_NearOverspeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_DriveEM1_NearOverspeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_DriveEM2_NearOverspeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DANA_Conf_Err_Duplic_IO_Assignm : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Restricted_Mode : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Safety_Contactor_State : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_TM_IntermDrumSpeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_TM_InputSpeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_HV_Contactor : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_1st_3rd_Selector : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_3rd_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_3rd_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_Oil_Level_Monitor : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Safety_Firmw_Err_version_config : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DANA_Conf_Err_Incomp_FW_Datafile : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Assert_Safe_State : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Assert_code_520632 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_NotOper_Insuff_Manif_Prs : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exc_NotOper_InsuffAuxWF2MtrSpd : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exc_NotOper_aux_WF2_Inv_NotOper : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_NotOper_DrvMtrInv_NotOper : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_NotOper_InsuffDCbusVolt : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_NotOper_BatteryCharging : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Calibration_Clutch_Filling : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Red_FuSa_SpdMeas_Ratio_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Power_On_Self_Test_PumpPrime : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ FilterClogging : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ShiftLeverRange : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ShiftLeverDirection : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_PowerStageTemp___f_auxEM : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MotorTemp___f_auxEM : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_EmergStopReq___f_WF_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_EmergStopReq___f_WF_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_EmergStopReq___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_EmergStopReq___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_State___f_WF_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_State___f_WF_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_State___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_State___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MtrCurTorque___f_wf_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MtrCurTorque___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_HighPwrVolt___f_WF_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_HighPwrVolt___f_WF_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_HighPwrVolt___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MinBatteryVoltage___f_BMS : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MaxBatteryVoltage___f_BMS : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MaxDischargeCurr___f_BMS : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_MaxChargeCurr___f_BMS : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_TransmOutputTorqueLim : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_TorqueLimit_perWhlDrive : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_WF2_SpeedReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_WF1_SpeedReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_WF2_OperationReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_WF1_OperationReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_SafetyMonBypassMode : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_ActMotorSpeed___f_auxEM : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_HighPwrVolt___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_VehicleSpeedLimit : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_ImmediateSafeStateReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANsig_DrivelineOperationReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_TEHPS2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_TEHPS1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_2___f_WF_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_2___f_WF_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_2___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_2___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_1___f_drive_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_1___f_WF_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_1___f_WF_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_EM_Info_1___f_drive_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_BMS_Info_1___f_BMS : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_VCU_to_DCU_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_VCU_to_DCU_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_HydrPump_Sel : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_TotalNeutral_Act : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_2nd_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_1st_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_WorkFuncMotor_2_Spd : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_WorkFuncMotor_1_Spd : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_DriveMotor_2_Speed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_DriveMotor_1_Speed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_AuxMotorSpeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_RingSpeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_TM_OutputSpeed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_OperatorSeatedSwitch : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_DeclutchRequest : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_Start_1st_2nd : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_ParkBrakeStatus : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ DigIn_AutomaticManualShiftReq : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_RegenBiasPercentage : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_RegenPercentageRequest : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_AcceleratorPedalPerc : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_DC_CurrSsn_EM2_highRes : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_DC_CurrSsn_EM1_highRes : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_DC_CurrSsn_EM2_lowRes : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_DC_CurrSsn_EM1_lowRes : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_2nd_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_1st_ClutchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_ManifoldPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnaIn_TmSumpTemperature : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ LowSideOutput_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ LowSideOutput_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ LowSideOutput_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ LowSideOutput_0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ HighSideOutput_0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_5 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_4 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ AnalogOutput_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_Input_0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_C4 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_C3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_C2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_C1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_C0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_B4 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_B3 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_B2 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_B1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageAnaIn_B0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ResistiveAnaIn_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Transmission_Ratio : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ResistiveAnaIn_0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Assert_Boots_In_Restricted_Mode : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ SupplyPower_forController : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ SupplyPower_forSensors_8V : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ SupplyPower_forSensors_5V : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Ground_Sense_Fault : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ CANmsg_VCU_to_DCU_1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Calibration_PressureCurrent : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Calibration_TouchPressure : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_Transm_Calib_Interval : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_Downshift_Vehicle_Speed : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_OperatorSeated_Conds : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_Transmission_Speed_Limit : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Exceed_Cluch_Engergy : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ APC_Data_Flash_Corrupt : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Safety_Core_Functional_Safety : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "DCON_errors";
+BA_ "SPN" SG_ 3221225472 Therm_Indicator_WF2 520518;
+BA_ "SPN" SG_ 3221225472 Therm_Indicator_WF1 520517;
+BA_ "SPN" SG_ 3221225472 Therm_Indicator_drive_EM2 520514;
+BA_ "SPN" SG_ 3221225472 Therm_Indicator_drive_EM1 520513;
+BA_ "SPN" SG_ 3221225472 Red_FuSa_SpdMeas_Ratio_2 520584;
+BA_ "SPN" SG_ 3221225472 Exc_HillHold_cant_hold_vehicle 520622;
+BA_ "SPN" SG_ 3221225472 Exceed_NotOper_AuxMtrInv_NotOper 520624;
+BA_ "SPN" SG_ 3221225472 Exc_SlippingTorqueLimiterClutch 520610;
+BA_ "SPN" SG_ 3221225472 CANsig_TractionControlRequest 520512;
+BA_ "SPN" SG_ 3221225472 CANsig_GuidingWheelStatus 520511;
+BA_ "SPN" SG_ 3221225472 Exc_NotOper_aux_WF1_Inv_NotOper 520623;
+BA_ "SPN" SG_ 3221225472 CANsig_MtrCurTorque___f_drive_2 520483;
+BA_ "SPN" SG_ 3221225472 CANsig_MtrCurTorque___f_wf_1 520489;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_TorqueLimClutchPrs 520357;
+BA_ "SPN" SG_ 3221225472 Exceed_WF2_NearOverspeed 520621;
+BA_ "SPN" SG_ 3221225472 Exceed_WF1_NearOverspeed 520620;
+BA_ "SPN" SG_ 3221225472 Exceed_DriveEM1_NearOverspeed 520618;
+BA_ "SPN" SG_ 3221225472 Exceed_DriveEM2_NearOverspeed 520619;
+BA_ "SPN" SG_ 3221225472 DANA_Conf_Err_Duplic_IO_Assignm 520635;
+BA_ "SPN" SG_ 3221225472 Restricted_Mode 520633;
+BA_ "SPN" SG_ 3221225472 Safety_Contactor_State 520562;
+BA_ "SPN" SG_ 3221225472 Speed_Input_TM_IntermDrumSpeed 520343;
+BA_ "SPN" SG_ 3221225472 Speed_Input_TM_InputSpeed 520342;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_HV_Contactor 520377;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_1st_3rd_Selector 520376;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_3rd_ClutchPressure 520356;
+BA_ "SPN" SG_ 3221225472 AnaIn_3rd_ClutchPressure 520277;
+BA_ "SPN" SG_ 3221225472 DigIn_Oil_Level_Monitor 3027;
+BA_ "SPN" SG_ 3221225472 Safety_Firmw_Err_version_config 520638;
+BA_ "SPN" SG_ 3221225472 DANA_Conf_Err_Incomp_FW_Datafile 520637;
+BA_ "SPN" SG_ 3221225472 Assert_Safe_State 520631;
+BA_ "SPN" SG_ 3221225472 Assert_code_520632 520632;
+BA_ "SPN" SG_ 3221225472 Exceed_NotOper_Insuff_Manif_Prs 520617;
+BA_ "SPN" SG_ 3221225472 Exc_NotOper_InsuffAuxWF2MtrSpd 520616;
+BA_ "SPN" SG_ 3221225472 Exc_NotOper_aux_WF2_Inv_NotOper 520615;
+BA_ "SPN" SG_ 3221225472 Exceed_NotOper_DrvMtrInv_NotOper 520614;
+BA_ "SPN" SG_ 3221225472 Exceed_NotOper_InsuffDCbusVolt 520613;
+BA_ "SPN" SG_ 3221225472 Exceed_NotOper_BatteryCharging 520612;
+BA_ "SPN" SG_ 3221225472 Calibration_Clutch_Filling 520592;
+BA_ "SPN" SG_ 3221225472 Red_FuSa_SpdMeas_Ratio_1 520583;
+BA_ "SPN" SG_ 3221225472 Power_On_Self_Test_PumpPrime 520561;
+BA_ "SPN" SG_ 3221225472 FilterClogging 520560;
+BA_ "SPN" SG_ 3221225472 ShiftLeverRange 520559;
+BA_ "SPN" SG_ 3221225472 ShiftLeverDirection 520558;
+BA_ "SPN" SG_ 3221225472 CANsig_PowerStageTemp___f_auxEM 520502;
+BA_ "SPN" SG_ 3221225472 CANsig_MotorTemp___f_auxEM 520501;
+BA_ "SPN" SG_ 3221225472 CANsig_EmergStopReq___f_WF_2 520499;
+BA_ "SPN" SG_ 3221225472 CANsig_EmergStopReq___f_WF_1 520493;
+BA_ "SPN" SG_ 3221225472 CANsig_EmergStopReq___f_drive_2 520487;
+BA_ "SPN" SG_ 3221225472 CANsig_EmergStopReq___f_drive_1 520481;
+BA_ "SPN" SG_ 3221225472 CANsig_State___f_WF_2 520496;
+BA_ "SPN" SG_ 3221225472 CANsig_State___f_WF_1 520490;
+BA_ "SPN" SG_ 3221225472 CANsig_State___f_drive_2 520484;
+BA_ "SPN" SG_ 3221225472 CANsig_State___f_drive_1 520478;
+BA_ "SPN" SG_ 3221225472 CANsig_MtrCurTorque___f_wf_2 520495;
+BA_ "SPN" SG_ 3221225472 CANsig_MtrCurTorque___f_drive_1 520477;
+BA_ "SPN" SG_ 3221225472 CANsig_HighPwrVolt___f_WF_2 520475;
+BA_ "SPN" SG_ 3221225472 CANsig_HighPwrVolt___f_WF_1 520474;
+BA_ "SPN" SG_ 3221225472 CANsig_HighPwrVolt___f_drive_2 520473;
+BA_ "SPN" SG_ 3221225472 CANsig_MinBatteryVoltage___f_BMS 520471;
+BA_ "SPN" SG_ 3221225472 CANsig_MaxBatteryVoltage___f_BMS 520470;
+BA_ "SPN" SG_ 3221225472 CANsig_MaxDischargeCurr___f_BMS 520469;
+BA_ "SPN" SG_ 3221225472 CANsig_MaxChargeCurr___f_BMS 520468;
+BA_ "SPN" SG_ 3221225472 CANsig_TransmOutputTorqueLim 520456;
+BA_ "SPN" SG_ 3221225472 CANsig_TorqueLimit_perWhlDrive 520455;
+BA_ "SPN" SG_ 3221225472 CANsig_WF2_SpeedReq 520454;
+BA_ "SPN" SG_ 3221225472 CANsig_WF1_SpeedReq 520452;
+BA_ "SPN" SG_ 3221225472 CANsig_WF2_OperationReq 520453;
+BA_ "SPN" SG_ 3221225472 CANsig_WF1_OperationReq 520451;
+BA_ "SPN" SG_ 3221225472 CANsig_SafetyMonBypassMode 520449;
+BA_ "SPN" SG_ 3221225472 CANsig_ActMotorSpeed___f_auxEM 520500;
+BA_ "SPN" SG_ 3221225472 CANsig_HighPwrVolt___f_drive_1 520472;
+BA_ "SPN" SG_ 3221225472 CANsig_VehicleSpeedLimit 520447;
+BA_ "SPN" SG_ 3221225472 CANsig_ImmediateSafeStateReq 520448;
+BA_ "SPN" SG_ 3221225472 CANsig_DrivelineOperationReq 520446;
+BA_ "SPN" SG_ 3221225472 CANmsg_TEHPS2 520417;
+BA_ "SPN" SG_ 3221225472 CANmsg_TEHPS1 520416;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_2___f_WF_2 520415;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_2___f_WF_1 520414;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_2___f_drive_2 520413;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_2___f_drive_1 520412;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_1___f_drive_1 520408;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_1___f_WF_2 520411;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_1___f_WF_1 520410;
+BA_ "SPN" SG_ 3221225472 CANmsg_EM_Info_1___f_drive_2 520409;
+BA_ "SPN" SG_ 3221225472 CANmsg_BMS_Info_1___f_BMS 520407;
+BA_ "SPN" SG_ 3221225472 CANmsg_VCU_to_DCU_3 520406;
+BA_ "SPN" SG_ 3221225472 CANmsg_VCU_to_DCU_2 520405;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_HydrPump_Sel 520375;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_TotalNeutral_Act 520374;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_2nd_ClutchPressure 520355;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_1st_ClutchPressure 520354;
+BA_ "SPN" SG_ 3221225472 Speed_Input_WorkFuncMotor_2_Spd 520348;
+BA_ "SPN" SG_ 3221225472 Speed_Input_WorkFuncMotor_1_Spd 520347;
+BA_ "SPN" SG_ 3221225472 Speed_Input_DriveMotor_2_Speed 520341;
+BA_ "SPN" SG_ 3221225472 Speed_Input_DriveMotor_1_Speed 520340;
+BA_ "SPN" SG_ 3221225472 Speed_Input_AuxMotorSpeed 520346;
+BA_ "SPN" SG_ 3221225472 Speed_Input_RingSpeed 520344;
+BA_ "SPN" SG_ 3221225472 Speed_Input_TM_OutputSpeed 520345;
+BA_ "SPN" SG_ 3221225472 DigIn_OperatorSeatedSwitch 520306;
+BA_ "SPN" SG_ 3221225472 DigIn_DeclutchRequest 520305;
+BA_ "SPN" SG_ 3221225472 DigIn_Start_1st_2nd 520304;
+BA_ "SPN" SG_ 3221225472 DigIn_ParkBrakeStatus 520303;
+BA_ "SPN" SG_ 3221225472 DigIn_AutomaticManualShiftReq 520302;
+BA_ "SPN" SG_ 3221225472 AnaIn_RegenBiasPercentage 520294;
+BA_ "SPN" SG_ 3221225472 AnaIn_RegenPercentageRequest 520293;
+BA_ "SPN" SG_ 3221225472 AnaIn_AcceleratorPedalPerc 520292;
+BA_ "SPN" SG_ 3221225472 AnaIn_DC_CurrSsn_EM2_highRes 520287;
+BA_ "SPN" SG_ 3221225472 AnaIn_DC_CurrSsn_EM1_highRes 520285;
+BA_ "SPN" SG_ 3221225472 AnaIn_DC_CurrSsn_EM2_lowRes 520286;
+BA_ "SPN" SG_ 3221225472 AnaIn_DC_CurrSsn_EM1_lowRes 520284;
+BA_ "SPN" SG_ 3221225472 AnaIn_2nd_ClutchPressure 520276;
+BA_ "SPN" SG_ 3221225472 AnaIn_1st_ClutchPressure 520275;
+BA_ "SPN" SG_ 3221225472 AnaIn_ManifoldPressure 520274;
+BA_ "SPN" SG_ 3221225472 AnaIn_TmSumpTemperature 520268;
+BA_ "SPN" SG_ 3221225472 LowSideOutput_3 520263;
+BA_ "SPN" SG_ 3221225472 LowSideOutput_2 520262;
+BA_ "SPN" SG_ 3221225472 LowSideOutput_1 520261;
+BA_ "SPN" SG_ 3221225472 LowSideOutput_0 520260;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_3 520255;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_2 520254;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_1 520253;
+BA_ "SPN" SG_ 3221225472 HighSideOutput_0 520252;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_5 520245;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_4 520244;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_3 520243;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_0 520240;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_2 520242;
+BA_ "SPN" SG_ 3221225472 AnalogOutput_1 520241;
+BA_ "SPN" SG_ 3221225472 Speed_Input_3 520235;
+BA_ "SPN" SG_ 3221225472 Speed_Input_2 520234;
+BA_ "SPN" SG_ 3221225472 Speed_Input_1 520233;
+BA_ "SPN" SG_ 3221225472 Speed_Input_0 520232;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_C4 520226;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_C3 520225;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_C2 520224;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_C1 520223;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_C0 520222;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_B4 520216;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_B3 520215;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_B2 520214;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_B1 520213;
+BA_ "SPN" SG_ 3221225472 VoltageAnaIn_B0 520212;
+BA_ "SPN" SG_ 3221225472 ResistiveAnaIn_1 520209;
+BA_ "SPN" SG_ 3221225472 Transmission_Ratio 520582;
+BA_ "SPN" SG_ 3221225472 ResistiveAnaIn_0 520208;
+BA_ "SPN" SG_ 3221225472 Assert_Boots_In_Restricted_Mode 520630;
+BA_ "SPN" SG_ 3221225472 SupplyPower_forController 520396;
+BA_ "SPN" SG_ 3221225472 SupplyPower_forSensors_8V 520397;
+BA_ "SPN" SG_ 3221225472 SupplyPower_forSensors_5V 520398;
+BA_ "SPN" SG_ 3221225472 Ground_Sense_Fault 520399;
+BA_ "SPN" SG_ 3221225472 CANmsg_VCU_to_DCU_1 520404;
+BA_ "SPN" SG_ 3221225472 Calibration_PressureCurrent 520590;
+BA_ "SPN" SG_ 3221225472 Calibration_TouchPressure 520591;
+BA_ "SPN" SG_ 3221225472 Exceed_Transm_Calib_Interval 520606;
+BA_ "SPN" SG_ 3221225472 Exceed_Downshift_Vehicle_Speed 520607;
+BA_ "SPN" SG_ 3221225472 Exceed_OperatorSeated_Conds 520611;
+BA_ "SPN" SG_ 3221225472 Exceed_Transmission_Speed_Limit 520608;
+BA_ "SPN" SG_ 3221225472 Exceed_Cluch_Engergy 520609;
+BA_ "SPN" SG_ 3221225472 APC_Data_Flash_Corrupt 520634;
+BA_ "SPN" SG_ 3221225472 Safety_Core_Functional_Safety 520636;
+

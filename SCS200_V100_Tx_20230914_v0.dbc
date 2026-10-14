@@ -1,0 +1,254 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SCS200 Host
+VAL_TABLE_ OFF_ON 1 "ON" 0 "OFF" ;
+VAL_TABLE_ Module_Diagnostic_Voltage 1 "Overvoltage" 0 "Normal" ;
+VAL_TABLE_ Module_Diagnostic_Current 1 "Overcurrent" 0 "Normal" ;
+VAL_TABLE_ Load_Diagnostic 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_TABLE_ ON_OFF 1 "OFF" 0 "ON" ;
+
+
+BO_ 2565799840 SCS200_AddressClaimedMessage: 8 Vector__XXX
+ SG_ J1939_ArbitraryAddressCapable : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ J1939_IndustryGroup : 60|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ J1939_VehicleSystemInstance : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ J1939_VehicleSystem : 49|7@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ J1939_Funciton : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ J1939_ECUInstance : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ J1939_FuncitonInstance : 35|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ J1939_ManufacturerCode : 21|11@1+ (1,0) [0|2047] "" Vector__XXX
+ SG_ J1939_IdentityNumber : 0|21@1+ (1,0) [0|2097151] "" Vector__XXX
+
+BO_ 2566852512 SCS200_Load_Switching_States: 6 SCS200
+ SG_ Load_Switching_State_12 : 40|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_11 : 44|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_10 : 32|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_09 : 36|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_08 : 24|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_07 : 28|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_06 : 16|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_05 : 20|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_04 : 8|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_03 : 12|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_02 : 0|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Switching_State_01 : 4|1@1+ (1,0) [0|1] ""  Host
+
+BO_ 2566852256 SCS200_Load_Module_Diagnostic: 8 SCS200
+ SG_ Module_Diagnostic_Voltage : 48|1@1+ (1,0) [0|1] ""  Host
+ SG_ Module_Diagnostic_Current : 56|1@1+ (1,0) [0|1] ""  Host
+ SG_ Load_Diagnostic_12 : 40|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_11 : 44|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_10 : 32|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_09 : 36|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_08 : 24|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_07 : 28|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_06 : 16|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_05 : 20|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_04 : 8|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_03 : 12|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_02 : 0|2@1+ (1,0) [0|4] ""  Host
+ SG_ Load_Diagnostic_01 : 4|2@1+ (1,0) [0|4] ""  Host
+
+BO_ 2566852000 SCS200_Load_Current_9_12: 8 SCS200
+ SG_ Load_Current_12 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_11 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_10 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_09 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566851744 SCS200_Load_Voltage_9_12: 8 SCS200
+ SG_ Load_Voltage_12 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_11 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_10 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_09 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566851488 SCS200_Load_Current_5_8: 8 SCS200
+ SG_ Load_Current_08 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_07 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_06 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_05 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566851232 SCS200_Load_Voltage_5_8: 8 SCS200
+ SG_ Load_Voltage_08 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_07 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_06 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_05 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850976 SCS200_Load_Current_1_4: 8 SCS200
+ SG_ Load_Current_04 : 48|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_03 : 32|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_02 : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Load_Current_01 : 0|16@1+ (10,0) [0|655350] "mA"  Host
+
+BO_ 2566850720 SCS200_Load_Voltage_1_4: 8 SCS200
+ SG_ Load_Voltage_04 : 48|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_03 : 32|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_02 : 16|16@1+ (10,0) [0|655350] "mV"  Host
+ SG_ Load_Voltage_01 : 0|16@1+ (10,0) [0|655350] "mV"  Host
+
+BO_ 2566850464 SCS200_Analog_Inputs_5_6_PMA: 8 SCS200
+ SG_ PMA_Mode : 56|1@1+ (1,0) [0|1] ""  Host
+ SG_ Analog_Input_06 : 16|16@1+ (10,0) [0|65535] "mV"  Host
+ SG_ Analog_Input_05 : 0|16@1+ (10,0) [0|65535] "mV"  Host
+
+BO_ 2566850208 SCS200_Analog_Inputs_1_4: 8 SCS200
+ SG_ Analog_Input_04 : 48|16@1+ (10,0) [0|65535] "mV"  Host
+ SG_ Analog_Input_03 : 32|16@1+ (10,0) [0|65535] "mV"  Host
+ SG_ Analog_Input_02 : 16|16@1+ (10,0) [0|65535] "mV"  Host
+ SG_ Analog_Input_01 : 0|16@1+ (10,0) [0|65535] "mV"  Host
+
+BO_ 2566849952 SCS200_Module_Values: 8 SCS200
+ SG_ Module_Temperature : 48|16@1+ (10,0) [0|655350] "°C"  Host
+ SG_ Total_Current : 16|16@1+ (10,0) [0|655350] "mA"  Host
+ SG_ Supply_Voltage : 32|16@1+ (10,0) [0|655350] "mV"  Host
+
+
+
+CM_ BO_ 2566850464 "PMA only available starting FW version V100";
+CM_ SG_ 2566850464 PMA_Mode "PMA only available above FW version V100";
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_DEF_  "TpJ1939VarDlc" "No";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_ "DBName" "SCS200_V100";
+BA_ "NmJ1939AAC" BU_ SCS200 1;
+BA_ "NmJ1939IdentityNumber" BU_ SCS200 5;
+BA_ "NmJ1939Function" BU_ SCS200 67;
+BA_ "NmJ1939ManufacturerCode" BU_ SCS200 984;
+BA_ "NmJ1939System" BU_ SCS200 127;
+BA_ "NmStationAddress" BU_ SCS200 160;
+BA_ "NmStationAddress" BU_ Host 0;
+BA_ "VFrameFormat" BO_ 2565799840 3;
+BA_ "VFrameFormat" BO_ 2566852512 3;
+BA_ "VFrameFormat" BO_ 2566852256 3;
+BA_ "VFrameFormat" BO_ 2566852000 3;
+BA_ "VFrameFormat" BO_ 2566851744 3;
+BA_ "VFrameFormat" BO_ 2566851488 3;
+BA_ "VFrameFormat" BO_ 2566851232 3;
+BA_ "VFrameFormat" BO_ 2566850976 3;
+BA_ "VFrameFormat" BO_ 2566850720 3;
+BA_ "VFrameFormat" BO_ 2566850464 3;
+BA_ "VFrameFormat" BO_ 2566850208 3;
+BA_ "VFrameFormat" BO_ 2566849952 3;
+VAL_ 2566852512 Load_Switching_State_12 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_11 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_10 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_09 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_08 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_07 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_06 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_05 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_04 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_03 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_02 1 "ON" 0 "OFF" ;
+VAL_ 2566852512 Load_Switching_State_01 1 "ON" 0 "OFF" ;
+VAL_ 2566852256 Module_Diagnostic_Voltage 1 "Overvoltage" 0 "Normal" ;
+VAL_ 2566852256 Module_Diagnostic_Current 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_12 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_11 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_10 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_09 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_08 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_07 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_06 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_05 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_04 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_03 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_02 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566852256 Load_Diagnostic_01 4 "Fast Trip" 2 "Open Load" 1 "Overcurrent" 0 "Normal" ;
+VAL_ 2566850464 PMA_Mode 1 "OFF" 0 "ON" ;
+

@@ -1,0 +1,106 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0001 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0006 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0010 : 48|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+
+BO_ 529 Wakes_and_Modes: 8 VCU
+ SG_ Wake : 0|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ WakeChgr : 2|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ RunMode : 4|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ ActualDriveMode : 6|2@1+ (1,0) [0|3] "Enum" Vector__XXX
+ SG_ ChargeMode : 8|2@1+ (1,0) [0|3] "Bool" Vector__XXX
+ SG_ ActualControlMode_DC1 : 16|4@1+ (1,0) [0|0] "Enum" Vector__XXX
+ SG_ ActualControlMode_DC2 : 20|4@1+ (1,0) [0|0] "Enum" Vector__XXX
+
+BO_ 530 Speed_and_Distance: 8 VCU
+ SG_ VehicleSpeed : 0|16@1+ (0.00390625,0) [0|250.996] "kph" Vector__XXX
+ SG_ Odometer : 16|32@1+ (0.005,0) [0|21055400] "km" Vector__XXX
+
+BO_ 531 Energy: 8 VCU
+ SG_ BattSysEnergySystem : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ StateOfCharge : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ BattSysEnergySysInitial : 24|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ StateOfChrgInitial : 40|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 532 Temperature: 8 VCU
+ SG_ AmbientTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+
+BO_ 533 Energy2: 8 VCU
+ SG_ PTCHtr_Energy : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ LV12V_Energy : 16|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ LV24V_Energy : 32|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+
+BO_ 534 Energy3: 8 VCU
+ SG_ LiftSysEnergy : 0|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+ SG_ PSSysEnergy : 16|16@1+ (0.01,0) [0|655.35] "kWh" Vector__XXX
+
+
+
+CM_ BO_ 529 "1000 ms";
+CM_ SG_ 529 Wake "Indicates that modules wake signal is acitve.
+";
+CM_ SG_ 529 WakeChgr "Indicates that modules wake signal is acitve due to a charge event.";
+CM_ SG_ 529 RunMode "Indicates that run mode is active.";
+CM_ SG_ 529 ActualDriveMode "Working mode of propulsion system";
+CM_ SG_ 529 ChargeMode "Indicates that charge mode is active.";
+CM_ SG_ 529 ActualControlMode_DC1 "DCDC 1 control state";
+CM_ SG_ 529 ActualControlMode_DC2 "DCDC 2 control state";
+CM_ BO_ 530 "1000 ms";
+CM_ BO_ 531 "1000 ms";
+CM_ SG_ 531 BattSysEnergySysInitial "Initial battery energy at system start.";
+CM_ SG_ 531 StateOfChrgInitial "Initial battery state of charge at system start.";
+CM_ BO_ 532 "1000 ms";
+CM_ SG_ 532 AmbientTemp "Temperature of air surrounding vehicle.";
+CM_ BO_ 533 "1000 ms";
+CM_ SG_ 533 PTCHtr_Energy "Energy consumed by the cabin heater this drive cycle.";
+CM_ SG_ 533 LV12V_Energy "Energy consumed by the 12V system this drive cycle.";
+CM_ SG_ 533 LV24V_Energy "Energy consumed by the 24V system this drive cycle.";
+CM_ BO_ 534 "1000 ms";
+CM_ SG_ 534 LiftSysEnergy "Energy consumed by the fifth wheel system this drive cycle.";
+CM_ SG_ 534 PSSysEnergy "Energy consumed by the power steering and air compressor inverter this drive cycle.";
+VAL_ 529 Wake 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 WakeChgr 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 RunMode 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 ActualDriveMode 0 "Stop" 1 "Driving" 2 "Regen" 3 "Error" ;
+VAL_ 529 ChargeMode 0 "Inactive" 1 "Active" 2 "Error" 3 "Invalid" ;
+VAL_ 529 ActualControlMode_DC1 0 "Standby" 1 "VoltageControl" 2 "CurrentControl" 13 "ErrorState" 14 "Not Available" 15 "Error Indicator" 12 "ShuttingDown" ;
+VAL_ 529 ActualControlMode_DC2 0 "Standby" 1 "VoltageControl" 2 "CurrentControl" 12 "ShuttingDown" 13 "ErrorState" 14 "NotAvailable" 15 "ErrorIndicator" ;
+

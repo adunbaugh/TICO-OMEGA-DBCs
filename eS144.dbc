@@ -1,0 +1,403 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU MCU_WF2 MCU_eAxle_Drive DCU Dashboard_PC_TOOL
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ brake_current_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ drive_current_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ mech_tq_based_on_output_spd : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ Reserved : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ acceleration_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ outputSpeed_CAN : 0|16@1+ (1,-32767) [-32767|32768] "" Vector__XXX
+ SG_ saf_framew_sm_all_data_vref_5V : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Reserved : 0|14@1+ (1,0) [0|16383] "" Vector__XXX
+ SG_ Safety_contactor_feedback : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DCU_SW_command_safety_contactor : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2349793027 SHM_DCU_to_VCU: 8 Vector__XXX
+ SG_ SDM_Data_CRC : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Inverted_SDM_PF_Value : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_PS_Value : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_Source_Address : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Sequence_Number : 3|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Reserved : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Extended_Data_Page : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Data_Page : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2365508099 DM1: 8 Vector__XXX
+
+BO_ 2349793253 SHM_VCU_to_DCU: 8 Vector__XXX
+ SG_ SDM_Data_CRC : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Inverted_SDM_PF_Value : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_PS_Value : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Inverted_SDM_Source_Address : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Sequence_Number : 3|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Reserved : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Extended_Data_Page : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inverted_Data_Page : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566849060 EM_Info_1_WF2: 8 Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Low_Power_Voltage : 0|8@1+ (0.5,0) [0|127] "" Vector__XXX
+ SG_ High_Power_Voltage : 8|16@1+ (1,0) [0|65000] "" Vector__XXX
+ SG_ High_Power_Current : 24|16@1+ (0.25,-8100) [-8100|8100] "" Vector__XXX
+ SG_ Fault_Phase_To_Chassis : 52|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Motor_Cable : 56|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Battery_Cable : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Drive_Cover_Opened : 58|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566849263 EM_Info_1_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Low_Power_Voltage : 0|8@1+ (0.5,0) [0|127] "" Vector__XXX
+ SG_ High_Power_Voltage : 8|16@1+ (1,0) [0|65000] "" Vector__XXX
+ SG_ High_Power_Current : 24|16@1+ (0.25,-8100) [-8100|8100] "" Vector__XXX
+ SG_ Fault_Phase_To_Chassis : 52|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Motor_Cable : 56|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Interlock_Battery_Cable : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Fault_Drive_Cover_Opened : 58|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566852900 EM2_Thermal_WF2: 8 Vector__XXX
+ SG_ MCU_Temperature : 24|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ EMI_Temperature : 16|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ambient_Temperature : 8|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Motor_Temperature : 0|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+
+BO_ 2566853103 EM2_Thermal_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MCU_Temperature : 24|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ EMI_Temperature : 16|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Ambient_Temperature : 8|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ Motor_Temperature : 0|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+
+BO_ 2365546788 EM_Info_3_WF2: 8 Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Torque_Available : 8|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Torque_Available : 24|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Derating : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Derating : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2365546532 EM_Info_2_WF2: 8 Vector__XXX
+ SG_ Speed_Reduction_Request : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Emergency_Stop : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Current_Command_Mode : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ State : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Motor_Current_Torque : 16|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Motor_Current_Speed : 0|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+
+BO_ 2566849572 EM1_Thermal_WF2: 8 Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Thermal_Indicator : 16|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Motor_Cooling_Flow_Request : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Drive_Cooling_Flow_Request : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+
+BO_ 2365546991 EM_Info_3_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Torque_Available : 8|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Torque_Available : 24|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Regen_Derating : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Traction_Derating : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2365546735 EM_Info_2_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Emergency_Stop : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Speed_Reduction_Request : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Current_Command_Mode : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ State : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Motor_Current_Torque : 16|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Motor_Current_Speed : 0|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+
+BO_ 2566849775 EM1_Thermal_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Counter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Thermal_Indicator : 16|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Motor_Cooling_Flow_Request : 8|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ Drive_Cooling_Flow_Request : 0|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+
+BO_ 2364482563 DCU_to_EM_2_WF2: 8 Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Torque_Limit : 40|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Speed_Command : 24|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Torque_Command : 8|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Operation_Request : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Command_Mode : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2381259779 BMS_Info_1_WF2: 8 Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2364534531 DCU_to_EM_2_eAxle_Drive: 8 Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Torque_Limit : 40|16@1+ (0.125,0) [0|8031.875] "Nm" Vector__XXX
+ SG_ Speed_Command : 24|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ Torque_Command : 8|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ Operation_Request : 3|3@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Command_Mode : 0|3@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 2381311747 BMS_Info_1_eAxle_Drive: 8 Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2365551107 DCU_to_VCU_3: 8 Vector__XXX
+ SG_ Available_Power_For_WF2 : 32|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Available_Power_For_WF1 : 16|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Available_Power_For_Drive : 0|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+
+BO_ 2365550851 DCU_to_VCU_2: 8 Vector__XXX
+ SG_ WF2_Health : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WF1_Health : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Requested_Power_For_WF1 : 16|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Requested_Power_For_WF2 : 32|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+ SG_ Requested_Power_For_Drive : 0|16@1+ (0.1,-3276.7) [-3276.7|3276.8] "kW" Vector__XXX
+
+BO_ 2365550595 SDM_DCU_to_VCU_1: 8 Vector__XXX
+ SG_ Tm_Output_Shaft_Speed : 24|16@1+ (0.125,0) [0|8031.875] "" Vector__XXX
+ SG_ Tm_Output_Spd_Direction : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Tm_Output_Spd_Q_Factor : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Transmission_Range_Position : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Driveline_Mode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Actual_Vehicle_Speed : 40|16@1+ (0.00390625,0) [0|250.99609375] "" Vector__XXX
+ SG_ FuSa_Monitoring_Bypass_Mode : 13|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ DCU_Functional_Safety_Status : 11|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Driveline_Health : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Consolidated_Mtr_Inv_Stat : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2381251428 BMS_Info_1_from_BMS: 8 Vector__XXX
+ SG_ Message_Checksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Min_Voltage : 36|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Max_Voltage : 24|12@1+ (1,0) [0|4094] "V" Vector__XXX
+ SG_ Message_Counter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Max_Discharge_Current : 12|12@1+ (1,0) [0|4094] "A" Vector__XXX
+ SG_ Max_Charge_Current : 0|12@1+ (1,0) [0|4094] "A" Vector__XXX
+
+BO_ 2365555035 SDM_VCU_to_DCU_2: 8 Vector__XXX
+ SG_ Torque_Limit_Per_Wheel_Drive : 48|16@1+ (0.125,-4096) [-4096|3935.875] "Nm" Vector__XXX
+ SG_ WF2_Speed_Request : 32|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ WF1_Speed_Request : 8|16@1+ (1,-32767) [-32767|31488] "rpm" Vector__XXX
+ SG_ WF2_Operation_Request : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ WF1_Operation_Request : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2365554779 SDM_VCU_to_DCU_1: 8 Vector__XXX
+ SG_ Accelerator_Pedal_Percentage : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Regeneration_Bias : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Shift_Lever_Fault : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Auto_Manual_Shift_Request : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Maximum_Vehicle_Speed_Limit : 32|16@1+ (0.00390625,0) [0|250.99609375] "km/h" Vector__XXX
+ SG_ Regeneration_Percentage : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Safety_Monitoring_Bypass_Mode : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Immediate_Safe_State_Request : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Park_Brake_Status : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Driveline_Operation_Request : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Shift_Lever_Range : 3|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Shift_Lever_Direction : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "Yes","No";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","reserved","OnChange","reserved","reserved","reserved","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_  "SAE_J1939-71_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939-75_SpecVersion" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ SG_  "value" INT 0 1024;
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "SAE_J1939-71_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939-75_SpecVersion" "";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "value" 0;
+BA_ "BusType" "CAN";
+BA_ "VFrameFormat" BO_ 2349793027 1;
+BA_ "VFrameFormat" BO_ 2365508099 1;
+BA_ "VFrameFormat" BO_ 2349793253 1;
+BA_ "VFrameFormat" BO_ 2566849060 1;
+BA_ "GenSigStartValue" SG_ 2566849060 High_Power_Current 0;
+BA_ "VFrameFormat" BO_ 2566849263 1;
+BA_ "VFrameFormat" BO_ 2566852900 1;
+BA_ "GenSigStartValue" SG_ 2566852900 MCU_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566852900 EMI_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566852900 Ambient_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566852900 Motor_Temperature 40;
+BA_ "VFrameFormat" BO_ 2566853103 1;
+BA_ "GenSigStartValue" SG_ 2566853103 MCU_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566853103 EMI_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566853103 Ambient_Temperature 40;
+BA_ "GenSigStartValue" SG_ 2566853103 Motor_Temperature 40;
+BA_ "VFrameFormat" BO_ 2365546788 1;
+BA_ "VFrameFormat" BO_ 2365546532 1;
+BA_ "GenSigStartValue" SG_ 2365546532 Motor_Current_Torque 0;
+BA_ "GenSigStartValue" SG_ 2365546532 Motor_Current_Speed 0;
+BA_ "VFrameFormat" BO_ 2566849572 1;
+BA_ "VFrameFormat" BO_ 2365546991 1;
+BA_ "VFrameFormat" BO_ 2365546735 1;
+BA_ "GenSigStartValue" SG_ 2365546735 Motor_Current_Torque 0;
+BA_ "GenSigStartValue" SG_ 2365546735 Motor_Current_Speed 0;
+BA_ "VFrameFormat" BO_ 2566849775 1;
+BA_ "VFrameFormat" BO_ 2364482563 1;
+BA_ "GenSigStartValue" SG_ 2364482563 Speed_Command 0;
+BA_ "VFrameFormat" BO_ 2381259779 1;
+BA_ "VFrameFormat" BO_ 2364534531 1;
+BA_ "GenSigStartValue" SG_ 2364534531 Speed_Command 0;
+BA_ "GenSigStartValue" SG_ 2364534531 Torque_Command 0;
+BA_ "VFrameFormat" BO_ 2381311747 1;
+BA_ "VFrameFormat" BO_ 2365551107 1;
+BA_ "VFrameFormat" BO_ 2365550851 1;
+BA_ "VFrameFormat" BO_ 2365550595 1;
+BA_ "VFrameFormat" BO_ 2381251428 1;
+BA_ "VFrameFormat" BO_ 2365555035 1;
+BA_ "GenSigStartValue" SG_ 2365555035 Torque_Limit_Per_Wheel_Drive 0;
+BA_ "GenSigStartValue" SG_ 2365555035 WF2_Speed_Request 0;
+BA_ "GenSigStartValue" SG_ 2365555035 WF1_Speed_Request 0;
+BA_ "VFrameFormat" BO_ 2365554779 1;
+BA_ "NmStationAddress" BU_ VCU 229;
+BA_ "NmStationAddress" BU_ MCU_WF2 36;
+BA_ "NmStationAddress" BU_ MCU_eAxle_Drive 15;
+BA_ "NmStationAddress" BU_ DCU 3;
+BA_ "NmStationAddress" BU_ Dashboard_PC_TOOL 249;
+VAL_ 2566849060 Fault_Phase_To_Chassis 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849060 Fault_Interlock_Motor_Cable 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849060 Fault_Interlock_Battery_Cable 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849060 Fault_Drive_Cover_Opened 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849263 Fault_Phase_To_Chassis 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849263 Fault_Interlock_Motor_Cable 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849263 Fault_Interlock_Battery_Cable 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2566849263 Fault_Drive_Cover_Opened 3 "Not available" 2 "Reserved" 1 "Fault" 0 "No fault" ;
+VAL_ 2365546788 Regen_Derating 14 "Reserved" 13 "Reserved" 12 "Reserved" 15 "Not available" 11 "Limp home" 10 "Defect sensor machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC voltage" 6 "Maximum power" 5 "Defect sensor drive" 4 "Overheat system" 3 "Overspeed" 2 "Internal" 1 "Battery current" 0 "None" ;
+VAL_ 2365546788 Traction_Derating 14 "Reserved" 13 "Reserved" 12 "Reserved" 15 "Not available" 11 "Limp home" 10 "Defect sensor machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC voltage" 6 "Maximum power" 5 "Defect sensor drive" 4 "Overheat system" 3 "Overspeed" 2 "Internal" 1 "Battery current" 0 "None" ;
+VAL_ 2365546532 Speed_Reduction_Request 3 "Not available" 2 "Reserved" 1 "Reduction request" 0 "No action" ;
+VAL_ 2365546532 Emergency_Stop 3 "Not available" 2 "Reserved" 1 "Emergency stop requested" 0 "System OK" ;
+VAL_ 2365546532 Current_Command_Mode 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Speed" 0 "Torque" ;
+VAL_ 2365546532 State 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Wait for safe condition" 7 "Ready to power off" 6 "Shutdown" 5 "Failure" 4 "Operational" 3 "Deactivation" 2 "Activation" 1 "Standby" 0 "Initializing" ;
+VAL_ 2365546991 Regen_Derating 14 "Reserved" 13 "Reserved" 12 "Reserved" 15 "Not available" 11 "Limp home" 10 "Defect sensor machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC voltage" 6 "Maximum power" 5 "Defect sensor drive" 4 "Overheat system" 3 "Overspeed" 2 "Internal" 1 "Battery current" 0 "None" ;
+VAL_ 2365546991 Traction_Derating 14 "Reserved" 13 "Reserved" 12 "Reserved" 15 "Not available" 11 "Limp home" 10 "Defect sensor machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC voltage" 6 "Maximum power" 5 "Defect sensor drive" 4 "Overheat system" 3 "Overspeed" 2 "Internal" 1 "Battery current" 0 "None" ;
+VAL_ 2365546735 Emergency_Stop 3 "Not available" 2 "Reserved" 1 "Emergency stop requested" 0 "System OK" ;
+VAL_ 2365546735 Speed_Reduction_Request 3 "Not available" 2 "Reserved" 1 "Reduction request" 0 "No action" ;
+VAL_ 2365546735 Current_Command_Mode 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Speed mode" 0 "Torque mode" ;
+VAL_ 2365546735 State 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Wait for safe condition" 7 "Ready to power off" 6 "Shutdown" 5 "Failure" 4 "Operational" 3 "Deactivation" 2 "Activation" 1 "Standby" 0 "Initializing" ;
+VAL_ 2364482563 Operation_Request 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_ 2364482563 Command_Mode 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Speed mode" 0 "Torque mode" ;
+VAL_ 2364534531 Operation_Request 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_ 2364534531 Command_Mode 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "Speed mode" 0 "Torque mode" ;
+VAL_ 2365550851 WF2_Health 3 "Not available" 2 "Work function 2 disabled" 1 "Work function 2 degraded" 0 "Work function 2 normal operation" ;
+VAL_ 2365550851 WF1_Health 3 "Not available" 2 "Work function 1 disabled" 1 "Work function 1 degraded" 0 "Work function 1 normal operation" ;
+VAL_ 2365550595 Tm_Output_Spd_Direction 3 "Not available" 2 "Error" 1 "Reverse" 0 "Forward" ;
+VAL_ 2365550595 Tm_Output_Spd_Q_Factor 3 "Not available" 2 "High quality" 1 "Medium quality" 0 "Diagnostic issue" ;
+VAL_ 2365550595 Transmission_Range_Position 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "8th" 7 "7th" 6 "6th" 5 "5th" 4 "4th" 3 "3rd" 2 "2nd" 1 "1st" 0 "Reserved" ;
+VAL_ 2365550595 Driveline_Mode 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Transitional" 8 "Direction change to reverse" 7 "Direction change to forward" 6 "Reverse brake" 5 "Reverse coast" 4 "Reverse traction" 3 "Forward brake" 2 "Forward coast" 1 "Forward traction" 0 "Neutral" ;
+VAL_ 2365550595 FuSa_Monitoring_Bypass_Mode 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 7 "Not available" 6 "Error" 1 "FuSa monitoring is bypassed" 0 "FuSa monitoring is active" ;
+VAL_ 2365550595 DCU_Functional_Safety_Status 3 "Not available" 2 "Error" 1 "Safe state" 0 "No safe state" ;
+VAL_ 2365550595 Driveline_Health 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Driveline disabled" 3 "Degraded oper drv mot/inv or DCU" 2 "Degraded operation drive mot/inv" 1 "Degraded operation DCU" 0 "Normal operation" ;
+VAL_ 2365550595 Consolidated_Mtr_Inv_Stat 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Wait for safe condition" 8 "Ready to power off" 7 "Shutdown" 6 "Failure" 5 "Operational" 4 "Deactivation" 3 "Activation" 2 "Wait for high voltage" 1 "Standby" 0 "Initializing" ;
+VAL_ 2365555035 WF2_Operation_Request 3 "Not available" 2 "Reserved" 1 "Work function 2 requested" 0 "Work function 2 not requested" ;
+VAL_ 2365555035 WF1_Operation_Request 3 "Not available" 2 "Reserved" 1 "Work function 1 requested" 0 "Work function 1 not requested" ;
+VAL_ 2365554779 Shift_Lever_Fault 1 "Fault detected on shift lever" 0 "No fault detected on shift lever" ;
+VAL_ 2365554779 Auto_Manual_Shift_Request 3 "Not available" 2 "Reserved" 1 "Automatic" 0 "Manual" ;
+VAL_ 2365554779 Safety_Monitoring_Bypass_Mode 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 7 "Not available" 6 "Error" 1 "Bypass safety monitoring" 0 "Activate safety monitoring" ;
+VAL_ 2365554779 Immediate_Safe_State_Request 3 "Not available" 2 "Reserved" 1 "Immediate safe state request" 0 "No action" ;
+VAL_ 2365554779 Park_Brake_Status 3 "Not available" 2 "Reserved" 1 "Park brake active" 0 "Park brake released" ;
+VAL_ 2365554779 Driveline_Operation_Request 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_ 2365554779 Shift_Lever_Range 15 "Not available" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "VIII" 7 "VII" 6 "VI" 5 "V" 4 "IV" 3 "III" 2 "II" 1 "I" 0 "Reserved" ;
+VAL_ 2365554779 Shift_Lever_Direction 3 "Not available" 2 "Reserved" 1 "Forward" 0 "Neutral" ;
+

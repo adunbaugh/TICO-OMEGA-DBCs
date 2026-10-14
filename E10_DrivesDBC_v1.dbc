@@ -1,0 +1,666 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PLS EDI_RA EDI_FA MSM MDC
+
+
+BO_ 13 PLS_01: 8 PLS
+ SG_ PLS_stParkLock : 0|8@1+ (1,0) [0|255] ""  MDC,MSM
+
+BO_ 12 MDC_12: 8 MDC
+ SG_ MDC_vVehRef_PLS : 2|16@1+ (0.0075,0) [0|491.5125] "kph"  PLS
+ SG_ MDC_enParkLock_PLS : 0|2@1+ (1,0) [0|3] ""  PLS
+
+BO_ 10 MSM_01: 8 MSM
+ SG_ MSM_TmpSol : 22|8@1+ (1,-40) [-40|215] "°C"  EDI_FA
+ SG_ MSM_Posn_Plattform : 15|7@1+ (0.1,-4) [-4|8.7] "mm"  EDI_FA
+ SG_ MSM_Posn_P3a : 8|7@1+ (0.1,-4) [-4|8.7] "mm"  EDI_FA
+
+BO_ 85 MDC_11: 8 MDC
+ SG_ MDC_lvlDynDcpl_EDI_FA : 61|3@1+ (1,0) [0|7] "%"  EDI_FA
+ SG_ MDC_ActvDisChgReq_EDI : 59|2@1+ (1,0) [0|3] ""  EDI_FA,EDI_RA
+ SG_ MDC_GlobalRealTime_Clu : 3|32@1+ (0.00166666666666667,0) [0|7158278.82500001] "min"  EDI_RA,EDI_FA
+ SG_ MDC_whlDir_RR : 55|2@1+ (1,0) [0|3] ""  EDI_RA,EDI_FA
+ SG_ MDC_whlDir_RL : 57|2@1+ (1,0) [0|3] ""  EDI_RA,EDI_FA
+ SG_ MDC_whlDir_FR : 53|2@1+ (1,0) [0|3] ""  EDI_RA,EDI_FA
+ SG_ MDC_whlDir_FL : 51|2@1+ (1,0) [0|3] ""  EDI_RA,EDI_FA
+ SG_ MDC_SpdVehCog_EDI : 35|16@1+ (0.0075,0) [0|491.5125] "kmh"  EDI_RA,EDI_FA
+ SG_ MDC_PowSupSts_EDI : 0|3@1+ (1,0) [0|3] ""  EDI_RA,EDI_FA
+
+BO_ 80 MDC_10: 8 MDC
+ SG_ MDC_InvInletFlow_EDI_RA : 53|8@1+ (0.05,0) [0|12.75] "l/min"  EDI_RA
+ SG_ MDC_TrqSlopMax_EDI_RA : 45|8@1+ (1000,0) [0|255000] "Nm/s"  EDI_RA
+ SG_ MDC_DisTrqReqFfSlipCtrl_EDI_RA : 44|1@1+ (1,0) [0|1] ""  EDI_RA
+ SG_ MDC_TrqGrdReqSlipCtrl_EDI_RA : 36|8@1+ (1000,0) [0|255000] "Nm/s"  EDI_RA
+ SG_ MDC_StiffnessSpdCtrl_EDI_RA : 33|3@1+ (1,0) [0|7] ""  EDI_RA
+ SG_ MDC_StiffnessActvDmpr_EDI_RA : 29|4@1+ (1,0) [0|15] ""  EDI_RA
+ SG_ MDC_StiffnessSlipCtrl_EDI_RA : 26|3@1+ (1,0) [0|7] ""  EDI_RA
+ SG_ MDC_TrqMinSpdCtrl_EDI_RA : 13|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_RA
+ SG_ MDC_TrqMaxSpdCtrl_EDI_RA : 0|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_RA
+
+BO_ 75 MDC_09: 8 MDC
+ SG_ MDC_ActCurr_EDI_FA : 54|10@1+ (0.125,-64) [-64|63.875] "A"  EDI_FA
+ SG_ MDC_ActCtlMode_EDI_FA : 51|3@1+ (1,0) [0|7] ""  EDI_FA
+ SG_ MDC_InvInletFlow_EDI_FA : 43|8@1+ (0.05,0) [0|12.75] "l/min"  EDI_FA
+ SG_ MDC_TrqSlopMax_EDI_FA : 35|8@1+ (1000,0) [0|255000] "Nm/s"  EDI_FA
+ SG_ MDC_DisTrqReqFfSlipCtrl_EDI_FA : 34|1@1+ (1,0) [0|1] ""  EDI_FA
+ SG_ MDC_TrqGrdReqSlipCtrl_EDI_FA : 26|8@1+ (1000,0) [0|255000] "Nm/s"  EDI_FA
+ SG_ MDC_TrqMinSpdCtrl_EDI_FA : 13|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_FA
+ SG_ MDC_TrqMaxSpdCtrl_EDI_FA : 0|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_FA
+
+BO_ 115 MDC_08: 8 MDC
+ SG_ MDC_ActvDmprReq_EDI_RA : 60|2@1+ (1,0) [0|3] ""  EDI_RA
+ SG_ MDC_ActvDmprReq_EDI_FA : 58|2@1+ (1,0) [0|3] ""  EDI_FA
+ SG_ MDC_tmpAmb_EDI : 48|10@1+ (0.25,-128) [-128|127.75] "°C"  EDI_RA,EDI_FA
+ SG_ MDC_InvInletTemp_EDI_RA : 40|8@1+ (1,-40) [-40|215] "°C"  EDI_RA
+ SG_ MDC_InvInletTemp_EDI_FA : 32|8@1+ (1,-40) [-40|215] "°C"  EDI_FA
+ SG_ MDC_tmpDCLink_EDI_FA : 16|8@1+ (1,-40) [-40|215] "°C"  EDI_FA
+ SG_ MDC_tmpDCLink_EDI_RA : 24|8@1+ (1,-40) [-40|215] "°C"  EDI_RA
+ SG_ MDC_tmpOilSump_EDI_RA : 8|8@1+ (1,-40) [-40|215] "°C"  EDI_RA
+ SG_ MDC_tmpOilSump_EDI_FA : 0|8@1+ (1,-40) [-40|215] "°C"  EDI_FA
+
+BO_ 70 MDC_07: 8 MDC
+ SG_ MDC_Veh_Slope_EDI : 55|9@1+ (0.5,-127) [-127|128.5] "%"  EDI_RA,EDI_FA
+ SG_ MDC_WakeupReq_EDI : 54|1@1+ (1,0) [0|1] ""  EDI_RA,EDI_FA
+ SG_ MDC_TrqMinSlipCtrl_EDI_RA : 41|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_RA
+ SG_ MDC_TrqMaxSlipCtrl_EDI_RA : 28|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_RA
+ SG_ MDC_SpdLimMaxSlipCtrl_EDI_RA : 14|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_RA
+ SG_ MDC_SpdLimMinSlipCtrl_EDI_RA : 0|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_RA
+
+BO_ 65 MDC_06: 8 MDC
+ SG_ MDC_StiffnessSpdCtrl_EDI_FA : 61|3@1+ (1,0) [0|7] ""  EDI_FA
+ SG_ MDC_StiffnessActvDmpr_EDI_FA : 57|4@1+ (1,0) [0|15] ""  EDI_FA
+ SG_ MDC_StiffnessSlipCtrl_EDI_FA : 54|3@1+ (1,0) [0|7] ""  EDI_FA
+ SG_ MDC_TrqMinSlipCtrl_EDI_FA : 41|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_FA
+ SG_ MDC_TrqMaxSlipCtrl_EDI_FA : 28|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_FA
+ SG_ MDC_SpdLimMaxSlipCtrl_EDI_FA : 14|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_FA
+ SG_ MDC_SpdLimMinSlipCtrl_EDI_FA : 0|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_FA
+
+BO_ 45 MDC_05: 8 MDC
+ SG_ MDC_BattVoltMin_EDI : 52|12@1+ (0.25,0) [0|1023.75] "V"  EDI_RA,EDI_FA
+ SG_ MDC_BattVoltMax_EDI : 40|12@1+ (0.25,0) [0|1023.75] "V"  EDI_RA,EDI_FA
+ SG_ MDC_BattCurrLimGenr_EDI_RA : 30|10@1+ (1,-1023) [-1023|0] "A"  EDI_RA
+ SG_ MDC_BattCurrLimGenr_EDI_FA : 20|10@1+ (1,-1023) [-1023|0] "A"  EDI_FA
+ SG_ MDC_BattCurrLimMot_EDI_RA : 10|10@1+ (1,0) [0|1023] "A"  EDI_RA
+ SG_ MDC_BattCurrLimMot_EDI_FA : 0|10@1+ (1,0) [0|1023] "A"  EDI_FA
+
+BO_ 15 MDC_04: 8 MDC
+ SG_ MDC_SlipCtrlReq_EDI_RA : 62|2@1+ (1,0) [0|3] ""  EDI_RA
+ SG_ MDC_SlipCtrlReq_EDI_FA : 60|2@1+ (1,0) [0|3] ""  EDI_FA
+ SG_ MDC_SpdReq_EDI_RA : 46|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_RA
+ SG_ MDC_SpdReq_EDI_FA : 32|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  EDI_FA
+ SG_ MDC_TrqReq_EDI_RA : 19|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_RA
+ SG_ MDC_TrqReq_EDI_FA : 6|13@1+ (2,-8191) [-8191|8191] "Nm"  EDI_FA
+ SG_ MDC_CtlModeReq_EDI_RA : 3|3@1+ (1,0) [0|7] ""  EDI_RA
+ SG_ MDC_CtlModeReq_EDI_FA : 0|3@1+ (1,0) [0|7] ""  EDI_FA
+
+BO_ 30 MDC_03: 8 MDC
+ SG_ MDC_oilPumpFlow_EDI_FA : 32|10@1+ (10,0) [0|10230] "ml/min" Vector__XXX
+ SG_ MDC_oilPumpFlow_EDI_RA : 48|10@1+ (10,0) [0|10230] "ml/min"  EDI_FA,EDI_RA
+
+BO_ 50 MDC_02: 8 MDC
+ SG_ MDC_whlSpd_EDI_RR : 48|16@1+ (0.0075,0) [0|491.5125] "kmh"  PLS,EDI_RA,EDI_FA
+ SG_ MDC_whlSpd_EDI_RL : 32|16@1+ (0.0075,0) [0|491.5125] "kmh"  PLS,EDI_RA,EDI_FA
+ SG_ MDC_whlSpd_EDI_FR : 16|16@1+ (0.0075,0) [0|491.5125] "kmh"  PLS,EDI_RA,EDI_FA
+ SG_ MDC_whlSpd_EDI_FL : 0|16@1+ (0.0075,0) [0|491.5125] "kmh"  PLS,EDI_RA,EDI_FA
+
+BO_ 110 MDC_01: 8 MDC
+
+BO_ 25 EDI_FA_04: 8 EDI_FA
+ SG_ EDI_FA_stLubDcpl : 45|1@1+ (1,0) [0|1] ""  MDC,MSM
+ SG_ EDI_FA_SlipCtrlSts : 30|2@1+ (1,0) [0|3] ""  MSM,MDC
+ SG_ EDI_FA_ActCtlModeReq : 32|3@1+ (1,0) [0|7] ""  MSM,MDC
+ SG_ EDI_FA_ActCurrReq : 35|10@1+ (0.1,-51.2) [-51.2|51.1] "A"  MSM,MDC
+ SG_ EDI_FA_Trq : 17|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_FA_Spd : 3|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  MSM,MDC
+ SG_ EDI_FA_CtlMode : 0|3@1+ (1,0) [0|7] ""  MSM,MDC
+
+BO_ 100 EDI_FA_03: 8 EDI_FA
+ SG_ EDI_FA_MotTemp2 : 40|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_FA_MotTemp1 : 30|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_FA_InvJuncTempEstMax : 20|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+ SG_ EDI_FA_StatorTempEstMax : 10|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+ SG_ EDI_FA_RotorTempEstMax : 0|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+
+BO_ 55 EDI_FA_02: 8 EDI_FA
+ SG_ EDI_FA_TrqMinLimDerReason : 48|8@1+ (1,0) [0|255] ""  MSM,MDC
+ SG_ EDI_FA_TrqMinAvl : 27|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_FA_TrqMaxLimDerReason : 40|8@1+ (1,0) [0|255] ""  MSM,MDC
+ SG_ EDI_FA_TrqMaxAvl : 14|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_FA_SpdMaxAllwd : 0|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  MSM,MDC
+
+BO_ 90 EDI_FA_01: 8 EDI_FA
+ SG_ EDI_FA_InvTempW : 54|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_FA_InvTempV : 44|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_FA_InvTempU : 34|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_FA_DcLinkVolt : 22|12@1+ (0.25,0) [0|1023.75] "V"  MSM,MDC
+ SG_ EDI_FA_DcLinkCurr : 10|12@1+ (0.625,-1280) [-1280|1279.375] "A"  MSM,MDC
+ SG_ EDI_FA_DcLinkCapTemp : 0|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+
+BO_ 20 EDI_RA_04: 8 EDI_RA
+ SG_ EDI_RA_SlipCtrlSts : 30|2@1+ (1,0) [0|3] ""  MSM,MDC
+ SG_ EDI_RA_Trq : 17|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_RA_Spd : 3|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  MSM,MDC
+ SG_ EDI_RA_CtlMode : 0|3@1+ (1,0) [0|7] ""  MSM,MDC
+
+BO_ 105 EDI_RA_03: 8 EDI_RA
+ SG_ EDI_RA_MotTemp2 : 40|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_RA_MotTemp1 : 30|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_RA_InvJuncTempEstMax : 20|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+ SG_ EDI_RA_StatorTempEstMax : 10|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+ SG_ EDI_RA_RotorTempEstMax : 0|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+
+BO_ 60 EDI_RA_02: 8 EDI_RA
+ SG_ EDI_RA_TrqMinLimDerReason : 48|8@1+ (1,0) [0|255] ""  MSM,MDC
+ SG_ EDI_RA_TrqMinAvl : 27|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_RA_TrqMaxLimDerReason : 40|8@1+ (1,0) [0|255] ""  MSM,MDC
+ SG_ EDI_RA_TrqMaxAvl : 14|13@1+ (2,-8191) [-8191|8191] "Nm"  MSM,MDC
+ SG_ EDI_RA_SpdMaxAllwd : 0|14@1+ (0.25,-2048) [-2048|2047.75] "RPM"  MSM,MDC
+
+BO_ 95 EDI_RA_01: 8 EDI_RA
+ SG_ EDI_RA_InvTempW : 54|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_RA_InvTempV : 44|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_RA_InvTempU : 34|10@1+ (0.25,-40) [-40|215.75] "°C"  MSM,MDC
+ SG_ EDI_RA_DcLinkVolt : 22|12@1+ (0.25,0) [0|1023.75] "V"  MSM,MDC
+ SG_ EDI_RA_DcLinkCurr : 10|12@1+ (0.625,-1280) [-1280|1279.375] "A"  MSM,MDC
+ SG_ EDI_RA_DcLinkCapTemp : 0|10@1- (0.25,80) [-48|207.75] "°C"  MSM,MDC
+
+
+
+CM_ BU_ PLS "Parklock System";
+CM_ BU_ EDI_RA "electrical drive inverter rear axle ";
+CM_ BU_ EDI_FA "electrical drive inverter front axle ";
+CM_ BU_ MSM "Magna System Monitor";
+CM_ BU_ MDC "Magna Driving Controller";
+CM_ SG_ 13 PLS_stParkLock "Status Parksperre";
+CM_ SG_ 12 MDC_vVehRef_PLS "Vehicle Reference Speed";
+CM_ SG_ 12 MDC_enParkLock_PLS "REDUNDANT- Send value of 1 (No Lock Request).";
+CM_ SG_ 10 MSM_TmpSol "REDUNDANT-Send value of 0.";
+CM_ SG_ 10 MSM_Posn_Plattform "Externally read disconnect position.";
+CM_ SG_ 10 MSM_Posn_P3a "REDUNDANT- Send constant value of 0.";
+CM_ SG_ 85 MDC_lvlDynDcpl_EDI_FA "variable dynamics for the coupling procedure. from comfortable to very dynamic ";
+CM_ SG_ 85 MDC_ActvDisChgReq_EDI "Active Discharge request of DC link ";
+CM_ SG_ 85 MDC_GlobalRealTime_Clu "Global real time in order to calculate the engine off time";
+CM_ SG_ 85 MDC_whlDir_RR "Wheel Direction (1=FWD 2=REV).  Rear Right.";
+CM_ SG_ 85 MDC_whlDir_RL "Wheel Direction (1=FWD 2=REV).  Rear Left.  ";
+CM_ SG_ 85 MDC_whlDir_FR "Wheel Direction (1=FWD 2=REV).  Front Right.";
+CM_ SG_ 85 MDC_whlDir_FL "Wheel Direction (1=FWD 2=REV).  Front Left.  ";
+CM_ SG_ 85 MDC_SpdVehCog_EDI "Reference synchronization speed of EM for coupling with 199.995kmh offset (vehicle stopped=199.995 signal)";
+CM_ SG_ 85 MDC_PowSupSts_EDI "Status of the DC power net";
+CM_ SG_ 80 MDC_InvInletFlow_EDI_RA "Coolant Flow at Inverter Inlet";
+CM_ SG_ 80 MDC_TrqSlopMax_EDI_RA "Max allowed Torque Gradient";
+CM_ SG_ 80 MDC_DisTrqReqFfSlipCtrl_EDI_RA "E5-SET TO 0.  Deaktivierung Momentenvorsteuerung Schlupfregelung";
+CM_ SG_ 80 MDC_TrqGrdReqSlipCtrl_EDI_RA "Max exit gradient of slip controller.  Axle level.";
+CM_ SG_ 80 MDC_StiffnessSpdCtrl_EDI_RA "Abstract controller stiffness for speed control.  Rear.";
+CM_ SG_ 80 MDC_StiffnessActvDmpr_EDI_RA "Abstract controller stiffness for active damping.  Rear.";
+CM_ SG_ 80 MDC_StiffnessSlipCtrl_EDI_RA "Abstract controller stiffness for slip control.  Rear.";
+CM_ SG_ 80 MDC_TrqMinSpdCtrl_EDI_RA "Min torque limit during speed control control at axle level.";
+CM_ SG_ 80 MDC_TrqMaxSpdCtrl_EDI_RA "Max torque limit during speed control at axle level.";
+CM_ SG_ 75 MDC_ActCurr_EDI_FA "Actual current of decoupling solenoid driver.";
+CM_ SG_ 75 MDC_ActCtlMode_EDI_FA "Istmodus für die Treiberstufe die den Magnet schaltet";
+CM_ SG_ 75 MDC_InvInletFlow_EDI_FA "Coolant Flow at Inverter Inlet";
+CM_ SG_ 75 MDC_TrqSlopMax_EDI_FA "Max allowed Torque Gradient";
+CM_ SG_ 75 MDC_DisTrqReqFfSlipCtrl_EDI_FA "E5-SET TO 0.  Deaktivierung Momentenvorsteuerung Schlupfregelung";
+CM_ SG_ 75 MDC_TrqGrdReqSlipCtrl_EDI_FA "Max exit gradient of slip controller.  Axle level.";
+CM_ SG_ 75 MDC_TrqMinSpdCtrl_EDI_FA "Min torque limit during speed control control at axle level.";
+CM_ SG_ 75 MDC_TrqMaxSpdCtrl_EDI_FA "Max torque limit during speed control at axle level.";
+CM_ SG_ 115 MDC_ActvDmprReq_EDI_RA "active damping enable request";
+CM_ SG_ 115 MDC_ActvDmprReq_EDI_FA "active damping enable request";
+CM_ SG_ 115 MDC_tmpAmb_EDI "An improved version of the measured ambient temperature. range -57..+70 degC";
+CM_ SG_ 115 MDC_InvInletTemp_EDI_RA "Coolant temperature at inverter inlet";
+CM_ SG_ 115 MDC_InvInletTemp_EDI_FA "Coolant temperature at inverter inlet";
+CM_ SG_ 115 MDC_tmpDCLink_EDI_FA "External temp sensor for DC link.";
+CM_ SG_ 115 MDC_tmpDCLink_EDI_RA "External temp sensor for DC link.";
+CM_ SG_ 115 MDC_tmpOilSump_EDI_RA "Oil sump temperature";
+CM_ SG_ 115 MDC_tmpOilSump_EDI_FA "Oil sump temperature
+";
+CM_ SG_ 70 MDC_Veh_Slope_EDI "REDUNDANT Steigung in % Berg. Positive Werte > bergauf; Negative Werte < bergab";
+CM_ SG_ 70 MDC_WakeupReq_EDI "Positive level enables the eDrive, negative edge shuts it down.";
+CM_ SG_ 70 MDC_TrqMinSlipCtrl_EDI_RA "Minimum permissible actuating torque of the slip control.";
+CM_ SG_ 70 MDC_TrqMaxSlipCtrl_EDI_RA "Maximum permissible actuating torque at axle level of the slip control. ";
+CM_ SG_ 70 MDC_SpdLimMaxSlipCtrl_EDI_RA "Maximum permissible AXLE speed for slip control.  Rear Axle.";
+CM_ SG_ 70 MDC_SpdLimMinSlipCtrl_EDI_RA "Minimum permissible AXLE speed for slip control.  Rear Axle.";
+CM_ SG_ 65 MDC_StiffnessSpdCtrl_EDI_FA "Abstract controller stiffness for speed control.  Front.";
+CM_ SG_ 65 MDC_StiffnessActvDmpr_EDI_FA "Abstract Controller Stiffness for Active Damping";
+CM_ SG_ 65 MDC_StiffnessSlipCtrl_EDI_FA "Abstract controller stiffness for slip control.  Front.";
+CM_ SG_ 65 MDC_TrqMinSlipCtrl_EDI_FA "Minimum permissible actuating torque of the slip control.";
+CM_ SG_ 65 MDC_TrqMaxSlipCtrl_EDI_FA "Maximum permissible actuating torque at axle level of the slip control. ";
+CM_ SG_ 65 MDC_SpdLimMaxSlipCtrl_EDI_FA "Maximum permissible AXLE speed for slip control.  Front Axle.";
+CM_ SG_ 65 MDC_SpdLimMinSlipCtrl_EDI_FA "Minimum permissible AXLE speed for slip control.  Front Axle.";
+CM_ SG_ 45 MDC_BattVoltMin_EDI "Minimum allowed DC link voltage";
+CM_ SG_ 45 MDC_BattVoltMax_EDI "Maximum allowed DC link voltage";
+CM_ SG_ 45 MDC_BattCurrLimGenr_EDI_RA "Min allowed DC current (negative)";
+CM_ SG_ 45 MDC_BattCurrLimGenr_EDI_FA "Min allowed DC current (negative)";
+CM_ SG_ 45 MDC_BattCurrLimMot_EDI_RA "Max allowed DC current (positive)";
+CM_ SG_ 45 MDC_BattCurrLimMot_EDI_FA "Max allowed DC current (positive)";
+CM_ SG_ 15 MDC_SlipCtrlReq_EDI_RA "Slip Control Activation";
+CM_ SG_ 15 MDC_SlipCtrlReq_EDI_FA "Slip Control Activation";
+CM_ SG_ 15 MDC_SpdReq_EDI_RA "Speed request(used in speed control mode) at rear axle after final drive ratio";
+CM_ SG_ 15 MDC_SpdReq_EDI_FA "Speed request(used in speed control mode) at front axle after final drive ratio";
+CM_ SG_ 15 MDC_TrqReq_EDI_RA "Torque request (used in torque control mode)  at rear axle after final drive ratio";
+CM_ SG_ 15 MDC_TrqReq_EDI_FA "Torque request (used in torque control mode)  at front axle after final drive ratio";
+CM_ SG_ 15 MDC_CtlModeReq_EDI_RA "Control mode request
+(voltage feed-forward and current control are only allowed when EdiEdrv_CtlTestModeEn == 1)";
+CM_ SG_ 15 MDC_CtlModeReq_EDI_FA "Control mode request
+(voltage feed-forward and current control are only allowed when EdiEdrv_CtlTestModeEn == 1)";
+CM_ SG_ 30 MDC_oilPumpFlow_EDI_FA "Oil Pump Flow Rate FA";
+CM_ SG_ 30 MDC_oilPumpFlow_EDI_RA "Oil Pump Flow Rate RA";
+CM_ SG_ 50 MDC_whlSpd_EDI_RR "Wheel Speed Rear Right";
+CM_ SG_ 50 MDC_whlSpd_EDI_RL "Wheel Speed Rear Left";
+CM_ SG_ 50 MDC_whlSpd_EDI_FR "Wheel Speed Front Right";
+CM_ SG_ 50 MDC_whlSpd_EDI_FL "Wheel Speed Front Left";
+CM_ SG_ 25 EDI_FA_SlipCtrlSts "Slip Controller Status";
+CM_ SG_ 25 EDI_FA_ActCtlModeReq "Sollmodus für die Treiberstufe die den Magnet schaltet";
+CM_ SG_ 25 EDI_FA_ActCurrReq "Target current for decoupling solenoid driver.";
+CM_ SG_ 25 EDI_FA_Trq "Estimated torque value at front axle after final drive ratio";
+CM_ SG_ 25 EDI_FA_Spd "Measured motor speed at front axle after final drive ratio";
+CM_ SG_ 25 EDI_FA_CtlMode "Actual electric drive control mode";
+CM_ SG_ 100 EDI_FA_MotTemp2 "Motor temperature 2";
+CM_ SG_ 100 EDI_FA_MotTemp1 "Motor temperature 1";
+CM_ SG_ 100 EDI_FA_InvJuncTempEstMax "estimated max. inverter junction temperature";
+CM_ SG_ 100 EDI_FA_StatorTempEstMax "estimated max. stator temperature";
+CM_ SG_ 100 EDI_FA_RotorTempEstMax "estimated max. rotor temperature";
+CM_ SG_ 55 EDI_FA_TrqMinLimDerReason "Derating Status (neg)";
+CM_ SG_ 55 EDI_FA_TrqMinAvl "Available torque (negative)  at front axle after final drive ratio";
+CM_ SG_ 55 EDI_FA_TrqMaxLimDerReason "Derating Status (pos)";
+CM_ SG_ 55 EDI_FA_TrqMaxAvl "Available torque (positive) at front axle after final drive ratio";
+CM_ SG_ 55 EDI_FA_SpdMaxAllwd "REDUNDANT.  Maximum permissible speed for em protection front rear axle after final drive ratio";
+CM_ SG_ 90 EDI_FA_InvTempW "Inverter temperature W";
+CM_ SG_ 90 EDI_FA_InvTempV "Inverter temperature V";
+CM_ SG_ 90 EDI_FA_InvTempU "Inverter temperature U";
+CM_ SG_ 90 EDI_FA_DcLinkVolt "Measured DC link voltage";
+CM_ SG_ 90 EDI_FA_DcLinkCurr "Direct component of the actual motor current";
+CM_ SG_ 90 EDI_FA_DcLinkCapTemp "estimated DC link capacitor temperature";
+CM_ SG_ 20 EDI_RA_SlipCtrlSts "Slip Controller Status";
+CM_ SG_ 20 EDI_RA_Trq "Estimated torque value at rear axle after final drive ratio";
+CM_ SG_ 20 EDI_RA_Spd "Measured motor speed at rear axle after final drive ratio";
+CM_ SG_ 20 EDI_RA_CtlMode "Actual electric drive control mode";
+CM_ SG_ 105 EDI_RA_MotTemp2 "Motor temperature 2";
+CM_ SG_ 105 EDI_RA_MotTemp1 "Motor temperature 1";
+CM_ SG_ 105 EDI_RA_InvJuncTempEstMax "estimated max. inverter junction temperature";
+CM_ SG_ 105 EDI_RA_StatorTempEstMax "estimated max. stator temperature";
+CM_ SG_ 105 EDI_RA_RotorTempEstMax "estimated max. rotor temperature";
+CM_ SG_ 60 EDI_RA_TrqMinLimDerReason "Derating Status (neg)";
+CM_ SG_ 60 EDI_RA_TrqMinAvl "Available torque (negative)  at rear axle after final drive ratio";
+CM_ SG_ 60 EDI_RA_TrqMaxLimDerReason "Derating Status (pos)";
+CM_ SG_ 60 EDI_RA_TrqMaxAvl "Available torque (positive)  at rear axle after final drive ratio";
+CM_ SG_ 60 EDI_RA_SpdMaxAllwd "REDUNDANT. Maximum permissible speed for em protection at rear axle after final drive ratio";
+CM_ SG_ 95 EDI_RA_InvTempW "Inverter temperature W";
+CM_ SG_ 95 EDI_RA_InvTempV "Inverter temperature V";
+CM_ SG_ 95 EDI_RA_InvTempU "Inverter temperature U";
+CM_ SG_ 95 EDI_RA_DcLinkVolt "Measured DC link voltage";
+CM_ SG_ 95 EDI_RA_DcLinkCurr "Direct component of the actual motor current";
+CM_ SG_ 95 EDI_RA_DcLinkCapTemp "estimated DC link capacitor temperatur";
+BA_DEF_ SG_  "Event trans." ENUM  "Yes","No";
+BA_DEF_ SG_  "Accuracy" STRING ;
+BA_DEF_ BO_  "GenMsgTimeoutTime" INT 0 10000;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "Type" ENUM  "P","C","PE","COC","PE_Cntrl","E","E_Cntrl","OC","S","BAF","DC","EM","MM","-";
+BA_DEF_ BO_  "Period [ms]" INT 0 65535;
+BA_DEF_ BU_  "TpOwnSystemEcuNumber" HEX 0 255;
+BA_DEF_ BU_  "NwmNodeType" ENUM  "kMaster","kSlave15","kSlave30","none";
+BA_DEF_ BU_  "NmNodeType" ENUM  "kMaster","kSlave15","kSlave30","none";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "Description" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "NWM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigErrVal" STRING ;
+BA_DEF_ SG_  "GenSigNoVal" STRING ;
+BA_DEF_ SG_  "GenSigHandlingTypeCode" STRING ;
+BA_DEF_ SG_  "GenSigAppDataTypeCode" STRING ;
+BA_DEF_ SG_  "GenSigVtEn" STRING ;
+BA_DEF_ SG_  "GenSigVtName" STRING ;
+BA_DEF_ SG_  "GenSigVtIndex" STRING ;
+BA_DEF_ SG_  "GenSigMarked" STRING ;
+BA_DEF_ SG_  "GenSigCmt" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 1 999999;
+BA_DEF_ BO_  "NWM-Botschaft" ENUM  "nein","ja";
+BA_DEF_ BO_  "GenMsgCmt1" STRING ;
+BA_DEF_ BO_  "GenMsgCmt2" STRING ;
+BA_DEF_ BO_  "GenMsgCmt3" STRING ;
+BA_DEF_ BO_  "GenMsgCmt4" STRING ;
+BA_DEF_ BO_  "GenMsgCmt5" STRING ;
+BA_DEF_ BO_  "GenMsgHandlingTypeCode" STRING ;
+BA_DEF_ BO_  "GenMsgHandlingTypeDoc" STRING ;
+BA_DEF_ BO_  "GenMsgMarked" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTimeus" INT 1000 1000000;
+BA_DEF_ SG_  "State2" STRING ;
+BA_DEF_ SG_  "State1" STRING ;
+BA_DEF_ SG_  "State0" STRING ;
+BA_DEF_ SG_  "Timeout" INT 0 100000;
+BA_DEF_ SG_  "DataType" ENUM  "ASC","BLN","ENM","BCD","SNM","UNM","SFP","PKT";
+BA_DEF_ SG_  "SigLongName" STRING ;
+BA_DEF_ SG_  "VNSigHSLocalIgnitionDelayed" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOff" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOn" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalDiagnostics" ENUM  "No","Yes";
+BA_DEF_ BO_  "MsgLongName" STRING ;
+BA_DEF_ BO_  "DiagFdOnly" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigTimeoutTime_ECU" INT 0 65535;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "CAN_Standard","CAN_Extended","CAN_FD_Standard","CAN_FD_Extended";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","OnEvent ","OnRequest","undefined","undefined","undefined","undefined","IfActive";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 5000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 255;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagConnection" HEX 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "NBTMin" INT 6 25;
+BA_DEF_  "NBTMax" INT 6 25;
+BA_DEF_  "SyncJumpWidthMin" INT 1 4;
+BA_DEF_  "SyncJumpWidthMax" INT 1 4;
+BA_DEF_  "SamplePointMin" INT 50 100;
+BA_DEF_  "SamplePointMax" INT 50 100;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "VersionYear" INT 0 153;
+BA_DEF_  "VersionMonth" INT 0 18;
+BA_DEF_  "VersionWeek" INT 0 83;
+BA_DEF_  "VersionDay" INT 0 49;
+BA_DEF_  "VersionNumber" INT 0 0;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 1 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 1 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "Event trans." "No";
+BA_DEF_DEF_  "Accuracy" "";
+BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "Type" "-";
+BA_DEF_DEF_  "Period [ms]" 0;
+BA_DEF_DEF_  "TpOwnSystemEcuNumber" 0;
+BA_DEF_DEF_  "NwmNodeType" "none";
+BA_DEF_DEF_  "NmNodeType" "none";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "Description" "";
+BA_DEF_DEF_  "NodeLayerModules" "Osek_TP.dll";
+BA_DEF_DEF_  "NWM-WakeupAllowed" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigErrVal" "";
+BA_DEF_DEF_  "GenSigNoVal" "";
+BA_DEF_DEF_  "GenSigHandlingTypeCode" "";
+BA_DEF_DEF_  "GenSigAppDataTypeCode" "";
+BA_DEF_DEF_  "GenSigVtEn" "";
+BA_DEF_DEF_  "GenSigVtName" "";
+BA_DEF_DEF_  "GenSigVtIndex" "";
+BA_DEF_DEF_  "GenSigMarked" "";
+BA_DEF_DEF_  "GenSigCmt" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "NWM-Botschaft" "nein";
+BA_DEF_DEF_  "GenMsgCmt1" "";
+BA_DEF_DEF_  "GenMsgCmt2" "";
+BA_DEF_DEF_  "GenMsgCmt3" "";
+BA_DEF_DEF_  "GenMsgCmt4" "";
+BA_DEF_DEF_  "GenMsgCmt5" "";
+BA_DEF_DEF_  "GenMsgHandlingTypeCode" "";
+BA_DEF_DEF_  "GenMsgHandlingTypeDoc" "";
+BA_DEF_DEF_  "GenMsgMarked" "";
+BA_DEF_DEF_  "GenMsgCycleTimeus" 100000;
+BA_DEF_DEF_  "State2" "Description";
+BA_DEF_DEF_  "State1" "Description";
+BA_DEF_DEF_  "State0" "Description";
+BA_DEF_DEF_  "Timeout" 0;
+BA_DEF_DEF_  "DataType" "";
+BA_DEF_DEF_  "SigLongName" "";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionDelayed" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOff" "No";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOn" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalDiagnostics" "No";
+BA_DEF_DEF_  "MsgLongName" "";
+BA_DEF_DEF_  "DiagFdOnly" "No";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigTimeoutTime_ECU" 0;
+BA_DEF_DEF_  "VFrameFormat" "CAN_Standard";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "NmAsrNode" "Yes";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "DBName" "CAN";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "NBTMin" 8;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "SyncJumpWidthMin" 1;
+BA_DEF_DEF_  "SyncJumpWidthMax" 4;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "SamplePointMax" 90;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "VersionYear" 0;
+BA_DEF_DEF_  "VersionMonth" 1;
+BA_DEF_DEF_  "VersionWeek" 1;
+BA_DEF_DEF_  "VersionDay" 1;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "VersionYear" 19;
+BA_ "VersionMonth" 12;
+BA_ "VersionWeek" 33;
+BA_ "VersionDay" 12;
+BA_ "VersionNumber" 1;
+BA_ "Manufacturer" "Magna ECS";
+BA_ "BusType" "CAN";
+BA_ "DBName" "drivetrain_can";
+BA_ "NmAsrNode" BU_ MDC 1;
+BA_ "GenMsgCycleTime" BO_ 13 10;
+BA_ "GenMsgCycleTime" BO_ 12 10;
+BA_ "GenMsgCycleTime" BO_ 10 10;
+BA_ "GenMsgCycleTime" BO_ 85 10;
+BA_ "GenMsgCycleTime" BO_ 80 10;
+BA_ "GenMsgCycleTime" BO_ 75 5;
+BA_ "GenMsgCycleTime" BO_ 115 10;
+BA_ "GenMsgCycleTime" BO_ 70 10;
+BA_ "GenMsgCycleTime" BO_ 65 10;
+BA_ "GenMsgCycleTime" BO_ 45 10;
+BA_ "GenMsgCycleTime" BO_ 15 10;
+BA_ "GenMsgCycleTime" BO_ 30 10;
+BA_ "GenMsgCycleTime" BO_ 50 10;
+BA_ "GenMsgCycleTime" BO_ 110 10;
+BA_ "GenMsgCycleTime" BO_ 25 5;
+BA_ "GenMsgCycleTime" BO_ 100 10;
+BA_ "GenMsgCycleTime" BO_ 55 10;
+BA_ "GenMsgCycleTime" BO_ 90 10;
+BA_ "GenMsgCycleTime" BO_ 20 10;
+BA_ "GenMsgCycleTime" BO_ 105 10;
+BA_ "GenMsgCycleTime" BO_ 60 10;
+BA_ "GenMsgCycleTime" BO_ 95 10;
+BA_ "GenSigStartValue" SG_ 10 MSM_TmpSol 40;
+BA_ "GenSigStartValue" SG_ 10 MSM_Posn_Plattform 40;
+BA_ "GenSigStartValue" SG_ 10 MSM_Posn_P3a 40;
+BA_ "GenSigStartValue" SG_ 85 MDC_lvlDynDcpl_EDI_FA 0;
+BA_ "GenSigStartValue" SG_ 85 MDC_SpdVehCog_EDI 0;
+BA_ "GenSigStartValue" SG_ 80 MDC_TrqMinSpdCtrl_EDI_RA 4095.5;
+BA_ "GenSigStartValue" SG_ 80 MDC_TrqMaxSpdCtrl_EDI_RA 4095.5;
+BA_ "GenSigStartValue" SG_ 75 MDC_ActCurr_EDI_FA 512;
+BA_ "GenSigStartValue" SG_ 75 MDC_TrqMinSpdCtrl_EDI_FA 4095.5;
+BA_ "GenSigStartValue" SG_ 75 MDC_TrqMaxSpdCtrl_EDI_FA 4095.5;
+BA_ "GenSigStartValue" SG_ 115 MDC_InvInletTemp_EDI_RA 40;
+BA_ "GenSigStartValue" SG_ 115 MDC_InvInletTemp_EDI_FA 40;
+BA_ "GenSigStartValue" SG_ 115 MDC_tmpDCLink_EDI_FA 40;
+BA_ "GenSigStartValue" SG_ 115 MDC_tmpDCLink_EDI_RA 40;
+BA_ "GenSigStartValue" SG_ 115 MDC_tmpOilSump_EDI_RA 40;
+BA_ "GenSigStartValue" SG_ 115 MDC_tmpOilSump_EDI_FA 40;
+BA_ "GenSigStartValue" SG_ 70 MDC_Veh_Slope_EDI 254;
+BA_ "GenSigStartValue" SG_ 70 MDC_TrqMinSlipCtrl_EDI_RA 4095.5;
+BA_ "GenSigStartValue" SG_ 70 MDC_TrqMaxSlipCtrl_EDI_RA 4095.5;
+BA_ "GenSigStartValue" SG_ 70 MDC_SpdLimMaxSlipCtrl_EDI_RA 8192;
+BA_ "GenSigStartValue" SG_ 70 MDC_SpdLimMinSlipCtrl_EDI_RA 8192;
+BA_ "GenSigStartValue" SG_ 65 MDC_TrqMinSlipCtrl_EDI_FA 4095.5;
+BA_ "GenSigStartValue" SG_ 65 MDC_TrqMaxSlipCtrl_EDI_FA 4095.5;
+BA_ "GenSigStartValue" SG_ 65 MDC_SpdLimMaxSlipCtrl_EDI_FA 8192;
+BA_ "GenSigStartValue" SG_ 65 MDC_SpdLimMinSlipCtrl_EDI_FA 8192;
+BA_ "GenSigStartValue" SG_ 45 MDC_BattCurrLimGenr_EDI_RA 1023;
+BA_ "GenSigStartValue" SG_ 45 MDC_BattCurrLimGenr_EDI_FA 1023;
+BA_ "GenSigStartValue" SG_ 15 MDC_SpdReq_EDI_RA 8192;
+BA_ "GenSigStartValue" SG_ 15 MDC_SpdReq_EDI_FA 8192;
+BA_ "GenSigStartValue" SG_ 15 MDC_TrqReq_EDI_RA 4095.5;
+BA_ "GenSigStartValue" SG_ 15 MDC_TrqReq_EDI_FA 4095.5;
+BA_ "GenSigStartValue" SG_ 25 EDI_FA_ActCurrReq 512;
+BA_ "GenSigStartValue" SG_ 25 EDI_FA_Trq 4095.5;
+BA_ "GenSigStartValue" SG_ 25 EDI_FA_Spd 8192;
+BA_ "GenSigStartValue" SG_ 100 EDI_FA_MotTemp2 160;
+BA_ "GenSigStartValue" SG_ 100 EDI_FA_MotTemp1 160;
+BA_ "GenSigStartValue" SG_ 100 EDI_FA_InvJuncTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 100 EDI_FA_StatorTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 100 EDI_FA_RotorTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 55 EDI_FA_TrqMinAvl 4095.5;
+BA_ "GenSigStartValue" SG_ 55 EDI_FA_TrqMaxAvl 4095.5;
+BA_ "GenSigStartValue" SG_ 55 EDI_FA_SpdMaxAllwd 8192;
+BA_ "GenSigStartValue" SG_ 90 EDI_FA_InvTempW 160;
+BA_ "GenSigStartValue" SG_ 90 EDI_FA_InvTempV 160;
+BA_ "GenSigStartValue" SG_ 90 EDI_FA_InvTempU 160;
+BA_ "GenSigStartValue" SG_ 90 EDI_FA_DcLinkCurr 2048;
+BA_ "GenSigStartValue" SG_ 90 EDI_FA_DcLinkCapTemp -320;
+BA_ "GenSigStartValue" SG_ 20 EDI_RA_Trq 4095.5;
+BA_ "GenSigStartValue" SG_ 20 EDI_RA_Spd 8192;
+BA_ "GenSigStartValue" SG_ 105 EDI_RA_MotTemp2 160;
+BA_ "GenSigStartValue" SG_ 105 EDI_RA_MotTemp1 160;
+BA_ "GenSigStartValue" SG_ 105 EDI_RA_InvJuncTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 105 EDI_RA_StatorTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 105 EDI_RA_RotorTempEstMax -320;
+BA_ "GenSigStartValue" SG_ 60 EDI_RA_TrqMinAvl 4095.5;
+BA_ "GenSigStartValue" SG_ 60 EDI_RA_TrqMaxAvl 4095.5;
+BA_ "GenSigStartValue" SG_ 60 EDI_RA_SpdMaxAllwd 8192;
+BA_ "GenSigStartValue" SG_ 95 EDI_RA_InvTempW 160;
+BA_ "GenSigStartValue" SG_ 95 EDI_RA_InvTempV 160;
+BA_ "GenSigStartValue" SG_ 95 EDI_RA_InvTempU 160;
+BA_ "GenSigStartValue" SG_ 95 EDI_RA_DcLinkCurr 2048;
+BA_ "GenSigStartValue" SG_ 95 EDI_RA_DcLinkCapTemp -320;
+VAL_ 13 PLS_stParkLock 7 "failed open" 6 "failed closed" 5 "tooth on tooth position" 4 "connect in progress" 3 "disconnected" 2 "disconnect in progress" 1 "connected" 0 "not defined" ;
+VAL_ 12 MDC_enParkLock_PLS 3 "Fault" 2 "Lock Request" 1 "No Lock Request" 0 "initialisation" ;
+VAL_ 85 MDC_lvlDynDcpl_EDI_FA 7 "level 8 -very dynamic" 6 "level 7" 5 "level 6" 4 "level 5" 3 "level 4 -comfotable @driving" 2 "level 3" 1 "level 2" 0 "level 1 -comfortable @standstill" ;
+VAL_ 85 MDC_ActvDisChgReq_EDI 1 "active" 0 "inactive" ;
+VAL_ 85 MDC_PowSupSts_EDI 3 "Fault" 2 "HV Kreis Antriebe stabil" 1 "12V stabil (DCDC gestuetzt)" 0 "Init 12V" ;
+VAL_ 80 MDC_DisTrqReqFfSlipCtrl_EDI_RA 1 "PreControl Active" 0 "PreControl Inactive" ;
+VAL_ 75 MDC_ActCtlMode_EDI_FA 2 "current control" 1 "active short-circuit" 0 "tristate" ;
+VAL_ 75 MDC_DisTrqReqFfSlipCtrl_EDI_FA 1 "Precontrol Active" 0 "Precontrol Inactive" ;
+VAL_ 115 MDC_ActvDmprReq_EDI_RA 1 "active" 0 "inactive" ;
+VAL_ 115 MDC_ActvDmprReq_EDI_FA 1 "active" 0 "inactive" ;
+VAL_ 15 MDC_SlipCtrlReq_EDI_RA 3 "erzw. Regelung auf oberes Limit" 2 "erzw. Regelung auf unteres Limit" 1 "Regelung aktiv - auto akt /deakt" 0 "inaktiv" ;
+VAL_ 15 MDC_SlipCtrlReq_EDI_FA 3 "erzw. Regelung auf oberesLimit" 2 "erzw. Regelung auf unteres Limit" 1 "Regelung aktiv - auto akt /deakt" 0 "inaktiv" ;
+VAL_ 15 MDC_CtlModeReq_EDI_RA 7 "synchronize" 4 "torque control" 3 "decouple" 6 "trq and slip ctrl incl actv dmp" 5 "speed control" 2 "fault (active short-circuit)" 1 "fault (pwm off)" 0 "standby" ;
+VAL_ 15 MDC_CtlModeReq_EDI_FA 7 "synchronize" 4 "torque control" 3 "decouple" 6 "trq and slip ctrl incl actv dmp" 5 "speed control" 2 "fault (active short-circuit)" 1 "fault (pwm off)" 0 "standby" ;
+VAL_ 25 EDI_FA_SlipCtrlSts 3 "Fehler" 2 "regelt auf obere Grenze" 1 "regelt auf untere Grenze" 0 "regelt nicht" ;
+VAL_ 25 EDI_FA_ActCtlModeReq 2 "current control" 1 "active short-circuit" 0 "tristate" ;
+VAL_ 25 EDI_FA_CtlMode 7 "synchronize" 4 "torque control" 3 "decouple" 2 "fault (active short-cicruit)" 1 "fault (pwm off)" 6 "trq and slip ctrl incl actv dmp" 5 "speed control" 0 "standby" ;
+VAL_ 55 EDI_FA_TrqMinLimDerReason 34 "Dc voltage limit request" 33 "Dc power limit lookup table" 32 "Dc power limit request" 31 "Dc power current limit" 30 "Dc power limit nominal" 29 "Dc voltage limit nominal" 28 "manuel override" 27 "Dc current" 26 "Dc Link voltage control" 25 "rotor temp est high speed" 24 "inverter clt flow" 23 "motor clt flow" 22 "inverter coil tmp estd" 21 "inverter ac busbar temp estd" 20 "inverter dc busbar temp estd" 19 "inverter dc cap temp estd" 18 "inverter pwr switch temp estd" 17 "inverter inlet temp estd" 16 "motor inlet temp estd" 15 "motor housing temp estd" 14 "motor fe stator temp estd" 13 "motor cu stator temp estd" 12 "motor rotor temp estd" 11 "fe stator temp estd (not used)" 10 "cu stator temp estd (not used)" 9 "Inverter pwr switch temp" 8 "Motor winding temp" 7 "speed limit (not used)" 6 "torque limit (not used)" 5 "AC current limit" 4 "power limit (not used)" 3 "Flux capability" 2 "Speed  capability" 1 "Torque capability" 0 "AC current capability" ;
+VAL_ 55 EDI_FA_TrqMaxLimDerReason 34 "Dc voltage limit request" 33 "Dc power limit lookup table" 32 "Dc power limit request" 31 "Dc power current limit" 30 "Dc power limit nominal" 29 "Dc voltage limit nominal" 28 "manuel override" 27 "Dc current" 26 "Dc Link voltage control" 25 "rotor temp est high speed" 24 "inverter clt flow" 23 "motor clt flow" 22 "inverter coil tmp estd" 21 "inverter ac busbar temp estd" 20 "inverter dc busbar temp estd" 19 "inverter dc cap temp estd" 18 "inverter pwr switch temp estd" 17 "inverter inlet temp estd" 16 "motor inlet temp estd" 15 "motor housing temp estd" 14 "motor fe stator temp estd" 13 "motor cu stator temp estd" 12 "motor rotor temp estd" 11 "fe stator temp estd (not used)" 10 "cu stator temp estd (not used)" 9 "Inverter pwr switch temp" 8 "Motor winding temp" 7 "speed limit (not used)" 6 "torque limit (not used)" 5 "AC current limit" 4 "power limit (not used)" 3 "Flux capability" 2 "Speed  capability" 1 "Torque capability" 0 "AC current capability" ;
+VAL_ 20 EDI_RA_SlipCtrlSts 3 "Fehler" 2 "regelt auf obere Grenze" 1 "regelt auf untere Grenze" 0 "regelt nicht" ;
+VAL_ 20 EDI_RA_CtlMode 7 "synchronize" 4 "torque control" 3 "decouple" 2 "fault (active short-cicruit)" 1 "fault (pwm off)" 6 "trq and slip ctrl incl actv dmp" 5 "speed control" 0 "standby" ;
+VAL_ 60 EDI_RA_TrqMinLimDerReason 26 "pcb temp" 25 "surface temp estd" 24 "dc cap diff temp estd" 23 "dc voltage limit request" 22 "dc power limit lut" 21 "dc power limit request" 20 "dc current limit" 19 "dc power limit" 18 "dc voltage limit" 17 "manual override" 16 "rotor temp dep speed limit" 15 "oil volume flow" 14 "coolant volume flow" 13 "ac busbar temp estd" 12 "dc busbar temp estd" 11 "dc cap temp estd" 10 "power switch temp estd" 9 "oil inlet temp estd" 8 "coolant inlet temp estd" 7 "winding temp estd" 6 "rotor temp estd" 5 "power switch temp" 4 "winding temp" 3 "Flux capability" 2 "Speed  capability" 1 "Torque capability" 0 "AC current capability" ;
+VAL_ 60 EDI_RA_TrqMaxLimDerReason 26 "pcb temp" 25 "surface temp estd" 24 "dc cap diff temp estd" 23 "dc voltage limit request" 22 "dc power limit lut" 21 "dc power limit request" 20 "dc current limit" 19 "dc power limit" 18 "dc voltage limit" 17 "manual override" 16 "rotor temp dep speed limit" 15 "oil volume flow" 14 "coolant volume flow" 13 "ac busbar temp estd" 12 "dc busbar temp estd" 11 "dc cap temp estd" 10 "power switch temp estd" 9 "oil inlet temp estd" 8 "coolant inlet temp estd" 7 "winding temp estd" 6 "rotor temp estd" 5 "power switch temp" 4 "winding temp" 3 "Flux capability" 2 "Speed  capability" 1 "Torque capability" 0 "AC current capability" ;
+

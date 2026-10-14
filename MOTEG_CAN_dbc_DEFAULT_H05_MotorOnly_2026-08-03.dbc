@@ -1,0 +1,88 @@
+VERSION ""
+
+
+BS_:
+
+BU_:
+
+
+BO_ 2566848528 TX_general_control_set: 8 Vector__XXX
+ SG_ Appl_Contr_Control : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566848784 TX_general_torque_speed_set: 8 Vector__XXX
+ SG_ Appl_Contr_VelocityRef : 32|32@1+ (1,-5000) [-5000|4.29496e+009] "rpm" Vector__XXX
+ SG_ Appl_Contr_TorqueRef : 0|32@1+ (0.01,-50) [-50|4.29496e+007] "Nm" Vector__XXX
+
+BO_ 2566849040 TX_general_position_set: 8 Vector__XXX
+ SG_ Appl_Contr_PositionRef : 0|32@1+ (1,-5000) [-5000|4.29496e+009] "mm" Vector__XXX
+
+BO_ 2566856719 RX_general_status_get: 8 Vector__XXX
+ SG_ DcLinkVoltage : 40|16@1+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ CurrentPhaseRms : 24|16@1+ (1,0) [0|65535] "A" Vector__XXX
+ SG_ MotorTemp : 16|8@1+ (1,-80) [-80|175] "°C" Vector__XXX
+ SG_ InverterTemp : 8|8@1+ (1,-80) [-80|175] "°C" Vector__XXX
+ SG_ Contr_State : 0|8@1+ (1,-4) [-4|3] "" Vector__XXX
+
+BO_ 2566856975 RX_general_protections_get: 8 Vector__XXX
+ SG_ Prot2_LuaScriptErroredOrTimedOut : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_MasterSlaveCANTimeout : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_ErrorTriggeredFromLuaScript : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_ErrorFOCLoadTooHigh : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_PrechargeProcedureFailed : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_SafetyMotorControlDisabled : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwarePhaseOvercurrent : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwareDcLinkOvervoltage : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwareDcLinkUndervoltage : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeOvertemperature : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CapacitorOvertemperature : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorOvertemperature : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentOffset : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CANCommandTimeout : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SystemSelfTestFailed : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentSumThresholdExceeded : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentMeasurementRangeError : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorFeedbackError : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SafetyUnrecoverableError : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SafetyRecoverableError : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_DynamicASCError : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CANCommunicationError : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_GatedriverDCDCError : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_DcLinkOvervoltageComparator : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_OvercurrentComparator : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_GatedriverError : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_HVInterlock : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorTempSensorFail : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CapacitorTempSensorFail : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeTempSensorFail : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeFault : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_LogicSupplyFault : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BusBarFault : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SystemInitializationError : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_VrefFaultCompanionChip : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_ApplicationErrorState : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorControlError : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_ErrorExtendedToProtections2 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566857231 RX_general_torque_speed_get: 8 Vector__XXX
+ SG_ Ctrl_act_speed : 16|16@1+ (1,-32767) [-32767|32768] "rpm" Vector__XXX
+ SG_ Ctrl_act_torque : 0|16@1+ (0.1,-3275) [-3275|3278.5] "Nm" Vector__XXX
+
+BO_ 2566834703 DM01: 22 Vector__XXX
+
+
+
+VAL_ 2566848528 Appl_Contr_Control
+ 1 "Run"
+ 2 "Recover from error"
+ 3 "Calibration"
+ 4 "Precharge done";
+
+VAL_ 2566856719 Contr_State
+ 0 "Undefined"
+ 1 "Precharge"
+ 2 "Initialization"
+ 3 "Self test"
+ 4 "Off"
+ 5 "Run"
+ 6 "Error"
+ 7 "Calibration";

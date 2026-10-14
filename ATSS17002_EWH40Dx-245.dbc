@@ -1,0 +1,87 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 692 HTR_OUT_1: 8 Vector__XXX
+ SG_ HTR_PWR_REQ_FLAG : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BUS_OFF_HTR : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HTR_PWR_AC : 15|8@0+ (40,0) [0|10160] "W" Vector__XXX
+ SG_ HTR_CURRENT : 23|8@0+ (0.2,0) [0|50] "A" Vector__XXX
+ SG_ HTR_W_IN_SNSR : 31|8@0+ (1,-40) [-40|214] "degC" Vector__XXX
+ SG_ HTR_W_OUT_SNSR : 39|8@0+ (1,-40) [-40|214] "degC" Vector__XXX
+ SG_ HTR_STAT : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 693 HTR_OUT_2: 8 Vector__XXX
+ SG_ IGBT_Q11_SNSR : 7|8@0+ (1,-40) [-40|150] "degC" Vector__XXX
+ SG_ IGBT_Q12_SNSR : 15|8@0+ (1,-40) [-40|150] "degC" Vector__XXX
+ SG_ IGBT_Q13_SNSR : 23|8@0+ (1,-40) [-40|150] "degC" Vector__XXX
+ SG_ IGBT_Q14_SNSR : 31|8@0+ (1,-40) [-40|150] "degC" Vector__XXX
+ SG_ BOARD_SNSR : 39|8@0+ (1,-40) [-40|150] "degC" Vector__XXX
+ SG_ HV_VOLT_DC : 47|8@0+ (2.5,0) [0|555] "V" Vector__XXX
+
+BO_ 972 Data_Set_1: 8 Vector__XXX
+ SG_ HTR_OUTPUT_REQ : 7|8@0+ (1,0) [0|80] "degC" Vector__XXX
+ SG_ HTR_PWR_LIMIT : 15|8@0+ (40,0) [0|10160] "W" Vector__XXX
+ SG_ ECU_MODE : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HTR_ENABLE : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+
+CM_ SG_ 692 HTR_PWR_REQ_FLAG "LV Power Keep Request Flag";
+CM_ SG_ 692 BUS_OFF_HTR "Bus off flag";
+CM_ SG_ 692 HTR_PWR_AC "Heater Power";
+CM_ SG_ 692 HTR_CURRENT "Heater Electric Current
+";
+CM_ SG_ 692 HTR_W_IN_SNSR "Heater Water Inlet Sensor";
+CM_ SG_ 692 HTR_W_OUT_SNSR "Heater Water Outlet Sensor";
+CM_ SG_ 692 HTR_STAT "Heater Status (see Technical Information document for bit field definition)";
+CM_ SG_ 693 IGBT_Q11_SNSR "IGBT Q11 Temperature Sensor";
+CM_ SG_ 693 IGBT_Q12_SNSR "IGBT Q12 Temperature Sensor";
+CM_ SG_ 693 IGBT_Q13_SNSR "IGBT Q13 Temperature Sensor";
+CM_ SG_ 693 IGBT_Q14_SNSR "IGBT Q14 Temperature Sensor";
+CM_ SG_ 693 BOARD_SNSR "Circuit Board Temperature Sensor";
+CM_ SG_ 693 HV_VOLT_DC "Heater Electric Voltage";
+CM_ SG_ 972 HTR_OUTPUT_REQ "Heater Output Request";
+CM_ SG_ 972 HTR_PWR_LIMIT "Heater Power Limit";
+CM_ SG_ 972 ECU_MODE "Power Status Signal";
+CM_ SG_ 972 HTR_ENABLE "Heater Enable/Disable";
+VAL_ 692 HTR_PWR_REQ_FLAG 0 "Not Requesting" 1 "Requesting" ;
+VAL_ 692 BUS_OFF_HTR 0 "Normal" 1 "Bus off" ;
+VAL_ 972 ECU_MODE 0 "0h (Send fixed value to E_HTR)
+Other values are reserved." ;
+VAL_ 972 HTR_ENABLE 0 "Heater Disable" 1 "Heater Enable" ;
+

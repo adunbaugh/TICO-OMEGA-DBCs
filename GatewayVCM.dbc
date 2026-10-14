@@ -1,0 +1,122 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: XCP VCM GTWY
+VAL_TABLE_ VTSig_TCSysStatus 2 "ESCOffTCOff" 1 "ESCOffTCOffPending" 0 "ESCOffTCOn" ;
+VAL_TABLE_ VTSig_PRND 3 "Drv" 2 "Ntrl" 1 "Rev" 0 "Park" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ CrsCtrlSetSpdRes : 0|2@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ CrsCtrlSetSpdDec : 0|2@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ CrsCtrlSetSpdInc : 0|2@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ CrsCtrlSetSpdOn : 0|2@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ DriveModeAct : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DriverRequestedMode : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ CompSpdReq2 : 0|14@0+ (1,0) [960|8640] "RPM" Vector__XXX
+ SG_ BATT_VOLT2 : 0|8@1+ (0.1,0) [0|25.5] "Volts" Vector__XXX
+ SG_ KeyStart2 : 0|4@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CompStat2 : 0|4@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ CompElecCurr2 : 0|8@1+ (0.2,0) [0|51] "Amps" Vector__XXX
+ SG_ CompElecPwrV2 : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CompSpdIncrReq2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompSpdV2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompElecPwr2 : 0|8@1+ (40,0) [0|10200] "Watts" Vector__XXX
+ SG_ CompSpd2 : 0|14@0+ (1,0) [0|16383] "RPM" Vector__XXX
+ SG_ CompElecCurrV2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompFltStat2 : 0|4@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ CompIGBTTemp2 : 0|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ CompIGBTTempV2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompHVInputV2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompBoardTempV2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CompBoardTemp2 : 0|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ CompHVInput2 : 0|8@1+ (4,0) [0|1020] "Volts" Vector__XXX
+ SG_ CellBalanceActive : 0|1@0+ (1,0) [0|1] "bool" Vector__XXX
+ SG_ OUTPUT1_AccPosCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT2_AccNegCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT3_Inv1PosCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT4_Inv1NegCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT5_Inv2PosCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT6_Inv2NegCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT7_Inv3PosCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ OUTPUT8_Inv3NegCntcr : 0|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+
+BO_ 768 XCP_2: 8 XCP
+
+BO_ 512 XCP_1: 8 XCP
+
+BO_ 622 Gateway_Status: 8 Vector__XXX
+ SG_ GatewayCANFault : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 382 EvSystem_Status2: 8 Vector__XXX
+ SG_ VehSpd : 8|16@1+ (0.01,0) [0|655.35] "kph" Vector__XXX
+ SG_ AccPos : 7|8@0+ (0.39,0) [0|99.45] "%" Vector__XXX
+
+BO_ 399 Vehicle_Request: 8 VCM
+ SG_ EPBApplyReq : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 383 Vehicle_Status: 8 GTWY
+ SG_ TCSysStatus : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AmbientTemp : 0|8@1+ (1,0) [0|70] "degC" Vector__XXX
+ SG_ DriverTemp : 8|8@1+ (1,0) [0|255] "degF" Vector__XXX
+ SG_ PassTemp : 16|8@1+ (1,0) [0|255] "degF" Vector__XXX
+ SG_ ACOnSw : 24|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ Defrost : 26|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ DefrostMax : 28|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ HVACOn : 30|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ HVACAuto : 32|1@1+ (1,0) [0|1] "boolean" Vector__XXX
+ SG_ CCSwStatus : 34|4@1+ (1,0) [0|15] "enum" Vector__XXX
+ SG_ ElecPrkBrkStatus : 38|2@1+ (1,0) [0|3] "enum" Vector__XXX
+
+BO_ 366 EvSystem_Status: 8 VCM
+ SG_ TrqSplit_RBias : 49|10@0+ (0.25,0) [0|255.75] "%" Vector__XXX
+ SG_ PRND : 0|2@1+ (1,0) [0|4] "gear" Vector__XXX
+ SG_ FaultLamp : 2|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ CCEnbl : 3|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ CCActv : 4|1@1+ (1,0) [0|1] "Bool" Vector__XXX
+ SG_ Power : 8|16@1+ (0.01,-200) [-200|455.35] "kW" Vector__XXX
+ SG_ BatteryTemp : 24|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ PwrElecTemp : 32|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ SOC : 40|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 366 PRND "Park=0, Reverse=1, Neutral=2, Drive=3";
+VAL_ 383 TCSysStatus 2 "ESCOffTCOff" 1 "ESCOffTCOffPending" 0 "ESCOffTCOn" ;
+VAL_ 383 CCSwStatus 0 "Indeterminate" 1 "No Activation" 2 "Resume" 3 "Set" 4 "SL/SW On/Off/GAP" 5 "Cruise On/Off" 6 "Cancel" 7 "Open/Short to Ground" 8 "Short to Power" 9 "Between Ranges" ;
+VAL_ 383 ElecPrkBrkStatus 0 "Released" 1 "Applied" 2 "Fault" ;
+VAL_ 366 PRND 3 "Drv" 2 "Ntrl" 1 "Rev" 0 "Park" ;
+

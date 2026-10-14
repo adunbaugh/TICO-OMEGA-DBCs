@@ -1,0 +1,1925 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2163179769 HED_J1939_Config: 8 Vector__XXX
+ SG_ HED_J1939_Config_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Button1_Left_LED m1 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button1_Center_LED m1 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button1_Right_LED m1 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button1_Between_LED m1 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler1 m1 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection1 m1 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED1 m1 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED1 m1 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED1 m1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED1 m1 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler1 m1 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button2_Left_LED m2 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button2_Center_LED m2 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button2_Right_LED m2 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button2_Between_LED m2 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler2 m2 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection2 m2 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED2 m2 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED2 m2 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED2 m2 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED2 m2 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler2 m2 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button3_Left_LED m3 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button3_Center_LED m3 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button3_Right_LED m3 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button3_Between_LED m3 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler3 m3 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection3 m3 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED3 m3 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED3 m3 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED3 m3 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED3 m3 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler3 m3 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button4_Left_LED m4 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button4_Center_LED m4 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button4_Right_LED m4 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button4_Between_LED m4 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler4 m4 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection4 m4 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED4 m4 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED4 m4 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED4 m4 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED4 m4 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler4 m4 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button5_Left_LED m5 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button5_Center_LED m5 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button5_Right_LED m5 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button5_Between_LED m5 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler5 m5 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection5 m5 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED5 m5 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED5 m5 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED5 m5 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED5 m5 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler5 m5 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button6_Left_LED m6 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button6_Center_LED m6 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button6_Right_LED m6 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button6_Between_LED m6 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler6 m6 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection6 m6 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED6 m6 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED6 m6 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED6 m6 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED6 m6 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler6 m6 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button7_Left_LED m7 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button7_Center_LED m7 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button7_Right_LED m7 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button7_Between_LED m7 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler7 m7 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection7 m7 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED7 m7 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED7 m7 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED7 m7 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED7 m7 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler7 m7 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button8_Left_LED m8 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button8_Center_LED m8 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button8_Right_LED m8 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button8_Between_LED m8 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler8 m8 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection8 m8 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED8 m8 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED8 m8 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED8 m8 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED8 m8 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler8 m8 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button9_Left_LED m9 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button9_Center_LED m9 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button9_Right_LED m9 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button9_Between_LED m9 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler9 m9 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection9 m9 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED9 m9 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED9 m9 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED9 m9 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED9 m9 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler9 m9 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button10_Left_LED m16 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button10_Center_LED m16 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button10_Right_LED m16 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button10_Between_LED m16 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler16 m16 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection16 m16 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED16 m16 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED16 m16 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED16 m16 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED16 m16 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler16 m16 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button11_Left_LED m17 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button11_Center_LED m17 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button11_Right_LED m17 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button11_Between_LED m17 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler17 m17 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection17 m17 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED17 m17 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED17 m17 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED17 m17 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED17 m17 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler17 m17 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button12_Left_LED m18 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button12_Center_LED m18 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button12_Right_LED m18 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button12_Between_LED m18 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler18 m18 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection18 m18 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED18 m18 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED18 m18 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED18 m18 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED18 m18 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler18 m18 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button13_Left_LED m19 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button13_Center_LED m19 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button13_Right_LED m19 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button13_Between_LED m19 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler19 m19 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection19 m19 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED19 m19 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED19 m19 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED19 m19 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED19 m19 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler19 m19 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button14_Left_LED m20 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button14_Center_LED m20 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button14_Right_LED m20 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button14_Between_LED m20 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler20 m20 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection20 m20 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED20 m20 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED20 m20 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED20 m20 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED20 m20 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler20 m20 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button15_Left_LED m21 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button15_Center_LED m21 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button15_Right_LED m21 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button15_Between_LED m21 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler21 m21 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection21 m21 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED21 m21 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED21 m21 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED21 m21 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED21 m21 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler21 m21 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button16_Left_LED m22 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button16_Center_LED m22 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button16_Right_LED m22 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button16_Between_LED m22 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler22 m22 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection22 m22 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED22 m22 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED22 m22 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED22 m22 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED22 m22 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler22 m22 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button17_Left_LED m23 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button17_Center_LED m23 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button17_Right_LED m23 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button17_Between_LED m23 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler23 m23 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection23 m23 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED23 m23 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED23 m23 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED23 m23 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED23 m23 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler23 m23 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button18_Left_LED m24 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button18_Center_LED m24 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button18_Right_LED m24 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button18_Between_LED m24 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler24 m24 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection24 m24 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED24 m24 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED24 m24 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED24 m24 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED24 m24 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler24 m24 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button19_Left_LED m25 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button19_Center_LED m25 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button19_Right_LED m25 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button19_Between_LED m25 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler25 m25 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection25 m25 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED25 m25 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED25 m25 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED25 m25 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED25 m25 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler25 m25 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Button20_Left_LED m32 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button20_Center_LED m32 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button20_Right_LED m32 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Button20_Between_LED m32 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte3_Filler32 m32 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_Button_Selection32 m32 : 32|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED32 m32 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED32 m32 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED32 m32 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED32 m32 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte7_Filler32 m32 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ LED_Intensity m128 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Backlight_Intensity m128 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler128 m128 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler128 m128 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler128 m128 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte6_Filler m128 : 48|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte7_Filler128 m128 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ New_Node_ID m224 : 8|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte2_Filler224 m224 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler224 m224 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Source_Address m224 : 32|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte5_Filler224 m224 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6224 m224 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7224 m224 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PGN225 m225 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte3_Filler225 m225 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler225 m225 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler225 m225 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6225 m225 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7225 m225 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority226 m226 : 8|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Byte2_Filler226 m226 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler226 m226 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler226 m226 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler226 m226 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6226 m226 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7226 m226 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tx_Rate227 m227 : 8|8@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Tx_On_Change227 m227 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler227 m227 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler227 m227 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler227 m227 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6227 m227 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7227 m227 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PGN228 m228 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte3_Filler228 m228 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler228 m228 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler228 m228 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6228 m228 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7228 m228 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority229 m229 : 8|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Byte2_Filler229 m229 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler229 m229 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler229 m229 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler229 m229 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6229 m229 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7229 m229 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tx_Rate230 m230 : 8|8@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Tx_On_Change230 m230 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Analog_Tx_Enable m230 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte4_Filler230 m230 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler230 m230 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6230 m230 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7230 m230 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Input_Group m231 : 8|8@1+ (1,0) [0|146] "" Vector__XXX
+ SG_ Input1_Type m231 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input2_Type m231 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input3_Type m231 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input4_Type m231 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input5_Type m231 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input6_Type m231 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input7_Type m231 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input8_Type m231 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Config_Byte6231 m231 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7231 m231 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Flash_On_Power_Up m232 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Flash_Init_Timer m232 : 16|16@1+ (10,0) [0|655350] "ms" Vector__XXX
+ SG_ Device_Info_On_Power_Up m232 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte5_Filler232 m232 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6232 m232 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7232 m232 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority233 m233 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PGN233 m233 : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Heartbeat_Timeout m233 : 32|16@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Config_Byte6233 m233 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7233 m233 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte1_Filler m234 : 8|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte2_Filler234 m234 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler234 m234 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler234 m234 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler234 m234 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6234 m234 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7234 m234 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CAN_Line235 m235 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Baud_Rate m235 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler235 m235 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler235 m235 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler235 m235 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6235 m235 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7235 m235 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Group236 m236 : 8|8@1+ (1,0) [0|145] "" Vector__XXX
+ SG_ Output1_Type m236 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output2_Type m236 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output3_Type m236 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output4_Type m236 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output5_Type m236 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output6_Type m236 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output7_Type m236 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output8_Type m236 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Config_Byte6236 m236 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7236 m236 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Group237 m237 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output01237 m237 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output02237 m237 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output03237 m237 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output04237 m237 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output05237 m237 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output06237 m237 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output07237 m237 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output08237 m237 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output09237 m237 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output10237 m237 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output11237 m237 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output12237 m237 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output13 m237 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output14 m237 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output15 m237 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output16 m237 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output17 m237 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output18 m237 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output19 m237 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output20 m237 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output21 m237 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output22 m237 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output23 m237 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output24 m237 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OutputGroup m238 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output1 m238 : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Output2 m238 : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Output3 m238 : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Output_Group239 m239 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output01239 m239 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output02239 m239 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output03239 m239 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output04239 m239 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output05239 m239 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output06239 m239 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output07239 m239 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output08239 m239 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output09239 m239 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output10239 m239 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output11239 m239 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output12239 m239 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ PGN240 m240 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte3_Filler240 m240 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler240 m240 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler240 m240 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6240 m240 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7240 m240 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority241 m241 : 8|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Byte2_Filler241 m241 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler241 m241 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler241 m241 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler241 m241 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6241 m241 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7241 m241 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tx_Rate242 m242 : 8|8@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Tx_On_Change242 m242 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler242 m242 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler242 m242 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler242 m242 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6242 m242 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7242 m242 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Group243 m243 : 8|8@1+ (1,0) [0|136] "" Vector__XXX
+ SG_ Output_01 m243 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_02 m243 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_03 m243 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_04 m243 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_05 m243 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_06 m243 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_07 m243 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_08 m243 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_09 m243 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_10 m243 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_11 m243 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_12 m243 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_13 m243 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_14 m243 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_15 m243 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_16 m243 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Config_Byte6243 m243 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7243 m243 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Number244 m244 : 8|8@1+ (1,0) [1|144] "" Vector__XXX
+ SG_ Freq_Or_Duty_Cycle m244 : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SlewRateOn m244 : 32|8@1+ (10,0) [0|2550] "" Vector__XXX
+ SG_ SlewRateOff m244 : 40|8@1+ (10,0) [0|2550] "" Vector__XXX
+ SG_ Config_Byte6244 m244 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7244 m244 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Number245 m245 : 8|8@1+ (1,0) [1|144] "" Vector__XXX
+ SG_ K0_Gain m245 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ K1_Gain m245 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Offset m245 : 32|8@1+ (0.1,0) [0|25.5] "" Vector__XXX
+ SG_ Byte5_Filler245 m245 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6245 m245 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7245 m245 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Bank1_Requested m246 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Bank2_Requested m246 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler246 m246 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Response_Type m246 : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Byte5_Filler246 m246 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6246 m246 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7246 m246 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PGN247 m247 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte3_Filler247 m247 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler247 m247 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler247 m247 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6247 m247 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7247 m247 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority248 m248 : 8|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Byte2_Filler248 m248 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler248 m248 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler248 m248 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler248 m248 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6248 m248 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7248 m248 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tx_Rate249 m249 : 8|8@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Byte2_Filler249 m249 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler249 m249 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler249 m249 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler249 m249 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6249 m249 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7249 m249 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PGN250 m250 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte3_Filler250 m250 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler250 m250 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler250 m250 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6250 m250 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7250 m250 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Priority251 m251 : 8|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Byte2_Filler251 m251 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler251 m251 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler251 m251 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler251 m251 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6251 m251 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7251 m251 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Tx_Rate252 m252 : 8|8@1+ (10,0) [0|2550] "ms" Vector__XXX
+ SG_ Byte2_Filler252 m252 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler252 m252 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler252 m252 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler252 m252 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6252 m252 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7252 m252 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CAN_Line253 m253 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Enable_CAN_Link m253 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3_Filler253 m253 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4_Filler253 m253 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5_Filler253 m253 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6253 m253 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7253 m253 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte1 m254 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte2 m254 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte3 m254 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte4 m254 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte5 m254 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte6 m254 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte7 m254 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2163147001 HED_J1939_Config_Alt_Node_ID: 8 Vector__XXX
+ SG_ HED_J1939_Config_Alt_Node_ID_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Node_ID m224 : 8|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte2_Filler m224 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler m224 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Source_Address m224 : 32|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte5_Filler m224 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6 m224 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7 m224 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2163179520 HED_J1939_Config_Alt_Config_SA: 8 Vector__XXX
+ SG_ HED_J1939_Config_Alt_Config_SA_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Node_ID m224 : 8|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte2_Filler m224 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3_Filler m224 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Source_Address m224 : 32|8@1+ (1,0) [0|251] "" Vector__XXX
+ SG_ Byte5_Filler m224 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Config_Byte6 m224 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7 m224 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566892160 HED_J1939_Test_Heartbeat: 8 Vector__XXX
+ SG_ Byte0 : 0|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte1 : 8|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte2 : 16|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte3 : 24|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte4 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte5 : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte6 : 48|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte7 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+
+BO_ 2179956985 HED_J1939_Config_Response: 8 Vector__XXX
+ SG_ HED_J1939_Config_Response_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Input_Group m231 : 8|8@1+ (1,0) [0|18] "" Vector__XXX
+ SG_ Input1_Type m231 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input2_Type m231 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input3_Type m231 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input4_Type m231 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input5_Type m231 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input6_Type m231 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input7_Type m231 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Input8_Type m231 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Config_Byte6231 m231 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7231 m231 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Firmware_Version_Major m234 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Firmware_Version_Minor m234 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ J1939_App_Version_Major m234 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ J1939_App_Version_Minor m234 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ J1939_Spec_Version m234 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Byte6_Filler m234 : 48|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte7_Filler m234 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Output_Group236 m236 : 8|8@1+ (1,0) [0|17] "" Vector__XXX
+ SG_ Output1_Type m236 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output2_Type m236 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output3_Type m236 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output4_Type m236 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output5_Type m236 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output6_Type m236 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output7_Type m236 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output8_Type m236 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Config_Byte6236 m236 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7236 m236 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Output_Group243 m243 : 8|8@1+ (1,0) [0|8] "" Vector__XXX
+ SG_ Output_01 m243 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_02 m243 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_03 m243 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_04 m243 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_05 m243 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_06 m243 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_07 m243 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_08 m243 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_09 m243 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_10 m243 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_11 m243 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_12 m243 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_13 m243 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_14 m243 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_15 m243 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Output_16 m243 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Config_Byte6243 m243 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Config_Byte7243 m243 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566849152 Keypad_Button_State: 8 Vector__XXX
+ SG_ Button01 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button02 : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button03 : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button04 : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button05 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button06 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button07 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button08 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button09 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button10 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button11 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button12 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button13 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button14 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button15 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button16 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button17 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button18 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button19 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Button20 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Byte5_Filler : 40|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte6_Filler : 48|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Byte7_Filler : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+
+BO_ 2566849408 Input_State: 8 Vector__XXX
+ SG_ Input_State_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Input001 m0 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input002 m0 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input003 m0 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input004 m0 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input005 m0 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input006 m0 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input007 m0 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input008 m0 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input009 m0 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input010 m0 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input011 m0 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input012 m0 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input013 m0 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input014 m0 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input015 m0 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input016 m0 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input017 m0 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input018 m0 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input019 m0 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input020 m0 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input021 m0 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input022 m0 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input023 m0 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input024 m0 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input025 m0 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input026 m0 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input027 m0 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input028 m0 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input029 m1 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input030 m1 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input031 m1 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input032 m1 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input033 m1 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input034 m1 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input035 m1 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input036 m1 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input037 m1 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input038 m1 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input039 m1 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input040 m1 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input041 m1 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input042 m1 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input043 m1 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input044 m1 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input045 m1 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input046 m1 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input047 m1 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input048 m1 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input049 m1 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input050 m1 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input051 m1 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input052 m1 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input053 m1 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input054 m1 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input055 m1 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input056 m1 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input057 m2 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input058 m2 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input059 m2 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input060 m2 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input061 m2 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input062 m2 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input063 m2 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input064 m2 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input065 m2 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input066 m2 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input067 m2 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input068 m2 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input069 m2 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input070 m2 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input071 m2 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input072 m2 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input073 m2 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input074 m2 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input075 m2 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input076 m2 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input077 m2 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input078 m2 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input079 m2 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input080 m2 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input081 m2 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input082 m2 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input083 m2 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input084 m2 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input085 m3 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input086 m3 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input087 m3 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input088 m3 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input089 m3 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input090 m3 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input091 m3 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input092 m3 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input093 m3 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input094 m3 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input095 m3 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input096 m3 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input097 m3 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input098 m3 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input099 m3 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input100 m3 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input101 m3 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input102 m3 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input103 m3 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input104 m3 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input105 m3 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input106 m3 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input107 m3 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input108 m3 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input109 m3 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input110 m3 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input111 m3 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input112 m3 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input113 m4 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input114 m4 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input115 m4 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input116 m4 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input117 m4 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input118 m4 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input119 m4 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input120 m4 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input121 m4 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input122 m4 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input123 m4 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input124 m4 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input125 m4 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input126 m4 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input127 m4 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input128 m4 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input129 m4 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input130 m4 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input131 m4 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input132 m4 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input133 m4 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input134 m4 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input135 m4 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input136 m4 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input137 m4 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input138 m4 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input139 m4 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input140 m4 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input141 m5 : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input142 m5 : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input143 m5 : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input144 m5 : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input145 m5 : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input146 m5 : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input147 m5 : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input148 m5 : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input149 m5 : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input150 m5 : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input151 m5 : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input152 m5 : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input153 m5 : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input154 m5 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input155 m5 : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input156 m5 : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input157 m5 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input158 m5 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input159 m5 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input160 m5 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input161 m5 : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input162 m5 : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input163 m5 : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input164 m5 : 54|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input165 m5 : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input166 m5 : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input167 m5 : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input168 m5 : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Input00 m16 : 8|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ Input01 m16 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input02 m16 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler16 m16 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input03 m17 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input04 m17 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input05 m17 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler17 m17 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input06 m18 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input07 m18 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input08 m18 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler18 m18 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input09 m19 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input10 m19 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input11 m19 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler19 m19 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input12 m20 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input13 m20 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input14 m20 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler20 m20 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input15 m21 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input16 m21 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input17 m21 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler21 m21 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Input18 m22 : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input19 m22 : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Input20 m22 : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Byte7_Filler22 m22 : 56|8@1+ (1,0) [255|255] "" Vector__XXX
+
+BO_ 2566849664 Output_Diagnostic: 8 Vector__XXX
+ SG_ Output_Diagnostic_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Output01 m0 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output02 m0 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output03 m0 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output04 m0 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output05 m0 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output06 m0 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output07 m0 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output08 m0 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output09 m0 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output10 m0 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output11 m0 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output12 m0 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output13 m0 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output14 m0 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output15 m1 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output16 m1 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output17 m1 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output18 m1 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output19 m1 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output20 m1 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output21 m1 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output22 m1 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output23 m1 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output24 m1 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output25 m1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output26 m1 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output27 m1 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output28 m1 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output29 m2 : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output30 m2 : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output31 m2 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output32 m2 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output33 m2 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output34 m2 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output35 m2 : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output36 m2 : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output37 m2 : 40|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output38 m2 : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output39 m2 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output40 m2 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output41 m2 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Output42 m2 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2566849920 LED_Status_Query_Response: 8 Vector__XXX
+ SG_ LED_Status_Query_Response_Mux M : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LED_Group m0 : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LED00 m0 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED01 m0 : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED02 m0 : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED03 m0 : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED04 m0 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED05 m0 : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED06 m0 : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED07 m0 : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED08 m0 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED09 m0 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED10 m0 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED11 m0 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED12 m0 : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED13 m0 : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED14 m0 : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED15 m0 : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED16 m0 : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED17 m0 : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED18 m0 : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED19 m0 : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED20 m0 : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED21 m0 : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED22 m0 : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED23 m0 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED24 m0 : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED25 m0 : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED26 m0 : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED27 m0 : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED28 m0 : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED29 m0 : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED30 m0 : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED31 m0 : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED32 m0 : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED33 m0 : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED34 m0 : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED35 m0 : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED36 m0 : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED37 m0 : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED38 m0 : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED39 m0 : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED40 m0 : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED41 m0 : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED42 m0 : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED43 m0 : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED44 m0 : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED45 m0 : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED46 m0 : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED47 m0 : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED48 m0 : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED49 m0 : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED50 m0 : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED51 m0 : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED52 m0 : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED53 m0 : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED54 m0 : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED55 m0 : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LED_Bank m1 : 8|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Left_LED m1 : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Center_LED m1 : 20|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Right_LED m1 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Between_LED m1 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Byte4_Filler m1 : 32|8@1+ (1,0) [255|255] "" Vector__XXX
+ SG_ Other_LED_Bank m1 : 40|8@1+ (1,0) [0|32] "" Vector__XXX
+ SG_ Other_Left_LED m1 : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Center_LED m1 : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Right_LED m1 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Other_Between_LED m1 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2566850176 Output_Current: 8 Vector__XXX
+ SG_ Output_Current_Mux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Output1_Current m0 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output2_Current m0 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output3_Current m0 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output4_Current m1 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output5_Current m1 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output6_Current m1 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output7_Current m2 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output8_Current m2 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output9_Current m2 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output10_Current m3 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output11_Current m3 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output12_Current m3 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output13_Current m4 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output14_Current m4 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output15_Current m4 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output16_Current m5 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output17_Current m5 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output18_Current m5 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output19_Current m6 : 8|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output20_Current m6 : 24|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+ SG_ Output21_Current m6 : 40|16@1+ (1,0) [0|65535] "mA" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4e+38 3.4e+38;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BusType" "CAN";
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler1 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler1 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler2 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler2 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler3 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler3 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler4 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler4 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler5 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler5 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler6 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler6 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler7 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler7 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler8 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler8 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler9 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler9 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler16 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler16 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler17 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler17 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler18 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler18 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler19 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler19 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler20 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler20 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler21 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler21 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler22 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler22 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler23 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler23 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler24 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler24 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler25 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler25 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler32 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler32 255;
+BA_ "GenSigStartValue" SG_ 2163179769 LED_Intensity 254;
+BA_ "GenSigStartValue" SG_ 2163179769 Backlight_Intensity 254;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler128 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler128 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler128 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte6_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte7_Filler128 255;
+BA_ "GenSigStartValue" SG_ 2163179769 New_Node_ID 128;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler224 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler224 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Source_Address 249;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler224 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6224 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7224 170;
+BA_ "GenSigStartValue" SG_ 2163179769 PGN225 65282;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler225 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler225 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler225 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6225 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7225 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority226 24;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler226 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler226 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler226 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler226 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6226 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7226 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_Rate227 10;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_On_Change227 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler227 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler227 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler227 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6227 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7227 170;
+BA_ "GenSigStartValue" SG_ 2163179769 PGN228 65283;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler228 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler228 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler228 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6228 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7228 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority229 24;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler229 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler229 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler229 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler229 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6229 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7229 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_Rate230 10;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_On_Change230 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Analog_Tx_Enable 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler230 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler230 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6230 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7230 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Input1_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input2_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input3_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input4_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input5_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input6_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input7_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Input8_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6231 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7231 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Flash_On_Power_Up 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Flash_Init_Timer 100;
+BA_ "GenSigStartValue" SG_ 2163179769 Device_Info_On_Power_Up 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler232 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6232 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7232 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority233 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Heartbeat_Timeout 25;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6233 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7233 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte1_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler234 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler234 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler234 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler234 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6234 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7234 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Baud_Rate 6;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler235 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler235 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler235 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6235 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7235 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Output1_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output2_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output3_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output4_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output5_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output6_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output7_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Output8_Type 15;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6236 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7236 170;
+BA_ "GenSigStartValue" SG_ 2163179769 PGN240 65284;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler240 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler240 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler240 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6240 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7240 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority241 24;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler241 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler241 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler241 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler241 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6241 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7241 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_Rate242 50;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_On_Change242 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler242 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler242 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler242 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6242 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7242 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_01 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_02 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_03 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_04 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_05 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_06 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_07 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_08 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_09 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_10 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_11 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_12 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_13 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_14 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_15 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_16 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6243 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7243 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_Number244 1;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6244 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7244 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Output_Number245 1;
+BA_ "GenSigStartValue" SG_ 2163179769 K0_Gain 100;
+BA_ "GenSigStartValue" SG_ 2163179769 K1_Gain 10;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler245 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6245 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7245 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Bank2_Requested 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler246 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler246 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6246 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7246 170;
+BA_ "GenSigStartValue" SG_ 2163179769 PGN247 65285;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler247 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler247 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler247 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6247 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7247 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority248 24;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler248 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler248 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler248 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler248 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6248 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7248 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_Rate249 100;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler249 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler249 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler249 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler249 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6249 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7249 170;
+BA_ "GenSigStartValue" SG_ 2163179769 PGN250 65286;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler250 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler250 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler250 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6250 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7250 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Priority251 24;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler251 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler251 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler251 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler251 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6251 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7251 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Tx_Rate252 100;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte2_Filler252 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler252 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler252 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler252 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6252 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7252 170;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte3_Filler253 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte4_Filler253 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Byte5_Filler253 255;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte6253 85;
+BA_ "GenSigStartValue" SG_ 2163179769 Config_Byte7253 170;
+BA_ "GenSigStartValue" SG_ 2163147001 New_Node_ID 128;
+BA_ "GenSigStartValue" SG_ 2163147001 Byte2_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163147001 Byte3_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163147001 Config_Source_Address 249;
+BA_ "GenSigStartValue" SG_ 2163147001 Byte5_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163147001 Config_Byte6 85;
+BA_ "GenSigStartValue" SG_ 2163147001 Config_Byte7 170;
+BA_ "GenSigStartValue" SG_ 2163179520 New_Node_ID 128;
+BA_ "GenSigStartValue" SG_ 2163179520 Byte2_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163179520 Byte3_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163179520 Config_Source_Address 249;
+BA_ "GenSigStartValue" SG_ 2163179520 Byte5_Filler 255;
+BA_ "GenSigStartValue" SG_ 2163179520 Config_Byte6 85;
+BA_ "GenSigStartValue" SG_ 2163179520 Config_Byte7 170;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte0 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte1 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte2 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte3 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte4 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte5 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte6 255;
+BA_ "GenSigStartValue" SG_ 2566892160 Byte7 255;
+BA_ "GenSigStartValue" SG_ 2179956985 Byte6_Filler 255;
+BA_ "GenSigStartValue" SG_ 2179956985 Byte7_Filler 255;
+BA_ "GenSigStartValue" SG_ 2566849152 Byte5_Filler 255;
+BA_ "GenSigStartValue" SG_ 2566849152 Byte6_Filler 255;
+BA_ "GenSigStartValue" SG_ 2566849152 Byte7_Filler 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler16 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler17 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler18 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler19 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler20 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler21 255;
+BA_ "GenSigStartValue" SG_ 2566849408 Byte7_Filler22 255;
+BA_ "GenSigStartValue" SG_ 2566849920 Byte4_Filler 255;
+VAL_ 2163179769 HED_J1939_Config_Mux 1 "Button1LEDControl" 2 "Button2LEDControl" 3 "Button3LEDControl" 4 "Button4LEDControl" 5 "Button5LEDControl" 6 "Button6LEDControl" 7 "Button7LEDControl" 8 "Button8LEDControl" 9 "Button9LEDControl" 16 "Button10LEDControl" 17 "Button11LEDControl" 18 "Button12LEDControl" 19 "Button13LEDControl" 20 "Button14LEDControl" 21 "Button15LEDControl" 22 "Button16LEDControl" 23 "Button17LEDControl" 24 "Button18LEDControl" 25 "Button19LEDControl" 32 "Button20LEDControl" 128 "BacklightLEDIntensity" 224 "DeviceNodeIDChange" 225 "ButtonTransmitIDChange" 226 "ButtonTransmitPriorityChange" 227 "ButtonTransmitRateEventChange" 228 "InputTransmitIDChange" 229 "InputTransmitPriorityChange" 230 "InputTransmitRateEventChange" 231 "InputTypeConfiguration" 232 "InitializationConfiguration" 233 "HeartbeatConfiguration" 234 "DeviceVersionRequest" 235 "CANBaudRateConfiguration" 236 "OutputTypeConfiguration" 237 "DigitalOutputCommand" 238 "AnalogOutputCommand" 239 "DigitalOutputFlash" 240 "OutputDiagnosticID" 241 "OutputDiagnosticPriority" ;
+VAL_ 2163179769 Button1_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button1_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button1_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button1_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED1 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED1 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED1 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED1 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button2_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button2_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button2_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button2_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED2 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED2 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED2 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED2 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button3_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button3_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button3_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button3_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED3 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED3 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED3 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED3 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button4_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button4_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button4_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button4_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED4 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED4 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED4 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED4 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button5_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button5_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button5_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button5_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED5 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED5 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED5 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED5 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button6_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button6_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button6_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button6_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED6 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED6 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED6 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED6 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button7_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button7_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button7_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button7_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED7 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED7 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED7 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED7 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button8_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button8_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button8_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button8_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED8 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED8 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED8 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED8 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button9_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button9_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button9_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button9_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED9 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED9 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED9 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED9 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button10_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button10_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button10_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button10_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED16 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED16 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED16 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED16 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button11_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button11_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button11_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button11_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED17 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED17 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED17 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED17 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button12_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button12_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button12_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button12_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED18 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED18 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED18 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED18 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button13_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button13_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button13_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button13_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED19 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED19 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED19 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED19 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button14_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button14_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button14_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button14_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED20 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED20 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED20 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED20 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button15_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button15_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button15_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button15_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED21 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED21 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED21 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED21 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button16_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button16_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button16_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button16_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED22 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED22 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED22 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED22 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button17_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button17_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button17_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button17_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED23 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED23 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED23 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED23 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button18_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button18_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button18_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button18_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED24 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED24 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED24 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED24 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button19_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button19_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button19_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button19_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED25 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED25 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED25 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED25 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button20_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button20_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button20_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Button20_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Left_LED32 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Center_LED32 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Right_LED32 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Other_Between_LED32 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 LED_Intensity 255 "No Change" ;
+VAL_ 2163179769 Backlight_Intensity 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6224 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7224 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6225 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7225 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority226 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" ;
+VAL_ 2163179769 Config_Byte6226 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7226 170 "Byte7 Valid" ;
+VAL_ 2163179769 Tx_Rate227 255 "No Change" ;
+VAL_ 2163179769 Tx_On_Change227 0 "At Rate" 1 "On Change" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6227 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7227 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6228 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7228 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority229 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" ;
+VAL_ 2163179769 Config_Byte6229 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7229 170 "Byte7 Valid" ;
+VAL_ 2163179769 Tx_Rate230 255 "No Change" ;
+VAL_ 2163179769 Tx_On_Change230 0 "At Rate" 1 "On Change" 255 "No Change" ;
+VAL_ 2163179769 Analog_Tx_Enable 0 "Disabled" 1 "Enabled" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6230 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7230 170 "Byte7 Valid" ;
+VAL_ 2163179769 Input1_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input2_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input3_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input4_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input5_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input6_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input7_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Input8_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Config_Byte6231 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7231 170 "Byte7 Valid" ;
+VAL_ 2163179769 Flash_On_Power_Up 0 "Disabled" 1 "Enabled" 255 "No Change" ;
+VAL_ 2163179769 Device_Info_On_Power_Up 0 "Disabled" 1 "Enabled" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6232 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7232 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority233 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" 255 "Disabled" ;
+VAL_ 2163179769 Config_Byte6233 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7233 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6234 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7234 170 "Byte7 Valid" ;
+VAL_ 2163179769 CAN_Line235 0 "No Change" 1 "CAN 1" 2 "CAN 2" 3 "CAN 3" 255 "No Change" ;
+VAL_ 2163179769 Baud_Rate 0 "No Change" 2 "20kbps" 3 "50kbps" 4 "100kbps" 5 "125kbps" 6 "250kbps" 7 "500kbps" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6235 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7235 170 "Byte7 Valid" ;
+VAL_ 2163179769 Output1_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output2_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output3_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output4_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output5_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output6_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output7_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Output8_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2163179769 Config_Byte6236 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7236 170 "Byte7 Valid" ;
+VAL_ 2163179769 Output_Group237 255 "No Change" ;
+VAL_ 2163179769 Output01237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output02237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output03237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output04237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output05237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output06237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output07237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output08237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output09237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output10237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output11237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output12237 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output13 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output14 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output15 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output16 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output17 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output18 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output19 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output20 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output21 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output22 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output23 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 Output24 0 "Off" 1 "On" 3 "No Change" ;
+VAL_ 2163179769 OutputGroup 255 "No Change" ;
+VAL_ 2163179769 Output_Group239 255 "No Change" ;
+VAL_ 2163179769 Output01239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output02239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output03239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output04239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output05239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output06239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output07239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output08239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output09239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output10239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output11239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Output12239 0 "No Flash" 1 "Flash Slow (1/2Hz)" 2 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2163179769 Config_Byte6240 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7240 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority241 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" ;
+VAL_ 2163179769 Config_Byte6241 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7241 170 "Byte7 Valid" ;
+VAL_ 2163179769 Tx_Rate242 255 "No Change" ;
+VAL_ 2163179769 Tx_On_Change242 0 "At Rate" 1 "On Change" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6242 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7242 170 "Byte7 Valid" ;
+VAL_ 2163179769 Output_01 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_02 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_03 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_04 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_05 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_06 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_07 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_08 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_09 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_10 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_11 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_12 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_13 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_14 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_15 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Output_16 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2163179769 Config_Byte6243 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7243 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6244 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7244 170 "Byte7 Valid" ;
+VAL_ 2163179769 K0_Gain 255 "No Change" ;
+VAL_ 2163179769 K1_Gain 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6245 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7245 170 "Byte7 Valid" ;
+VAL_ 2163179769 Bank1_Requested 0 "All" 255 "None" ;
+VAL_ 2163179769 Bank2_Requested 0 "All" 255 "None" ;
+VAL_ 2163179769 Response_Type 0 "Simple" 1 "Verbose" ;
+VAL_ 2163179769 Config_Byte6246 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7246 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6247 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7247 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority248 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" ;
+VAL_ 2163179769 Config_Byte6248 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7248 170 "Byte7 Valid" ;
+VAL_ 2163179769 Tx_Rate249 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6249 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7249 170 "Byte7 Valid" ;
+VAL_ 2163179769 Config_Byte6250 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7250 170 "Byte7 Valid" ;
+VAL_ 2163179769 Priority251 0 "Priority 0" 4 "Priority 1" 8 "Priority 2" 12 "Priority 3" 16 "Priority 4" 20 "Priority 5" 24 "Priority 6" 28 "Priority 7" ;
+VAL_ 2163179769 Config_Byte6251 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7251 170 "Byte7 Valid" ;
+VAL_ 2163179769 Tx_Rate252 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6252 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7252 170 "Byte7 Valid" ;
+VAL_ 2163179769 CAN_Line253 0 "No Change" 1 "CAN 1" 2 "CAN 2" 3 "CAN 3" 255 "No Change" ;
+VAL_ 2163179769 Enable_CAN_Link 0 "Disabled" 1 "Enabled" 255 "No Change" ;
+VAL_ 2163179769 Config_Byte6253 85 "Byte6 Valid" ;
+VAL_ 2163179769 Config_Byte7253 170 "Byte7 Valid" ;
+VAL_ 2163147001 HED_J1939_Config_Alt_Node_ID_Mux 224 "DeviceNodeIDChange" ;
+VAL_ 2163147001 Config_Byte6 85 "Byte6 Valid" ;
+VAL_ 2163147001 Config_Byte7 170 "Byte7 Valid" ;
+VAL_ 2163179520 HED_J1939_Config_Alt_Config_SA_Mux 224 "DeviceNodeIDChange" ;
+VAL_ 2163179520 Config_Byte6 85 "Byte6 Valid" ;
+VAL_ 2163179520 Config_Byte7 170 "Byte7 Valid" ;
+VAL_ 2566892160 Byte0 255 "No Change" ;
+VAL_ 2566892160 Byte1 255 "No Change" ;
+VAL_ 2566892160 Byte2 255 "No Change" ;
+VAL_ 2566892160 Byte3 255 "No Change" ;
+VAL_ 2566892160 Byte4 255 "No Change" ;
+VAL_ 2566892160 Byte5 255 "No Change" ;
+VAL_ 2566892160 Byte6 255 "No Change" ;
+VAL_ 2566892160 Byte7 255 "No Change" ;
+VAL_ 2179956985 HED_J1939_Config_Response_Mux 231 "InputTypeConfiguration" 234 "DeviceVersion" 236 "OutputTypeConfiguration" 243 "OutputDiagnosticEnable" ;
+VAL_ 2179956985 Input1_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input2_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input3_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input4_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input5_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input6_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input7_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Input8_Type 0 "STB" 1 "STG" 2 "VTD" 3 "RTD" 4 "FREQ" 5 "PWM" 6 "Counter" 7 "Encoder" 8 "CTD" 9 "4-20mA" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Config_Byte6231 85 "Byte6 Valid" ;
+VAL_ 2179956985 Config_Byte7231 170 "Byte7 Valid" ;
+VAL_ 2179956985 Output1_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output2_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output3_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output4_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output5_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output6_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output7_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Output8_Type 0 "Digital" 1 "PWM" 2 "CC" 3 "Single Servo" 4 "Double Servo" 5 "FREQ" 6 "CC Single Servo" 7 "CC Double Servo" 8 "PVG" 14 "Disabled" 15 "No Change" ;
+VAL_ 2179956985 Config_Byte6236 85 "Byte6 Valid" ;
+VAL_ 2179956985 Config_Byte7236 170 "Byte7 Valid" ;
+VAL_ 2179956985 Output_01 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_02 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_03 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_04 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_05 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_06 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_07 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_08 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_09 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_10 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_11 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_12 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_13 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_14 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_15 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Output_16 0 "Disabled" 1 "Enabled" 3 "No Change" ;
+VAL_ 2179956985 Config_Byte6243 85 "Byte6 Valid" ;
+VAL_ 2179956985 Config_Byte7243 170 "Byte7 Valid" ;
+VAL_ 2566849152 Button01 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button02 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button03 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button04 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button05 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button06 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button07 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button08 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button09 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button10 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button11 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button12 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button13 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button14 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button15 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button16 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button17 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button18 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button19 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849152 Button20 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input_State_Mux 0 "InputGroup0" 1 "InputGroup1" 2 "InputGroup2" 3 "InputGroup3" 4 "InputGroup4" 5 "InputGroup5" 16 "InputGroup10" 17 "InputGroup11" 18 "InputGroup12" 19 "InputGroup13" 20 "InputGroup14" 21 "InputGroup15" 22 "InputGroup16" ;
+VAL_ 2566849408 Input001 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input002 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input003 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input004 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input005 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input006 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input007 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input008 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input009 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input010 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input011 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input012 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input013 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input014 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input015 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input016 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input017 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input018 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input019 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input020 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input021 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input022 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input023 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input024 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input025 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input026 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input027 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input028 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input029 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input030 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input031 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input032 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input033 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input034 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input035 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input036 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input037 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input038 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input039 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input040 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input041 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input042 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input043 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input044 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input045 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input046 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input047 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input048 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input049 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input050 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input051 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input052 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input053 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input054 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input055 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input056 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input057 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input058 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input059 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input060 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input061 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input062 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input063 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input064 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input065 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input066 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input067 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input068 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input069 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input070 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input071 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input072 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input073 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input074 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input075 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input076 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input077 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input078 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input079 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input080 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input081 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input082 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input083 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input084 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input085 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input086 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input087 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input088 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input089 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input090 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input091 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input092 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input093 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input094 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input095 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input096 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input097 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input098 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input099 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input100 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input101 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input102 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input103 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input104 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input105 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input106 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input107 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input108 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input109 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input110 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input111 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input112 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input113 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input114 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input115 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input116 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input117 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input118 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input119 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input120 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input121 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input122 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input123 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input124 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input125 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input126 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input127 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input128 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input129 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input130 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input131 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input132 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input133 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input134 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input135 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input136 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input137 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input138 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input139 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input140 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input141 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input142 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input143 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input144 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input145 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input146 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input147 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input148 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input149 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input150 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input151 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input152 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input153 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input154 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input155 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input156 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input157 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input158 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input159 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input160 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input161 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input162 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input163 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input164 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input165 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input166 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input167 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849408 Input168 0 "Off" 1 "On" 2 "Error" 3 "N/A" ;
+VAL_ 2566849664 Output_Diagnostic_Mux 0 "OutputGroup0" 1 "OutputGroup1" 2 "OutputGroup2" ;
+VAL_ 2566849664 Output01 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output02 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output03 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output04 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output05 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output06 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output07 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output08 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output09 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output10 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output11 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output12 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output13 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output14 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output15 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output16 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output17 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output18 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output19 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output20 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output21 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output22 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output23 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output24 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output25 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output26 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output27 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output28 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output29 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output30 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output31 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output32 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output33 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output34 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output35 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output36 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output37 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output38 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output39 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output40 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output41 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849664 Output42 0 "Normal" 1 "Open Circuit" 2 "Short To Ground" 3 "Short To Battery" 4 "Over Current" 5 "Grounded" 6 "Short To Battery or Open" 7 "Over/Under Voltage" 8 "Over Temperature" 9 "Grounded or Open" 15 "Disabled" ;
+VAL_ 2566849920 LED_Status_Query_Response_Mux 0 "Simple" 1 "Verbose" ;
+VAL_ 2566849920 LED00 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED01 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED02 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED03 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED04 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED05 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED06 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED07 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED08 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED09 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED10 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED11 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED12 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED13 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED14 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED15 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED16 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED17 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED18 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED19 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED20 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED21 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED22 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED23 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED24 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED25 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED26 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED27 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED28 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED29 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED30 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED31 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED32 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED33 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED34 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED35 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED36 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED37 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED38 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED39 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED40 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED41 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED42 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED43 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED44 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED45 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED46 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED47 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED48 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED49 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED50 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED51 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED52 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED53 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED54 0 "Off" 1 "On" ;
+VAL_ 2566849920 LED55 0 "Off" 1 "On" ;
+VAL_ 2566849920 Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Other_Left_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Other_Center_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Other_Right_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566849920 Other_Between_LED 0 "Off" 1 "On" 2 "Flash Slow (1/2Hz)" 3 "Flash Med (1Hz)" 4 "Flash Fast (2Hz)" 15 "No Change" ;
+VAL_ 2566850176 Output_Current_Mux 0 "Group00" 1 "Group01" 2 "Group02" 3 "Group03" 4 "Group04" 5 "Group05" 6 "Group06" ;
+VAL_ 2566850176 Output1_Current 65535 "N/A" ;
+VAL_ 2566850176 Output2_Current 65535 "N/A" ;
+VAL_ 2566850176 Output3_Current 65535 "N/A" ;
+VAL_ 2566850176 Output4_Current 65535 "N/A" ;
+VAL_ 2566850176 Output5_Current 65535 "N/A" ;
+VAL_ 2566850176 Output6_Current 65535 "N/A" ;
+VAL_ 2566850176 Output7_Current 65535 "N/A" ;
+VAL_ 2566850176 Output8_Current 65535 "N/A" ;
+VAL_ 2566850176 Output9_Current 65535 "N/A" ;
+VAL_ 2566850176 Output10_Current 65535 "N/A" ;
+VAL_ 2566850176 Output11_Current 65535 "N/A" ;
+VAL_ 2566850176 Output12_Current 65535 "N/A" ;
+VAL_ 2566850176 Output13_Current 65535 "N/A" ;
+VAL_ 2566850176 Output14_Current 65535 "N/A" ;
+VAL_ 2566850176 Output15_Current 65535 "N/A" ;
+VAL_ 2566850176 Output16_Current 65535 "N/A" ;
+VAL_ 2566850176 Output17_Current 65535 "N/A" ;
+VAL_ 2566850176 Output18_Current 65535 "N/A" ;
+VAL_ 2566850176 Output19_Current 65535 "N/A" ;
+VAL_ 2566850176 Output20_Current 65535 "N/A" ;
+VAL_ 2566850176 Output21_Current 65535 "N/A" ;
+

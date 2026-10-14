@@ -1,0 +1,397 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HMI MDC
+
+
+BO_ 116 MDC_15: 8 MDC
+ SG_ MDC_SOC : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+
+BO_ 114 MDC_14: 8 MDC
+ SG_ VCM_MPTvc_RoadMuClass : 39|3@1+ (1,0) [0|10] "" Vector__XXX
+ SG_ VCM_MPTvc_VChassisKph : 54|10@1- (0.5,100) [-156|355.5] "kph"  HMI
+ SG_ VCM_MPTvc_MassEstAvgKg : 42|12@1- (1,0) [0|4000] "kg"  HMI
+ SG_ VCM_MPTvc_RoadMuEst : 35|4@1+ (1,0) [0|10] ""  HMI
+ SG_ VCM_MPTvc_SlipDetectAny : 25|1@1- (1,0) [0|1] ""  HMI
+ SG_ VCM_MPTvc_GrdEstPerc : 26|9@1+ (0.25,0) [0|127.75] "%"  HMI
+ SG_ VCM_MPTvc_ALatE : 18|7@1- (0.05,0) [-3.2|3.15] "g"  HMI
+ SG_ VCM_MPTvc_TqSplitRBiasPercRaw : 9|9@1+ (0.25,0) [0|127.75] "%"  HMI
+ SG_ VCM_MPTvc_RelRSlipPerc : 0|9@1+ (0.25,0) [0|127.75] "%"  HMI
+
+BO_ 113 MDC_13: 8 MDC
+ SG_ MDC_AlertMsgBox : 20|24@1+ (1,0) [0|16777215] "" Vector__XXX
+ SG_ MDC_ErrorMsgBox : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MDC_MPTvcEnbl_Status : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MDC_FrontCoupling_Status : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MDC_ActPRNDL_Status : 4|2@1+ (1,0) [0|3] ""  HMI
+ SG_ MDC_TCS_Status : 2|2@1+ (1,0) [0|2] ""  HMI
+ SG_ MDC_LaunchMode_Status : 9|1@1+ (1,0) [0|1] ""  HMI
+ SG_ MDC_ReAxleLock_Status : 8|1@1+ (1,0) [0|0] ""  HMI
+ SG_ MDC_RegenMode_Status : 0|2@1+ (1,0) [0|2] ""  HMI
+ SG_ MDC_LoRange_Status : 7|1@1+ (1,0) [0|1] ""  HMI
+ SG_ MDC_HndlMode_Status : 6|1@1+ (1,0) [0|1] ""  HMI
+ SG_ MDC_DemoMode_Status : 12|3@1+ (1,0) [0|7] ""  HMI
+ SG_ MDC_ActDamp_Status : 18|2@1+ (1,0) [0|1] ""  HMI
+ SG_ MDC_DrvMode_Status : 16|2@1+ (1,0) [0|2] ""  HMI
+ SG_ MDC_CreepMode_Status : 15|1@1+ (1,0) [0|1] ""  HMI
+
+BO_ 112 HMI_01: 5 HMI
+ SG_ HMI_LaunchMode_RQ : 15|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_ReAxleLock_RQ : 14|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_BuildNumber : 32|8@1+ (1,0) [0|256] ""  MDC
+ SG_ HMI_Major : 24|8@1+ (1,0) [0|256] ""  MDC
+ SG_ HMI_Minor : 16|8@1+ (1,0) [0|256] ""  MDC
+ SG_ HMI_DemoMode_RQ : 0|3@1+ (1,0) [0|7] ""  MDC
+ SG_ HMI_RegenMode_RQ : 8|2@1+ (1,0) [0|2] ""  MDC
+ SG_ HMI_LoRange_RQ : 13|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_HndlMode_RQ : 12|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_ActDamp_RQ : 5|2@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_Avl : 11|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_Fail : 10|1@1+ (1,0) [0|1] ""  MDC
+ SG_ HMI_DrvMode_RQ : 3|2@1+ (1,0) [0|3] ""  MDC
+ SG_ HMI_CreepMode_RQ : 7|1@1+ (1,0) [0|1] ""  MDC
+
+
+
+CM_ BU_ MDC "Magna Driving Controller";
+CM_ BO_ 116 "HMI Additional Signals";
+CM_ SG_ 116 MDC_SOC "Battery State of Charge Percentage";
+CM_ BO_ 114 "MPTvc Signals of Interest";
+CM_ BO_ 113 "HMI GUI Status Signals";
+CM_ SG_ 113 MDC_ActPRNDL_Status "VCM_Actual_PNDL is generated from OEM controls, Signal sent to VCM, to be forwarded to the HMI via CANbus.";
+CM_ SG_ 113 MDC_TCS_Status "This signal is generated within the VCM to update the status of the Traction Control Systems. NOTE: this function is controlled by the OEM Traction Control Button";
+CM_ SG_ 113 MDC_LaunchMode_Status "This signal is generated within the VCM to update the status of Launch Mode. NOTE: The Launch Mode initation is contoled by OEM toggle switches";
+CM_ SG_ 113 MDC_DemoMode_Status "Controls Creep Mode Requests. Signal Generated within the HMI and shall be sent to the VCM ECU.";
+CM_ SG_ 113 MDC_ActDamp_Status "Signal generated in the MDC ECU and is sent to the EDI ECU_FA via CANbus.";
+CM_ SG_ 113 MDC_DrvMode_Status "Controls the Driven Motors. Signal Generated from within the HMI and shall be sent to the VCM ECU. ";
+CM_ SG_ 113 MDC_CreepMode_Status "Signal Generated within the VCM Model & passed out to the HMI via CANBus. 
+";
+CM_ BO_ 112 "HMI GUI Control Requests";
+CM_ SG_ 112 HMI_BuildNumber "The HMI_BuildNumber is used to confrim that the software loaded into the Main Display matches what the vehicle is expecting";
+CM_ SG_ 112 HMI_Major "HMI major build number";
+CM_ SG_ 112 HMI_Minor "HMI Minor Build Number";
+CM_ SG_ 112 HMI_DemoMode_RQ "HMI_DemomodeRQ shall allow the driver to switch to different pre-determined settings to showcase one or more vehicle atributes.";
+CM_ SG_ 112 HMI_RegenMode_RQ "Signal Generated within the HMI and is sent to the VCM ECU. The value table corralates 2 lookup tables that control the strength of regen braking.
+
+
+";
+CM_ SG_ 112 HMI_LoRange_RQ "Signal Generated within the HMI and is sent to the VCM ECU. [0=disabled, 1=enabled](TBD)
+
+";
+CM_ SG_ 112 HMI_HndlMode_RQ "Signal Generated within the HMI and is sent to the VCM ECU. The vehicle shall default to auto drive mode upon first start up.";
+CM_ SG_ 112 HMI_ActDamp_RQ "Controls Active Damping Requests. Signal Generated from within the HMI and shall be sent to the VCM ECU.";
+CM_ SG_ 112 HMI_Avl "HMI_Avl is used for the VCM model to know if the HMI is currently plugged in. If the HMI is missing the vehicle will know to use default values";
+CM_ SG_ 112 HMI_Fail "This signal will be dedicated for failures that can possibly leave the HMI unusable.
+
+";
+CM_ SG_ 112 HMI_DrvMode_RQ "Controls the Driven Motors. Signal Generated from within the HMI and shall be sent to the VCM ECU. ";
+CM_ SG_ 112 HMI_CreepMode_RQ "Controls Creep Mode Requests. Signal Generated within the HMI and shall be sent to the VCM ECU.";
+BA_DEF_ SG_  "Event trans." ENUM  "Yes","No";
+BA_DEF_ SG_  "Accuracy" STRING ;
+BA_DEF_ BO_  "GenMsgTimeoutTime" INT 0 10000;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "Type" ENUM  "P","C","PE","COC","PE_Cntrl","E","E_Cntrl","OC","S","BAF","DC","EM","MM","-";
+BA_DEF_ BO_  "Period [ms]" INT 0 65535;
+BA_DEF_ BU_  "TpOwnSystemEcuNumber" HEX 0 255;
+BA_DEF_ BU_  "NwmNodeType" ENUM  "kMaster","kSlave15","kSlave30","none";
+BA_DEF_ BU_  "NmNodeType" ENUM  "kMaster","kSlave15","kSlave30","none";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "Description" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "NWM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigErrVal" STRING ;
+BA_DEF_ SG_  "GenSigNoVal" STRING ;
+BA_DEF_ SG_  "GenSigHandlingTypeCode" STRING ;
+BA_DEF_ SG_  "GenSigAppDataTypeCode" STRING ;
+BA_DEF_ SG_  "GenSigVtEn" STRING ;
+BA_DEF_ SG_  "GenSigVtName" STRING ;
+BA_DEF_ SG_  "GenSigVtIndex" STRING ;
+BA_DEF_ SG_  "GenSigMarked" STRING ;
+BA_DEF_ SG_  "GenSigCmt" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 1 999999;
+BA_DEF_ BO_  "NWM-Botschaft" ENUM  "nein","ja";
+BA_DEF_ BO_  "GenMsgCmt1" STRING ;
+BA_DEF_ BO_  "GenMsgCmt2" STRING ;
+BA_DEF_ BO_  "GenMsgCmt3" STRING ;
+BA_DEF_ BO_  "GenMsgCmt4" STRING ;
+BA_DEF_ BO_  "GenMsgCmt5" STRING ;
+BA_DEF_ BO_  "GenMsgHandlingTypeCode" STRING ;
+BA_DEF_ BO_  "GenMsgHandlingTypeDoc" STRING ;
+BA_DEF_ BO_  "GenMsgMarked" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTimeus" INT 1000 1000000;
+BA_DEF_ SG_  "State2" STRING ;
+BA_DEF_ SG_  "State1" STRING ;
+BA_DEF_ SG_  "State0" STRING ;
+BA_DEF_ SG_  "Timeout" INT 0 100000;
+BA_DEF_ SG_  "DataType" ENUM  "ASC","BLN","ENM","BCD","SNM","UNM","SFP","PKT";
+BA_DEF_ SG_  "SigLongName" STRING ;
+BA_DEF_ SG_  "VNSigHSLocalIgnitionDelayed" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOff" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalIgnitionOn" ENUM  "No","Yes";
+BA_DEF_ SG_  "VNSigHSLocalDiagnostics" ENUM  "No","Yes";
+BA_DEF_ BO_  "MsgLongName" STRING ;
+BA_DEF_ BO_  "DiagFdOnly" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigTimeoutTime_ECU" INT 0 65535;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "CAN_Standard","CAN_Extended","CAN_FD_Standard","CAN_FD_Extended";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","OnEvent ","OnRequest","undefined","undefined","undefined","undefined","IfActive";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 5000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 255;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagConnection" HEX 0 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "NBTMin" INT 6 25;
+BA_DEF_  "NBTMax" INT 6 25;
+BA_DEF_  "SyncJumpWidthMin" INT 1 4;
+BA_DEF_  "SyncJumpWidthMax" INT 1 4;
+BA_DEF_  "SamplePointMin" INT 50 100;
+BA_DEF_  "SamplePointMax" INT 50 100;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "VersionYear" INT 0 153;
+BA_DEF_  "VersionMonth" INT 0 18;
+BA_DEF_  "VersionWeek" INT 0 83;
+BA_DEF_  "VersionDay" INT 0 49;
+BA_DEF_  "VersionNumber" INT 0 0;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 1 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 1 65535;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "Event trans." "No";
+BA_DEF_DEF_  "Accuracy" "";
+BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "Type" "-";
+BA_DEF_DEF_  "Period [ms]" 0;
+BA_DEF_DEF_  "TpOwnSystemEcuNumber" 0;
+BA_DEF_DEF_  "NwmNodeType" "none";
+BA_DEF_DEF_  "NmNodeType" "none";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "Yes";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "Description" "";
+BA_DEF_DEF_  "NodeLayerModules" "Osek_TP.dll";
+BA_DEF_DEF_  "NWM-WakeupAllowed" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigErrVal" "";
+BA_DEF_DEF_  "GenSigNoVal" "";
+BA_DEF_DEF_  "GenSigHandlingTypeCode" "";
+BA_DEF_DEF_  "GenSigAppDataTypeCode" "";
+BA_DEF_DEF_  "GenSigVtEn" "";
+BA_DEF_DEF_  "GenSigVtName" "";
+BA_DEF_DEF_  "GenSigVtIndex" "";
+BA_DEF_DEF_  "GenSigMarked" "";
+BA_DEF_DEF_  "GenSigCmt" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "NWM-Botschaft" "nein";
+BA_DEF_DEF_  "GenMsgCmt1" "";
+BA_DEF_DEF_  "GenMsgCmt2" "";
+BA_DEF_DEF_  "GenMsgCmt3" "";
+BA_DEF_DEF_  "GenMsgCmt4" "";
+BA_DEF_DEF_  "GenMsgCmt5" "";
+BA_DEF_DEF_  "GenMsgHandlingTypeCode" "";
+BA_DEF_DEF_  "GenMsgHandlingTypeDoc" "";
+BA_DEF_DEF_  "GenMsgMarked" "";
+BA_DEF_DEF_  "GenMsgCycleTimeus" 100000;
+BA_DEF_DEF_  "State2" "Description";
+BA_DEF_DEF_  "State1" "Description";
+BA_DEF_DEF_  "State0" "Description";
+BA_DEF_DEF_  "Timeout" 0;
+BA_DEF_DEF_  "DataType" "";
+BA_DEF_DEF_  "SigLongName" "";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionDelayed" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOff" "No";
+BA_DEF_DEF_  "VNSigHSLocalIgnitionOn" "Yes";
+BA_DEF_DEF_  "VNSigHSLocalDiagnostics" "No";
+BA_DEF_DEF_  "MsgLongName" "";
+BA_DEF_DEF_  "DiagFdOnly" "No";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigTimeoutTime_ECU" 0;
+BA_DEF_DEF_  "VFrameFormat" "CAN_Standard";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "NmAsrNode" "Yes";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "DBName" "CAN";
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "NBTMin" 8;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "SyncJumpWidthMin" 1;
+BA_DEF_DEF_  "SyncJumpWidthMax" 4;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "SamplePointMax" 90;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "VersionYear" 0;
+BA_DEF_DEF_  "VersionMonth" 1;
+BA_DEF_DEF_  "VersionWeek" 1;
+BA_DEF_DEF_  "VersionDay" 1;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmAsrTimeoutTime" 1000;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 750;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 400;
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "VersionYear" 19;
+BA_ "VersionMonth" 12;
+BA_ "VersionWeek" 33;
+BA_ "VersionDay" 12;
+BA_ "VersionNumber" 1;
+BA_ "Manufacturer" "Magna ECS";
+BA_ "BusType" "CAN";
+BA_ "DBName" "drivetrain_can";
+BA_ "NmAsrNode" BU_ MDC 1;
+BA_ "GenMsgCycleTime" BO_ 113 10;
+BA_ "GenMsgCycleTime" BO_ 112 10;
+BA_ "GenSigStartValue" SG_ 116 MDC_SOC 0;
+BA_ "GenSigStartValue" SG_ 114 VCM_MPTvc_VChassisKph -200;
+BA_ "GenSigEnvVarType" SG_ 113 MDC_AlertMsgBox 0;
+BA_ "GenSigEnvVarType" SG_ 113 MDC_ErrorMsgBox 0;
+BA_ "GenSigStartValue" SG_ 113 MDC_RegenMode_Status 1;
+BA_ "GenSigStartValue" SG_ 113 MDC_LoRange_Status 0;
+BA_ "GenSigStartValue" SG_ 113 MDC_HndlMode_Status 1;
+BA_ "GenSigStartValue" SG_ 113 MDC_DemoMode_Status 0;
+BA_ "GenSigStartValue" SG_ 113 MDC_ActDamp_Status 1;
+BA_ "GenSigStartValue" SG_ 112 HMI_DemoMode_RQ 0;
+BA_ "GenSigStartValue" SG_ 112 HMI_RegenMode_RQ 1;
+BA_ "GenSigStartValue" SG_ 112 HMI_LoRange_RQ 0;
+BA_ "GenSigStartValue" SG_ 112 HMI_HndlMode_RQ 1;
+BA_ "GenSigStartValue" SG_ 112 HMI_ActDamp_RQ 1;
+BA_ "GenSigStartValue" SG_ 112 HMI_Avl 0;
+BA_ "GenSigStartValue" SG_ 112 HMI_Fail 0;
+BA_ "GenSigStartValue" SG_ 112 HMI_CreepMode_RQ 1;
+VAL_ 113 MDC_MPTvcEnbl_Status 1 "Enabled" 0 "Disabled" ;
+VAL_ 113 MDC_FrontCoupling_Status 1 "Coupled" 0 "Decoupled" ;
+VAL_ 113 MDC_ActPRNDL_Status 3 "Drive" 2 "Neutral" 1 "Reverse" 0 "Park" ;
+VAL_ 113 MDC_TCS_Status 2 "Trac Mode Control Enabled" 1 "Traction Control Enabled" 0 "Traction Control Disabled" ;
+VAL_ 113 MDC_LaunchMode_Status 1 "Launch Mode Enabled" 0 "Launch Mode Disabled" ;
+VAL_ 113 MDC_ReAxleLock_Status 1 "Rear Axle Locked" 0 "Rear Axle Unlocked" ;
+VAL_ 113 MDC_RegenMode_Status 2 "MAX Regen Braking Enabled" 1 "Regen Braking Enabled" 0 "Regen Braking Disabled" ;
+VAL_ 113 MDC_LoRange_Status 1 "Lo Range" 0 "Hi Range" ;
+VAL_ 113 MDC_HndlMode_Status 2 "Dynamic Handling Mode Enabled" 1 "Auto Handling Mode Enabled" ;
+VAL_ 113 MDC_DemoMode_Status 7 "TBD" 6 "TBD" 5 "TBD" 4 "TBD" 3 "TBD" 2 "TBD" 1 "TBD" 0 "No Demo Selected" ;
+VAL_ 113 MDC_ActDamp_Status 1 "Active Damping Enabled" 0 "Active Damping Disabled" ;
+VAL_ 113 MDC_DrvMode_Status 2 "FWD Enabled" 1 "RWD Enabled" 0 "AWD Enabled" ;
+VAL_ 113 MDC_CreepMode_Status 1 "Creep Mode ENABLED" 0 "Creep Mode DISABLED" ;
+VAL_ 112 HMI_LaunchMode_RQ 1 "Launch Mode Enabled" 0 "Launch Mode Disabled" ;
+VAL_ 112 HMI_ReAxleLock_RQ 1 "Rear Axle Locked" 0 "Rear Axle Unlocked" ;
+VAL_ 112 HMI_DemoMode_RQ 7 "TBD" 6 "TBD" 5 "TBD" 4 "TBD" 3 "TBD" 2 "TBD" 1 "TBD" 0 "No Demo Selected" ;
+VAL_ 112 HMI_RegenMode_RQ 2 "MAX Regen Braking Enabled" 1 "Regen Braking Enabled" 0 "Regen Braking Disabled" ;
+VAL_ 112 HMI_LoRange_RQ 1 "Lo-Range Enabled" 0 "Lo-Range Disabled" ;
+VAL_ 112 HMI_HndlMode_RQ 2 "Dynamic Handling Mode Requested" 1 "Auto Handling Mode Requested" ;
+VAL_ 112 HMI_ActDamp_RQ 1 "Active Damping Enabled" 0 "Active Damping Disabled" ;
+VAL_ 112 HMI_Avl 1 "App Connected" 0 "App Not Connected" ;
+VAL_ 112 HMI_Fail 1 "Connection Failed" 0 "No FAIL" ;
+VAL_ 112 HMI_DrvMode_RQ 3 "AUTO Enabled" 2 "FWD Enabled" 1 "RWD Enabled" 0 "AWD Enabled" ;
+VAL_ 112 HMI_CreepMode_RQ 1 "Creep Mode ENABLED" 0 "Creep Mode DISABLED" ;
+

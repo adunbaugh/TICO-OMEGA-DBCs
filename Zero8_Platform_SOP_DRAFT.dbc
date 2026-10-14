@@ -1,0 +1,434 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: TCU VCU MCU
+VAL_TABLE_ ShiftStage 7 "Reserved" 6 "Reserved" 5 "DrivrDemand torque application" 4 "Engagement" 3 "Motor speed synchronization" 2 "Disengagement" 1 "Torque neutralization" 0 "Idle" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ GrossCombinationWeight : 0|24@1+ (2,0) [0|32899070] "kg" Vector__XXX
+ SG_ checksum_McuTrqSpdModeVoltSpec1 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ torqueSpdModeMinDriveVoltage : 0|16@1+ (1,0) [0|65000] "V" Vector__XXX
+ SG_ torqueSpdModeMaxDriveVoltage : 0|16@1+ (1,0) [0|65000] "V" Vector__XXX
+ SG_ rollingCounter_TCUInfo2 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TransmissionInputSpeed_Signed : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+ SG_ TranmissionOutputSpeed_Signed : 0|16@1+ (1,-32127) [-32127|32128] "rpm" Vector__XXX
+ SG_ rollingCounter_ETC2 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ checksum_ETC2 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2381252954 VCUSlowCommand: 8 VCU
+ SG_ checksum_VCUSlowCmd : 60|4@1+ (1,0) [0|15] ""  TCU
+ SG_ rollingCounter_VCUSlowCmd : 56|4@1+ (1,0) [0|15] ""  TCU
+ SG_ maxDischargeCurrent : 44|12@1+ (2,0) [0|8100] "A"  TCU
+ SG_ minBatteryVoltage : 28|16@1+ (1,0) [0|65000] "V"  TCU
+ SG_ maxBatteryVoltage : 12|16@1+ (1,0) [0|65000] "V"  TCU
+ SG_ maxChargeCurrent : 0|12@1+ (2,0) [0|8100] "A"  TCU
+
+BO_ 2566755593 TransmissionFluids2: 8 TCU
+ SG_ transOilTemp2 : 32|16@1+ (0.03125,-273) [-273|1734.96875] "degC"  VCU
+ SG_ transOverheat : 4|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 2364534537 MotorFastCommand: 8 TCU
+ SG_ controlModeCmd_TCUFastCmd M : 6|3@1+ (1,0) [0|7] ""  MCU
+ SG_ operationalStateRq_TCUFastCmd : 0|3@1+ (1,0) [0|7] ""  MCU
+ SG_ operationalMode_TCUFastCmd : 3|3@1+ (1,0) [0|7] ""  MCU
+ SG_ commandValue_TCUFastCmd : 16|24@1+ (0.125,-650000) [-650000|650000] ""  MCU
+ SG_ TrqLimitValue_TCUFastCmd : 40|16@1+ (1,0) [0|65000] "Nm"  MCU
+ SG_ rollingCounter_TCUFastCmd : 56|4@1+ (1,0) [0|15] ""  MCU
+ SG_ checksum_TCUFastCmd : 60|4@1+ (1,0) [0|15] ""  MCU
+
+BO_ 2381311753 MotorSlowCommand: 8 TCU
+ SG_ checksum_VCUSlowCmd : 60|4@1+ (1,0) [0|15] ""  MCU
+ SG_ rollingCounter_MotorSlowCmd : 56|4@1+ (1,0) [0|15] ""  MCU
+ SG_ maxDischargeCurrent : 44|12@1+ (2,0) [0|8100] "A"  MCU
+ SG_ minBatteryVoltage : 28|16@1+ (1,0) [0|65000] "V"  MCU
+ SG_ maxBatteryVoltage : 12|16@1+ (1,0) [0|65000] "V"  MCU
+ SG_ maxChargeCurrent : 0|12@1+ (2,0) [0|8100] "A"  MCU
+
+BO_ 2566869001 TCUInfo1: 8 TCU
+ SG_ ShiftStage : 43|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ checksum_TCUInfo1 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ GearMaxAvailable : 36|4@1+ (1,0) [0|15] "n/a"  VCU
+ SG_ GearMinAvailable : 32|4@1+ (1,0) [0|15] ""  VCU
+ SG_ TCUState : 40|3@1+ (1,0) [0|7] "n/a"  VCU
+ SG_ rollingCounter_TCUInfo1 : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ flagFailedGear : 30|2@1+ (1,0) [0|3] ""  VCU
+ SG_ faultGear3 : 17|3@1+ (1,0) [0|7] ""  VCU
+ SG_ faultGear2 : 14|3@1+ (1,0) [0|7] ""  VCU
+ SG_ faultGear1 : 11|3@1+ (1,0) [0|7] ""  VCU
+ SG_ faultGear0 : 8|3@1+ (1,0) [0|7] ""  VCU
+
+BO_ 2566869257 TCUInfo2: 8 TCU
+ SG_ rollingCounter_TCUInfo2 : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TranmissionOutputSpeed_Signed : 16|16@1+ (1,-32127) [-32127|32128] "rpm"  VCU
+
+BO_ 2565866761 ElectronicTransCtrller2: 8 TCU
+ SG_ transCurrentGear : 24|8@1+ (1,-125) [-125|125] ""  VCU
+ SG_ transActualGearRatio : 8|16@1+ (0.001,0) [0|64.255] ""  VCU
+ SG_ transSelectedGear : 0|8@1+ (1,-125) [-125|125] ""  VCU
+
+BO_ 2364539401 ElectronicTransCtrller1: 8 TCU
+ SG_ transShiftInProc : 4|2@1+ (1,0) [0|3] ""  VCU
+
+BO_ 2566853103 McuThermal2: 8 MCU
+ SG_ checksum_MCUThermal2 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ sysLossEstimation : 32|16@1+ (0.0625,0) [0|4050] "kW"  VCU
+ SG_ rollingCounter_MCUThermal2 : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ mcuTemperature : 24|8@1+ (1,-40) [-40|210] "degC"  VCU
+ SG_ EMITemperature : 16|8@1+ (1,-40) [-40|210] "degC"  VCU
+ SG_ motorTemperature : 0|8@1+ (1,-40) [-40|210] "degC"  VCU
+ SG_ ambientTemperature : 8|8@1+ (1,-40) [-40|210] "degC"  VCU
+
+BO_ 2566848751 McuFastCommandResponse: 8 MCU
+ SG_ checksum_MCUFastCmd : 60|4@1+ (1,0) [0|15] ""  VCU,TCU
+ SG_ fastDischargeRateFault : 54|2@1+ (1,0) [0|3] ""  VCU,TCU
+ SG_ safeState_MCUFastCmd : 10|3@1+ (1,0) [0|7] ""  TCU,VCU
+ SG_ controlMode_MCUFastCmd : 0|3@1+ (1,0) [0|7] ""  TCU,VCU
+ SG_ stateMcu_MCUFastCmd : 6|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ speedReductionRequest : 50|2@1+ (1,0) [0|3] ""  TCU,VCU
+ SG_ rollingCounter_MCUFastCmd : 56|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ slowDischargeRateFault : 52|2@1+ (1,0) [0|3] ""  TCU,VCU
+ SG_ motorSpeed : 32|18@1+ (1,-130000) [-130000|130000] "rpm"  TCU,VCU
+ SG_ motorAngle : 16|16@1+ (1.5258789063E-005,0) [0|1] "rotation"  TCU,VCU
+ SG_ operationalMode_MCUFastCmd : 3|3@1+ (1,0) [0|7] ""  TCU,VCU
+
+BO_ 2566851823 McuMotorRotationInfo2: 8 MCU
+ SG_ checksum_MCUMotorRotationInfo2 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ totalMotorRotationFromMcu : 0|48@1+ (1,0) [0|281474976710654] "rotation"  VCU
+
+BO_ 2566850799 McuSpecification1: 8 MCU
+ SG_ checksum_MCUSpecification1 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ maxMotorFlow : 40|8@1+ (0.5,0) [0|125] "Lpm"  VCU
+ SG_ maxDriveFlow : 32|8@1+ (0.5,0) [0|125] "Lpm"  VCU
+ SG_ voltageCtrlModeUnavailable : 58|1@1+ (1,0) [0|1] ""  VCU
+ SG_ speedCtrlModeUnavailable : 57|1@1+ (1,0) [0|1] ""  VCU
+ SG_ torqueCtrlModeUnavailable : 56|1@1+ (1,0) [0|1] ""  VCU
+ SG_ maxMotorSpeed : 16|16@1+ (10,0) [0|650000] "rpm"  VCU
+ SG_ maxMotorTorque : 0|16@1+ (1,0) [0|65000] "Nm"  VCU
+
+BO_ 2566850031 McuOnEvent1: 8 MCU
+ SG_ checksum_MCUOnEvent1 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ rollingCounter_MCUOnEvent1 : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ evendId : 0|16@1+ (1,0) [0|65535] ""  VCU
+
+BO_ 2566849775 McuThermal1: 8 MCU
+ SG_ checksum_MCUThermal1 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ mcuThermalIndicator : 24|8@1+ (0.5,0) [0|100] "%"  VCU
+ SG_ motorTemperatureAverage100s : 48|8@1+ (1,-40) [-40|210] "degC"  VCU
+ SG_ acCableI2TThermalIndicator : 40|8@1+ (0.5,0) [0|100] "%"  VCU
+ SG_ dcCableI2TThermalIndicator : 32|8@1+ (0.5,0) [0|100] "%"  VCU
+ SG_ rollingCounter_MCUThermal1 : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ motorThermalIndicator : 16|8@1+ (0.5,0) [0|100] "%"  VCU
+ SG_ motorCoolingFlowRequest : 8|8@1+ (0.5,0) [0|125] "LPM"  VCU
+ SG_ driveCoolingFlowRequest : 0|8@1+ (0.5,0) [0|125] "LPM"  VCU
+
+BO_ 2566849519 McuInfo2: 8 MCU
+ SG_ checksum_MCUInfo2 : 60|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ rollingCounter_MCUInfo2 : 56|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ regenTorqueAvailable : 32|16@1+ (1,0) [0|65000] "Nm"  TCU,VCU
+ SG_ tractionTorqueAvailable : 16|16@1+ (1,0) [0|65000] "Nm"  TCU,VCU
+ SG_ motorTorqueEstimated : 0|16@1+ (2,-65000) [-65000|65000] "Nm"  TCU,VCU
+
+BO_ 2566849263 McuInfo1: 8 MCU
+ SG_ hvilStatus : 54|2@1+ (1,0) [0|3] ""  VCU
+ SG_ checksum_MCUInfo1 : 60|4@1+ (1,0) [0|15] ""  VCU
+ SG_ faultPhaseToChassis : 52|2@1+ (1,0) [0|3] ""  VCU
+ SG_ rollingCounter_MCUInfo1 : 56|4@1+ (1,0) [0|15] ""  VCU
+ SG_ highPowerCurrent : 24|16@1+ (0.25,-8100) [-8100|8100] "A"  VCU
+ SG_ highPowerVoltage : 8|16@1+ (1,0) [0|65000] "V"  VCU
+ SG_ auxiliaryVoltage : 0|8@1+ (0.5,0) [0|125] "V"  VCU
+
+BO_ 2566849007 McuSlowCommandResponse: 8 MCU
+ SG_ checksum_MCUSlowCmd : 60|4@1+ (1,0) [0|15] ""  VCU,TCU
+ SG_ rollingCounter_MCUSlowCmd : 56|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ maxMotorSpeedReverse : 16|16@1+ (1,0) [0|65000] "rpm"  TCU,VCU
+ SG_ maxMotorSpeedForward : 0|16@1+ (1,0) [0|65000] "rpm"  TCU,VCU
+ SG_ regenDerating : 32|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ tractionDerating : 36|4@1+ (1,0) [0|15] ""  TCU,VCU
+ SG_ stateMcu_MCUSlowCmd : 40|4@1+ (1,0) [0|15] ""  TCU,VCU
+
+BO_ 2364475738 VCUFastCommand: 8 VCU
+ SG_ controlModeCmd_VCUFastCmd M : 6|3@1+ (1,0) [0|7] ""  TCU
+ SG_ TrqLimitValue_VCUFastCmd : 40|16@1+ (1,0) [0|65000] "Nm"  TCU
+ SG_ checksum_VCUFastCmd : 60|4@1+ (1,0) [0|15] ""  TCU
+ SG_ rollingCounter_VCUFastCmd : 56|4@1+ (1,0) [0|15] ""  TCU
+ SG_ operationalModeCmd_VCUFastCmd : 3|3@1+ (1,0) [0|7] ""  TCU
+ SG_ operationalStateRq_VCUFastCmd : 0|3@1+ (1,0) [0|7] ""  TCU
+ SG_ commandValue_VCUFastCmd : 16|24@1+ (0.125,-650000) [-650000|650000] ""  TCU
+
+BO_ 2565865818 EBC1: 8 VCU
+ SG_ Halt_Brake_Switch : 58|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ABS_Fully_Operational : 40|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Acltr_Interlock_Switch : 24|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ASR_Hill_Holder_Switch : 20|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Traction_Ctrl_Ovr_Switch : 22|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EBS_Brake_Switch : 6|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Trailer_ABS_Status : 60|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ASR_Offroad_Switch : 18|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ATC_ASR_Information_Signal : 46|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ABS_Offroad_Switch : 16|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ASR_Eng_Ctrl_Active : 0|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ASR_Brake_Ctrl_Active : 2|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Anti_Lock_Braking_ABS_Active : 4|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ EBS_Red_Warning_Lamp_State : 42|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ ABS_EBS_Amber_Warning_Lamp_State : 44|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Trailer_ABS_Warning_Signal : 62|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Brake_Pedal_Position : 8|8@1+ (0.4,0) [0|0] "%" Vector__XXX
+ SG_ Eng_Ret_Selection : 32|8@1+ (0.4,0) [0|0] "%" Vector__XXX
+ SG_ SA_of_CtrllingDeviceForBrakeCtrl : 48|8@1+ (1,0) [0|0] "SA" Vector__XXX
+
+BO_ 2364539738 EEC2: 8 VCU
+ SG_ Pct_Load_At_Current_Speed_ : 16|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ Remote_Acltr : 24|8@1+ (0.4,0) [0|0] "%" Vector__XXX
+ SG_ Acltr_Pedal_AP_Position : 8|8@1+ (0.4,0) [0|0] "%" Vector__XXX
+ SG_ Acltr_Pedal_Kickdown_Switch : 2|2@1+ (1,0) [0|0] "bit" Vector__XXX
+ SG_ Acltr_Pedal_Low_Idle_Switch : 0|2@1+ (1,0) [0|0] "bit" Vector__XXX
+
+BO_ 2298375770 HRW: 8 VCU
+ SG_ HiResWheelSpeed_RearAxle_Left : 32|16@1+ (0.00390625,0) [0|0] "km/h" Vector__XXX
+ SG_ HiResWheelSpeed_FrontAxle_Right : 16|16@1+ (0.00390625,0) [0|0] "km/h" Vector__XXX
+ SG_ HiResWheelSpeed_FrontAxle_Left : 0|16@1+ (0.00390625,0) [0|0] "km/h" Vector__XXX
+ SG_ HiResWheelSpeed_RearAxle_Right : 48|16@1+ (0.00390625,0) [0|0] "km/h" Vector__XXX
+
+BO_ 2348878170 TransmissionControl1: 8 VCU
+ SG_ TransRqedLaunchGear : 50|4@1+ (1,0) [0|15] ""  TCU
+ SG_ DisengageDrivelineRq : 4|2@1+ (1,0) [0|3] ""  TCU
+ SG_ transRequestGear : 16|8@1+ (1,-125) [-125|130] ""  TCU
+ SG_ transGearShiftInhibReq : 0|2@1+ (1,0) [0|3] ""  TCU
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 2364534537 commandValue_TCUFastCmd "controlModeCmd= 0 (Torque)
+Range -65000 to 65000 Nm
+controlModeCmd= 1 (Speed) or 3 (SpeedControlTorqueLimit)
+Range -650000 to 650000 rpm
+";
+CM_ BO_ 2566850031 "On new event and every 100 ms";
+BA_DEF_  "SAE_J1939_71_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_73_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_21_SpecVersion" STRING ;
+BA_DEF_  "SAE_J1939_75_SpecVersion" STRING ;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 524287;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 10000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","IfActive","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","noMsgSendType";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BU_  "NmStationAddress" INT 0 255;
+BA_DEF_ BU_  "NmJ1939AAC" INT 0 1;
+BA_DEF_ BU_  "NmJ1939ECUInstance" INT 0 3;
+BA_DEF_ BU_  "NmJ1939Function" INT 0 255;
+BA_DEF_ BU_  "NmJ1939FunctionInstance" INT 0 7;
+BA_DEF_ BU_  "NmJ1939IdentityNumber" INT 0 2097151;
+BA_DEF_ BU_  "NmJ1939IndustryGroup" INT 0 7;
+BA_DEF_ BU_  "NmJ1939ManufacturerCode" INT 0 2047;
+BA_DEF_ BU_  "NmJ1939System" INT 0 127;
+BA_DEF_ BU_  "NmJ1939SystemInstance" INT 0 15;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_DEF_  "SAE_J1939_71_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_73_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_21_SpecVersion" "";
+BA_DEF_DEF_  "SAE_J1939_75_SpecVersion" "";
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigEVName" "Env@Nodename_@Signame";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "NmStationAddress" 254;
+BA_DEF_DEF_  "NmJ1939AAC" 0;
+BA_DEF_DEF_  "NmJ1939ECUInstance" 0;
+BA_DEF_DEF_  "NmJ1939Function" 0;
+BA_DEF_DEF_  "NmJ1939FunctionInstance" 0;
+BA_DEF_DEF_  "NmJ1939IdentityNumber" 0;
+BA_DEF_DEF_  "NmJ1939IndustryGroup" 0;
+BA_DEF_DEF_  "NmJ1939ManufacturerCode" 0;
+BA_DEF_DEF_  "NmJ1939System" 0;
+BA_DEF_DEF_  "NmJ1939SystemInstance" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ProtocolType" "J1939";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_ "DBName" "E12B_Serial_Communication";
+BA_ "NmStationAddress" BU_ TCU 9;
+BA_ "NmStationAddress" BU_ VCU 90;
+BA_ "NmStationAddress" BU_ MCU 239;
+BA_ "GenMsgCycleTime" BO_ 2381252954 100;
+BA_ "VFrameFormat" BO_ 2381252954 3;
+BA_ "GenMsgCycleTime" BO_ 2566755593 1000;
+BA_ "VFrameFormat" BO_ 2566755593 3;
+BA_ "VFrameFormat" BO_ 2364534537 3;
+BA_ "GenMsgCycleTime" BO_ 2381311753 100;
+BA_ "VFrameFormat" BO_ 2381311753 3;
+BA_ "GenMsgCycleTime" BO_ 2566869001 100;
+BA_ "VFrameFormat" BO_ 2566869001 3;
+BA_ "VFrameFormat" BO_ 2566869257 3;
+BA_ "GenMsgCycleTime" BO_ 2565866761 100;
+BA_ "VFrameFormat" BO_ 2565866761 3;
+BA_ "VFrameFormat" BO_ 2364539401 3;
+BA_ "GenMsgCycleTime" BO_ 2566853103 100;
+BA_ "VFrameFormat" BO_ 2566853103 3;
+BA_ "VFrameFormat" BO_ 2566848751 3;
+BA_ "GenMsgCycleTime" BO_ 2566851823 1000;
+BA_ "VFrameFormat" BO_ 2566851823 3;
+BA_ "GenMsgCycleTime" BO_ 2566850799 1000;
+BA_ "VFrameFormat" BO_ 2566850799 3;
+BA_ "GenMsgSendType" BO_ 2566850031 2;
+BA_ "GenMsgCycleTime" BO_ 2566850031 100;
+BA_ "VFrameFormat" BO_ 2566850031 3;
+BA_ "GenMsgCycleTime" BO_ 2566849775 100;
+BA_ "VFrameFormat" BO_ 2566849775 3;
+BA_ "VFrameFormat" BO_ 2566849519 3;
+BA_ "GenMsgCycleTime" BO_ 2566849263 100;
+BA_ "VFrameFormat" BO_ 2566849263 3;
+BA_ "GenMsgCycleTime" BO_ 2566849007 100;
+BA_ "VFrameFormat" BO_ 2566849007 3;
+BA_ "VFrameFormat" BO_ 2364475738 3;
+BA_ "GenMsgCycleTime" BO_ 2565865818 100;
+BA_ "VFrameFormat" BO_ 2565865818 3;
+BA_ "VFrameFormat" BO_ 2364539738 3;
+BA_ "GenMsgCycleTime" BO_ 2298375770 20;
+BA_ "VFrameFormat" BO_ 2298375770 3;
+BA_ "GenMsgCycleTime" BO_ 2348878170 50;
+BA_ "VFrameFormat" BO_ 2348878170 3;
+BA_ "SPN" SG_ 3221225472 GrossCombinationWeight 417;
+BA_ "SPN" SG_ 3221225472 TranmissionOutputSpeed_Signed 6585;
+BA_ "SPN" SG_ 2566755593 transOilTemp2 5913;
+BA_ "SPN" SG_ 2566755593 transOverheat 5345;
+BA_ "SPN" SG_ 2565866761 transCurrentGear 523;
+BA_ "SPN" SG_ 2565866761 transActualGearRatio 526;
+BA_ "SPN" SG_ 2565866761 transSelectedGear 524;
+BA_ "GenSigStartValue" SG_ 2566849263 highPowerCurrent 8100;
+VAL_ 3221225472 torqueSpdModeMinDriveVoltage 65535 "Not Available" ;
+VAL_ 3221225472 torqueSpdModeMaxDriveVoltage 65535 "Not available" ;
+VAL_ 2566755593 transOverheat 3 "Not available" 2 "Trans overheat indicator onflash" 1 "Trans overheat indicator on" 0 "Trans overheat indicator off" ;
+VAL_ 2364534537 controlModeCmd_TCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Reserved_04" 3 "Speed Control Torque Limit" 2 "Voltage Mode" 1 "Speed Mode" 0 "Torque Mode" ;
+VAL_ 2364534537 operationalStateRq_TCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_ 2364534537 operationalMode_TCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Purely Electric Gear Shifting" 3 "Purely Electric" 2 "Reserved_02" 1 "Generator" 0 "Neutral" ;
+VAL_ 2364534537 commandValue_TCUFastCmd 16777215 "Not available" ;
+VAL_ 2364534537 TrqLimitValue_TCUFastCmd 65535 "Not available" ;
+VAL_ 2381311753 maxDischargeCurrent 4095 "Not available" ;
+VAL_ 2381311753 minBatteryVoltage 65535 "Not available" ;
+VAL_ 2381311753 maxBatteryVoltage 65535 "Not available" ;
+VAL_ 2381311753 maxChargeCurrent 4095 "Not available" ;
+VAL_ 2566869001 ShiftStage 7 "Reserved" 6 "Reserved" 5 "DrivrDemand torque application" 4 "Engagement" 3 "Motor speed synchronization" 2 "Disengagement" 1 "Torque neutralization" 0 "Idle" ;
+VAL_ 2566869001 GearMaxAvailable 15 "Not available" 14 "Invalid" 13 "Invalid" 12 "Invalid" 11 "Invalid" 10 "Invalid" 9 "Invalid" 8 "Invalid" 7 "Invalid" 6 "Invalid" 5 "Invalid" 4 "Invalid" 3 "Third Gear" 2 "Second Gear" 1 "First Gear" 0 "No Gear Available" ;
+VAL_ 2566869001 GearMinAvailable 15 "Not available" 14 "Invalid" 13 "Invalid" 12 "Invalid" 11 "Invalid" 10 "Invalid" 9 "Invalid" 8 "Invalid" 7 "Invalid" 6 "Invalid" 5 "Invalid" 4 "Invalid" 3 "Third Gear" 2 "Second Gear" 1 "First Gear " 0 "No Gear Available" ;
+VAL_ 2566869001 TCUState 7 "Not available" 6 "Invalid" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Shutdown" 1 "Operational" 0 "Initialisation" ;
+VAL_ 2566869001 flagFailedGear 3 "Not Available" 2 "Invalid" 1 "True" 0 "False" ;
+VAL_ 2566869001 faultGear3 7 "Not Available" 6 "Other failure" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Speed/Torque control timeout" 1 "Gear actuator failure" 0 "No fault" ;
+VAL_ 2566869001 faultGear2 7 "Not available" 6 "Other failure" 5 "Reserved_03" 4 "Reserved_02" 3 "Reserved_01" 2 "Speed/Torque control timeout" 1 "Gear actuator failure" 0 "No fault" ;
+VAL_ 2566869001 faultGear1 7 "Not available" 6 "Other failure" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Speed/Torque control timeout" 1 "Gear actuator failure" 0 "No fault" ;
+VAL_ 2566869001 faultGear0 7 "Not Available" 6 "Other failure" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Speed/Torque control timeout" 1 "Gear actuator failure" 0 "No fault" ;
+VAL_ 2565866761 transCurrentGear 255 "Not available" 128 "Third" 127 "Second" 126 "First" 125 "Neutral" ;
+VAL_ 2565866761 transSelectedGear 255 "Not available" 128 "Third" 127 "Second" 126 "First" 125 "Neutral" ;
+VAL_ 2364539401 transShiftInProc 3 "Not available" 2 "Error" 1 "Shift in process" 0 "Shift not in process" ;
+VAL_ 2566853103 sysLossEstimation 65535 "Not available" ;
+VAL_ 2566853103 mcuTemperature 255 "Not available" ;
+VAL_ 2566853103 EMITemperature 255 "Not available" ;
+VAL_ 2566853103 motorTemperature 255 "Not available" ;
+VAL_ 2566853103 ambientTemperature 255 "Not available" ;
+VAL_ 2566848751 fastDischargeRateFault 3 "Not available" 2 "Invalid" 1 "True" 0 "False" ;
+VAL_ 2566848751 safeState_MCUFastCmd 7 "Not available" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Emergency Stop" 2 "ASC & Speed Reduction Request " 1 "Freewheel" 0 "False" ;
+VAL_ 2566848751 controlMode_MCUFastCmd 4 "Speed Control Torque Limit Mode" 3 "Voltage Mode (Not Used)" 2 "Speed Mode" 1 "Torque Mode" 0 "Unused Mode" ;
+VAL_ 2566848751 stateMcu_MCUFastCmd 8 "Waiting for Safe Condition" 9 "Reserved_09" 10 "Reserved_10" 11 "Reserved_11" 12 "Reserved_12" 13 "Reserved_13" 14 "Invalid" 15 "Not available" 7 "Read to Power Off" 6 "Shutdown" 5 "Failure" 4 "Operational" 3 "Deactivation" 2 "Activation" 1 "Standby" 0 "Initialisation" ;
+VAL_ 2566848751 speedReductionRequest 3 "Not available" 2 "Reserved_02" 1 "Request to reduce" 0 "No request" ;
+VAL_ 2566848751 slowDischargeRateFault 3 "Not available" 2 "Invalid" 1 "True" 0 "False" ;
+VAL_ 2566848751 operationalMode_MCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Purely Electric Gear Shifting" 3 "Purely Electric" 2 "Reserved_02" 1 "Generator" 0 "Neutral" ;
+VAL_ 2566850799 maxMotorFlow 255 "Not available" ;
+VAL_ 2566850799 maxDriveFlow 255 "Not available" ;
+VAL_ 2566850799 voltageCtrlModeUnavailable 1 "Unavailable" 0 "Available" ;
+VAL_ 2566850799 speedCtrlModeUnavailable 1 "Unavailable" 0 "Available" ;
+VAL_ 2566850799 torqueCtrlModeUnavailable 1 "Unavailable" 0 "Available" ;
+VAL_ 2566850799 maxMotorSpeed 65535 "Not available" ;
+VAL_ 2566850799 maxMotorTorque 65535 "Not available" ;
+VAL_ 2566849775 mcuThermalIndicator 255 "Not available" ;
+VAL_ 2566849775 motorTemperatureAverage100s 255 "Not available" ;
+VAL_ 2566849775 acCableI2TThermalIndicator 255 "Not available" ;
+VAL_ 2566849775 dcCableI2TThermalIndicator 255 "Not available" ;
+VAL_ 2566849775 motorThermalIndicator 255 "Not available" ;
+VAL_ 2566849775 motorCoolingFlowRequest 255 "Not available" ;
+VAL_ 2566849775 driveCoolingFlowRequest 255 "Not available" ;
+VAL_ 2566849519 regenTorqueAvailable 65535 "Not available" ;
+VAL_ 2566849519 tractionTorqueAvailable 65535 "Not available" ;
+VAL_ 2566849519 motorTorqueEstimated 65535 "Not available" ;
+VAL_ 2566849263 hvilStatus 3 "Not available" 2 "Reserved" 1 "True" 0 "False" ;
+VAL_ 2566849263 faultPhaseToChassis 3 "Not available" 2 "Reserved" 1 "True" 0 "False" ;
+VAL_ 2566849263 highPowerCurrent 65535 "Not available" ;
+VAL_ 2566849263 highPowerVoltage 65535 "Not available" ;
+VAL_ 2566849263 auxiliaryVoltage 255 "Not available" ;
+VAL_ 2566849007 maxMotorSpeedReverse 65535 "Not available" ;
+VAL_ 2566849007 maxMotorSpeedForward 65535 "Not available" ;
+VAL_ 2566849007 regenDerating 15 "Not available" 14 "Invalid" 13 "Reserved_13" 12 "Reserved_12" 11 "Limp Home" 10 "Sensor defect machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC Voltage" 6 "Maximum power" 5 "Defect Sensor Drive" 4 "System overheat" 3 "Over speed" 2 "Internal" 1 "Battery Current" 0 "None" ;
+VAL_ 2566849007 tractionDerating 15 "Not available" 14 "Invalid" 13 "Reserved_13" 12 "Reserved_12" 11 "Limp Home" 10 "Sensor defect machine" 9 "Overheat machine" 8 "Overheat drive" 7 "DC Voltage" 6 "Maximum power" 5 "Defect Sensor Drive" 4 "System overheat" 3 "Over speed" 2 "Internal" 1 "Battery Current" 0 "None" ;
+VAL_ 2566849007 stateMcu_MCUSlowCmd 15 "Not available" 14 "Invalid" 13 "Reserved_13" 12 "Reserved_12" 11 "Reserved_11" 10 "Reserved_10" 9 "Reserved_09" 8 "Waiting for Safe Condition" 7 "Ready to Power Off" 6 "Shutdown" 5 "Failure" 4 "Operational" 3 "Deactivation" 2 "Activation" 1 "Standby" 0 "Initialisation" ;
+VAL_ 2364475738 controlModeCmd_VCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Reserved_04" 3 "Speed Control Torque Limit Mode" 2 "Voltage Mode" 1 "Speed Mode" 0 "Torque Mode" ;
+VAL_ 2364475738 TrqLimitValue_VCUFastCmd 65535 "Not available" ;
+VAL_ 2364475738 operationalModeCmd_VCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Purely Electric Gear Shifting" 3 "Purely Electric" 2 "Reserved_02" 1 "Generator" 0 "Neutral" ;
+VAL_ 2364475738 operationalStateRq_VCUFastCmd 7 "Invalid" 6 "Reserved_06" 5 "Reserved_05" 4 "Reserved_04" 3 "Reserved_03" 2 "Shutdown" 1 "Operational" 0 "Standby" ;
+VAL_ 2364475738 commandValue_VCUFastCmd 16777215 "Not available" ;
+VAL_ 2348878170 TransRqedLaunchGear 15 "Not Available" 14 "Error" 13 "Reserved" 12 "Not Available" 11 "Not Available" 10 "Not Available" 9 "Not Available" 8 "Not Available" 7 "Not Available" 6 "Not Available" 5 "Not Available" 4 "Not Available" 3 "Launch in 3rd gear" 2 "Launch in 2nd gear" 1 "Launch in 1st gear" 0 "Use default launch gear" ;
+VAL_ 2348878170 DisengageDrivelineRq 3 "Take no action" 2 "Reserved" 1 "Disengage driveline" 0 "Allow driveline engagement" ;
+

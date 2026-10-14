@@ -1,0 +1,142 @@
+VERSION ""
+
+
+BS_:
+
+BU_:
+
+
+BO_ 2566877712 TX_to_eAir: 8 Vector__XXX
+ SG_ max_requested_motor_speed : 56|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ enable_emergency_stop : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ additional_pressure_demand : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ requested_motor_speed : 8|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ actual_minimum_air_pressure : 40|8@1+ (0.08,0) [0|20.4] "Bar" Vector__XXX
+ SG_ vehicle_speed : 32|8@1+ (1,0) [0|255] "kmph" Vector__XXX
+ SG_ vehicle_can_ok : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ enable_mode : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566877455 RX_from_eAir: 8 Vector__XXX
+ SG_ oil_level_sensor_fill_level : 36|4@1+ (10,-20) [-20|130] "%" Vector__XXX
+ SG_ solenoid_problem_detected : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ indirect_oil_level_warning : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ oil_level_warning : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ actual_dc_power : 48|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
+ SG_ dynamic_can_request_data_result : 40|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ warning_states_air_pressure_out_of_range : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_oil_temp_out_of_range : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_motor_out_of_range : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_any_warning_active : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ air_dryer_govenor_valve : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ air_dryer_regeneration_valve : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ calculated_oil_temperature : 24|8@1+ (1,-40) [-40|215] "°C" Vector__XXX
+ SG_ operating_counter : 8|16@1+ (6,0) [0|393210] "Hrs" Vector__XXX
+ SG_ open_solenoid_valve : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ can_alive_counter : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ error_message_can_rx_fail : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ error_message_motor_error : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_inverter_bootup_ready : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_motor_turning : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566878224 TX_to_eServo: 8 Vector__XXX
+ SG_ max_requested_motor_speed : 56|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ enable_emergency_stop : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ requested_motor_speed : 8|8@1+ (25,0) [0|6375] "rpm" Vector__XXX
+ SG_ vehicle_speed : 32|8@1+ (1,0) [0|255] "kmph" Vector__XXX
+ SG_ vehicle_can_ok : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ enable_mode : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566877967 RX_from_eServo: 8 Vector__XXX
+ SG_ actual_dc_power : 48|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
+ SG_ dynamic_can_request_data_result : 40|8@1+ (1,0) [0|255] "[]" Vector__XXX
+ SG_ uzk_mean : 24|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ warning_states_under_torque : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_motor_out_of_range : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ warning_states_any_warning_active : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ operating_counter : 8|16@1+ (6,0) [0|393210] "Hrs" Vector__XXX
+ SG_ can_alive_counter : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ error_message_can_rx_fail : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ error_message_motor_error : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_inverter_bootup_ready : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ status_message_motor_turning : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566848528 TX_general_control_set: 8 Vector__XXX
+ SG_ Appl_Contr_Control : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566848784 TX_general_torque_speed_set: 8 Vector__XXX
+ SG_ Appl_Contr_VelocityRef : 32|32@1+ (1,-5000) [-5000|4.29496e+009] "rpm" Vector__XXX
+ SG_ Appl_Contr_TorqueRef : 0|32@1+ (0.01,-50) [-50|4.29496e+007] "Nm" Vector__XXX
+
+BO_ 2566849040 TX_general_position_set: 8 Vector__XXX
+ SG_ Appl_Contr_PositionRef : 0|32@1+ (1,-5000) [-5000|4.29496e+009] "mm" Vector__XXX
+
+BO_ 2566856719 RX_general_status_get: 8 Vector__XXX
+ SG_ DcLinkVoltage : 40|16@1+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ CurrentPhaseRms : 24|16@1+ (1,0) [0|65535] "A" Vector__XXX
+ SG_ MotorTemp : 16|8@1+ (1,-80) [-80|175] "°C" Vector__XXX
+ SG_ InverterTemp : 8|8@1+ (1,-80) [-80|175] "°C" Vector__XXX
+ SG_ Contr_State : 0|8@1+ (1,-4) [-4|3] "" Vector__XXX
+
+BO_ 2566856975 RX_general_protections_get: 8 Vector__XXX
+ SG_ Prot2_LuaScriptErroredOrTimedOut : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_MasterSlaveCANTimeout : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_ErrorTriggeredFromLuaScript : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_ErrorFOCLoadTooHigh : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_PrechargeProcedureFailed : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot2_SafetyMotorControlDisabled : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwarePhaseOvercurrent : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwareDcLinkOvervoltage : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SoftwareDcLinkUndervoltage : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeOvertemperature : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CapacitorOvertemperature : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorOvertemperature : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentOffset : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CANCommandTimeout : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SystemSelfTestFailed : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentSumThresholdExceeded : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CurrentMeasurementRangeError : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorFeedbackError : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SafetyUnrecoverableError : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SafetyRecoverableError : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_DynamicASCError : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CANCommunicationError : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_GatedriverDCDCError : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_DcLinkOvervoltageComparator : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_OvercurrentComparator : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_GatedriverError : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_HVInterlock : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorTempSensorFail : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_CapacitorTempSensorFail : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeTempSensorFail : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BridgeFault : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_LogicSupplyFault : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_BusBarFault : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_SystemInitializationError : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_VrefFaultCompanionChip : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_ApplicationErrorState : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_MotorControlError : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Prot1_ErrorExtendedToProtections2 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566857231 RX_general_torque_speed_get: 8 Vector__XXX
+ SG_ Ctrl_act_speed : 16|16@1+ (1,-32767) [-32767|32768] "rpm" Vector__XXX
+ SG_ Ctrl_act_torque : 0|16@1+ (0.1,-3275) [-3275|3278.5] "Nm" Vector__XXX
+
+BO_ 2566834703 DM01: 22 Vector__XXX
+
+
+
+VAL_ 2566848528 Appl_Contr_Control
+ 1 "Run"
+ 2 "Recover from error"
+ 3 "Calibration"
+ 4 "Precharge done";
+
+VAL_ 2566856719 Contr_State
+ 0 "Undefined"
+ 1 "Precharge"
+ 2 "Initialization"
+ 3 "Self test"
+ 4 "Off"
+ 5 "Run"
+ 6 "Error"
+ 7 "Calibration";

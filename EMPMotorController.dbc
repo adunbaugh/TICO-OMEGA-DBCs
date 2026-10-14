@@ -1,0 +1,118 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ MeasuredMotorControllerTemperature : 24|16@1+ (0.03125,-273) [0|0] "degC" Vector__XXX
+
+BO_ 2565799936 MotorCommand: 8 Vector__XXX
+ SG_ OnOffDirectionCommand : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PowerHoldCommand : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MotorSpeedCommand : 8|16@1+ (0.5,0) [0|32767.5] "rpm" Vector__XXX
+ SG_ PercentMotorSpeedCommand : 24|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+
+BO_ 2566849280 MotorStatus1: 8 Vector__XXX
+ SG_ OnOffDirectionStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ControllerStatus : 2|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ MeasuredMotorSpeed : 8|16@1+ (0.5,0) [0|32767.5] "rpm" Vector__XXX
+ SG_ MeasuredMotorPower : 40|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ MeasuredPercentMotorSpeed : 56|8@1+ (0.5,0) [0|127.5] "%" Vector__XXX
+
+BO_ 2566865664 MeasuredExternalTemperature: 8 Vector__XXX
+ SG_ ExternalTemperatureMeasurement : 8|16@1+ (0.03125,-273) [0|1774.97] "degC" Vector__XXX
+
+BO_ 2566857472 MotorStatus2: 8 Vector__XXX
+ SG_ OnOffDirectionStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ControllerStatus : 2|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CommandStatus : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MeasuredMotorSpeed : 8|16@1+ (0.5,0) [0|32767.5] "rpm" Vector__XXX
+ SG_ MeasuredExternalTemperature : 24|16@1+ (0.03125,-273) [0|1774.97] "degC" Vector__XXX
+ SG_ MeasuredMotorPower : 40|16@1+ (1,0) [0|65535] "W" Vector__XXX
+ SG_ ServiceIndicator : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OperationStatus : 58|2@1+ (2,0) [0|3] "" Vector__XXX
+
+BO_ 2557804544 EAPMCF1C: 8 Vector__XXX
+ SG_ EnableCommand : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PowerHold : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SpeedCommand : 8|16@1+ (0.5,0) [0|32127.5] "rpm" Vector__XXX
+ SG_ PercentSpeed : 24|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+
+BO_ 2566650112 EAPMCF1S: 8 Vector__XXX
+ SG_ EnableStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ControllerStatusReason : 2|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ControllerCommand : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MotorSpeed : 8|16@1+ (0.5,0) [0|32127.5] "rpm" Vector__XXX
+ SG_ ControlTemperature : 24|16@1+ (0.03125,-237) [-273|1734.96875] "degC" Vector__XXX
+ SG_ Power : 40|16@1+ (0.5,0) [0|1734.96875] "W" Vector__XXX
+ SG_ ServiceIndicator : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OperatingStatus : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2558132224 EAPMCPC: 8 Vector__XXX
+ SG_ EnableCommand : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PowerHold : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SpeedCommand : 8|16@1+ (0.5,0) [0|32127.5] "rpm" Vector__XXX
+ SG_ PercentSpeed : 24|8@1+ (0.5,0) [0|125] "%" Vector__XXX
+
+BO_ 2566651392 EAPMCPS: 8 Vector__XXX
+ SG_ EnableStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ControllerStatusReason : 2|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ControllerCommand : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MotorSpeed : 8|16@1+ (0.5,0) [0|32127.5] "rpm" Vector__XXX
+ SG_ ControlTemperature : 24|16@1+ (0.03125,-237) [-273|1734.96875] "degC" Vector__XXX
+ SG_ Power : 40|16@1+ (0.5,0) [0|1734.96875] "W" Vector__XXX
+ SG_ ServiceIndicator : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OperatingStatus : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+
+
+
+CM_ BO_ 2565799936 "Rate = 100ms, ID = 0x18EFXXYY, where XX = EMP component source address, YY = controlling device source address";
+CM_ SG_ 2565799936 MotorSpeedCommand "Both Motor Speed Command and Percent Motor Speed Command cannot be used at the same time. Set either the Motor Speed Command to 0xFFFF or the Percent Motor Speed Command to 0xFF for the command method that is not being used.";
+CM_ SG_ 2565799936 PercentMotorSpeedCommand "";
+CM_ BO_ 2566849280 "Rate = 1000ms, ID = 0x18FF03XX, where XX = EMP component source address";
+CM_ BO_ 2566865664 "Rate = 1000ms, ID = 0x18FF43XX, where XX = EMP component source address";
+CM_ BO_ 2566857472 "Rate = 1000ms, ID = 0x18FF23XX, where XX = EMP component source address";
+CM_ BO_ 2557804544 "Rate = 1000ms, ID = 0x1875XXYY, where XX = EMP component source address, YY = controlling device source address";
+CM_ BO_ 2566650112 "Rate = 1000ms, ID = 0x18FBF9XX, where XX = EMP component source address";
+CM_ BO_ 2558132224 "Rate = 1000ms, ID = 0x187AXXYY, where XX = EMP component source address, YY = controlling device source address";
+CM_ BO_ 2566651392 "Rate = 1000ms, ID = 0x18FBFEXX, where XX = EMP component source address";
+VAL_ 2565799936 OnOffDirectionCommand 0 "Motor Off" 1 "Motor On: Default Direction" 2 "Motor On: Reverse Direction" 3 "Don't Care / Take No Action" ;
+VAL_ 2565799936 PowerHoldCommand 0 "Power Off" 1 "Power On" 2 "Reserved" 3 "Don't Care / Take No Action" ;
+VAL_ 2566857472 OnOffDirectionStatus 0 "Motor Off" 1 "Motor On: Default Direction" 2 "Motor On: Reverse Direction" 3 "Not Available" ;
+VAL_ 2566857472 CommandStatus 0 "Command is internal" 1 "Command is external" 2 "Command is default" 3 "Not available" ;
+VAL_ 2566857472 ServiceIndicator 0 "Service Not Required" 1 "Service Required" 2 "Reserved" 3 "Not Available" ;
+VAL_ 2566857472 OperationStatus 0 "Normal Operation" 1 "Derated Operation" 2 "Not Operable" 3 "Not Available" ;
+
